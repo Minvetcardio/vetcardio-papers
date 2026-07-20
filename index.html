@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VetCardio Papers</title>
+  <style>
+    :root {
+      --bg: #f6f8fb;
+      --card: #ffffff;
+      --text: #172033;
+      --muted: #667085;
+      --line: #e6eaf0;
+      --accent: #0f766e;
+      --accent-soft: #e8f5f3;
+      --dog: #2563eb;
+      --cat: #9333ea;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, "Noto Sans KR", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    header {
+      background: linear-gradient(135deg, #0f766e, #155e75);
+      color: white;
+      padding: 56px 20px 44px;
+    }
+
+    .wrap {
+      width: min(1080px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-size: clamp(30px, 5vw, 48px);
+    }
+
+    .subtitle {
+      margin: 0;
+      opacity: 0.92;
+      font-size: 17px;
+      line-height: 1.6;
+    }
+
+    .controls {
+      margin-top: -22px;
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 18px;
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+    }
+
+    .search {
+      width: 100%;
+      padding: 14px 16px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      font-size: 16px;
+      outline: none;
+    }
+
+    .search:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px var(--accent-soft);
+    }
+
+    .filter-row {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-top: 14px;
+    }
+
+    button {
+      border: 1px solid var(--line);
+      background: white;
+      color: var(--text);
+      padding: 9px 13px;
+      border-radius: 999px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    button.active {
+      background: var(--accent);
+      color: white;
+      border-color: var(--accent);
+    }
+
+    main {
+      padding: 34px 0 60px;
+    }
+
+    .summary {
+      color: var(--muted);
+      margin-bottom: 16px;
+    }
+
+    .grid {
+      display: grid;
+      gap: 16px;
+    }
+
+    .paper {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 20px;
+      transition: transform .15s ease, box-shadow .15s ease;
+    }
+
+    .paper:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
+    }
+
+    .tags {
+      display: flex;
+      gap: 7px;
+      flex-wrap: wrap;
+      margin-bottom: 12px;
+    }
+
+    .tag {
+      font-size: 12px;
+      font-weight: 700;
+      padding: 5px 8px;
+      border-radius: 999px;
+      background: #eef2f7;
+      color: #344054;
+    }
+
+    .tag.dog {
+      background: #eaf1ff;
+      color: var(--dog);
+    }
+
+    .tag.cat {
+      background: #f5eafe;
+      color: var(--cat);
+    }
+
+    .paper h2 {
+      margin: 0 0 10px;
+      font-size: 21px;
+      line-height: 1.4;
+    }
+
+    .meta {
+      color: var(--muted);
+      line-height: 1.6;
+      font-size: 14px;
+      margin-bottom: 12px;
+    }
+
+    .abstract {
+      line-height: 1.7;
+      color: #344054;
+      margin: 0 0 16px;
+    }
+
+    .paper a {
+      display: inline-block;
+      text-decoration: none;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-weight: 700;
+      padding: 9px 12px;
+      border-radius: 10px;
+    }
+
+    .empty {
+      background: white;
+      border: 1px dashed var(--line);
+      border-radius: 16px;
+      padding: 40px;
+      text-align: center;
+      color: var(--muted);
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      padding: 0 20px 36px;
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <h1>VetCardio Papers</h1>
+      <p class="subtitle">개와 고양이의 최신 심장학 논문을 한곳에서 확인하는 사이트입니다.</p>
+    </div>
+  </header>
+
+  <div class="wrap">
+    <section class="controls">
+      <input id="search" class="search" type="search" placeholder="논문 제목, 저자, 저널, 키워드 검색" />
+
+      <div class="filter-row" id="speciesFilters">
+        <button class="active" data-species="all">전체</button>
+        <button data-species="dog">개</button>
+        <button data-species="cat">고양이</button>
+      </div>
+
+      <div class="filter-row" id="topicFilters">
+        <button class="active" data-topic="all">전체 분야</button>
+        <button data-topic="MMVD">MMVD</button>
+        <button data-topic="Cardiomyopathy">Cardiomyopathy</button>
+        <button data-topic="Pulmonary Hypertension">Pulmonary Hypertension</button>
+        <button data-topic="Arrhythmia">Arrhythmia</button>
+        <button data-topic="Congenital">Congenital</button>
+        <button data-topic="Echocardiography">Echocardiography</button>
+      </div>
+    </section>
+
+    <main>
+      <div class="summary" id="summary"></div>
+      <section class="grid" id="paperList"></section>
+    </main>
+  </div>
+
+  <footer>
+    VetCardio Papers · First demo version
+  </footer>
+
+  <script>
+    const papers = [
+      {
+        title: "Left atrial volume assessment in dogs with myxomatous mitral valve disease",
+        authors: "Kim M, Seo M, Park C",
+        journal: "Journal of Veterinary Cardiology",
+        date: "2026 Jul",
+        species: "dog",
+        topics: ["MMVD", "Echocardiography"],
+        abstract: "MMVD 환자에서 좌심방 용적 측정과 심장 리모델링 평가를 다룬 예시 논문입니다.",
+        url: "https://pubmed.ncbi.nlm.nih.gov/"
+      },
+      {
+        title: "Hypertrophic cardiomyopathy in cats: diagnostic and prognostic markers",
+        authors: "Example A, Example B",
+        journal: "Journal of Feline Medicine and Surgery",
+        date: "2026 Jun",
+        species: "cat",
+        topics: ["Cardiomyopathy", "Echocardiography"],
+        abstract: "고양이 비대성 심근병증의 진단 및 예후 인자를 다룬 예시 논문입니다.",
+        url: "https://pubmed.ncbi.nlm.nih.gov/"
+      },
+      {
+        title: "Pulmonary hypertension in dogs: echocardiographic assessment",
+        authors: "Example C, Example D",
+        journal: "Journal of Veterinary Internal Medicine",
+        date: "2026 May",
+        species: "dog",
+        topics: ["Pulmonary Hypertension", "Echocardiography"],
+        abstract: "개 폐고혈압의 심초음파 평가 방법을 다룬 예시 논문입니다.",
+        url: "https://pubmed.ncbi.nlm.nih.gov/"
+      },
+      {
+        title: "Ambulatory electrocardiography in cats with suspected arrhythmia",
+        authors: "Example E, Example F",
+        journal: "Veterinary Sciences",
+        date: "2026 Apr",
+        species: "cat",
+        topics: ["Arrhythmia"],
+        abstract: "부정맥이 의심되는 고양이에서 장시간 심전도 검사의 활용을 다룬 예시 논문입니다.",
+        url: "https://pubmed.ncbi.nlm.nih.gov/"
+      },
+      {
+        title: "Transcatheter treatment of congenital heart disease in small dogs",
+        authors: "Example G, Example H",
+        journal: "Journal of Veterinary Cardiology",
+        date: "2026 Mar",
+        species: "dog",
+        topics: ["Congenital"],
+        abstract: "소형견 선천성 심장질환의 중재적 치료를 다룬 예시 논문입니다.",
+        url: "https://pubmed.ncbi.nlm.nih.gov/"
+      }
+    ];
+
+    let selectedSpecies = "all";
+    let selectedTopic = "all";
+
+    const paperList = document.getElementById("paperList");
+    const summary = document.getElementById("summary");
+    const search = document.getElementById("search");
+
+    function render() {
+      const keyword = search.value.trim().toLowerCase();
+
+      const filtered = papers.filter(paper => {
+        const speciesMatch = selectedSpecies === "all" || paper.species === selectedSpecies;
+        const topicMatch = selectedTopic === "all" || paper.topics.includes(selectedTopic);
+        const searchText = [
+          paper.title,
+          paper.authors,
+          paper.journal,
+          paper.abstract,
+          ...paper.topics
+        ].join(" ").toLowerCase();
+        const keywordMatch = !keyword || searchText.includes(keyword);
+
+        return speciesMatch && topicMatch && keywordMatch;
+      });
+
+      summary.textContent = `현재 ${filtered.length}개의 논문이 표시되고 있습니다.`;
+
+      if (filtered.length === 0) {
+        paperList.innerHTML = `<div class="empty">조건에 맞는 논문이 없습니다.</div>`;
+        return;
+      }
+
+      paperList.innerHTML = filtered.map(paper => `
+        <article class="paper">
+          <div class="tags">
+            <span class="tag ${paper.species}">${paper.species === "dog" ? "CANINE" : "FELINE"}</span>
+            ${paper.topics.map(topic => `<span class="tag">${topic}</span>`).join("")}
+          </div>
+          <h2>${paper.title}</h2>
+          <div class="meta">
+            ${paper.authors}<br />
+            ${paper.journal} · ${paper.date}
+          </div>
+          <p class="abstract">${paper.abstract}</p>
+          <a href="${paper.url}" target="_blank" rel="noopener noreferrer">PubMed 보기</a>
+        </article>
+      `).join("");
+    }
+
+    document.getElementById("speciesFilters").addEventListener("click", event => {
+      if (event.target.tagName !== "BUTTON") return;
+      document.querySelectorAll("#speciesFilters button").forEach(button => button.classList.remove("active"));
+      event.target.classList.add("active");
+      selectedSpecies = event.target.dataset.species;
+      render();
+    });
+
+    document.getElementById("topicFilters").addEventListener("click", event => {
+      if (event.target.tagName !== "BUTTON") return;
+      document.querySelectorAll("#topicFilters button").forEach(button => button.classList.remove("active"));
+      event.target.classList.add("active");
+      selectedTopic = event.target.dataset.topic;
+      render();
+    });
+
+    search.addEventListener("input", render);
+    render();
+  </script>
+</body>
+</html>
