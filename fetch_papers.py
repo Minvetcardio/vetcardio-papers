@@ -17,6 +17,7 @@ import os
 import re
 import sys
 import time
+import unicodedata
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Iterable
@@ -31,6 +32,7 @@ OUTPUT = Path(__file__).resolve().parent / "papers.json"
 EUTILS = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils"
 NCBI_API_KEY = os.getenv("NCBI_API_KEY", "").strip()
 NCBI_EMAIL = os.getenv("NCBI_EMAIL", "").strip()
+AUTHOR_LIST_VERSION = "2026-07-21-rishniw-saunders"
 
 
 TRACKED_JOURNALS = {
@@ -51,16 +53,30 @@ TRACKED_JOURNALS = {
 
 
 TRACKED_AUTHORS = {
-    "Marisa K. Ames": ("Ames", "MK"),
-    "Lance C. Visser": ("Visser", "LC"),
-    "Brian A. Scansen": ("Scansen", "BA"),
-    "E. Christopher Orton": ("Orton", "EC"),
-    "Brianna M. Potter": ("Potter", "BM"),
-    "Joshua A. Stern": ("Stern", "JA"),
-    "Mark A. Oyama": ("Oyama", "MA"),
-    "Joanna L. Kaplan": ("Kaplan", "JL"),
-    "Tommaso Vezzosi": ("Vezzosi", "T"),
-    "Gerhard Wess": ("Wess", "G"),
+    "Marisa K. Ames": [("Ames", "MK")],
+    "Lance C. Visser": [("Visser", "LC")],
+    "Brian A. Scansen": [("Scansen", "BA")],
+    "E. Christopher Orton": [("Orton", "EC")],
+    "Brianna M. Potter": [("Potter", "BM")],
+    "Joshua A. Stern": [("Stern", "JA")],
+    "Mark A. Oyama": [("Oyama", "MA")],
+    "Joanna L. Kaplan": [("Kaplan", "JL")],
+    "Tommaso Vezzosi": [("Vezzosi", "T")],
+    "Gerhard Wess": [("Wess", "G")],
+
+    # 추가 추적 연구자
+    "Mark Rishniw": [("Rishniw", "M")],
+    "Virginia Luis Fuentes": [
+        ("Luis Fuentes", "V"),
+        ("Luis-Fuentes", "V"),
+    ],
+    "Jens Häggström": [("Haggstrom", "J")],
+    "Kathryn M. Meurs": [("Meurs", "KM")],
+    "Darcy B. Adin": [("Adin", "DB")],
+    "Roberto A. Santilli": [("Santilli", "RA")],
+    "Romain Pariaut": [("Pariaut", "R")],
+    "N. Sydney Moïse": [("Moise", "NS")],
+    "Ashley B. Saunders": [("Saunders", "AB")],
 }
 
 
@@ -596,22 +612,42 @@ def parse_authors(
     return rows, ", ".join(names)
 
 
+def normalize_author_name(value: str) -> str:
+    """성의 하이픈·공백·악센트 차이를 무시해 비교합니다."""
+    decomposed = unicodedata.normalize("NFKD", value)
+    ascii_text = "".join(
+        character
+        for character in decomposed
+        if not unicodedata.combining(character)
+    )
+    return re.sub(r"[^a-z]", "", ascii_text.casefold())
+
+
 def matched_authors(
     rows: list[dict[str, str]],
 ) -> list[str]:
     matches: list[str] = []
 
-    for display_name, (last_name, initials) in TRACKED_AUTHORS.items():
-        for author in rows:
-            author_initials = re.sub(
-                r"[^A-Za-z]", "", author["initials"]
-            ).upper()
+    for display_name, aliases in TRACKED_AUTHORS.items():
+        for target_last, target_initials in aliases:
+            target_last_normalized = normalize_author_name(target_last)
 
-            if (
-                author["last"].casefold() == last_name.casefold()
-                and author_initials.startswith(initials.upper())
-            ):
-                matches.append(display_name)
+            for author in rows:
+                author_initials = re.sub(
+                    r"[^A-Za-z]", "", author["initials"]
+                ).upper()
+
+                if (
+                    normalize_author_name(author["last"])
+                    == target_last_normalized
+                    and author_initials.startswith(
+                        target_initials.upper()
+                    )
+                ):
+                    matches.append(display_name)
+                    break
+
+            if display_name in matches:
                 break
 
     return matches
@@ -736,7 +772,8 @@ def main() -> None:
     )
     author_terms = " OR ".join(
         f'"{last} {initials}"[Author]'
-        for last, initials in TRACKED_AUTHORS.values()
+        for aliases in TRACKED_AUTHORS.values()
+        for last, initials in aliases
     )
 
     journal_query = (
@@ -788,7 +825,7 @@ def main() -> None:
     data = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "total": len(papers),
-        "filter_version": "slightly-stricter-1.1",
+        "filter_version": "slightly-stricter-1.1-authors-2026-07-21",
         "tracked_journals": list(TRACKED_JOURNALS.keys()),
         "tracked_authors": list(TRACKED_AUTHORS.keys()),
         "papers": papers,
