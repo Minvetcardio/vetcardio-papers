@@ -1,106 +1,652 @@
 <!doctype html>
 <html lang="ko">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>VetCardio Papers</title>
 <style>
-:root{--p:#0f766e;--bg:#f4f7fa;--line:#e3e9ef;--muted:#667085}
-*{box-sizing:border-box}body{margin:0;font-family:Arial,"Noto Sans KR",sans-serif;background:var(--bg);color:#172033}
+:root{
+  --p:#0f766e;--p2:#0b5d57;--soft:#e8f5f3;--bg:#f4f7fa;
+  --line:#e3e9ef;--muted:#667085;--text:#172033
+}
+*{box-sizing:border-box}
+body{
+  margin:0;font-family:Arial,"Noto Sans KR",sans-serif;
+  background:var(--bg);color:var(--text)
+}
 .wrap{width:min(1120px,calc(100% - 30px));margin:auto}
-header{padding:52px 0 44px;color:white;background:linear-gradient(135deg,#0f766e,#155e75)}
-h1{margin:0;font-size:clamp(36px,6vw,56px)}header p{max-width:760px;line-height:1.7}
-.panel{margin-top:-22px;padding:18px;background:white;border:1px solid var(--line);border-radius:18px;box-shadow:0 12px 32px #0f172a12}
+header{
+  padding:52px 0 44px;color:white;
+  background:linear-gradient(135deg,#0f766e,#155e75)
+}
+h1{margin:0;font-size:clamp(36px,6vw,56px)}
+header p{max-width:760px;line-height:1.7}
+.panel{
+  margin-top:-22px;padding:18px;background:white;
+  border:1px solid var(--line);border-radius:18px;
+  box-shadow:0 12px 32px #0f172a12
+}
 .searchrow{display:grid;grid-template-columns:1fr 150px;gap:10px}
-input,select{width:100%;padding:13px;border:1px solid var(--line);border-radius:11px;font-size:15px;background:white}
-.label{margin:15px 0 7px;color:var(--muted);font-size:12px;font-weight:700;text-transform:uppercase}
+input,select{
+  width:100%;padding:13px;border:1px solid var(--line);
+  border-radius:11px;font-size:15px;background:white
+}
+.label{
+  margin:15px 0 7px;color:var(--muted);font-size:12px;
+  font-weight:700;text-transform:uppercase
+}
 .filters{display:flex;gap:7px;flex-wrap:wrap}
-button{padding:8px 11px;border:1px solid var(--line);border-radius:999px;background:white;cursor:pointer}
-button.active,.more{background:var(--p);color:white;border-color:var(--p)}
-main{padding:28px 0 60px}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:18px}
-.stat,.paper,.notice{background:white;border:1px solid var(--line);border-radius:15px}
-.stat{padding:15px}.stat strong{display:block;font-size:24px}.stat span,.meta{color:var(--muted);font-size:13px}
-.result{margin:15px 2px;color:var(--muted)}.list{display:grid;gap:14px}.paper{padding:19px}
-.tags{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px}.tag{padding:5px 8px;border-radius:999px;background:#eef2f6;font-size:11px;font-weight:700}
-.dog{background:#eaf1ff;color:#2563eb}.cat{background:#f5eafe;color:#9333ea}.author{background:#fff7d6;color:#a16207}.journal{background:#e6f5ff;color:#0369a1}
-h2{font-size:20px;line-height:1.4;margin:0 0 8px}.tracked{margin-top:7px;color:#a16207;font-size:13px;font-weight:700}
-details{margin-top:12px;padding-top:10px;border-top:1px solid var(--line)}summary{cursor:pointer;color:var(--p);font-weight:700}
-.abstract{line-height:1.7;white-space:pre-line;color:#344054;font-size:14px}.links{display:flex;gap:8px;margin-top:13px}
-.links a{padding:8px 10px;border-radius:9px;background:#e8f5f3;color:#0b5d57;text-decoration:none;font-weight:700;font-size:13px}
-.notice{padding:38px;text-align:center;color:var(--muted);line-height:1.7}.more{display:block;margin:20px auto;padding:10px 18px;border-radius:11px}
-footer{text-align:center;color:var(--muted);font-size:12px;padding-bottom:30px}
-@media(max-width:700px){.searchrow,.stats{grid-template-columns:1fr}h2{font-size:18px}}
+button{
+  padding:8px 11px;border:1px solid var(--line);
+  border-radius:999px;background:white;cursor:pointer;font:inherit
+}
+button.active,.more{
+  background:var(--p);color:white;border-color:var(--p)
+}
+main{padding:28px 0 60px}
+.stats{
+  display:grid;grid-template-columns:repeat(3,1fr);
+  gap:10px;margin-bottom:18px
+}
+.stat,.paper,.notice{
+  background:white;border:1px solid var(--line);border-radius:15px
+}
+.stat{padding:15px}
+.stat strong{display:block;font-size:24px}
+.stat span,.meta{color:var(--muted);font-size:13px}
+.result{margin:15px 2px;color:var(--muted)}
+.list{display:grid;gap:14px}
+.paper{padding:19px}
+.tags{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px}
+.tag{
+  padding:5px 8px;border-radius:999px;background:#eef2f6;
+  font-size:11px;font-weight:700
+}
+.dog{background:#eaf1ff;color:#2563eb}
+.cat{background:#f5eafe;color:#9333ea}
+.author{background:#fff7d6;color:#a16207}
+.journal{background:#e6f5ff;color:#0369a1}
+h2{font-size:20px;line-height:1.4;margin:0 0 8px}
+.tracked{
+  margin-top:7px;color:#a16207;font-size:13px;font-weight:700
+}
+.paper-tools{
+  display:flex;align-items:center;gap:14px;flex-wrap:wrap;
+  margin-top:13px;padding-top:11px;border-top:1px solid var(--line)
+}
+.summary-btn{
+  border:0;border-radius:9px;background:var(--p);color:white;
+  padding:9px 12px;font-weight:800
+}
+.summary-btn:hover{background:var(--p2)}
+.summary-btn:disabled{opacity:.65;cursor:wait}
+details.abstract-details{margin:0;padding:0;border:0}
+details.abstract-details summary{
+  cursor:pointer;color:var(--p);font-weight:700
+}
+.abstract{
+  margin-top:12px;line-height:1.7;white-space:pre-line;
+  color:#344054;font-size:14px
+}
+.summarybox{
+  margin-top:12px;padding:15px;border:1px solid #b9ddd7;
+  border-radius:12px;background:#f1fbf9
+}
+.summarybox h3{margin:0 0 9px;font-size:16px;color:var(--p2)}
+.summary-section{margin-top:11px}
+.summary-section:first-of-type{margin-top:0}
+.summary-label{
+  display:block;margin-bottom:4px;color:var(--p2);
+  font-size:12px;font-weight:800
+}
+.summary-text{margin:0;line-height:1.65;color:#344054;font-size:14px}
+.summary-note{
+  margin:12px 0 0;padding-top:10px;border-top:1px solid #cfe8e4;
+  color:var(--muted);font-size:11px;line-height:1.5
+}
+.links{display:flex;gap:8px;flex-wrap:wrap;margin-top:13px}
+.links a{
+  padding:8px 10px;border-radius:9px;background:var(--soft);
+  color:var(--p2);text-decoration:none;font-weight:700;font-size:13px
+}
+.notice{
+  padding:38px;text-align:center;color:var(--muted);line-height:1.7
+}
+.more{
+  display:block;margin:20px auto;padding:10px 18px;border-radius:11px
+}
+footer{
+  text-align:center;color:var(--muted);font-size:12px;
+  padding:0 20px 30px;line-height:1.6
+}
+[hidden]{display:none!important}
+@media(max-width:700px){
+  .searchrow,.stats{grid-template-columns:1fr}
+  h2{font-size:18px}
+  .paper-tools{gap:10px}
+}
 </style>
 </head>
 <body>
-<header><div class="wrap"><h1>VetCardio Papers</h1>
-<p>지정한 수의학 저널과 주요 수의심장학 연구자의 개·고양이 심장 관련 논문을 PubMed에서 자동으로 모아 보여줍니다.</p></div></header>
+<header>
+  <div class="wrap">
+    <h1>VetCardio Papers</h1>
+    <p>
+      지정한 수의학 저널과 주요 수의심장학 연구자의 개·고양이
+      심장 관련 논문을 PubMed에서 자동으로 모아 보여줍니다.
+    </p>
+  </div>
+</header>
+
 <div class="wrap">
 <section class="panel">
-<div class="searchrow"><input id="q" placeholder="제목, 저자, 저널, 초록, PMID 검색">
-<select id="sort"><option value="new">최신순</option><option value="old">오래된 순</option><option value="title">제목순</option></select></div>
-<div class="label">동물</div><div class="filters" id="species"></div>
-<div class="label">수집 경로</div><div class="filters" id="source"></div>
-<div class="label">분야</div><div class="filters" id="topics"></div>
-<div class="label">추적 연구자</div><div class="filters" id="authors"></div>
+  <div class="searchrow">
+    <input id="q" placeholder="제목, 저자, 저널, 초록, PMID 검색">
+    <select id="sort">
+      <option value="new">최신순</option>
+      <option value="old">오래된 순</option>
+      <option value="title">제목순</option>
+    </select>
+  </div>
+
+  <div class="label">동물</div>
+  <div class="filters" id="species"></div>
+
+  <div class="label">수집 경로</div>
+  <div class="filters" id="source"></div>
+
+  <div class="label">분야</div>
+  <div class="filters" id="topics"></div>
+
+  <div class="label">추적 연구자</div>
+  <div class="filters" id="authors"></div>
 </section>
+
 <main>
-<section class="stats">
-<div class="stat"><strong id="total">–</strong><span>전체 논문</span></div>
-<div class="stat"><strong id="shown">–</strong><span>현재 결과</span></div>
-<div class="stat"><strong id="updated">–</strong><span>마지막 업데이트</span></div>
-</section>
-<div class="result" id="result">논문을 불러오는 중입니다.</div>
-<section class="list" id="list"><div class="notice">PubMed 자료를 불러오는 중입니다.</div></section>
-<button class="more" id="more" hidden>논문 더 보기</button>
-</main></div>
-<footer>VetCardio Papers · PubMed automated literature dashboard</footer>
+  <section class="stats">
+    <div class="stat"><strong id="total">–</strong><span>전체 논문</span></div>
+    <div class="stat"><strong id="shown">–</strong><span>현재 결과</span></div>
+    <div class="stat"><strong id="updated">–</strong><span>마지막 업데이트</span></div>
+  </section>
+
+  <div class="result" id="result">논문을 불러오는 중입니다.</div>
+  <section class="list" id="list">
+    <div class="notice">PubMed 자료를 불러오는 중입니다.</div>
+  </section>
+  <button class="more" id="more" hidden>논문 더 보기</button>
+</main>
+</div>
+
+<footer>
+  VetCardio Papers · PubMed automated literature dashboard<br>
+  한글 핵심 요약은 PubMed 초록에서 주요 문장을 자동 추출한 뒤 기계번역한 참고용 정보입니다.
+</footer>
+
 <script>
-const PAGE=40;let papers=[],filtered=[],visible=PAGE,state={species:"all",source:"all",topic:"all",author:"all"};
+const PAGE=40;
+let papers=[],filtered=[],visible=PAGE;
+let state={species:"all",source:"all",topic:"all",author:"all"};
+
 const $=id=>document.getElementById(id);
-const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[c]));
-function btn(text,value,group,active=false){const b=document.createElement("button");b.textContent=text;b.dataset.value=value;b.dataset.group=group;if(active)b.classList.add("active");return b}
+const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({
+  "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"
+}[c]));
+
+function btn(text,value,group,active=false){
+  const b=document.createElement("button");
+  b.textContent=text;
+  b.dataset.value=value;
+  b.dataset.group=group;
+  if(active)b.classList.add("active");
+  return b;
+}
+
 function fillFilters(){
- const s=$("species");s.innerHTML="";[["전체","all"],["개","Canine"],["고양이","Feline"],["개·고양이","Both"]].forEach((x,i)=>s.append(btn(x[0],x[1],"species",i===0)));
- const so=$("source");so.innerHTML="";[["전체","all"],["지정 저널","journal"],["추적 연구자","author"]].forEach((x,i)=>so.append(btn(x[0],x[1],"source",i===0)));
- const t=$("topics");t.innerHTML="";t.append(btn("전체 분야","all","topic",true));[...new Set(papers.flatMap(p=>p.topics||[]))].sort().forEach(x=>t.append(btn(x,x,"topic")));
- const a=$("authors");a.innerHTML="";a.append(btn("전체 연구자","all","author",true));[...new Set(papers.flatMap(p=>p.matched_authors||[]))].sort().forEach(x=>a.append(btn(x,x,"author")));
+  const s=$("species");
+  s.innerHTML="";
+  [["전체","all"],["개","Canine"],["고양이","Feline"],["개·고양이","Both"]]
+    .forEach((x,i)=>s.append(btn(x[0],x[1],"species",i===0)));
+
+  const so=$("source");
+  so.innerHTML="";
+  [["전체","all"],["지정 저널","journal"],["추적 연구자","author"]]
+    .forEach((x,i)=>so.append(btn(x[0],x[1],"source",i===0)));
+
+  const t=$("topics");
+  t.innerHTML="";
+  t.append(btn("전체 분야","all","topic",true));
+  [...new Set(papers.flatMap(p=>p.topics||[]))].sort()
+    .forEach(x=>t.append(btn(x,x,"topic")));
+
+  const a=$("authors");
+  a.innerHTML="";
+  a.append(btn("전체 연구자","all","author",true));
+  [...new Set(papers.flatMap(p=>p.matched_authors||[]))].sort()
+    .forEach(x=>a.append(btn(x,x,"author")));
 }
+
 function apply(){
- const q=$("q").value.trim().toLowerCase();
- filtered=papers.filter(p=>{
-  const sp=state.species==="all"||p.species===state.species||(state.species==="Canine"&&p.species==="Both")||(state.species==="Feline"&&p.species==="Both");
-  const src=state.source==="all"||(state.source==="journal"&&p.selected_journal)||(state.source==="author"&&(p.matched_authors||[]).length);
-  const tp=state.topic==="all"||(p.topics||[]).includes(state.topic);
-  const au=state.author==="all"||(p.matched_authors||[]).includes(state.author);
-  const text=[p.title,p.authors_text,p.journal,p.abstract,p.pmid,p.doi,...(p.topics||[]),...(p.matched_authors||[])].join(" ").toLowerCase();
-  return sp&&src&&tp&&au&&(!q||text.includes(q));
- });
- const sort=$("sort").value;
- filtered.sort((a,b)=>sort==="old"?(a.sort_date||"").localeCompare(b.sort_date||""):sort==="title"?(a.title||"").localeCompare(b.title||""):(b.sort_date||"").localeCompare(a.sort_date||""));
- render();
+  const q=$("q").value.trim().toLowerCase();
+
+  filtered=papers.filter(p=>{
+    const sp=
+      state.species==="all"||
+      p.species===state.species||
+      (state.species==="Canine"&&p.species==="Both")||
+      (state.species==="Feline"&&p.species==="Both");
+
+    const src=
+      state.source==="all"||
+      (state.source==="journal"&&p.selected_journal)||
+      (state.source==="author"&&(p.matched_authors||[]).length);
+
+    const tp=
+      state.topic==="all"||
+      (p.topics||[]).includes(state.topic);
+
+    const au=
+      state.author==="all"||
+      (p.matched_authors||[]).includes(state.author);
+
+    const text=[
+      p.title,p.authors_text,p.journal,p.abstract,p.pmid,p.doi,
+      ...(p.topics||[]),...(p.matched_authors||[])
+    ].join(" ").toLowerCase();
+
+    return sp&&src&&tp&&au&&(!q||text.includes(q));
+  });
+
+  const sort=$("sort").value;
+  filtered.sort((a,b)=>
+    sort==="old"
+      ?(a.sort_date||"").localeCompare(b.sort_date||"")
+      :sort==="title"
+        ?(a.title||"").localeCompare(b.title||"")
+        :(b.sort_date||"").localeCompare(a.sort_date||"")
+  );
+
+  render();
 }
+
 function render(){
- $("shown").textContent=filtered.length.toLocaleString("ko-KR");$("result").textContent=`조건에 맞는 논문 ${filtered.length.toLocaleString("ko-KR")}개`;
- if(!filtered.length){$("list").innerHTML='<div class="notice">조건에 맞는 논문이 없습니다.</div>';$("more").hidden=true;return}
- const rows=filtered.slice(0,visible);
- $("list").innerHTML=rows.map(p=>{
-  const cls=p.species==="Canine"?"dog":p.species==="Feline"?"cat":"";
-  const tags=[`<span class="tag ${cls}">${esc(p.species)}</span>`,p.selected_journal?'<span class="tag journal">지정 저널</span>':"",p.matched_authors?.length?'<span class="tag author">추적 연구자</span>':"",...(p.topics||[]).slice(0,5).map(x=>`<span class="tag">${esc(x)}</span>`)].join("");
-  const tracked=p.matched_authors?.length?`<div class="tracked">추적 연구자: ${esc(p.matched_authors.join(", "))}</div>`:"";
-  const abs=p.abstract?`<details><summary>초록 보기</summary><p class="abstract">${esc(p.abstract)}</p></details>`:"";
-  const doi=p.doi?`<a target="_blank" rel="noopener" href="https://doi.org/${encodeURIComponent(p.doi)}">DOI 원문</a>`:"";
-  return `<article class="paper"><div class="tags">${tags}</div><h2>${esc(p.title)}</h2>
-  <div class="meta">${esc(p.authors_text)}<br>${esc(p.journal)} · ${esc(p.publication_date)} · PMID ${esc(p.pmid)}</div>
-  ${tracked}${abs}<div class="links"><a target="_blank" rel="noopener" href="${esc(p.pubmed_url)}">PubMed</a>${doi}</div></article>`;
- }).join("");
- $("more").hidden=visible>=filtered.length;
+  $("shown").textContent=filtered.length.toLocaleString("ko-KR");
+  $("result").textContent=
+    `조건에 맞는 논문 ${filtered.length.toLocaleString("ko-KR")}개`;
+
+  if(!filtered.length){
+    $("list").innerHTML=
+      '<div class="notice">조건에 맞는 논문이 없습니다.</div>';
+    $("more").hidden=true;
+    return;
+  }
+
+  const rows=filtered.slice(0,visible);
+
+  $("list").innerHTML=rows.map(p=>{
+    const cls=
+      p.species==="Canine"?"dog":
+      p.species==="Feline"?"cat":"";
+
+    const tags=[
+      `<span class="tag ${cls}">${esc(p.species)}</span>`,
+      p.selected_journal
+        ?'<span class="tag journal">지정 저널</span>':"",
+      p.matched_authors?.length
+        ?'<span class="tag author">추적 연구자</span>':"",
+      ...(p.topics||[]).slice(0,5)
+        .map(x=>`<span class="tag">${esc(x)}</span>`)
+    ].join("");
+
+    const tracked=p.matched_authors?.length
+      ?`<div class="tracked">추적 연구자: ${
+        esc(p.matched_authors.join(", "))
+      }</div>`:"";
+
+    const abstractTool=p.abstract
+      ?`<details class="abstract-details">
+          <summary>초록 보기</summary>
+          <p class="abstract">${esc(p.abstract)}</p>
+        </details>`:"";
+
+    const summaryTool=p.abstract
+      ?`<button class="summary-btn" data-pmid="${esc(p.pmid)}">
+          ✨ 한글 핵심 요약
+        </button>`:"";
+
+    const summaryBox=p.abstract
+      ?`<div class="summarybox" id="summary-${esc(p.pmid)}" hidden></div>`:"";
+
+    const doi=p.doi
+      ?`<a target="_blank" rel="noopener"
+        href="https://doi.org/${encodeURIComponent(p.doi)}">DOI 원문</a>`:"";
+
+    return `
+      <article class="paper">
+        <div class="tags">${tags}</div>
+        <h2>${esc(p.title)}</h2>
+        <div class="meta">
+          ${esc(p.authors_text)}<br>
+          ${esc(p.journal)} · ${esc(p.publication_date)} ·
+          PMID ${esc(p.pmid)}
+        </div>
+        ${tracked}
+        <div class="paper-tools">${summaryTool}${abstractTool}</div>
+        ${summaryBox}
+        <div class="links">
+          <a target="_blank" rel="noopener"
+            href="${esc(p.pubmed_url)}">PubMed</a>
+          ${doi}
+        </div>
+      </article>`;
+  }).join("");
+
+  $("more").hidden=visible>=filtered.length;
 }
-document.addEventListener("click",e=>{if(!e.target.matches("button[data-group]"))return;const g=e.target.dataset.group;document.querySelectorAll(`button[data-group="${g}"]`).forEach(b=>b.classList.remove("active"));e.target.classList.add("active");state[g]=e.target.dataset.value;visible=PAGE;apply()});
-$("q").addEventListener("input",()=>{visible=PAGE;apply()});$("sort").addEventListener("change",()=>{visible=PAGE;apply()});$("more").addEventListener("click",()=>{visible+=PAGE;render()});
-fetch(`papers.json?v=${Date.now()}`,{cache:"no-store"}).then(r=>{if(!r.ok)throw Error(r.status);return r.json()}).then(data=>{
- papers=Array.isArray(data.papers)?data.papers:[];$("total").textContent=papers.length.toLocaleString("ko-KR");
- $("updated").textContent=data.generated_at?new Date(data.generated_at).toLocaleDateString("ko-KR"):"준비 중";fillFilters();apply();
- if(!papers.length)$("list").innerHTML='<div class="notice">첫 PubMed 수집이 아직 끝나지 않았습니다.<br>GitHub의 Actions 탭에서 작업이 끝날 때까지 기다려 주세요.</div>';
-}).catch(()=>{$("list").innerHTML='<div class="notice">papers.json을 불러오지 못했습니다.<br>GitHub Actions가 끝난 뒤 새로고침해 주세요.</div>'});
+
+function splitSentences(text){
+  const clean=String(text||"").replace(/\s+/g," ").trim();
+  if(!clean)return[];
+  return clean.match(/[^.!?]+(?:[.!?]+|$)/g)
+    ?.map(x=>x.trim()).filter(Boolean)||[];
+}
+
+function takeSentences(text,count=2){
+  return splitSentences(text).slice(0,count).join(" ");
+}
+
+function parseAbstractSections(text){
+  const sectionRegex=
+    /(BACKGROUND|INTRODUCTION|OBJECTIVE|OBJECTIVES|AIM|AIMS|METHOD|METHODS|MATERIALS AND METHODS|ANIMALS|DESIGN|RESULT|RESULTS|CONCLUSION|CONCLUSIONS|CLINICAL RELEVANCE):\s*/gi;
+
+  const matches=[...String(text||"").matchAll(sectionRegex)];
+  const sections={};
+
+  matches.forEach((match,index)=>{
+    const label=match[1].toUpperCase();
+    const start=match.index+match[0].length;
+    const end=index+1<matches.length?matches[index+1].index:text.length;
+    const value=text.slice(start,end).trim();
+    if(value)sections[label]=value;
+  });
+
+  return sections;
+}
+
+function pickSection(sections,names,count){
+  for(const name of names){
+    if(sections[name])return takeSentences(sections[name],count);
+  }
+  return "";
+}
+
+function makeExtractiveSummary(abstract){
+  const sections=parseAbstractSections(abstract);
+  const result=[];
+
+  if(Object.keys(sections).length){
+    const purpose=pickSection(
+      sections,
+      ["OBJECTIVE","OBJECTIVES","AIM","AIMS","BACKGROUND","INTRODUCTION"],
+      2
+    );
+    const methods=pickSection(
+      sections,
+      ["METHODS","METHOD","MATERIALS AND METHODS","DESIGN","ANIMALS"],
+      2
+    );
+    const findings=pickSection(sections,["RESULTS","RESULT"],3);
+    const conclusion=pickSection(
+      sections,["CONCLUSIONS","CONCLUSION","CLINICAL RELEVANCE"],2
+    );
+
+    if(purpose)result.push({label:"연구 목적",text:purpose});
+    if(methods)result.push({label:"연구 방법",text:methods});
+    if(findings)result.push({label:"주요 결과",text:findings});
+    if(conclusion)result.push({label:"결론",text:conclusion});
+  }
+
+  if(!result.length){
+    const sentences=splitSentences(abstract);
+    if(!sentences.length)return[];
+
+    const purpose=sentences[0];
+    const resultCandidates=sentences.filter((sentence,index)=>
+      index>0&&/(significant|associated|increased|decreased|higher|lower|improved|reduced|survival|sensitivity|specificity|correlat|difference|odds|hazard)/i
+        .test(sentence)
+    );
+
+    result.push({label:"연구 개요",text:purpose});
+
+    if(resultCandidates.length){
+      result.push({
+        label:"주요 결과",
+        text:resultCandidates.slice(0,2).join(" ")
+      });
+    }else if(sentences.length>2){
+      result.push({
+        label:"핵심 내용",
+        text:sentences.slice(1,3).join(" ")
+      });
+    }
+
+    if(sentences.length>1){
+      const last=sentences[sentences.length-1];
+      if(last!==purpose){
+        result.push({label:"결론",text:last});
+      }
+    }
+  }
+
+  return result.slice(0,4);
+}
+
+function utf8Bytes(text){
+  return new TextEncoder().encode(text).length;
+}
+
+function splitTranslationChunks(text,maxBytes=450){
+  const sentences=splitSentences(text);
+  const chunks=[];
+  let current="";
+
+  function pushLongSentence(sentence){
+    const words=sentence.split(/\s+/);
+    let piece="";
+    words.forEach(word=>{
+      const candidate=piece?`${piece} ${word}`:word;
+      if(utf8Bytes(candidate)>maxBytes&&piece){
+        chunks.push(piece);
+        piece=word;
+      }else{
+        piece=candidate;
+      }
+    });
+    if(piece)chunks.push(piece);
+  }
+
+  sentences.forEach(sentence=>{
+    if(utf8Bytes(sentence)>maxBytes){
+      if(current){chunks.push(current);current="";}
+      pushLongSentence(sentence);
+      return;
+    }
+
+    const candidate=current?`${current} ${sentence}`:sentence;
+    if(utf8Bytes(candidate)>maxBytes&&current){
+      chunks.push(current);
+      current=sentence;
+    }else{
+      current=candidate;
+    }
+  });
+
+  if(current)chunks.push(current);
+  return chunks;
+}
+
+async function translateToKorean(text){
+  const chunks=splitTranslationChunks(text);
+  const translated=[];
+
+  for(const chunk of chunks){
+    const url=
+      `https://api.mymemory.translated.net/get?q=${
+        encodeURIComponent(chunk)
+      }&langpair=en%7Cko&mt=1`;
+
+    const response=await fetch(url);
+    if(!response.ok)throw new Error(`번역 오류 ${response.status}`);
+
+    const data=await response.json();
+    const value=data?.responseData?.translatedText;
+    if(!value)throw new Error("번역 결과 없음");
+    translated.push(value);
+  }
+
+  return translated.join(" ");
+}
+
+function renderSummarySections(items,translated=true){
+  return `
+    <h3>${translated?"한글 핵심 요약":"핵심 요약"}</h3>
+    ${items.map(item=>`
+      <div class="summary-section">
+        <span class="summary-label">${esc(item.label)}</span>
+        <p class="summary-text">${esc(item.text)}</p>
+      </div>
+    `).join("")}
+    <p class="summary-note">
+      초록의 주요 문장을 자동 추출한 참고용 요약입니다.
+      세부 수치와 임상적 해석은 반드시 원문에서 확인하세요.
+    </p>`;
+}
+
+async function showSummary(button){
+  const pmid=button.dataset.pmid;
+  const box=$(`summary-${pmid}`);
+  if(!box)return;
+
+  if(!box.hidden){
+    box.hidden=true;
+    button.textContent="✨ 한글 핵심 요약";
+    return;
+  }
+
+  box.hidden=false;
+  button.textContent="요약 닫기";
+
+  if(box.dataset.ready==="true")return;
+
+  const paper=papers.find(item=>String(item.pmid)===String(pmid));
+  if(!paper?.abstract){
+    box.innerHTML='<p class="summary-text">PubMed에 초록이 없습니다.</p>';
+    box.dataset.ready="true";
+    return;
+  }
+
+  const extracted=makeExtractiveSummary(paper.abstract);
+  if(!extracted.length){
+    box.innerHTML='<p class="summary-text">요약할 초록 내용이 없습니다.</p>';
+    box.dataset.ready="true";
+    return;
+  }
+
+  const cacheKey=`vetcardio-ko-summary-v1-${pmid}`;
+
+  try{
+    const cached=localStorage.getItem(cacheKey);
+    if(cached){
+      const parsed=JSON.parse(cached);
+      box.innerHTML=renderSummarySections(parsed,true);
+      box.dataset.ready="true";
+      return;
+    }
+  }catch(error){}
+
+  button.disabled=true;
+  button.textContent="요약 만드는 중…";
+  box.innerHTML='<p class="summary-text">초록에서 핵심 내용을 찾고 한글로 번역하는 중입니다…</p>';
+
+  try{
+    const translated=[];
+    for(const item of extracted){
+      translated.push({
+        label:item.label,
+        text:await translateToKorean(item.text)
+      });
+    }
+
+    box.innerHTML=renderSummarySections(translated,true);
+    box.dataset.ready="true";
+
+    try{
+      localStorage.setItem(cacheKey,JSON.stringify(translated));
+    }catch(error){}
+  }catch(error){
+    box.innerHTML=
+      renderSummarySections(extracted,false)+
+      '<p class="summary-note">한글 번역 서비스에 일시적으로 연결되지 않아 영어 핵심 문장을 표시했습니다.</p>';
+    box.dataset.ready="true";
+  }finally{
+    button.disabled=false;
+    button.textContent="요약 닫기";
+  }
+}
+
+document.addEventListener("click",event=>{
+  if(event.target.matches("button[data-group]")){
+    const group=event.target.dataset.group;
+    document.querySelectorAll(`button[data-group="${group}"]`)
+      .forEach(button=>button.classList.remove("active"));
+    event.target.classList.add("active");
+    state[group]=event.target.dataset.value;
+    visible=PAGE;
+    apply();
+    return;
+  }
+
+  const summaryButton=event.target.closest(".summary-btn");
+  if(summaryButton)showSummary(summaryButton);
+});
+
+$("q").addEventListener("input",()=>{
+  visible=PAGE;
+  apply();
+});
+
+$("sort").addEventListener("change",()=>{
+  visible=PAGE;
+  apply();
+});
+
+$("more").addEventListener("click",()=>{
+  visible+=PAGE;
+  render();
+});
+
+fetch(`papers.json?v=${Date.now()}`,{cache:"no-store"})
+  .then(response=>{
+    if(!response.ok)throw Error(response.status);
+    return response.json();
+  })
+  .then(data=>{
+    papers=Array.isArray(data.papers)?data.papers:[];
+    $("total").textContent=papers.length.toLocaleString("ko-KR");
+    $("updated").textContent=data.generated_at
+      ?new Date(data.generated_at).toLocaleDateString("ko-KR")
+      :"준비 중";
+    fillFilters();
+    apply();
+
+    if(!papers.length){
+      $("list").innerHTML=
+        '<div class="notice">첫 PubMed 수집이 아직 끝나지 않았습니다.<br>GitHub의 Actions 탭에서 작업이 끝날 때까지 기다려 주세요.</div>';
+    }
+  })
+  .catch(()=>{
+    $("list").innerHTML=
+      '<div class="notice">papers.json을 불러오지 못했습니다.<br>GitHub Actions가 끝난 뒤 새로고침해 주세요.</div>';
+  });
 </script>
-</body></html>
+</body>
+</html>
