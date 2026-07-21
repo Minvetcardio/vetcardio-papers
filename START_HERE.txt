@@ -1,0 +1,27 @@
+VetCardio Papers 업데이트 파일
+
+이번 파일의 작동 방식
+- 지정 저널: 개·고양이 심장 관련 논문을 수집
+- 추적 연구자: 저널 제한 없이 개·고양이 심장 관련 논문을 수집
+- 같은 논문은 PMID 기준으로 한 번만 표시
+- 매일 한국시간 오전 9시 15분 자동 업데이트
+
+업로드 순서
+1. 이 ZIP 파일의 압축을 풉니다.
+2. GitHub 저장소로 들어갑니다:
+   https://github.com/Minvetcardio/vetcardio-papers
+3. Add file → Upload files를 누릅니다.
+4. 압축을 푼 폴더 안의 아래 항목을 모두 선택해서 끌어다 놓습니다.
+   - index.html
+   - fetch_papers.py
+   - papers.json
+   - .github 폴더
+   - README.md
+5. Commit changes를 누릅니다.
+6. 위쪽 Actions 탭을 누릅니다.
+7. Update PubMed papers가 초록 체크가 될 때까지 기다립니다.
+8. 사이트를 새로고침합니다:
+   https://minvetcardio.github.io/vetcardio-papers/
+
+첫 실행은 논문을 전부 가져오므로 몇 분 걸릴 수 있습니다.
+빨간 X가 뜨면 Actions 화면을 캡처하면 됩니다.
