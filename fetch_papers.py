@@ -1,169 +1,812 @@
 #!/usr/bin/env python3
+'''VetCardio Papers PubMed collector — slightly stricter filter.
+
+수집 대상:
+1. 지정 저널의 개·고양이 심장 관련 논문
+2. 추적 연구자가 저자인 개·고양이 심장 관련 논문
+
+이 버전은 heart rate, shock, blood pressure, generic ultrasound처럼
+비심장 논문에서도 흔히 나오는 표현 하나만으로는 논문을 포함하지 않습니다.
+'''
+
 from __future__ import annotations
-import html, json, os, re, sys, time
+
+import html
+import json
+import os
+import re
+import sys
+import time
 from datetime import datetime, timezone
 from pathlib import Path
+from typing import Iterable
 import xml.etree.ElementTree as ET
+
 import requests
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 
-OUT = Path(__file__).resolve().parent / "papers.json"
-BASE = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils"
-API_KEY = os.getenv("NCBI_API_KEY", "").strip()
-EMAIL = os.getenv("NCBI_EMAIL", "").strip()
 
-JOURNALS = {
- "Frontiers in Veterinary Science":"Front Vet Sci",
- "BMC Veterinary Research":"BMC Vet Res",
- "The Veterinary Journal":"Vet J",
- "Animals":"Animals (Basel)",
- "Veterinary Sciences":"Vet Sci",
- "Journal of Veterinary Cardiology":"J Vet Cardiol",
- "Journal of Veterinary Emergency and Critical Care":"J Vet Emerg Crit Care (San Antonio)",
- "Journal of Veterinary Internal Medicine":"J Vet Intern Med",
- "Veterinary Radiology & Ultrasound":"Vet Radiol Ultrasound",
- "Journal of the American Veterinary Medical Association":"J Am Vet Med Assoc",
- "American Journal of Veterinary Research":"Am J Vet Res",
+OUTPUT = Path(__file__).resolve().parent / "papers.json"
+EUTILS = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils"
+NCBI_API_KEY = os.getenv("NCBI_API_KEY", "").strip()
+NCBI_EMAIL = os.getenv("NCBI_EMAIL", "").strip()
+
+
+TRACKED_JOURNALS = {
+    "Frontiers in Veterinary Science": "Front Vet Sci",
+    "BMC Veterinary Research": "BMC Vet Res",
+    "The Veterinary Journal": "Vet J",
+    "Animals": "Animals (Basel)",
+    "Veterinary Sciences": "Vet Sci",
+    "Journal of Veterinary Cardiology": "J Vet Cardiol",
+    "Journal of Veterinary Emergency and Critical Care":
+        "J Vet Emerg Crit Care (San Antonio)",
+    "Journal of Veterinary Internal Medicine": "J Vet Intern Med",
+    "Veterinary Radiology & Ultrasound": "Vet Radiol Ultrasound",
+    "Journal of the American Veterinary Medical Association":
+        "J Am Vet Med Assoc",
+    "American Journal of Veterinary Research": "Am J Vet Res",
 }
-AUTHORS = {
- "Marisa K. Ames":("Ames","MK"),
- "Lance C. Visser":("Visser","LC"),
- "Brian A. Scansen":("Scansen","BA"),
- "E. Christopher Orton":("Orton","EC"),
- "Brianna M. Potter":("Potter","BM"),
- "Joshua A. Stern":("Stern","JA"),
- "Mark A. Oyama":("Oyama","MA"),
- "Joanna L. Kaplan":("Kaplan","JL"),
- "Tommaso Vezzosi":("Vezzosi","T"),
- "Gerhard Wess":("Wess","G"),
+
+
+TRACKED_AUTHORS = {
+    "Marisa K. Ames": ("Ames", "MK"),
+    "Lance C. Visser": ("Visser", "LC"),
+    "Brian A. Scansen": ("Scansen", "BA"),
+    "E. Christopher Orton": ("Orton", "EC"),
+    "Brianna M. Potter": ("Potter", "BM"),
+    "Joshua A. Stern": ("Stern", "JA"),
+    "Mark A. Oyama": ("Oyama", "MA"),
+    "Joanna L. Kaplan": ("Kaplan", "JL"),
+    "Tommaso Vezzosi": ("Vezzosi", "T"),
+    "Gerhard Wess": ("Wess", "G"),
 }
-SPECIES = '''("Dogs"[Mesh] OR "Cats"[Mesh] OR dog[tiab] OR dogs[tiab] OR canine[tiab] OR cat[tiab] OR cats[tiab] OR feline[tiab])'''
-CARDIO = '''("Cardiovascular Diseases"[Mesh] OR "Heart"[Mesh] OR cardiology[tiab] OR cardiovascular[tiab] OR cardiac[tiab] OR heart[tiab] OR echocardiograph*[tiab] OR electrocardiograph*[tiab] OR arrhythm*[tiab] OR myocard*[tiab] OR pericard*[tiab] OR valv*[tiab] OR "mitral regurgitation"[tiab] OR "pulmonary hypertension"[tiab] OR "patent ductus arteriosus"[tiab] OR "heart failure"[tiab] OR "systemic hypertension"[tiab] OR thromboembol*[tiab] OR "cardiac troponin"[tiab] OR "natriuretic peptide"[tiab] OR "NT-proBNP"[tiab] OR "left atrial"[tiab] OR "right atrial"[tiab] OR "ventricular function"[tiab])'''
+
+
+SPECIES_QUERY = r'''
+(
+  "Dogs"[Mesh] OR "Cats"[Mesh]
+  OR dog[Title/Abstract] OR dogs[Title/Abstract] OR canine[Title/Abstract]
+  OR cat[Title/Abstract] OR cats[Title/Abstract] OR feline[Title/Abstract]
+)
+'''
+
+
+# 너무 넓은 Heart[Mesh], Cardiovascular Diseases[Mesh],
+# heart[tiab], cardiac[tiab], cardiovascular[tiab]는 제거했습니다.
+CARDIO_QUERY = r'''
+(
+  "Heart Diseases"[Mesh]
+  OR "Cardiomyopathies"[Mesh]
+  OR "Heart Failure"[Mesh]
+  OR "Arrhythmias, Cardiac"[Mesh]
+  OR "Heart Valve Diseases"[Mesh]
+  OR "Pulmonary Hypertension"[Mesh]
+  OR "Heart Defects, Congenital"[Mesh]
+  OR "Pericardial Diseases"[Mesh]
+  OR "Echocardiography"[Mesh]
+  OR "Electrocardiography"[Mesh]
+
+  OR "myxomatous mitral"[Title/Abstract]
+  OR "degenerative mitral"[Title/Abstract]
+  OR "mitral regurgitation"[Title/Abstract]
+  OR cardiomyopath*[Title/Abstract]
+  OR "heart failure"[Title/Abstract]
+  OR arrhythm*[Title/Abstract]
+  OR "atrial fibrillation"[Title/Abstract]
+  OR "ventricular tachycardia"[Title/Abstract]
+  OR "atrioventricular block"[Title/Abstract]
+  OR pacemaker[Title/Abstract]
+  OR "pulmonary hypertension"[Title/Abstract]
+  OR echocardiograph*[Title/Abstract]
+  OR electrocardiograph*[Title/Abstract]
+  OR holter[Title/Abstract]
+  OR "patent ductus arteriosus"[Title/Abstract]
+  OR "pulmonic stenosis"[Title/Abstract]
+  OR "pulmonary stenosis"[Title/Abstract]
+  OR "subaortic stenosis"[Title/Abstract]
+  OR "ventricular septal defect"[Title/Abstract]
+  OR "atrial septal defect"[Title/Abstract]
+  OR pericard*[Title/Abstract]
+  OR "cardiac tamponade"[Title/Abstract]
+  OR "left atrial"[Title/Abstract]
+  OR "right atrial"[Title/Abstract]
+  OR "ventricular function"[Title/Abstract]
+  OR "cardiac troponin"[Title/Abstract]
+  OR "natriuretic peptide"[Title/Abstract]
+  OR "NT-proBNP"[Title/Abstract]
+  OR heartworm[Title/Abstract]
+  OR dirofilaria[Title/Abstract]
+)
+'''
+
+
 NOT_HUMAN_ONLY = 'NOT ("Humans"[Mesh] NOT "Animals"[Mesh])'
 
-TOPICS = {
- "MMVD / Mitral Valve":[r"\bmmvd\b",r"myxomatous mitral",r"degenerative mitral",r"mitral regurgitation",r"mitral valve"],
- "Cardiomyopathy":[r"cardiomyopath",r"\bhcm\b",r"\bdcm\b",r"myocardial thickening"],
- "Pulmonary Hypertension":[r"pulmonary hypertension",r"pulmonary arterial hypertension",r"\bpah\b"],
- "Arrhythmia":[r"arrhythm",r"atrial fibrillation",r"ventricular tachy",r"heart block",r"atrioventricular block",r"pacemaker"],
- "Congenital Heart Disease":[r"congenital heart",r"patent ductus",r"\bpda\b",r"pulmonic stenosis",r"subaortic stenosis",r"septal defect",r"tetralogy of fallot",r"cor triatriatum",r"tricuspid dysplasia"],
- "Heart Failure":[r"heart failure",r"congestive heart",r"pulmonary edema",r"cardiogenic edema"],
- "Pericardial Disease":[r"pericard",r"cardiac tamponade"],
- "Systemic Hypertension":[r"systemic hypertension",r"arterial hypertension",r"blood pressure"],
- "Thromboembolism":[r"thromboembol",r"arterial thrombus",r"atrial thrombus"],
- "Heartworm":[r"heartworm",r"dirofilaria",r"caval syndrome"],
- "Echocardiography":[r"echocardiograph",r"doppler",r"speckle.?tracking",r"left atrial volume"],
- "ECG / Holter":[r"electrocardiograph",r"\becg\b",r"\bekg\b",r"holter"],
- "Intervention / Surgery":[r"transcatheter",r"device occlusion",r"balloon valvuloplasty",r"cardiac surgery",r"mitral valve repair",r"edge-to-edge"],
- "Biomarkers":[r"troponin",r"natriuretic peptide",r"nt-probnp",r"\bbnp\b",r"biomarker"],
- "Pharmacology":[r"pimobendan",r"furosemide",r"torsemide",r"spironolactone",r"benazepril",r"enalapril",r"atenolol",r"sotalol",r"clopidogrel",r"rapamycin"],
- "Advanced Imaging":[r"computed tomography",r"\bct angiograph",r"magnetic resonance",r"\bmri\b",r"radiograph"],
- "Emergency / Critical Care":[r"emergency",r"critical care",r"shock",r"cardiopulmonary resuscitation",r"\bcpr\b",r"point-of-care ultrasound",r"\bpocus\b"],
+
+TITLE_CORE_PATTERNS = [
+    r"\bmmvd\b",
+    r"myxomatous mitral",
+    r"degenerative mitral",
+    r"mitral regurgitation",
+    r"mitral valve",
+    r"tricuspid valve",
+    r"aortic valve",
+    r"pulmonic valve",
+    r"pulmonary valve",
+    r"cardiomyopath",
+    r"\bhcm\b",
+    r"\bdcm\b",
+    r"heart failure",
+    r"congestive heart",
+    r"cardiac failure",
+    r"arrhythm",
+    r"atrial fibrillation",
+    r"ventricular tachy",
+    r"supraventricular tachy",
+    r"bradyarrhythm",
+    r"atrioventricular block",
+    r"heart block",
+    r"pacemaker",
+    r"pulmonary hypertension",
+    r"echocardiograph",
+    r"electrocardiograph",
+    r"\bholter\b",
+    r"patent ductus arteriosus",
+    r"\bpda\b",
+    r"pulmonic stenosis",
+    r"pulmonary stenosis",
+    r"subaortic stenosis",
+    r"ventricular septal defect",
+    r"atrial septal defect",
+    r"tetralogy of fallot",
+    r"cor triatriatum",
+    r"tricuspid dysplasia",
+    r"pericard",
+    r"cardiac tamponade",
+    r"left atrial",
+    r"right atrial",
+    r"left ventricular",
+    r"right ventricular",
+    r"ventricular function",
+    r"cardiac function",
+    r"balloon valvuloplasty",
+    r"mitral valve repair",
+    r"edge-to-edge",
+    r"heartworm",
+    r"dirofilaria",
+    r"caval syndrome",
+    r"feline arterial thromboembol",
+    r"cardiogenic",
+]
+
+
+TITLE_SUPPORT_PATTERNS = [
+    r"\bcardiac\b",
+    r"\bheart\b",
+    r"\bcardiovascular\b",
+    r"troponin",
+    r"natriuretic peptide",
+    r"nt-probnp",
+    r"\bbnp\b",
+    r"pimobendan",
+    r"furosemide",
+    r"torsemide",
+    r"spironolactone",
+    r"benazepril",
+    r"enalapril",
+    r"atenolol",
+    r"sotalol",
+    r"clopidogrel",
+    r"point-of-care ultrasound",
+    r"\bpocus\b",
+    r"transcatheter",
+    r"catheterization",
+]
+
+
+ABSTRACT_CORE_PATTERNS = [
+    r"myxomatous mitral",
+    r"degenerative mitral",
+    r"mitral regurgitation",
+    r"mitral valve disease",
+    r"cardiomyopath",
+    r"heart failure",
+    r"congestive heart",
+    r"arrhythm",
+    r"atrial fibrillation",
+    r"ventricular tachy",
+    r"atrioventricular block",
+    r"pacemaker",
+    r"pulmonary hypertension",
+    r"echocardiograph",
+    r"electrocardiograph",
+    r"\bholter\b",
+    r"patent ductus arteriosus",
+    r"pulmonic stenosis",
+    r"pulmonary stenosis",
+    r"subaortic stenosis",
+    r"ventricular septal defect",
+    r"atrial septal defect",
+    r"pericardial effusion",
+    r"cardiac tamponade",
+    r"left atrial",
+    r"right atrial",
+    r"left ventricular",
+    r"right ventricular",
+    r"ventricular function",
+    r"cardiac function",
+    r"cardiac remodeling",
+    r"cardiac remodelling",
+    r"heartworm",
+    r"dirofilaria",
+    r"feline arterial thromboembol",
+    r"atrial thrombus",
+    r"cardiogenic",
+]
+
+
+NONCARDIAC_TITLE_PATTERNS = [
+    r"neuromyopath",
+    r"neurolog",
+    r"spinal",
+    r"septic shock",
+    r"\bsepsis\b",
+    r"quadratus lumborum",
+    r"abdominal surgery",
+    r"regional anesthesia",
+    r"regional anaesthesia",
+    r"nerve block",
+    r"analgesi",
+    r"orthopedic",
+    r"orthopaedic",
+    r"renal disease",
+    r"kidney disease",
+    r"chronic kidney",
+    r"urinary",
+    r"gastrointestinal",
+    r"enteropath",
+    r"hepat",
+    r"dermat",
+    r"neoplas",
+    r"tumor",
+    r"tumour",
+    r"oncolog",
+    r"pneumonia",
+]
+
+
+STRONG_CARDIAC_MESH = {
+    "heart diseases",
+    "cardiomyopathies",
+    "heart failure",
+    "arrhythmias, cardiac",
+    "heart valve diseases",
+    "pulmonary hypertension",
+    "heart defects, congenital",
+    "pericardial diseases",
+    "echocardiography",
+    "electrocardiography",
 }
-MONTH = {"Jan":1,"Feb":2,"Mar":3,"Apr":4,"May":5,"Jun":6,"Jul":7,"Aug":8,"Sep":9,"Oct":10,"Nov":11,"Dec":12}
 
-retry = Retry(total=5,backoff_factor=1,status_forcelist=(429,500,502,503,504),allowed_methods=frozenset(("GET","POST")))
-S = requests.Session(); S.mount("https://",HTTPAdapter(max_retries=retry))
-S.headers["User-Agent"]="vetcardio-papers/1.0 (GitHub Actions)"
 
-def common():
- d={"tool":"vetcardio_papers"}
- if API_KEY:d["api_key"]=API_KEY
- if EMAIL:d["email"]=EMAIL
- return d
-def pause(): time.sleep(.12 if API_KEY else .38)
-def norm(q): return re.sub(r"\s+"," ",q).strip()
-def txt(e): return html.unescape("".join(e.itertext())).strip() if e is not None else ""
-def clean(s): return re.sub(r"\s+"," ",s).strip()
+TOPIC_PATTERNS = {
+    "MMVD / Mitral Valve": [
+        r"\bmmvd\b", r"myxomatous mitral", r"degenerative mitral",
+        r"mitral regurgitation", r"mitral valve",
+    ],
+    "Cardiomyopathy": [
+        r"cardiomyopath", r"\bhcm\b", r"\bdcm\b",
+        r"myocardial thickening",
+    ],
+    "Pulmonary Hypertension": [
+        r"pulmonary hypertension", r"pulmonary arterial hypertension",
+        r"\bpah\b",
+    ],
+    "Arrhythmia": [
+        r"arrhythm", r"atrial fibrillation", r"ventricular tachy",
+        r"supraventricular tachy", r"heart block",
+        r"atrioventricular block", r"pacemaker",
+    ],
+    "Congenital Heart Disease": [
+        r"congenital heart", r"patent ductus", r"\bpda\b",
+        r"pulmonic stenosis", r"pulmonary stenosis",
+        r"subaortic stenosis", r"ventricular septal defect",
+        r"atrial septal defect", r"tetralogy of fallot",
+        r"cor triatriatum", r"tricuspid dysplasia",
+    ],
+    "Heart Failure": [
+        r"heart failure", r"congestive heart", r"cardiogenic edema",
+        r"cardiogenic pulmonary edema",
+    ],
+    "Pericardial Disease": [
+        r"pericard", r"cardiac tamponade",
+    ],
+    "Systemic Hypertension": [
+        r"systemic hypertension", r"arterial hypertension",
+    ],
+    "Cardiac Thromboembolism": [
+        r"feline arterial thromboembol", r"atrial thrombus",
+        r"left atrial thrombus", r"cardiogenic thromboembol",
+    ],
+    "Heartworm": [
+        r"heartworm", r"dirofilaria", r"caval syndrome",
+    ],
+    "Echocardiography": [
+        r"echocardiograph", r"speckle.?tracking",
+        r"left atrial volume", r"right atrial",
+        r"left ventricular", r"right ventricular",
+    ],
+    "ECG / Holter": [
+        r"electrocardiograph", r"\becg\b", r"\bekg\b", r"holter",
+    ],
+    "Intervention / Surgery": [
+        r"transcatheter", r"device occlusion",
+        r"balloon valvuloplasty", r"cardiac surgery",
+        r"mitral valve repair", r"edge-to-edge",
+    ],
+    "Biomarkers": [
+        r"cardiac troponin", r"natriuretic peptide",
+        r"nt-probnp", r"\bbnp\b",
+    ],
+    "Pharmacology": [
+        r"pimobendan", r"furosemide", r"torsemide",
+        r"spironolactone", r"benazepril", r"enalapril",
+        r"atenolol", r"sotalol", r"clopidogrel",
+    ],
+    "Cardiac Emergency / CPR": [
+        r"cardiac arrest", r"cardiopulmonary resuscitation", r"\bcpr\b",
+    ],
+}
 
-def esearch(query):
- query=norm(query)
- r=S.post(f"{BASE}/esearch.fcgi",data={**common(),"db":"pubmed","term":query,"retmode":"json","retmax":"0"},timeout=60);r.raise_for_status()
- count=int(r.json()["esearchresult"]["count"]);print("검색 결과",count)
- ids=[]
- for start in range(0,count,5000):
-  r=S.post(f"{BASE}/esearch.fcgi",data={**common(),"db":"pubmed","term":query,"retmode":"json","retstart":start,"retmax":5000,"sort":"pub date"},timeout=90);r.raise_for_status()
-  ids+=r.json()["esearchresult"]["idlist"];pause()
- return list(dict.fromkeys(ids))
 
-def fetch(pmids):
- for start in range(0,len(pmids),200):
-  batch=pmids[start:start+200]
-  r=S.post(f"{BASE}/efetch.fcgi",data={**common(),"db":"pubmed","id":",".join(batch),"retmode":"xml"},timeout=120);r.raise_for_status()
-  yield from ET.fromstring(r.content).findall("./PubmedArticle")
-  print("수집",min(start+200,len(pmids)),"/",len(pmids));pause()
+MONTHS = {
+    "Jan": 1, "Feb": 2, "Mar": 3, "Apr": 4, "May": 5,
+    "Jun": 6, "Jul": 7, "Aug": 8, "Sep": 9, "Oct": 10,
+    "Nov": 11, "Dec": 12,
+}
 
-def parse_date(n):
- a=n.find(".//Article/ArticleDate")
- if a is not None:
-  y=txt(a.find("Year"));m=txt(a.find("Month")).zfill(2) or "01";d=txt(a.find("Day")).zfill(2) or "01"
-  if y:return f"{y}-{m}-{d}",f"{y}-{m}-{d}"
- p=n.find(".//JournalIssue/PubDate")
- if p is not None:
-  med=txt(p.find("MedlineDate"));y=txt(p.find("Year"))
-  if not y and med:
-   z=re.search(r"(19|20)\d{2}",med);y=z.group(0) if z else ""
-  if y:
-   mt=txt(p.find("Month"));m=MONTH.get(mt,int(mt) if mt.isdigit() else 1);dt=txt(p.find("Day"));d=int(dt) if dt.isdigit() else 1
-   return f"{y}-{m:02d}-{d:02d}",med or f"{y}-{m:02d}"
- return "0000-01-01","날짜 정보 없음"
 
-def parse_authors(n):
- rows=[];names=[]
- for a in n.findall(".//Article/AuthorList/Author"):
-  coll=txt(a.find("CollectiveName"))
-  if coll: rows.append({"last":coll,"fore":"","initials":""});names.append(coll);continue
-  last=txt(a.find("LastName"));fore=txt(a.find("ForeName"));ini=txt(a.find("Initials"))
-  if last: rows.append({"last":last,"fore":fore,"initials":ini});names.append(clean(f"{fore or ini} {last}"))
- return rows,", ".join(names)
+def make_session() -> requests.Session:
+    retry = Retry(
+        total=5,
+        backoff_factor=1,
+        status_forcelist=(429, 500, 502, 503, 504),
+        allowed_methods=frozenset(("GET", "POST")),
+    )
+    session = requests.Session()
+    session.mount("https://", HTTPAdapter(max_retries=retry))
+    session.headers["User-Agent"] = (
+        "vetcardio-papers/1.1 (GitHub Actions)"
+    )
+    return session
 
-def matched(rows):
- out=[]
- for name,(last,ini) in AUTHORS.items():
-  if any(a["last"].casefold()==last.casefold() and re.sub("[^A-Za-z]","",a["initials"]).upper().startswith(ini) for a in rows):out.append(name)
- return out
 
-def classify_species(text,mesh):
- x=(text+" "+" ".join(mesh)).lower()
- dog=bool(re.search(r"\b(dog|dogs|canine|canines)\b",x)) or "dogs" in mesh
- cat=bool(re.search(r"\b(cat|cats|feline|felines)\b",x)) or "cats" in mesh
- return "Both" if dog and cat else "Canine" if dog else "Feline" if cat else "Unclear"
+SESSION = make_session()
 
-def classify_topics(text):
- x=text.lower();out=[k for k,patterns in TOPICS.items() if any(re.search(p,x,re.I) for p in patterns)]
- return out or ["Other Cardiology"]
 
-def parse(n,journal_ids):
- pmid=txt(n.find(".//MedlineCitation/PMID"));title=clean(txt(n.find(".//Article/ArticleTitle")))
- if not pmid or not title:return None
- parts=[]
- for a in n.findall(".//Article/Abstract/AbstractText"):
-  label=a.attrib.get("Label","").strip();v=clean(txt(a))
-  if v:parts.append(f"{label}: {v}" if label else v)
- abstract="\n".join(parts);rows,authors_text=parse_authors(n);ma=matched(rows)
- journal=clean(txt(n.find(".//Article/Journal/Title"))) or clean(txt(n.find(".//MedlineJournalInfo/MedlineTA")))
- sort_date,pub_date=parse_date(n);doi="";pmc=""
- for a in n.findall(".//PubmedData/ArticleIdList/ArticleId"):
-  if a.attrib.get("IdType")=="doi":doi=txt(a)
-  if a.attrib.get("IdType")=="pmc":pmc=txt(a)
- mesh=[clean(txt(a)).lower() for a in n.findall(".//MeshHeading/DescriptorName")]
- keywords=[clean(txt(a)) for a in n.findall(".//KeywordList/Keyword")]
- text=" ".join([title,abstract,journal," ".join(mesh)," ".join(keywords)])
- return {"pmid":pmid,"title":title,"authors_text":authors_text,"journal":journal,"publication_date":pub_date,"sort_date":sort_date,"abstract":abstract,"doi":doi,"pmcid":pmc,"pubmed_url":f"https://pubmed.ncbi.nlm.nih.gov/{pmid}/","species":classify_species(text,mesh),"topics":classify_topics(text),"selected_journal":pmid in journal_ids,"matched_authors":ma}
+def common_params() -> dict[str, str]:
+    params = {"tool": "vetcardio_papers"}
+    if NCBI_API_KEY:
+        params["api_key"] = NCBI_API_KEY
+    if NCBI_EMAIL:
+        params["email"] = NCBI_EMAIL
+    return params
 
-def main():
- jq=" OR ".join(f'"{x}"[Journal]' for x in JOURNALS.values())
- aq=" OR ".join(f'"{l} {i}"[Author]' for l,i in AUTHORS.values())
- journal_ids=set(esearch(f"({jq}) AND {SPECIES} AND {CARDIO} {NOT_HUMAN_ONLY}"))
- author_ids=set(esearch(f"({aq}) AND {SPECIES} AND {CARDIO} {NOT_HUMAN_ONLY}"))
- ids=sorted(journal_ids|author_ids,key=int,reverse=True)
- if not ids:raise RuntimeError("검색 결과가 0개라서 기존 파일을 바꾸지 않습니다.")
- papers=[p for n in fetch(ids) if (p:=parse(n,journal_ids))]
- papers.sort(key=lambda p:(p["sort_date"],int(p["pmid"])),reverse=True)
- data={"generated_at":datetime.now(timezone.utc).isoformat(),"total":len(papers),"tracked_journals":list(JOURNALS),"tracked_authors":list(AUTHORS),"papers":papers}
- temp=OUT.with_suffix(".tmp");temp.write_text(json.dumps(data,ensure_ascii=False,indent=2),encoding="utf-8");temp.replace(OUT)
- print("완료",len(papers))
-if __name__=="__main__":
- try:main()
- except Exception as e:print("오류:",e,file=sys.stderr);raise
+
+def pause() -> None:
+    time.sleep(0.12 if NCBI_API_KEY else 0.38)
+
+
+def normalize(query: str) -> str:
+    return re.sub(r"\s+", " ", query).strip()
+
+
+def text_of(element: ET.Element | None) -> str:
+    if element is None:
+        return ""
+    return html.unescape("".join(element.itertext())).strip()
+
+
+def clean(value: str) -> str:
+    return re.sub(r"\s+", " ", value).strip()
+
+
+def has_pattern(text: str, patterns: list[str]) -> bool:
+    return any(re.search(pattern, text, re.I) for pattern in patterns)
+
+
+def count_patterns(text: str, patterns: list[str]) -> int:
+    return sum(
+        1 for pattern in patterns
+        if re.search(pattern, text, re.I)
+    )
+
+
+def is_relevant(
+    title: str,
+    abstract: str,
+    mesh_terms: list[str],
+) -> bool:
+    title_core = has_pattern(title, TITLE_CORE_PATTERNS)
+    title_support = has_pattern(title, TITLE_SUPPORT_PATTERNS)
+    abstract_core_count = count_patterns(
+        abstract, ABSTRACT_CORE_PATTERNS
+    )
+    mesh_core = bool(
+        {term.lower() for term in mesh_terms} & STRONG_CARDIAC_MESH
+    )
+    noncardiac_title = has_pattern(
+        title, NONCARDIAC_TITLE_PATTERNS
+    )
+
+    if noncardiac_title and not title_core:
+        return False
+    if title_core:
+        return True
+    if title_support and abstract_core_count >= 1:
+        return True
+    if mesh_core and abstract_core_count >= 1:
+        return True
+    if abstract_core_count >= 2:
+        return True
+    return False
+
+
+def esearch(query: str) -> list[str]:
+    query = normalize(query)
+
+    response = SESSION.post(
+        f"{EUTILS}/esearch.fcgi",
+        data={
+            **common_params(),
+            "db": "pubmed",
+            "term": query,
+            "retmode": "json",
+            "retmax": "0",
+        },
+        timeout=60,
+    )
+    response.raise_for_status()
+
+    count = int(response.json()["esearchresult"]["count"])
+    print(f"검색 후보: {count:,}개")
+
+    ids: list[str] = []
+    page_size = 5000
+
+    for start in range(0, count, page_size):
+        response = SESSION.post(
+            f"{EUTILS}/esearch.fcgi",
+            data={
+                **common_params(),
+                "db": "pubmed",
+                "term": query,
+                "retmode": "json",
+                "retstart": str(start),
+                "retmax": str(page_size),
+                "sort": "pub date",
+            },
+            timeout=90,
+        )
+        response.raise_for_status()
+        ids.extend(response.json()["esearchresult"]["idlist"])
+        pause()
+
+    return list(dict.fromkeys(ids))
+
+
+def efetch(pmids: list[str]) -> Iterable[ET.Element]:
+    batch_size = 200
+
+    for start in range(0, len(pmids), batch_size):
+        batch = pmids[start:start + batch_size]
+
+        response = SESSION.post(
+            f"{EUTILS}/efetch.fcgi",
+            data={
+                **common_params(),
+                "db": "pubmed",
+                "id": ",".join(batch),
+                "retmode": "xml",
+            },
+            timeout=120,
+        )
+        response.raise_for_status()
+
+        root = ET.fromstring(response.content)
+        yield from root.findall("./PubmedArticle")
+
+        print(
+            f"수집: {min(start + batch_size, len(pmids)):,}"
+            f"/{len(pmids):,}"
+        )
+        pause()
+
+
+def parse_date(article: ET.Element) -> tuple[str, str]:
+    article_date = article.find(".//Article/ArticleDate")
+
+    if article_date is not None:
+        year = text_of(article_date.find("Year"))
+        month = text_of(article_date.find("Month")).zfill(2) or "01"
+        day = text_of(article_date.find("Day")).zfill(2) or "01"
+
+        if year:
+            return f"{year}-{month}-{day}", f"{year}-{month}-{day}"
+
+    pub_date = article.find(".//JournalIssue/PubDate")
+
+    if pub_date is not None:
+        medline = text_of(pub_date.find("MedlineDate"))
+        year = text_of(pub_date.find("Year"))
+
+        if not year and medline:
+            match = re.search(r"(19|20)\d{2}", medline)
+            year = match.group(0) if match else ""
+
+        if year:
+            month_text = text_of(pub_date.find("Month"))
+            month = (
+                int(month_text)
+                if month_text.isdigit()
+                else MONTHS.get(month_text, 1)
+            )
+            day_text = text_of(pub_date.find("Day"))
+            day = int(day_text) if day_text.isdigit() else 1
+            return (
+                f"{year}-{month:02d}-{day:02d}",
+                medline or f"{year}-{month:02d}",
+            )
+
+    return "0000-01-01", "날짜 정보 없음"
+
+
+def parse_authors(
+    article: ET.Element,
+) -> tuple[list[dict[str, str]], str]:
+    rows: list[dict[str, str]] = []
+    names: list[str] = []
+
+    for author in article.findall(".//Article/AuthorList/Author"):
+        collective = text_of(author.find("CollectiveName"))
+
+        if collective:
+            rows.append({
+                "last": collective,
+                "fore": "",
+                "initials": "",
+            })
+            names.append(collective)
+            continue
+
+        last = text_of(author.find("LastName"))
+        fore = text_of(author.find("ForeName"))
+        initials = text_of(author.find("Initials"))
+
+        if last:
+            rows.append({
+                "last": last,
+                "fore": fore,
+                "initials": initials,
+            })
+            names.append(clean(f"{fore or initials} {last}"))
+
+    return rows, ", ".join(names)
+
+
+def matched_authors(
+    rows: list[dict[str, str]],
+) -> list[str]:
+    matches: list[str] = []
+
+    for display_name, (last_name, initials) in TRACKED_AUTHORS.items():
+        for author in rows:
+            author_initials = re.sub(
+                r"[^A-Za-z]", "", author["initials"]
+            ).upper()
+
+            if (
+                author["last"].casefold() == last_name.casefold()
+                and author_initials.startswith(initials.upper())
+            ):
+                matches.append(display_name)
+                break
+
+    return matches
+
+
+def classify_species(text: str, mesh_terms: list[str]) -> str:
+    combined = f"{text} {' '.join(mesh_terms)}".lower()
+
+    dog = (
+        bool(re.search(r"\b(dog|dogs|canine|canines)\b", combined))
+        or "dogs" in mesh_terms
+    )
+    cat = (
+        bool(re.search(r"\b(cat|cats|feline|felines)\b", combined))
+        or "cats" in mesh_terms
+    )
+
+    if dog and cat:
+        return "Both"
+    if dog:
+        return "Canine"
+    if cat:
+        return "Feline"
+    return "Unclear"
+
+
+def classify_topics(text: str) -> list[str]:
+    topics = [
+        topic
+        for topic, patterns in TOPIC_PATTERNS.items()
+        if has_pattern(text, patterns)
+    ]
+    return topics or ["General Cardiology"]
+
+
+def parse_article(
+    node: ET.Element,
+    journal_pmids: set[str],
+) -> dict | None:
+    pmid = text_of(node.find(".//MedlineCitation/PMID"))
+    title = clean(text_of(node.find(".//Article/ArticleTitle")))
+
+    if not pmid or not title:
+        return None
+
+    abstract_parts: list[str] = []
+
+    for item in node.findall(".//Article/Abstract/AbstractText"):
+        label = item.attrib.get("Label", "").strip()
+        value = clean(text_of(item))
+        if value:
+            abstract_parts.append(
+                f"{label}: {value}" if label else value
+            )
+
+    abstract = "\n".join(abstract_parts)
+
+    mesh_terms = [
+        clean(text_of(item)).lower()
+        for item in node.findall(
+            ".//MeshHeading/DescriptorName"
+        )
+    ]
+
+    if not is_relevant(title, abstract, mesh_terms):
+        return None
+
+    author_rows, author_text = parse_authors(node)
+    tracked = matched_authors(author_rows)
+
+    journal = (
+        clean(text_of(node.find(".//Article/Journal/Title")))
+        or clean(text_of(node.find(
+            ".//MedlineJournalInfo/MedlineTA"
+        )))
+    )
+
+    sort_date, publication_date = parse_date(node)
+    doi = ""
+    pmcid = ""
+
+    for article_id in node.findall(
+        ".//PubmedData/ArticleIdList/ArticleId"
+    ):
+        id_type = article_id.attrib.get("IdType")
+        if id_type == "doi":
+            doi = text_of(article_id)
+        elif id_type == "pmc":
+            pmcid = text_of(article_id)
+
+    classification_text = " ".join([
+        title,
+        abstract,
+        journal,
+        " ".join(mesh_terms),
+    ])
+
+    return {
+        "pmid": pmid,
+        "title": title,
+        "authors_text": author_text,
+        "journal": journal,
+        "publication_date": publication_date,
+        "sort_date": sort_date,
+        "abstract": abstract,
+        "doi": doi,
+        "pmcid": pmcid,
+        "pubmed_url": f"https://pubmed.ncbi.nlm.nih.gov/{pmid}/",
+        "species": classify_species(
+            classification_text, mesh_terms
+        ),
+        "topics": classify_topics(classification_text),
+        "selected_journal": pmid in journal_pmids,
+        "matched_authors": tracked,
+    }
+
+
+def main() -> None:
+    journal_terms = " OR ".join(
+        f'"{journal}"[Journal]'
+        for journal in TRACKED_JOURNALS.values()
+    )
+    author_terms = " OR ".join(
+        f'"{last} {initials}"[Author]'
+        for last, initials in TRACKED_AUTHORS.values()
+    )
+
+    journal_query = (
+        f"({journal_terms}) AND {SPECIES_QUERY} "
+        f"AND {CARDIO_QUERY} {NOT_HUMAN_ONLY}"
+    )
+    author_query = (
+        f"({author_terms}) AND {SPECIES_QUERY} "
+        f"AND {CARDIO_QUERY} {NOT_HUMAN_ONLY}"
+    )
+
+    print("1/4 지정 저널 후보 검색")
+    journal_pmids = set(esearch(journal_query))
+
+    print("2/4 추적 연구자 후보 검색")
+    author_pmids = set(esearch(author_query))
+
+    all_pmids = sorted(
+        journal_pmids | author_pmids,
+        key=int,
+        reverse=True,
+    )
+
+    if not all_pmids:
+        raise RuntimeError(
+            "검색 결과가 0개라서 기존 papers.json을 변경하지 않습니다."
+        )
+
+    print(
+        f"3/4 후보 {len(all_pmids):,}개에서 "
+        "비심장 논문을 제거합니다."
+    )
+
+    papers: list[dict] = []
+
+    for node in efetch(all_pmids):
+        parsed = parse_article(node, journal_pmids)
+        if parsed is not None:
+            papers.append(parsed)
+
+    papers.sort(
+        key=lambda paper: (
+            paper["sort_date"],
+            int(paper["pmid"]),
+        ),
+        reverse=True,
+    )
+
+    data = {
+        "generated_at": datetime.now(timezone.utc).isoformat(),
+        "total": len(papers),
+        "filter_version": "slightly-stricter-1.1",
+        "tracked_journals": list(TRACKED_JOURNALS.keys()),
+        "tracked_authors": list(TRACKED_AUTHORS.keys()),
+        "papers": papers,
+    }
+
+    temporary = OUTPUT.with_suffix(".tmp")
+    temporary.write_text(
+        json.dumps(data, ensure_ascii=False, indent=2),
+        encoding="utf-8",
+    )
+    temporary.replace(OUTPUT)
+
+    print(f"4/4 완료: 관련 논문 {len(papers):,}개 저장")
+
+
+if __name__ == "__main__":
+    try:
+        main()
+    except Exception as error:
+        print(f"오류: {error}", file=sys.stderr)
+        raise
