@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="ko">
 <head>
+<!-- FULL_ABSTRACT_TRANSLATION_VERSION: 2026-07-22-v1 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>VetCardio Papers</title>
@@ -182,7 +183,7 @@ footer{
 
 <footer>
   VetCardio Papers · PubMed automated literature dashboard<br>
-  한글 핵심 요약은 PubMed 초록에서 주요 문장을 자동 추출한 뒤 기계번역한 참고용 정보입니다.
+  초록 전체 번역은 PubMed 초록을 문단별로 나누어 기계번역한 참고용 정보입니다.
 </footer>
 
 <script>
@@ -313,7 +314,7 @@ function render(){
 
     const summaryTool=p.abstract
       ?`<button class="summary-btn" data-pmid="${esc(p.pmid)}">
-          ✨ 한글 핵심 요약
+          🌐 초록 전체 번역
         </button>`:"";
 
     const summaryBox=p.abstract
@@ -509,19 +510,55 @@ async function translateToKorean(text){
   return translated.join(" ");
 }
 
-function renderSummarySections(items,translated=true){
+function renderFullAbstractTranslation(items, translated=true){
   return `
-    <h3>${translated?"한글 핵심 요약":"핵심 요약"}</h3>
+    <h3>${translated ? "초록 전체 번역" : "Abstract"}</h3>
     ${items.map(item=>`
       <div class="summary-section">
-        <span class="summary-label">${esc(item.label)}</span>
+        ${item.label
+          ? `<span class="summary-label">${esc(item.label)}</span>`
+          : ""}
         <p class="summary-text">${esc(item.text)}</p>
       </div>
     `).join("")}
     <p class="summary-note">
-      초록의 주요 문장을 자동 추출한 참고용 요약입니다.
-      세부 수치와 임상적 해석은 반드시 원문에서 확인하세요.
+      PubMed에 수록된 초록 전체를 자동 번역한 참고용 내용입니다.
+      수치, 용어 및 임상적 해석은 원문을 확인하세요.
     </p>`;
+}
+
+
+function fullAbstractSections(abstract){
+  const sections=parseAbstractSections(abstract);
+
+  if(Object.keys(sections).length){
+    const labelMap={
+      "BACKGROUND":"배경",
+      "INTRODUCTION":"서론",
+      "OBJECTIVE":"목적",
+      "OBJECTIVES":"목적",
+      "AIM":"목적",
+      "AIMS":"목적",
+      "METHOD":"방법",
+      "METHODS":"방법",
+      "MATERIALS AND METHODS":"재료 및 방법",
+      "ANIMALS":"대상 동물",
+      "DESIGN":"연구 설계",
+      "RESULT":"결과",
+      "RESULTS":"결과",
+      "CONCLUSION":"결론",
+      "CONCLUSIONS":"결론",
+      "CLINICAL RELEVANCE":"임상적 의의",
+      "CLINICAL SIGNIFICANCE":"임상적 의의"
+    };
+
+    return Object.entries(sections).map(([label,text])=>({
+      label:labelMap[label]||label,
+      text
+    }));
+  }
+
+  return [{label:"",text:String(abstract||"").trim()}];
 }
 
 async function showSummary(button){
@@ -531,12 +568,12 @@ async function showSummary(button){
 
   if(!box.hidden){
     box.hidden=true;
-    button.textContent="✨ 한글 핵심 요약";
+    button.textContent="🌐 초록 전체 번역";
     return;
   }
 
   box.hidden=false;
-  button.textContent="요약 닫기";
+  button.textContent="번역 닫기";
 
   if(box.dataset.ready==="true")return;
 
@@ -547,39 +584,34 @@ async function showSummary(button){
     return;
   }
 
-  const extracted=makeExtractiveSummary(paper.abstract);
-  if(!extracted.length){
-    box.innerHTML='<p class="summary-text">요약할 초록 내용이 없습니다.</p>';
-    box.dataset.ready="true";
-    return;
-  }
-
-  const cacheKey=`vetcardio-ko-summary-v1-${pmid}`;
+  const sections=fullAbstractSections(paper.abstract);
+  const cacheKey=`vetcardio-ko-full-abstract-v1-${pmid}`;
 
   try{
     const cached=localStorage.getItem(cacheKey);
     if(cached){
       const parsed=JSON.parse(cached);
-      box.innerHTML=renderSummarySections(parsed,true);
+      box.innerHTML=renderFullAbstractTranslation(parsed,true);
       box.dataset.ready="true";
       return;
     }
   }catch(error){}
 
   button.disabled=true;
-  button.textContent="요약 만드는 중…";
-  box.innerHTML='<p class="summary-text">초록에서 핵심 내용을 찾고 한글로 번역하는 중입니다…</p>';
+  button.textContent="초록 번역 중…";
+  box.innerHTML='<p class="summary-text">초록 전체를 문단별로 한글 번역하는 중입니다…</p>';
 
   try{
     const translated=[];
-    for(const item of extracted){
+
+    for(const section of sections){
       translated.push({
-        label:item.label,
-        text:await translateToKorean(item.text)
+        label:section.label,
+        text:await translateToKorean(section.text)
       });
     }
 
-    box.innerHTML=renderSummarySections(translated,true);
+    box.innerHTML=renderFullAbstractTranslation(translated,true);
     box.dataset.ready="true";
 
     try{
@@ -587,12 +619,12 @@ async function showSummary(button){
     }catch(error){}
   }catch(error){
     box.innerHTML=
-      renderSummarySections(extracted,false)+
-      '<p class="summary-note">한글 번역 서비스에 일시적으로 연결되지 않아 영어 핵심 문장을 표시했습니다.</p>';
+      renderFullAbstractTranslation(sections,false)+
+      '<p class="summary-note">번역 서비스에 일시적으로 연결되지 않아 영어 초록을 표시했습니다.</p>';
     box.dataset.ready="true";
   }finally{
     button.disabled=false;
-    button.textContent="요약 닫기";
+    button.textContent="번역 닫기";
   }
 }
 
