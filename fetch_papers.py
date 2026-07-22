@@ -17,7 +17,6 @@ import os
 import re
 import sys
 import time
-import unicodedata
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Iterable
@@ -32,8 +31,7 @@ OUTPUT = Path(__file__).resolve().parent / "papers.json"
 EUTILS = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils"
 NCBI_API_KEY = os.getenv("NCBI_API_KEY", "").strip()
 NCBI_EMAIL = os.getenv("NCBI_EMAIL", "").strip()
-AUTHOR_LIST_VERSION = "2026-07-21-rishniw-saunders"
-JOURNAL_LIST_VERSION = "2026-07-21-jvpt-jfms"
+AUTHOR_SCOPE_VERSION = "2026-07-22-all-dog-cat-papers"
 
 
 TRACKED_JOURNALS = {
@@ -50,37 +48,20 @@ TRACKED_JOURNALS = {
     "Journal of the American Veterinary Medical Association":
         "J Am Vet Med Assoc",
     "American Journal of Veterinary Research": "Am J Vet Res",
-    "Journal of Veterinary Pharmacology and Therapeutics":
-        "J Vet Pharmacol Ther",
-    "Journal of Feline Medicine and Surgery": "J Feline Med Surg",
 }
 
 
 TRACKED_AUTHORS = {
-    "Marisa K. Ames": [("Ames", "MK")],
-    "Lance C. Visser": [("Visser", "LC")],
-    "Brian A. Scansen": [("Scansen", "BA")],
-    "E. Christopher Orton": [("Orton", "EC")],
-    "Brianna M. Potter": [("Potter", "BM")],
-    "Joshua A. Stern": [("Stern", "JA")],
-    "Mark A. Oyama": [("Oyama", "MA")],
-    "Joanna L. Kaplan": [("Kaplan", "JL")],
-    "Tommaso Vezzosi": [("Vezzosi", "T")],
-    "Gerhard Wess": [("Wess", "G")],
-
-    # 추가 추적 연구자
-    "Mark Rishniw": [("Rishniw", "M")],
-    "Virginia Luis Fuentes": [
-        ("Luis Fuentes", "V"),
-        ("Luis-Fuentes", "V"),
-    ],
-    "Jens Häggström": [("Haggstrom", "J")],
-    "Kathryn M. Meurs": [("Meurs", "KM")],
-    "Darcy B. Adin": [("Adin", "DB")],
-    "Roberto A. Santilli": [("Santilli", "RA")],
-    "Romain Pariaut": [("Pariaut", "R")],
-    "N. Sydney Moïse": [("Moise", "NS")],
-    "Ashley B. Saunders": [("Saunders", "AB")],
+    "Marisa K. Ames": ("Ames", "MK"),
+    "Lance C. Visser": ("Visser", "LC"),
+    "Brian A. Scansen": ("Scansen", "BA"),
+    "E. Christopher Orton": ("Orton", "EC"),
+    "Brianna M. Potter": ("Potter", "BM"),
+    "Joshua A. Stern": ("Stern", "JA"),
+    "Mark A. Oyama": ("Oyama", "MA"),
+    "Joanna L. Kaplan": ("Kaplan", "JL"),
+    "Tommaso Vezzosi": ("Vezzosi", "T"),
+    "Gerhard Wess": ("Wess", "G"),
 }
 
 
@@ -616,42 +597,22 @@ def parse_authors(
     return rows, ", ".join(names)
 
 
-def normalize_author_name(value: str) -> str:
-    """성의 하이픈·공백·악센트 차이를 무시해 비교합니다."""
-    decomposed = unicodedata.normalize("NFKD", value)
-    ascii_text = "".join(
-        character
-        for character in decomposed
-        if not unicodedata.combining(character)
-    )
-    return re.sub(r"[^a-z]", "", ascii_text.casefold())
-
-
 def matched_authors(
     rows: list[dict[str, str]],
 ) -> list[str]:
     matches: list[str] = []
 
-    for display_name, aliases in TRACKED_AUTHORS.items():
-        for target_last, target_initials in aliases:
-            target_last_normalized = normalize_author_name(target_last)
+    for display_name, (last_name, initials) in TRACKED_AUTHORS.items():
+        for author in rows:
+            author_initials = re.sub(
+                r"[^A-Za-z]", "", author["initials"]
+            ).upper()
 
-            for author in rows:
-                author_initials = re.sub(
-                    r"[^A-Za-z]", "", author["initials"]
-                ).upper()
-
-                if (
-                    normalize_author_name(author["last"])
-                    == target_last_normalized
-                    and author_initials.startswith(
-                        target_initials.upper()
-                    )
-                ):
-                    matches.append(display_name)
-                    break
-
-            if display_name in matches:
+            if (
+                author["last"].casefold() == last_name.casefold()
+                and author_initials.startswith(initials.upper())
+            ):
+                matches.append(display_name)
                 break
 
     return matches
@@ -684,12 +645,13 @@ def classify_topics(text: str) -> list[str]:
         for topic, patterns in TOPIC_PATTERNS.items()
         if has_pattern(text, patterns)
     ]
-    return topics or ["General Cardiology"]
+    return topics or ["Other Veterinary Medicine"]
 
 
 def parse_article(
     node: ET.Element,
     journal_pmids: set[str],
+    author_pmids: set[str],
 ) -> dict | None:
     pmid = text_of(node.find(".//MedlineCitation/PMID"))
     title = clean(text_of(node.find(".//Article/ArticleTitle")))
@@ -716,11 +678,19 @@ def parse_article(
         )
     ]
 
-    if not is_relevant(title, abstract, mesh_terms):
-        return None
-
     author_rows, author_text = parse_authors(node)
     tracked = matched_authors(author_rows)
+
+    # 지정 저널 경로는 심장 관련성 필터를 적용합니다.
+    # 추적 연구자 경로는 개·고양이 논문이면 비심장 논문도 포함합니다.
+    is_tracked_author_paper = (
+        pmid in author_pmids and bool(tracked)
+    )
+    if (
+        not is_tracked_author_paper
+        and not is_relevant(title, abstract, mesh_terms)
+    ):
+        return None
 
     journal = (
         clean(text_of(node.find(".//Article/Journal/Title")))
@@ -776,17 +746,18 @@ def main() -> None:
     )
     author_terms = " OR ".join(
         f'"{last} {initials}"[Author]'
-        for aliases in TRACKED_AUTHORS.values()
-        for last, initials in aliases
+        for last, initials in TRACKED_AUTHORS.values()
     )
 
     journal_query = (
         f"({journal_terms}) AND {SPECIES_QUERY} "
         f"AND {CARDIO_QUERY} {NOT_HUMAN_ONLY}"
     )
+    # 추적 연구자는 심장 분야로 제한하지 않고,
+    # 개·고양이가 포함된 모든 PubMed 논문을 수집합니다.
     author_query = (
         f"({author_terms}) AND {SPECIES_QUERY} "
-        f"AND {CARDIO_QUERY} {NOT_HUMAN_ONLY}"
+        f"{NOT_HUMAN_ONLY}"
     )
 
     print("1/4 지정 저널 후보 검색")
@@ -808,13 +779,13 @@ def main() -> None:
 
     print(
         f"3/4 후보 {len(all_pmids):,}개에서 "
-        "비심장 논문을 제거합니다."
+        "지정 저널의 비심장 논문을 제거하고 추적 연구자 논문은 유지합니다."
     )
 
     papers: list[dict] = []
 
     for node in efetch(all_pmids):
-        parsed = parse_article(node, journal_pmids)
+        parsed = parse_article(node, journal_pmids, author_pmids)
         if parsed is not None:
             papers.append(parsed)
 
@@ -829,7 +800,7 @@ def main() -> None:
     data = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "total": len(papers),
-        "filter_version": "slightly-stricter-1.1-authors-journals-2026-07-21",
+        "filter_version": "journal-cardio-author-all-dog-cat-2026-07-22",
         "tracked_journals": list(TRACKED_JOURNALS.keys()),
         "tracked_authors": list(TRACKED_AUTHORS.keys()),
         "papers": papers,
