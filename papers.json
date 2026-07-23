@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-22T09:39:16.730472+00:00",
-  "total": 4460,
-  "filter_version": "unified-authors-journals-2026-07-22",
+  "generated_at": "2026-07-23T04:08:12.778259+00:00",
+  "total": 4517,
+  "filter_version": "unified-authors-journals-bonagura-2026-07-23",
   "tracked_journals": [
     "Frontiers in Veterinary Science",
     "BMC Veterinary Research",
@@ -38,7 +38,10 @@
     "Roberto A. Santilli",
     "Romain Pariaut",
     "N. Sydney Moïse",
-    "Ashley B. Saunders"
+    "Ashley B. Saunders",
+    "Michele Borgarelli",
+    "Claudio Maria Bussadori",
+    "John D. Bonagura"
   ],
   "papers": [
     {
@@ -251,6 +254,28 @@
       ],
       "selected_journal": true,
       "matched_authors": []
+    },
+    {
+      "pmid": "42485707",
+      "title": "Association of component measurement variability and disease severity with variability of calculated mitral regurgitant fraction in dogs with myxomatous mitral valve disease.",
+      "authors_text": "G McAulay, D Singleton, M Rishniw",
+      "journal": "Journal of veterinary cardiology : the official journal of the European Society of Veterinary Cardiology",
+      "publication_date": "2026-06-23",
+      "sort_date": "2026-06-23",
+      "abstract": "INTRODUCTION/OBJECTIVES: Echocardiographic calculation of mitral regurgitant fraction (MR%) may complement variables used to assess myxomatous mitral valve disease (MMVD) severity. The geometric technique of calculating MR% uses four component variable measurements. Calculations using multiple measurements necessarily influence variability. The influence of disease severity on component measurements and MR% variability has not been explored. This study explored the contribution of component measurement variability and the markers of disease severity: left atrial-to-aortic ratio, R-R interval (RR) variability and heart rate on MR% variability.\nANIMALS, MATERIALS AND METHODS: Echocardiographic studies from 109 dogs with MMVD were analysed. The co-efficient of variation (COV) was calculated from three measurements of each echocardiographic variable and calculated MR%. A multivariable linear regression model was devised modelling COV MR% as the outcome variable.\nRESULTS: The COV of MR% correlated negatively with MR% severity and decreased with increasing American College of Veterinary Internal Medicine stages. Component variables of MR% generally had variability <10% in all American College of Veterinary Internal Medicine stages. In a multivariable model, of the component variables, only COV aortic diameter measured between the open aortic leaflets at mid-systole in a right parasternal long-axis view showed positive correlation with MR% variability (2.17, P=0.010). However, MR% variability showed clearest association with left atrial-to-aortic ratio (-16.89, P=0.001) and variation in R-R interval (COV RR: 1.47, P=0.002, COV RR2 = -0.04, P=0.013).\nSTUDY LIMITATIONS: Modelling of retrospective data is a limitation of the present study.\nCONCLUSIONS: Variability of MR% is associated with disease severity. We propose beat-to-beat variation in component variables attributable to sinus arrhythmia is associated with variability of mitral regurgitation and echocardiographic calculation of MR% in dogs. These results provide insights into echocardiographic measurement variability in MMVD and assist interpretation of MR% at different disease stages.",
+      "doi": "10.1016/j.jvc.2026.06.004",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42485707/",
+      "species": "Canine",
+      "topics": [
+        "MMVD / Mitral Valve",
+        "Arrhythmia",
+        "Echocardiography"
+      ],
+      "selected_journal": true,
+      "matched_authors": [
+        "Mark Rishniw"
+      ]
     },
     {
       "pmid": "42357795",
@@ -992,7 +1017,9 @@
         "Echocardiography"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "Michele Borgarelli"
+      ]
     },
     {
       "pmid": "42091070",
@@ -2426,7 +2453,10 @@
         "Pharmacology"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "Michele Borgarelli",
+        "Claudio Maria Bussadori"
+      ]
     },
     {
       "pmid": "41844437",
@@ -2504,7 +2534,9 @@
         "Pulmonary Hypertension"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "John D. Bonagura"
+      ]
     },
     {
       "pmid": "41863192",
@@ -3594,7 +3626,8 @@
         "Lance C. Visser",
         "Brian A. Scansen",
         "E. Christopher Orton",
-        "Brianna M. Potter"
+        "Brianna M. Potter",
+        "John D. Bonagura"
       ]
     },
     {
@@ -4429,7 +4462,8 @@
       ],
       "selected_journal": true,
       "matched_authors": [
-        "Mark Rishniw"
+        "Mark Rishniw",
+        "Michele Borgarelli"
       ]
     },
     {
@@ -6845,7 +6879,9 @@
         "Echocardiography"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "Michele Borgarelli"
+      ]
     },
     {
       "pmid": "40431579",
@@ -8050,7 +8086,9 @@
         "Echocardiography"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "Claudio Maria Bussadori"
+      ]
     },
     {
       "pmid": "40037104",
@@ -9741,7 +9779,9 @@
         "Echocardiography"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "Claudio Maria Bussadori"
+      ]
     },
     {
       "pmid": "39480739",
@@ -10711,7 +10751,9 @@
         "Echocardiography"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "Michele Borgarelli"
+      ]
     },
     {
       "pmid": "39220767",
@@ -14020,7 +14062,9 @@
         "Echocardiography"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "Claudio Maria Bussadori"
+      ]
     },
     {
       "pmid": "37984068",
@@ -14156,7 +14200,9 @@
         "Echocardiography"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "Michele Borgarelli"
+      ]
     },
     {
       "pmid": "38128419",
@@ -16222,7 +16268,8 @@
       ],
       "selected_journal": false,
       "matched_authors": [
-        "Roberto A. Santilli"
+        "Roberto A. Santilli",
+        "Claudio Maria Bussadori"
       ]
     },
     {
@@ -16438,7 +16485,9 @@
         "Echocardiography"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "John D. Bonagura"
+      ]
     },
     {
       "pmid": "37228845",
@@ -17213,7 +17262,9 @@
         "Echocardiography"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "Michele Borgarelli"
+      ]
     },
     {
       "pmid": "36913392",
@@ -18390,7 +18441,8 @@
       ],
       "selected_journal": false,
       "matched_authors": [
-        "Brian A. Scansen"
+        "Brian A. Scansen",
+        "John D. Bonagura"
       ]
     },
     {
@@ -21430,7 +21482,9 @@
         "Echocardiography"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "Claudio Maria Bussadori"
+      ]
     },
     {
       "pmid": "35366638",
@@ -21507,7 +21561,9 @@
         "Echocardiography"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "Michele Borgarelli"
+      ]
     },
     {
       "pmid": "35349852",
@@ -21670,7 +21726,8 @@
       ],
       "selected_journal": true,
       "matched_authors": [
-        "Jens Häggström"
+        "Jens Häggström",
+        "Michele Borgarelli"
       ]
     },
     {
@@ -23032,7 +23089,9 @@
         "Pharmacology"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "Claudio Maria Bussadori"
+      ]
     },
     {
       "pmid": "34827894",
@@ -23511,7 +23570,9 @@
         "ECG / Holter"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "Michele Borgarelli"
+      ]
     },
     {
       "pmid": "34554874",
@@ -23668,7 +23729,9 @@
         "Echocardiography"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "Claudio Maria Bussadori"
+      ]
     },
     {
       "pmid": "34631858",
@@ -23827,7 +23890,8 @@
       ],
       "selected_journal": true,
       "matched_authors": [
-        "Lance C. Visser"
+        "Lance C. Visser",
+        "John D. Bonagura"
       ]
     },
     {
@@ -24340,6 +24404,26 @@
       ],
       "selected_journal": true,
       "matched_authors": []
+    },
+    {
+      "pmid": "34329896",
+      "title": "Corrigendum to \"Trifascicular block in a cat infected with Cytauxzoon felis\" [J Veter Cardiol (2021) 35, 121-123]\".",
+      "authors_text": "H W Jeong, M Borgarelli",
+      "journal": "Journal of veterinary cardiology : the official journal of the European Society of Veterinary Cardiology",
+      "publication_date": "2021-07-17",
+      "sort_date": "2021-07-17",
+      "abstract": "",
+      "doi": "10.1016/j.jvc.2021.06.006",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/34329896/",
+      "species": "Feline",
+      "topics": [
+        "Other Veterinary Medicine"
+      ],
+      "selected_journal": false,
+      "matched_authors": [
+        "Michele Borgarelli"
+      ]
     },
     {
       "pmid": "34256860",
@@ -25249,7 +25333,9 @@
       ],
       "selected_journal": true,
       "matched_authors": [
-        "Roberto A. Santilli"
+        "Roberto A. Santilli",
+        "Michele Borgarelli",
+        "Claudio Maria Bussadori"
       ]
     },
     {
@@ -25462,7 +25548,8 @@
       ],
       "selected_journal": true,
       "matched_authors": [
-        "Jens Häggström"
+        "Jens Häggström",
+        "Michele Borgarelli"
       ]
     },
     {
@@ -25858,7 +25945,9 @@
         "ECG / Holter"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "Michele Borgarelli"
+      ]
     },
     {
       "pmid": "33764833",
@@ -25976,7 +26065,9 @@
         "Echocardiography"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "Michele Borgarelli"
+      ]
     },
     {
       "pmid": "33894589",
@@ -26644,7 +26735,8 @@
       "selected_journal": true,
       "matched_authors": [
         "Kathryn M. Meurs",
-        "Darcy B. Adin"
+        "Darcy B. Adin",
+        "John D. Bonagura"
       ]
     },
     {
@@ -26827,7 +26919,8 @@
       ],
       "selected_journal": true,
       "matched_authors": [
-        "Jens Häggström"
+        "Jens Häggström",
+        "Michele Borgarelli"
       ]
     },
     {
@@ -27071,6 +27164,28 @@
       "matched_authors": []
     },
     {
+      "pmid": "33484890",
+      "title": "Is Pulmonary Hypertension a Rare Condition Associated to Angiostrongylosis in Naturally Infected Dogs?",
+      "authors_text": "Paola Paradies, Mariateresa Sasanelli, Antonio Capogna, Angelica Mercadante, Giuseppe Tommaso Roberto Rubino, Claudio Maria Bussadori",
+      "journal": "Topics in companion animal medicine",
+      "publication_date": "2021-01-21",
+      "sort_date": "2021-01-21",
+      "abstract": "Canine angiostrongylosis due to Angiostrongylus vasorum is one of the cardiopulmonary parasitic diseases in dogs and it can manifest with very different clinical pictures, which often make diagnosis very difficult. Based on the nature of the vascular and parenchymal lesions induced by the infection (thrombo-arteritis and fibrosis), it is not surprising that cases of pulmonary arterial hypertension (PAH) associated with angiostrongylosis have been reported in the literature, although it seems to represent a rare condition. The aim of the present work is to describe the clinical and instrumental aspects referred to cases of canine angiostrongylosis before and after treatment then to evaluate even mild conditions of PAH using echocardiography. PAH was not only conventionally investigated based on characteristic cardiac changes that occur secondary to PAH and by estimating pulmonary pressure from spectral Doppler tracings, but also by using a combination of further selected echocardiographic parameters (AT/ET, PA/Ao, Pulmonary flow profile pattern) able also to reveal PAH in the absence of tricuspid or pulmonary regurgitation. Clinical and instrumental aspects of 17 cases of angiostrongylosis, divided into respiratory cases (n = 6), nonrespiratory (n = 5), and asymptomatic (n = 6), are here described. Radiographic alterations were recorded in 90% of patients despite the reason for clinical presentation. A state of mild to severe PAH was diagnosed in 58.8% of cases. Although the return to a normal clinical condition was achieved 2 months after treatment in almost all patients, radiographic and echocardiographic alterations were persistent for longer. The cases presented reinforce the evidence on the complexity of the clinical picture of angiostrongylosis. PAH associated with canine angiostrongylosis could be a more common condition than previously reported in naturally infected dogs. In some cases, echocardiographic findings suggestive of PAH could be the starting point to address the clinical diagnosis toward angiostrongylosis. PAH may be responsible for worsening of the clinical picture of patients; thus, a careful evaluation is suggested before and after anthelmintic treatment in order to optimize the therapeutic management of each case.",
+      "doi": "10.1016/j.tcam.2021.100513",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/33484890/",
+      "species": "Canine",
+      "topics": [
+        "Pulmonary Hypertension",
+        "Systemic Hypertension",
+        "Echocardiography"
+      ],
+      "selected_journal": false,
+      "matched_authors": [
+        "Claudio Maria Bussadori"
+      ]
+    },
+    {
       "pmid": "33592560",
       "title": "Analysis of mitral valve morphology in dogs undergoing mitral valve repair with three-dimensional transesophageal echocardiography.",
       "authors_text": "T Mizuno, A Chen, K Mamada, A Takahashi, S Uchida, M Uechi",
@@ -27209,7 +27324,9 @@
       ],
       "selected_journal": true,
       "matched_authors": [
-        "Brian A. Scansen"
+        "Brian A. Scansen",
+        "Claudio Maria Bussadori",
+        "John D. Bonagura"
       ]
     },
     {
@@ -27843,7 +27960,9 @@
         "Pharmacology"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "John D. Bonagura"
+      ]
     },
     {
       "pmid": "33360109",
@@ -28481,7 +28600,9 @@
         "Echocardiography"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "Michele Borgarelli"
+      ]
     },
     {
       "pmid": "33009675",
@@ -29405,6 +29526,26 @@
       "matched_authors": []
     },
     {
+      "pmid": "32716943",
+      "title": "Epidemiological study of congenital heart diseases in dogs: Prevalence, popularity, and volatility throughout twenty years of clinical practice.",
+      "authors_text": "Paola Giuseppina Brambilla, Michele Polli, Danitza Pradelli, Melissa Papa, Rita Rizzi, Mara Bagardi, Claudio Bussadori",
+      "journal": "PloS one",
+      "publication_date": "2020-07-27",
+      "sort_date": "2020-07-27",
+      "abstract": "The epidemiology of Congenital Heart Diseases (CHDs) has changed over the past twenty years. This study aimed to evaluate the prevalence of CHDs in the population of dogs recruited in a single referral center (RC); compare the epidemiological features of CHDs in screened breeds (Boxers) versus non-screened (French and English Bulldogs, German Shepherds); investigate the association of breeds with the prevalence of CHDs; determine the popularity and volatility of breeds over a 20-year period; analysed the trends of the most popular breeds in the overall population of new-born dogs registered in the Italian Kennel Club (IKC) from 1st January 1997 to 31st December 2017. The RC's cardiological database was analysed, and 1,779 clinical records were included in a retrospective observation study. Descriptive statistics and frequencies regarding the most representative breeds and CHDs were generated. A logistic regression model was used to analyse the trends of the most common CHDs found in single and in cluster of breeds. The relationship between breed popularity and presence of CHDs was studied. The most common CHDs were Pulmonic Stenosis, Patent Ductus Arteriosus, Subaortic Stenosis, Ventricular Septal Defect, Aortic Stenosis, Tricuspid Dysplasia, Atrial Septal Defect, Double Chamber Right Ventricle, Mitral Dysplasia, and others less frequent. The most represented pure breeds were Boxer, German Shepherd, French Bulldog, English Bulldog, Maltese, Newfoundland, Rottweiler, Golden Retriever, Chihuahua, and others in lower percentage. Chihuahuas, American Staffordshire Terriers, Border Collies, French Bulldogs, and Cavalier King Charles Spaniel were the most appreciated all of which showed a high value of volatility. This study found evidence for the value of the screening program implemented in Boxers; fashions and trends influence dog owners' choices more than the worries of health problems in a breed. Effective breeding programs are needed in order to control the diffusion of CHDs without impoverishing the genetic pool.",
+      "doi": "10.1371/journal.pone.0230160",
+      "pmcid": "PMC7384636",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/32716943/",
+      "species": "Canine",
+      "topics": [
+        "Congenital Heart Disease"
+      ],
+      "selected_journal": false,
+      "matched_authors": [
+        "Claudio Maria Bussadori"
+      ]
+    },
+    {
       "pmid": "32716076",
       "title": "Biologic variation of symmetric dimethylarginine and creatinine in clinically healthy cats.",
       "authors_text": "Jennifer M Prieto, Patrick C Carney, Meredith L Miller, Mark Rishniw, John F Randolph, Giosi Farace, Graham Bilbrough, Maha Yerramilli, Mark E Peterson",
@@ -29950,6 +30091,26 @@
       "matched_authors": []
     },
     {
+      "pmid": "32619933",
+      "title": "Branch pulmonary artery stent placement in a dog with heart base neoplasia.",
+      "authors_text": "C M Bussadori, M Claretti, S Borgonovo, E Boz, M Papa, C Rossi, F Martelli, M Aimi, S Signorelli, R Marinelli",
+      "journal": "Journal of veterinary cardiology : the official journal of the European Society of Veterinary Cardiology",
+      "publication_date": "2020-05-23",
+      "sort_date": "2020-05-23",
+      "abstract": "A 7-year-old French bulldog was presented for evaluation of cardiac neoplasia. Two-dimensional transthoracic echocardiography revealed a mass on the base of the heart, compressing the right pulmonary artery. Computed tomography exam confirmed that a surgical approach to remove the mass would not be viable. Stent placement in the right pulmonary artery was performed to relieve external compression caused by the neoplasia. When surgery is not feasible, pulmonary artery stenting could be one aspect of a multidisciplinary approach to palliative management of heart base neoplasia.",
+      "doi": "10.1016/j.jvc.2020.05.002",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/32619933/",
+      "species": "Canine",
+      "topics": [
+        "Echocardiography"
+      ],
+      "selected_journal": true,
+      "matched_authors": [
+        "Claudio Maria Bussadori"
+      ]
+    },
+    {
       "pmid": "32442325",
       "title": "Letter to editor regarding Temporal changes in clinical and radiographic variables in dogs with preclinical myxomatous mitral valve disease: The EPIC study.",
       "authors_text": "Mark D Kittleson",
@@ -30247,7 +30408,9 @@
         "Biomarkers"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "John D. Bonagura"
+      ]
     },
     {
       "pmid": "32326862",
@@ -30718,7 +30881,8 @@
         "Jens Häggström",
         "Roberto A. Santilli",
         "N. Sydney Moïse",
-        "Ashley B. Saunders"
+        "Ashley B. Saunders",
+        "John D. Bonagura"
       ]
     },
     {
@@ -30938,7 +31102,9 @@
         "Echocardiography"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "Claudio Maria Bussadori"
+      ]
     },
     {
       "pmid": "32077239",
@@ -31003,7 +31169,8 @@
       "selected_journal": true,
       "matched_authors": [
         "Lance C. Visser",
-        "Brian A. Scansen"
+        "Brian A. Scansen",
+        "Michele Borgarelli"
       ]
     },
     {
@@ -31368,7 +31535,9 @@
       ],
       "selected_journal": true,
       "matched_authors": [
-        "Roberto A. Santilli"
+        "Roberto A. Santilli",
+        "Michele Borgarelli",
+        "Claudio Maria Bussadori"
       ]
     },
     {
@@ -31714,6 +31883,26 @@
       "matched_authors": []
     },
     {
+      "pmid": "31832167",
+      "title": "Heart to spine measurements to detect left atrial enlargement in dogs with mitral insufficiency.",
+      "authors_text": "Xavier Sánchez Salguero, David Prandi, Francisco Llabrés-Díaz, Edgar G Manzanilla, Llorenç Badiella, Claudio Bussadori",
+      "journal": "Irish veterinary journal",
+      "publication_date": "2019-11-20",
+      "sort_date": "2019-11-20",
+      "abstract": "BACKGROUND: Radiography is useful to determine left atrial (LA) size when echocardiography is not available. Recently, the authors have described Radiographic Left Atrial Dimension (RLAD) as a new radiographic measurement to assess LA size. The objective of this study was to assess the clinical usefulness of 2 new radiographic measurements to detect and quantify left atrial enlargement (LAE) compared to RLAD and using left atrium to aortic root (LA/Ao) ratio as gold standard. These new measurements, bronchus-to-spine (Br-Spine) and RLAD-to-spine (RLAD-Spine) may be more precise in cases were LA boundaries are not well defined. Fifty dogs, 25 with and 25 without LAE were recruited. Reference LA/Ao ratio was assessed by 2D echocardiography and LAE was considered if LA/Ao > 1.6. Br-spine was measured as a straight vertical line from the main stem bronchus to the ventral border of the vertebra situated immediately dorsal to the heart base. RLAD-Spine was measured from RLAD endpoint perpendicularly to spine. The correlation of RLAD, Br-Spine and RLAD-Spine methods with LA/Ao and their sensitivity and specificity for detecting LAE were calculated. Receiver Operating Characteristic (ROC) curves were used to estimate the optimal cut-off for each method.\nRESULTS: Correlations between Br-Spine, RLAD-Spine, RLAD and LA/Ao ratio were - 0.66, - 0.76 and 0.89 respectively (P < 0.001). Sensitivity at the optimal cut-off values for detecting LAE were 32.0, 64.0 and 96.0%, respectively. Specificity was 96.0% in all cases.\nCONCLUSION: Br-Spine and RLAD-Spine were less sensitive radiographic measurements than RLAD in detecting LAE in dogs. Both Br-Spine and RLAD-Spine may not be good alternatives to RLAD.",
+      "doi": "10.1186/s13620-019-0152-6",
+      "pmcid": "PMC6868697",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/31832167/",
+      "species": "Canine",
+      "topics": [
+        "Echocardiography"
+      ],
+      "selected_journal": false,
+      "matched_authors": [
+        "Claudio Maria Bussadori"
+      ]
+    },
+    {
       "pmid": "31687895",
       "title": "Prevalence of selected cardiotropic pathogens in the myocardium of adult dogs with unexplained myocardial and rhythm disorders or with congenital heart disease.",
       "authors_text": "Roberto A Santilli, Elena Grego, Stefano Battaia, Paola Gianella, Massimiliano Tursi, Nicola Di Girolamo, Ilaria Biasato, Manuela Perego",
@@ -31940,7 +32129,9 @@
         "Virginia Luis Fuentes",
         "Jens Häggström",
         "Romain Pariaut",
-        "N. Sydney Moïse"
+        "N. Sydney Moïse",
+        "Michele Borgarelli",
+        "Claudio Maria Bussadori"
       ]
     },
     {
@@ -31961,6 +32152,27 @@
       ],
       "selected_journal": true,
       "matched_authors": []
+    },
+    {
+      "pmid": "31596900",
+      "title": "Evaluation of left ventricular dimension and systolic function by standard transthoracic echocardiography before and 24-hours after percutaneous closure of patent ductus arteriosus in 120 dogs.",
+      "authors_text": "Diego Piantedosi, Alfonso Piscitelli, Angela De Rosa, Blanca Serrano Lopez, Marta Claretti, Elisabetta Boz, Laura Mazzoni, Iolanda Navalon Calvo, Paolo Ciaramella, Claudio Bussadori",
+      "journal": "PloS one",
+      "publication_date": "2019-10-09",
+      "sort_date": "2019-10-09",
+      "abstract": "One hundred and twenty dogs were enrolled to value the effect of loading condition changes on left ventricular volumes before and 24-hours after the patent ductus arteriosus (PDA) occlusion by Amplatzer Canine Duct Occluder (ACDO) using standard echocardiography. The animals were divided in pure breed (n. 94) and mixed breed (n. 26); subsequently, the pure breed dogs were divided on the basis of the size of the breed of belonging in 3 groups (small size n. 36; medium size n. 8; large size n. 50). Moreover, the animals were divided in three classes based on their age: until 6 months; 6-12 months; over 12 months. A significant reduction of all the examined parameters (left ventricle internal diameter at end-diastole-LVIDd; left ventricle internal diameter at end-systole-LVIDs; end-diastolic volume-EDV; end-systolic volume-ESV; end-diastolic volume index-EDVI; end-systolic volume index-ESVI; fractional shortening-FS) was observed after ductal closure. Twenty-four hours after the closure, the evaluation of the relative percentage difference (RPD) of the echocardiographic parameters showed a significant reduction, higher in small size breed than in large size breed dogs. No significant difference related to breed size was observed only for RPD_FS variable. A significant interaction effect, between breed size and age classes, was observed only for RPD_EDVI (F = 3.39; p = 0.039). Until six months of age there was no significant difference in RPD_EDVI reduction, but over 6 months a significant reduction between small size and large size breed dogs at 24-hours from the occlusion was observed. In conclusion, our data seem to indicate that small breed dogs show a greater tolerance to congenital volume overload than large breed dogs, and this finding could be justify a delay of PDA closure in order to simplify the interventional procedure.",
+      "doi": "10.1371/journal.pone.0223676",
+      "pmcid": "PMC6785069",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/31596900/",
+      "species": "Canine",
+      "topics": [
+        "Congenital Heart Disease",
+        "Echocardiography"
+      ],
+      "selected_journal": false,
+      "matched_authors": [
+        "Claudio Maria Bussadori"
+      ]
     },
     {
       "pmid": "31675525",
@@ -32452,7 +32664,9 @@
         "Intervention / Surgery"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "Claudio Maria Bussadori"
+      ]
     },
     {
       "pmid": "31276517",
@@ -33058,7 +33272,8 @@
       "selected_journal": true,
       "matched_authors": [
         "Mark A. Oyama",
-        "Jens Häggström"
+        "Jens Häggström",
+        "John D. Bonagura"
       ]
     },
     {
@@ -33155,7 +33370,9 @@
         "Echocardiography"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "John D. Bonagura"
+      ]
     },
     {
       "pmid": "30924221",
@@ -34290,6 +34507,27 @@
       "matched_authors": []
     },
     {
+      "pmid": "30568788",
+      "title": "A radiographic measurement of left atrial size in dogs.",
+      "authors_text": "Xavier Sánchez Salguero, David Prandi, Francisco Llabrés-Díaz, Edgar Garcia Manzanilla, Claudio Bussadori",
+      "journal": "Irish veterinary journal",
+      "publication_date": "2018-12-17",
+      "sort_date": "2018-12-17",
+      "abstract": "BACKGROUND: The dimensions of the left atrium in cases with mitral regurgitation are an indirect measurement of its severity. The objective of this study was to evaluate the value of a new radiographic measurement, the radiographic left atrial dimension (RLAD), for detecting left atrial enlargement (LAE) in dogs. Thirty one dogs without LAE and 46 dogs with LAE were recruited in a prospective fashion. Reference left atrium dimension was measured by standard left atrium to aorta ratio (LA/Ao) by 2D echocardiography. LAE was considered if LA/Ao > 1.6. Left atrium dimension was then quantified on lateral radiographs by measuring RLAD. Vertebral heart size (VHS) was measured and RLAD was obtained by drawing a line bisecting the 90 degrees angle defined by the long and short cardiac axes lines of the VHS, up to the dorsal edge of the left atrium and comparing its length to T4's vertebral body length. The correlation of VHS and RLAD methods with LA/Ao was estimated, as well as their sensitivity and specificity for detecting LAE. Receiver Operating Characteristic (ROC) curves were used to estimate the optimal decision criteria for each method.\nRESULTS: A positive correlation was observed between RLAD and LA/Ao (r = 0.82). RLAD's sensitivity and specificity for detecting LAE when evaluated at the optimal cut-off value, 1.8 vertebrae, were 93.5 and 96.8% respectively. RLAD showed high reproducibility and repeatability.\nCONCLUSION: RLAD appears to be a clinically useful radiographic measurement for evaluating left atrial dimensions. RLAD would provide clinicians with a simple and cost-effective tool for evaluating and monitoring LAE.",
+      "doi": "10.1186/s13620-018-0137-x",
+      "pmcid": "PMC6297992",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/30568788/",
+      "species": "Canine",
+      "topics": [
+        "MMVD / Mitral Valve",
+        "Echocardiography"
+      ],
+      "selected_journal": false,
+      "matched_authors": [
+        "Claudio Maria Bussadori"
+      ]
+    },
+    {
       "pmid": "30559174",
       "title": "Home monitoring of heart rate and heart rhythm with a smartphone-based ECG in dogs.",
       "authors_text": "Tommaso Vezzosi, Rosalba Tognetti, Carlotta Buralli, Federica Marchesotti, Valentina Patata, Eric Zini, Oriol Domenech",
@@ -34973,7 +35211,9 @@
         "Echocardiography"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "Claudio Maria Bussadori"
+      ]
     },
     {
       "pmid": "30357909",
@@ -35230,7 +35470,8 @@
       ],
       "selected_journal": true,
       "matched_authors": [
-        "Jens Häggström"
+        "Jens Häggström",
+        "Michele Borgarelli"
       ]
     },
     {
@@ -35476,7 +35717,8 @@
       ],
       "selected_journal": true,
       "matched_authors": [
-        "Lance C. Visser"
+        "Lance C. Visser",
+        "John D. Bonagura"
       ]
     },
     {
@@ -35810,6 +36052,26 @@
       "matched_authors": []
     },
     {
+      "pmid": "29963946",
+      "title": "Ischemic necrosis of the digits and hyperlipidemia associated with atherosclerosis in a Miniature American Shepherd.",
+      "authors_text": "Jessie Scaglione, Sandra F Diaz, John D Bonagura, Rebecca A Kohnken, Timothy H Helms, Rachel E Cianciolo",
+      "journal": "Journal of the American Veterinary Medical Association",
+      "publication_date": "2018-07",
+      "sort_date": "2018-07-15",
+      "abstract": "CASE DESCRIPTION A 2.5-year-old 12-kg (26.4-lb) castrated male Miniature American Shepherd was referred because of a 3-week history of a localized crusted skin lesion on the digital pad of digit 3 of the right hind limb. CLINICAL FINDINGS Skin lesions were noted on the digital pads of the right hind limb. Serum biochemical analyses indicated severe hypercholesterolemia and hypertriglyceridemia. Ultrasonography of the terminal portion of the aorta and other major arterial vessels revealed substantial arteriosclerotic change. TREATMENT AND OUTCOME Medical treatments included administration of atorvastatin calcium, a low-fat diet, and omega-3 fatty acids to reduce serum lipids concentration; clopidogrel to prevent thrombosis; pentoxifylline to improve microcirculatory blood flow; clomipramine hydrochloride and trazodone hydrochloride to help with the behavioral problems; and gabapentin to help with pain management and behavioral problems. Surgical management included amputation of the initial digit involved, then eventually the entire initial limb involved. The response to treatment was poor, and euthanasia was elected. Postmortem findings revealed severe, widespread, and chronic intimal atherosclerosis; mild, widespread, and degenerative changes in the cerebral cortex; and edema and vascular congestion in the meninges. CLINICAL RELEVANCE To the authors' knowledge, this was the first report of skin necrosis secondary to atherosclerosis in a dog. Although the incidence of atherosclerosis has been considered very low in dogs, it should be investigated in dogs with severe hyperlipidemia. Primary hyperlipidemia has not been previously described in Miniature American Shepherd dogs but was the suspected underlying metabolic disorder.",
+      "doi": "10.2460/javma.253.2.209",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/29963946/",
+      "species": "Canine",
+      "topics": [
+        "Pharmacology"
+      ],
+      "selected_journal": false,
+      "matched_authors": [
+        "John D. Bonagura"
+      ]
+    },
+    {
       "pmid": "30017853",
       "title": "Murmur grading in humans and animals: past and present.",
       "authors_text": "M Rishniw",
@@ -36037,7 +36299,9 @@
         "Pharmacology"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "John D. Bonagura"
+      ]
     },
     {
       "pmid": "29807749",
@@ -36250,7 +36514,9 @@
         "Jens Häggström",
         "Roberto A. Santilli",
         "Romain Pariaut",
-        "N. Sydney Moïse"
+        "N. Sydney Moïse",
+        "Michele Borgarelli",
+        "Claudio Maria Bussadori"
       ]
     },
     {
@@ -36887,7 +37153,9 @@
         "Echocardiography"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "Claudio Maria Bussadori"
+      ]
     },
     {
       "pmid": "29432704",
@@ -37288,7 +37556,8 @@
       ],
       "selected_journal": true,
       "matched_authors": [
-        "Brian A. Scansen"
+        "Brian A. Scansen",
+        "John D. Bonagura"
       ]
     },
     {
@@ -37316,7 +37585,8 @@
         "Jens Häggström",
         "Roberto A. Santilli",
         "N. Sydney Moïse",
-        "Ashley B. Saunders"
+        "Ashley B. Saunders",
+        "John D. Bonagura"
       ]
     },
     {
@@ -37519,7 +37789,9 @@
         "Echocardiography"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "John D. Bonagura"
+      ]
     },
     {
       "pmid": "29121915",
@@ -37865,7 +38137,9 @@
         "Echocardiography"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "Michele Borgarelli"
+      ]
     },
     {
       "pmid": "28960715",
@@ -37903,7 +38177,9 @@
         "MMVD / Mitral Valve"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "Michele Borgarelli"
+      ]
     },
     {
       "pmid": "28958795",
@@ -38082,7 +38358,8 @@
       ],
       "selected_journal": true,
       "matched_authors": [
-        "Brian A. Scansen"
+        "Brian A. Scansen",
+        "John D. Bonagura"
       ]
     },
     {
@@ -38894,7 +39171,9 @@
         "Pharmacology"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "Michele Borgarelli"
+      ]
     },
     {
       "pmid": "28571753",
@@ -38973,6 +39252,26 @@
       "selected_journal": false,
       "matched_authors": [
         "Brian A. Scansen"
+      ]
+    },
+    {
+      "pmid": "28543810",
+      "title": "In vitro bactericidal activity of blue light (465 nm) phototherapy on meticillin-susceptible and meticillin-resistant Staphylococcus pseudintermedius.",
+      "authors_text": "Amy H Schnedeker, Lynette K Cole, Gwendolen Lorch, Sandra F Diaz, John Bonagura, Joshua B Daniels",
+      "journal": "Veterinary dermatology",
+      "publication_date": "2017-05-22",
+      "sort_date": "2017-05-22",
+      "abstract": "BACKGROUND: Staphylococcus pseudintermedius is the most common cause of bacterial skin infections in dogs. Meticillin-resistant infections have become more common and are challenging to treat. Blue light phototherapy may be an option for treating these infections.\nHYPOTHESIS/OBJECTIVES: The objective of this study was to measure the in vitro bactericidal activity of 465 nm blue light on meticillin-susceptible Staphylococcus pseudintermedius (MSSP) and meticillin-resistant Staphylococcus pseudintermedius (MRSP). We hypothesized that irradiation with blue light would kill MSSP and MRSP in a dose-dependent fashion in vitro as previously reported for meticillin-resistant Staphylococcus aureus (MRSA).\nMETHODS: In six replicate experiments, each strain [MSSP, n = 1; MRSP ST-71 (KM1381) n = 1; and MRSA (BAA-1680) n = 1] were cultivated on semisolid media, irradiated using a 465 nm blue light phototherapeutic device at the cumulative doses of 56.25, 112.5 and 225 J/cm2 and incubated overnight at 35°C. Controls were not irradiated. Colony counts (CC) were performed manually. Descriptive statistics were performed and treatment effects assessed using the Wilcoxon-Mann-Whitney rank-sum test. Bonferroni-corrected rank-sum tests were performed for post hoc analysis when significant differences were identified.\nRESULTS: There was a significant decrease in CC with blue light irradiation at all doses for MRSA (P = 0.0006) but not for MSSP (P = 0.131) or MRSP (P = 0.589).\nCONCLUSIONS: Blue light phototherapy significantly reduced CC of MRSA, but not of MSSP or MRSP. The mechanism for the relative photosensitivity of the MRSA isolate is unknown, but is hypothesized to be due to an increased concentration of porphyrin in S. aureus relative to S. pseudintermedius, which would modulate blue light absorption.",
+      "doi": "10.1111/vde.12451",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/28543810/",
+      "species": "Canine",
+      "topics": [
+        "Other Veterinary Medicine"
+      ],
+      "selected_journal": false,
+      "matched_authors": [
+        "John D. Bonagura"
       ]
     },
     {
@@ -39532,7 +39831,9 @@
         "ECG / Holter"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "Michele Borgarelli"
+      ]
     },
     {
       "pmid": "28295648",
@@ -39635,7 +39936,8 @@
       ],
       "selected_journal": true,
       "matched_authors": [
-        "Jens Häggström"
+        "Jens Häggström",
+        "Michele Borgarelli"
       ]
     },
     {
@@ -40722,7 +41024,8 @@
         "Jens Häggström",
         "Roberto A. Santilli",
         "N. Sydney Moïse",
-        "Ashley B. Saunders"
+        "Ashley B. Saunders",
+        "John D. Bonagura"
       ]
     },
     {
@@ -41040,7 +41343,8 @@
       ],
       "selected_journal": false,
       "matched_authors": [
-        "Jens Häggström"
+        "Jens Häggström",
+        "Michele Borgarelli"
       ]
     },
     {
@@ -41331,7 +41635,9 @@
         "Echocardiography"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "Claudio Maria Bussadori"
+      ]
     },
     {
       "pmid": "27379594",
@@ -41886,7 +42192,9 @@
         "Echocardiography"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "Claudio Maria Bussadori"
+      ]
     },
     {
       "pmid": "27177624",
@@ -41905,7 +42213,9 @@
         "Echocardiography"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "Claudio Maria Bussadori"
+      ]
     },
     {
       "pmid": "27177623",
@@ -42481,7 +42791,8 @@
       ],
       "selected_journal": true,
       "matched_authors": [
-        "Jens Häggström"
+        "Jens Häggström",
+        "Michele Borgarelli"
       ]
     },
     {
@@ -42524,6 +42835,26 @@
       "matched_authors": [
         "Gerhard Wess",
         "Jens Häggström"
+      ]
+    },
+    {
+      "pmid": "27033916",
+      "title": "Assessment of right ventricular function by feature-tracking echocardiography in conscious healthy dogs.",
+      "authors_text": "Chiara Locatelli, Ilaria Spalla, Anna M Zanaboni, Paola G Brambilla, Claudio Bussadori",
+      "journal": "Research in veterinary science",
+      "publication_date": "2016-01-26",
+      "sort_date": "2016-01-26",
+      "abstract": "Advanced two-dimensional echocardiographic techniques allow strain (S) analysis of regional function and thus can provide information on regional myocardial deformation. Feature-tracking echocardiography (FTE) is based on a mono-dimensional technology and may offer more detailed information about septal deformation because it can analyse the activity of left- and right-sided septal fibres separately. The present study aimed to quantify global and regional (free wall and septal) right ventricular (RV) longitudinal S and strain rate (SR). We also investigated the relationships of S and SR with age, sex, weight, breed (sighthound breed vs other breeds), and heart rate. Cine loops were acquired from the left apical four-chamber view, optimized for the RV, in 60 dogs. The within-day and between-day intra-observer coefficient of variation for global RV S and SR in normal dogs using FTE was acceptable (<8.5%). Global longitudinal S (GLS) and SR showed a significant correlation with breed. GLS showed a significant weak positive correlation with weight. Global longitudinal SR showed a significant moderate negative correlation with heart rate. No correlation was found between GLS/SR and age. There was no significant difference between male and female dogs. This study shows, for the first time, that a novel FTE algorithm represents a promising and feasible non-invasive technique to assess RV myocardial function (free wall and septal deformation) in dogs. Based on our results, sighthound breeds appear to need specific reference values.",
+      "doi": "10.1016/j.rvsc.2016.01.020",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/27033916/",
+      "species": "Canine",
+      "topics": [
+        "Echocardiography"
+      ],
+      "selected_journal": false,
+      "matched_authors": [
+        "Claudio Maria Bussadori"
       ]
     },
     {
@@ -43447,7 +43778,8 @@
       ],
       "selected_journal": true,
       "matched_authors": [
-        "Brian A. Scansen"
+        "Brian A. Scansen",
+        "John D. Bonagura"
       ]
     },
     {
@@ -43668,7 +44000,9 @@
         "Intervention / Surgery"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "Claudio Maria Bussadori"
+      ]
     },
     {
       "pmid": "26509595",
@@ -43712,7 +44046,8 @@
       ],
       "selected_journal": true,
       "matched_authors": [
-        "Brian A. Scansen"
+        "Brian A. Scansen",
+        "John D. Bonagura"
       ]
     },
     {
@@ -43732,7 +44067,8 @@
       ],
       "selected_journal": false,
       "matched_authors": [
-        "Brian A. Scansen"
+        "Brian A. Scansen",
+        "John D. Bonagura"
       ]
     },
     {
@@ -43753,6 +44089,26 @@
       "selected_journal": true,
       "matched_authors": [
         "Gerhard Wess"
+      ]
+    },
+    {
+      "pmid": "26679811",
+      "title": "A multimodality imaging approach for guiding a modified endovascular coil embolization of a single intrahepatic portosystemic shunt in dogs.",
+      "authors_text": "Teja Knapp, Iolanda Navalòn, Massimo Medda, Danitza Pradelli, Simone Borgonovo, Cristina Crosta, Claudio Maria Bussadori",
+      "journal": "Research in veterinary science",
+      "publication_date": "2015-10-19",
+      "sort_date": "2015-10-19",
+      "abstract": "Intrahepatic portosystemic shunts (IHPSS) in dogs are aberrant vascular anomalies that connect the portal and the systemic venous vessels. In most of the patients, the surgical approach is unfavourable due to the difficulties in isolating the IHPSS, making the option of a percutaneous transvenous coil embolization (PTCE) one of the safer occlusive procedures. This study describes the treatment of eight dogs with a single IHPSS using a multimodality imaging approach to guide the modified PTCE procedure. This new technique results in a decrease of 71% of the time of the entire procedure with the reduction of 91% in the time required involved the IHPSS identification and in the fluoroscopy exposure time avoiding the need for iodinated contrast agents during the procedure. Moreover, the placement of the catheter before the caval stent ensures its greater stability, enhancing the procedural safety in the phase when the coils are released and avoiding the risk of their dislocation.",
+      "doi": "10.1016/j.rvsc.2015.09.023",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/26679811/",
+      "species": "Canine",
+      "topics": [
+        "Other Veterinary Medicine"
+      ],
+      "selected_journal": false,
+      "matched_authors": [
+        "Claudio Maria Bussadori"
       ]
     },
     {
@@ -44047,7 +44403,9 @@
       "selected_journal": true,
       "matched_authors": [
         "Mark A. Oyama",
-        "N. Sydney Moïse"
+        "N. Sydney Moïse",
+        "Claudio Maria Bussadori",
+        "John D. Bonagura"
       ]
     },
     {
@@ -44373,7 +44731,8 @@
       "selected_journal": true,
       "matched_authors": [
         "Lance C. Visser",
-        "Brian A. Scansen"
+        "Brian A. Scansen",
+        "John D. Bonagura"
       ]
     },
     {
@@ -44655,7 +45014,9 @@
         "Echocardiography"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "Michele Borgarelli"
+      ]
     },
     {
       "pmid": "25997373",
@@ -45478,7 +45839,8 @@
       "selected_journal": true,
       "matched_authors": [
         "Jens Häggström",
-        "Roberto A. Santilli"
+        "Roberto A. Santilli",
+        "Michele Borgarelli"
       ]
     },
     {
@@ -45574,7 +45936,8 @@
       "selected_journal": true,
       "matched_authors": [
         "Lance C. Visser",
-        "Brian A. Scansen"
+        "Brian A. Scansen",
+        "John D. Bonagura"
       ]
     },
     {
@@ -45961,7 +46324,9 @@
         "Echocardiography"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "Claudio Maria Bussadori"
+      ]
     },
     {
       "pmid": "25311942",
@@ -46487,7 +46852,9 @@
         "Echocardiography"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "Michele Borgarelli"
+      ]
     },
     {
       "pmid": "25056593",
@@ -46631,7 +46998,8 @@
       "selected_journal": true,
       "matched_authors": [
         "Lance C. Visser",
-        "Brian A. Scansen"
+        "Brian A. Scansen",
+        "John D. Bonagura"
       ]
     },
     {
@@ -46733,7 +47101,9 @@
         "Echocardiography"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "Claudio Maria Bussadori"
+      ]
     },
     {
       "pmid": "25023066",
@@ -47172,7 +47542,8 @@
       ],
       "selected_journal": true,
       "matched_authors": [
-        "Brian A. Scansen"
+        "Brian A. Scansen",
+        "John D. Bonagura"
       ]
     },
     {
@@ -47503,7 +47874,8 @@
       ],
       "selected_journal": false,
       "matched_authors": [
-        "Brian A. Scansen"
+        "Brian A. Scansen",
+        "John D. Bonagura"
       ]
     },
     {
@@ -48283,7 +48655,9 @@
         "Intervention / Surgery"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "Claudio Maria Bussadori"
+      ]
     },
     {
       "pmid": "24304841",
@@ -48490,7 +48864,9 @@
       "matched_authors": [
         "Gerhard Wess",
         "Jens Häggström",
-        "Roberto A. Santilli"
+        "Roberto A. Santilli",
+        "Michele Borgarelli",
+        "Claudio Maria Bussadori"
       ]
     },
     {
@@ -48890,7 +49266,9 @@
         "Intervention / Surgery"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "Claudio Maria Bussadori"
+      ]
     },
     {
       "pmid": "23875847",
@@ -49425,7 +49803,9 @@
         "Pharmacology"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "John D. Bonagura"
+      ]
     },
     {
       "pmid": "23680134",
@@ -49786,7 +50166,8 @@
       "selected_journal": true,
       "matched_authors": [
         "Lance C. Visser",
-        "Brian A. Scansen"
+        "Brian A. Scansen",
+        "John D. Bonagura"
       ]
     },
     {
@@ -49966,7 +50347,8 @@
       ],
       "selected_journal": false,
       "matched_authors": [
-        "Jens Häggström"
+        "Jens Häggström",
+        "Claudio Maria Bussadori"
       ]
     },
     {
@@ -50146,7 +50528,30 @@
         "Echocardiography"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "Michele Borgarelli"
+      ]
+    },
+    {
+      "pmid": "23385073",
+      "title": "Myocardial expression of hyperpolarization-activated, cyclic nucleotide-gated proteins in healthy cats and cats with hypertrophic cardiomyopathy.",
+      "authors_text": "S C Riesen, K E Schober, J D Bonagura, C A Carnes",
+      "journal": "Schweizer Archiv fur Tierheilkunde",
+      "publication_date": "2013-02",
+      "sort_date": "2013-02-01",
+      "abstract": "In this article the myocardial expression of different hyperpolarization-activated, cyclic nucleotide-gated (HCN) isoforms in myocardial tissue from healthy control cats and cats with hypertrophic cardiomyopathy (HCM) was evaluated. Myocardial tissue samples of the left ventricle of control cats (n = 12) and cats with HCM (n = 4) were collected. Expression of feline HCN was determined by immunoblot analysis using antibodies against HCN2 and HCN4. Optical densities of HCN bands were compared among groups by use of the Mann-Whitney Rank Sum test. HCN4 was reliably detected in myocardial tissue whereas HCN2 was not. HCN4 expression was significantly increased in left ventricular (LV) myocardial samples of cats with HCM (P = 0.036) compared to control cats. Results indicate that myocardial HCN4 expression can be evaluated in cats by immunoblot analysis and that HCN4 expression is upregulated in LV myocardial tissue of cats with HCM. The pathophysiological importance of HCN overexpression with regard to myocyte function and altered automaticity deserves further study.",
+      "doi": "10.1024/0036-7281/a000431",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/23385073/",
+      "species": "Feline",
+      "topics": [
+        "Cardiomyopathy",
+        "Echocardiography"
+      ],
+      "selected_journal": false,
+      "matched_authors": [
+        "John D. Bonagura"
+      ]
     },
     {
       "pmid": "23363345",
@@ -50662,6 +51067,26 @@
       ]
     },
     {
+      "pmid": "23116650",
+      "title": "Pharmacokinetics of oral pimobendan in healthy cats.",
+      "authors_text": "Andrew S Hanzlicek, Ronette Gehring, Butch Kukanich, Kate S Kukanich, Michele Borgarelli, Nicole Smee, Emily E Olson, Marco Margiocco",
+      "journal": "Journal of veterinary cardiology : the official journal of the European Society of Veterinary Cardiology",
+      "publication_date": "2012-10-30",
+      "sort_date": "2012-10-30",
+      "abstract": "OBJECTIVE: To describe the pharmacokinetics of oral pimobendan in healthy cats.\nANIMALS: 18 purpose-bred cats.\nMETHODS: In 10 cats, blood samples were collected before, and at multiple time points after, a single oral dose of pimobendan (0.28 ± 0.04 mg/kg). In 8 cats, blood samples were collected at 3 various time points on the first and third days of twice daily oral dosing of pimobendan for a total of 7 doses (0.31 ± 0.04 mg/kg). Plasma concentrations of pimobendan were quantified by high pressure liquid chromatography coupled to tandem mass spectrometry.\nRESULTS: A 1-compartment open model with first order absorption in and elimination from the central compartment with a lag time best describes the disposition of pimobendan. Two cats were removed from final pharmacokinetic descriptive analysis due to delayed minimal absorption from gastrointestinal adverse effects. After a lag time (0.3 ± 0.06 h), pimobendan was rapidly absorbed (absorption half-life = 0.2 ± 0.08 h) and eliminated (elimination half-life = 1.3 ± 0.2 h). Maximum plasma concentrations (34.50 ± 6.59 ng/mL) were high and were predicted 0.9 h after drug administration. Apparent volume of distribution at steady state (per bioavailability) was large (8.2 ± 2.5 L/kg). The multi-dose study showed the pharmacokinetic model to be robust.\nCONCLUSION: When administered a similar dose on a per weight basis, pimobendan has a substantially longer elimination half-life and maximal drug plasma concentration in cats as compared to those previously reported in dogs.",
+      "doi": "10.1016/j.jvc.2012.06.002",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/23116650/",
+      "species": "Both",
+      "topics": [
+        "Pharmacology"
+      ],
+      "selected_journal": false,
+      "matched_authors": [
+        "Michele Borgarelli"
+      ]
+    },
+    {
       "pmid": "23110980",
       "title": "Fossa ovalis tear causing right to left shunting in a Cavalier King Charles Spaniel.",
       "authors_text": "Geri A Lake-Bakaar, Mai Yee Mok, Mark D Kittleson",
@@ -50762,6 +51187,26 @@
       "selected_journal": false,
       "matched_authors": [
         "Ashley B. Saunders"
+      ]
+    },
+    {
+      "pmid": "23025353",
+      "title": "A new method of computing the vertebral heart scale by means of direct standardisation.",
+      "authors_text": "X Sánchez, D Prandi, L Badiella, A Vázquez, F Llabrés-Díaz, C Bussadori, O Domènech",
+      "journal": "The Journal of small animal practice",
+      "publication_date": "2012-10-01",
+      "sort_date": "2012-10-01",
+      "abstract": "OBJECTIVES: The aim of this study was to describe and compare a simplified vertebral heart scale computation method (Objective VHS) with the original Buchanan method (Buchanan VHS).\nMETHODS: The Objective VHS was compared to the Buchanan VHS method in 42 dogs including 14 healthy dogs and 28 dogs with mitral insufficiency. For the Objective VHS, the sum of the length of the long and short axes of the cardiac silhouette obtained in centimetres using a metric ruler was subsequently converted into units of vertebral length by means of a direct standardization method. The Buchanan VHS was obtained as previously described.\nRESULTS: No significant differences in vertebral heart scale values were found between the two methods in all dogs. There was a strong positive correlation (0·99) between Objective VHS and Buchanan VHS.\nCLINICAL SIGNIFICANCE: The use of a direct standardization method based on a unit conversion allows -computation of vertebral heart scale values without transposing long and short axes to the cranial edge of T4.",
+      "doi": "10.1111/j.1748-5827.2012.01288.x",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/23025353/",
+      "species": "Canine",
+      "topics": [
+        "Other Veterinary Medicine"
+      ],
+      "selected_journal": true,
+      "matched_authors": [
+        "Claudio Maria Bussadori"
       ]
     },
     {
@@ -51669,7 +52114,9 @@
         "Pharmacology"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "John D. Bonagura"
+      ]
     },
     {
       "pmid": "22578688",
@@ -51709,7 +52156,9 @@
         "ECG / Holter"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "John D. Bonagura"
+      ]
     },
     {
       "pmid": "22575676",
@@ -51804,7 +52253,9 @@
         "ECG / Holter"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "Michele Borgarelli"
+      ]
     },
     {
       "pmid": "22490116",
@@ -52072,7 +52523,9 @@
         "Heart Failure"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "Michele Borgarelli"
+      ]
     },
     {
       "pmid": "22386587",
@@ -52612,7 +53065,9 @@
         "Echocardiography"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "John D. Bonagura"
+      ]
     },
     {
       "pmid": "22356836",
@@ -52688,7 +53143,9 @@
         "Echocardiography"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "John D. Bonagura"
+      ]
     },
     {
       "pmid": "22280378",
@@ -52708,7 +53165,8 @@
       ],
       "selected_journal": true,
       "matched_authors": [
-        "Jens Häggström"
+        "Jens Häggström",
+        "Michele Borgarelli"
       ]
     },
     {
@@ -53011,7 +53469,8 @@
       ],
       "selected_journal": true,
       "matched_authors": [
-        "Jens Häggström"
+        "Jens Häggström",
+        "Michele Borgarelli"
       ]
     },
     {
@@ -53031,6 +53490,28 @@
       ],
       "selected_journal": true,
       "matched_authors": []
+    },
+    {
+      "pmid": "22186722",
+      "title": "Dilated cardiomyopathy and sinoatrial dysfunction in an Estrela mountain dog.",
+      "authors_text": "Luis Lobo, António Pinheiro-Vieira, João L Gomes, Nuno Canada, Lenio Ribeiro, Paulo D Costa, Pedro Oliveira, Claudio Bussadori",
+      "journal": "Journal of the American Animal Hospital Association",
+      "publication_date": "2011-12-20",
+      "sort_date": "2011-12-20",
+      "abstract": "A 1 yr old male Estrela mountain dog was evaluated as a part of a screening program for dilated cardiomyopathy. The dog came from a family with a history of dilated cardiomyopathy but was asymptomatic. Occult dilated cardiomyopathy and sino-atrial dysfunction were diagnosed based on echocardiography and electrocardiography. These two disorders may be associated given that related dogs have been diagnosed with the same disorders. The dog has remained asymptomatic for 4 years following initial evaluation.",
+      "doi": "10.5326/JAAHA-MS-5659",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/22186722/",
+      "species": "Canine",
+      "topics": [
+        "Cardiomyopathy",
+        "Echocardiography",
+        "ECG / Holter"
+      ],
+      "selected_journal": false,
+      "matched_authors": [
+        "Claudio Maria Bussadori"
+      ]
     },
     {
       "pmid": "22168834",
@@ -53307,6 +53788,26 @@
       "matched_authors": []
     },
     {
+      "pmid": "22030291",
+      "title": "Pharmacodynamic effects of ivabradine, a negative chronotropic agent, in healthy cats.",
+      "authors_text": "Richard E Cober, Karsten E Schober, Tony C A Buffington, Xiaobai Li, Sabine C Riesen, John D Bonagura",
+      "journal": "Journal of veterinary cardiology : the official journal of the European Society of Veterinary Cardiology",
+      "publication_date": "2011-10-24",
+      "sort_date": "2011-10-24",
+      "abstract": "OBJECTIVE: To determine the pharmacodynamic effects of oral ivabradine in cats.\nANIMALS: Eight healthy, adult domestic short hair cats.\nMETHODS: Each cat underwent four study periods of 24 h, receiving either one dose of placebo or ivabradine (0.1 mg/kg, 0.3 mg/kg, and 0.5 mg/kg) in a single-blind randomized crossover study. Clinical tolerance was assessed hourly for the first 8 h, at 12 h, and at the end of the 24-h study period. Heart rate and blood pressure were monitored continuously for 18-24 h via radiotelemetry after each treatment. Response to stress (acoustic startle) was studied before (t = 0) and after treatment (t = 4 h). Statistical comparisons were made using a linear mixed models and 1-way and 2-way repeated measures ANOVA.\nRESULTS: Heart rate (min(-1)) decreased significantly (P < 0.05) in a dose-dependent manner with peak negative chronotropic effects observed 3 h after ivabradine (mean ± SD; placebo, 144 ± 20; ivabradine 0.1 mg/kg, 133 ± 22; ivabradine 0.3 mg/kg, 112 ± 20; and ivabradine 0.5 mg/kg, 104 ± 11). Heart rate (min(-1)) was still reduced (P < 0.05) 12 h after ivabradine (0.3 mg/kg; 128 ± 18 and 0.5 mg/kg; 124 ± 16) compared to placebo (141 ± 21). The tachycardic response to acoustic startle was significantly (P < 0.01) blunted at all 3 doses of ivabradine. Myocardial oxygen consumption estimated by the rate-pressure product was significantly reduced (P < 0.05) for all doses of ivabradine. No effect of ivabradine on systolic, diastolic, and mean blood pressure was identified and no clinically discernable side effects were observed.\nCONCLUSION: These findings indicate that a single oral dose of ivabradine predictably lowers heart rate, blunts the chronotropic response to stress, and is clinically well tolerated in healthy cats. This makes ivabradine potentially interesting in the treatment of feline heart disease where ischemia is of pathophysiologic importance.",
+      "doi": "10.1016/j.jvc.2011.06.001",
+      "pmcid": "PMC4154821",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/22030291/",
+      "species": "Feline",
+      "topics": [
+        "Other Veterinary Medicine"
+      ],
+      "selected_journal": false,
+      "matched_authors": [
+        "John D. Bonagura"
+      ]
+    },
+    {
       "pmid": "22030290",
       "title": "Use of the loop diuretic torsemide in three dogs with advanced heart failure.",
       "authors_text": "Mark A Oyama, Gordon D Peddle, Caryn A Reynolds, Gretchen E Singletary",
@@ -53492,6 +53993,27 @@
       ]
     },
     {
+      "pmid": "21908643",
+      "title": "The relevance of echocardiography heart measures for breeding against the risk of subaortic and pulmonic stenosis in Boxer dogs.",
+      "authors_text": "L Menegazzo, C Bussadori, D Chiavegato, C Quintavalla, V Bonfatti, C Guglielmini, E Sturaro, L Gallo, P Carnier",
+      "journal": "Journal of animal science",
+      "publication_date": "2011-09-09",
+      "sort_date": "2011-09-09",
+      "abstract": "The aims of this study were to investigate the role and relative importance of auscultation and echocardiography traits as risk factors for the diagnosis of subaortic (SubAS) and pulmonic (PS) stenosis and to estimate the heritability (h(2)) of cardiac measurements taken through echocardiography for a random sample of Italian Boxer dogs. The data were cardiovascular examination results of 1,283 Italian Boxer dogs (686 females and 597 males) enrolled in the national screening program for heart defects arranged by the Italian Boxer Club. Examinations were performed during a 6-yr period by a group of 7 veterinary cardiologists following a standard protocol. Occurrence and severity of SubAS and PS were diagnosed, taking into account clinical and echocardiography findings such as the grade of cardiac murmur, direct ultrasound imaging of the anatomic obstructive lesions, and values of aortic or pulmonary blood flow velocities. A Bayesian logistic regression analysis was performed to identify clinical and echocardiography variables related to SubAS and PS diagnosis. Estimation of variance components for clinical and echocardiography traits was performed using a mixed linear animal model, Bayesian procedures, and the Gibbs sampler. Prevalence of SubAS (PS) was 8.4% (2.2) and 10.7% (6.4) for female and male dogs, respectively. Cardiac murmur, peak velocities, and annulus areas behaved as risk factors for SubAS and PS. The risk of a positive diagnosis for SubAS was 3 times greater for dogs with aortic annulus area <2.1 cm(2) relative to dogs with areas >2.37 cm(2), 84 times greater for dogs showing aortic peak velocities >2.19 m/s relative to dogs with peak velocities <1.97 m/s, and 41 times greater for dogs with moderate to severe murmur grades relative to dogs with absent murmur. Similar results were obtained for PS. The estimated h(2) for the occurrence of cardiac defects was 23.3% for SubAS and 8.6% for PS. Echocardiography and cardiac murmur grades exhibited moderate h(2) estimates and exploitable additive genetic variation. The estimated h(2) was 36, 24, and 20% for aortic annulus area, aortic peak velocity, and cardiac murmur score, respectively. For the area of the pulmonary annulus and peak pulmonary velocity, the estimated h(2) were smaller, ranging from 9.5 to 12.8%. These measures are candidate indicator traits that might be effectively used in dog breeding to reduce the prevalence and severity of cardiac defects.",
+      "doi": "10.2527/jas.2011-4018",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/21908643/",
+      "species": "Canine",
+      "topics": [
+        "Congenital Heart Disease",
+        "Echocardiography"
+      ],
+      "selected_journal": false,
+      "matched_authors": [
+        "Claudio Maria Bussadori"
+      ]
+    },
+    {
       "pmid": "21906985",
       "title": "Anaphylactic events observed within 4 h of ocular application of an antibiotic-containing ophthalmic preparation: 61 cats (1993-2010).",
       "authors_text": "Karen M Hume-Smith, Allyson D Groth, Mark Rishniw, Linda A Walter-Grimm, Signe J Plunkett, David J Maggs",
@@ -53548,7 +54070,9 @@
         "Echocardiography"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "Michele Borgarelli"
+      ]
     },
     {
       "pmid": "21985137",
@@ -53588,7 +54112,8 @@
       ],
       "selected_journal": true,
       "matched_authors": [
-        "Mark A. Oyama"
+        "Mark A. Oyama",
+        "John D. Bonagura"
       ]
     },
     {
@@ -53694,7 +54219,8 @@
       "selected_journal": true,
       "matched_authors": [
         "Brian A. Scansen",
-        "Joshua A. Stern"
+        "Joshua A. Stern",
+        "John D. Bonagura"
       ]
     },
     {
@@ -53835,7 +54361,8 @@
       ],
       "selected_journal": true,
       "matched_authors": [
-        "Jens Häggström"
+        "Jens Häggström",
+        "Michele Borgarelli"
       ]
     },
     {
@@ -54330,7 +54857,9 @@
         "Echocardiography"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "John D. Bonagura"
+      ]
     },
     {
       "pmid": "21529216",
@@ -54596,7 +55125,9 @@
         "ECG / Holter"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "Claudio Maria Bussadori"
+      ]
     },
     {
       "pmid": "21418322",
@@ -54640,7 +55171,9 @@
         "Pharmacology"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "John D. Bonagura"
+      ]
     },
     {
       "pmid": "21315672",
@@ -54800,7 +55333,9 @@
         "Intervention / Surgery"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "Claudio Maria Bussadori"
+      ]
     },
     {
       "pmid": "21277270",
@@ -54978,7 +55513,8 @@
       ],
       "selected_journal": true,
       "matched_authors": [
-        "Jens Häggström"
+        "Jens Häggström",
+        "Claudio Maria Bussadori"
       ]
     },
     {
@@ -55501,7 +56037,8 @@
       "selected_journal": false,
       "matched_authors": [
         "Jens Häggström",
-        "Roberto A. Santilli"
+        "Roberto A. Santilli",
+        "Michele Borgarelli"
       ]
     },
     {
@@ -55586,7 +56123,8 @@
       "selected_journal": true,
       "matched_authors": [
         "Brian A. Scansen",
-        "Joshua A. Stern"
+        "Joshua A. Stern",
+        "John D. Bonagura"
       ]
     },
     {
@@ -56074,7 +56612,8 @@
       ],
       "selected_journal": false,
       "matched_authors": [
-        "Jens Häggström"
+        "Jens Häggström",
+        "Michele Borgarelli"
       ]
     },
     {
@@ -56156,7 +56695,9 @@
         "ECG / Holter"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "John D. Bonagura"
+      ]
     },
     {
       "pmid": "20584637",
@@ -56374,6 +56915,28 @@
       "selected_journal": true,
       "matched_authors": [
         "Ashley B. Saunders"
+      ]
+    },
+    {
+      "pmid": "20424003",
+      "title": "Histologic characterization of dilated cardiomyopathy in Estrela mountain dogs.",
+      "authors_text": "L Lobo, J Carvalheira, N Canada, C Bussadori, J L Gomes, A M R Faustino",
+      "journal": "Veterinary pathology",
+      "publication_date": "2010-04-27",
+      "sort_date": "2010-04-27",
+      "abstract": "Dilated cardiomyopathy (DCM) is the second-most-important acquired cardiovascular disease in dogs (excluding heartworm disease in some geographic regions) and a major cause of morbidity and mortality in Estrela Mountain Dogs. The objective of this study is to describe the histologic features of DCM in Estrela Mountain Dogs, with special attention to the localization and quantification of attenuated wavy fibers (AWFs), fibrosis, and fatty infiltration. Myocardial samples from 10 areas were collected from the hearts of 10 dogs with DCM and 7 dogs without signs of cardiac disease-namely, the basal, middle, and apical portions of the free wall of both cardiac ventricles and the interventricular septum, as well as the left ventricular papillary muscle. In each sample, the presence or absence of AWFs was noted, and fatty infiltration and fibrosis were quantified. Fatty infiltration, fibrosis, and AWFs were observed in the myocardium of all dogs with DCM, in contrast to what has been described in other breeds. The left ventricular myocardium was the best tissue for diagnosis of DCM, based on these histologic features. The authors concluded that quantification of fibrosis and observation of AWFs in the left ventricular myocardium are useful in the histologic diagnosis of DCM in Estrela Mountain dogs.",
+      "doi": "10.1177/0300985810364511",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/20424003/",
+      "species": "Canine",
+      "topics": [
+        "Cardiomyopathy",
+        "Heartworm",
+        "Echocardiography"
+      ],
+      "selected_journal": false,
+      "matched_authors": [
+        "Claudio Maria Bussadori"
       ]
     },
     {
@@ -56978,7 +57541,9 @@
         "Pharmacology"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "John D. Bonagura"
+      ]
     },
     {
       "pmid": "21054533",
@@ -57016,6 +57581,26 @@
       ],
       "selected_journal": true,
       "matched_authors": []
+    },
+    {
+      "pmid": "20469555",
+      "title": "Noninvasive estimation of central venous pressure in anesthetized dogs by measurement of hepatic venous blood flow velocity and abdominal venous diameter.",
+      "authors_text": "Nathan C Nelson, Wm Tod Drost, Phillip Lerche, John D Bonagura",
+      "journal": "Veterinary radiology & ultrasound : the official journal of the American College of Veterinary Radiology and the International Veterinary Radiology Association",
+      "publication_date": "2010-01",
+      "sort_date": "2010-01-01",
+      "abstract": "Determination of central venous pressure (CVP) is relevant to patients with right heart disease, hypovolemia, and following intravenous fluid therapy. We hypothesized that changes in CVP in dogs could be predicted by measurements of hepatic vein diameter, caudal vena cava (CVC) diameter, and hepatic venous flow velocities. Nine healthy American Foxhounds were anesthetized. Following baseline recordings, intravenous fluids were administered to increase CVP. Volume administration created treatment periods with CVP ranges of 5, 10, 15, 20, and 25 mm Hg. Flow velocities in the right medial hepatic vein were recorded using pulsed wave Doppler ultrasound. Hepatic vein, CVC, and aorta diameters were determined with B-mode ultrasound. Variables were compared across the treatment periods by ANOVA for repeated measures. Relationships between CVP, Doppler, and B-mode variables were evaluated using Spearman's rank correlations, multiple linear regression, and repeated measures linear regression. The a-, S- and v-wave velocities were augmented significantly with volume loading. The best part (semipartial) correlation coefficients predicting increasing CVP were identified with v-wave velocity (0.823), S-wave velocity (-0.800), CVC diameter (0.855), and hepatic vein diameter (0.815). Multiple linear regression indicated that CVP in this study could be predicted best by a combination of CVC and hepatic vein diameter and the v-wave velocity (r = 0.928). Ultrasound imaging identified gallbladder and pancreatic edema consistently, likely related to acute volume loading. These findings may be applicable in the assessment of volume status, dogs with right heart disease, and during serial monitoring of dogs receiving fluid or diuretic therapy.",
+      "doi": "10.1111/j.1740-8261.2010.01668.x",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/20469555/",
+      "species": "Canine",
+      "topics": [
+        "Other Veterinary Medicine"
+      ],
+      "selected_journal": false,
+      "matched_authors": [
+        "John D. Bonagura"
+      ]
     },
     {
       "pmid": "20469550",
@@ -57278,7 +57863,8 @@
       ],
       "selected_journal": true,
       "matched_authors": [
-        "Jens Häggström"
+        "Jens Häggström",
+        "Michele Borgarelli"
       ]
     },
     {
@@ -57719,7 +58305,8 @@
       "selected_journal": true,
       "matched_authors": [
         "Virginia Luis Fuentes",
-        "Jens Häggström"
+        "Jens Häggström",
+        "John D. Bonagura"
       ]
     },
     {
@@ -57879,7 +58466,8 @@
       ],
       "selected_journal": true,
       "matched_authors": [
-        "Jens Häggström"
+        "Jens Häggström",
+        "Michele Borgarelli"
       ]
     },
     {
@@ -57900,7 +58488,9 @@
         "Echocardiography"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "John D. Bonagura"
+      ]
     },
     {
       "pmid": "19765215",
@@ -58121,7 +58711,9 @@
         "Echocardiography"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "Claudio Maria Bussadori"
+      ]
     },
     {
       "pmid": "19674279",
@@ -58283,7 +58875,8 @@
       ],
       "selected_journal": true,
       "matched_authors": [
-        "Brian A. Scansen"
+        "Brian A. Scansen",
+        "John D. Bonagura"
       ]
     },
     {
@@ -58437,6 +59030,26 @@
       ],
       "selected_journal": true,
       "matched_authors": []
+    },
+    {
+      "pmid": "19477704",
+      "title": "Analysis of weight uniformity, content uniformity and 30-day stability in halves and quarters of routinely prescribed cardiovascular medications.",
+      "authors_text": "Marco L Margiocco, Jamie Warren, Michele Borgarelli, Butch Kukanich",
+      "journal": "Journal of veterinary cardiology : the official journal of the European Society of Veterinary Cardiology",
+      "publication_date": "2009-05-28",
+      "sort_date": "2009-05-28",
+      "abstract": "OBJECTIVES: Congenital and acquired cardiac disorders are frequently diagnosed in small breed dogs and cats. In order to appropriately dose cardiovascular drugs for small patients, fractions of commercially available tablets must be prescribed. The aims of this study were to evaluate weight and content uniformity and 30-day chemical stability in halves and quarters of 11 drug formulations commonly prescribed to treat cardiovascular disorders in small breed dogs and cats.\nANIMALS, MATERIALS AND METHODS: Fifteen tablets from 11 drug formulations were obtained within the same lot. Tablets were split by a single operator using a commercially available pill splitter. Whole tablets, halves and quarters were weighed and stored in plastic containers. High-pressure liquid chromatography or liquid chromatography with mass spectrometry were utilized to determine drug content and repeated 30 days later to estimate chemical stability.\nRESULTS: Statistically significant weight variability, content non-uniformity and chemical degradation were found for some formulations. Digoxin showed a significant degradation that should be considered in clinical practice.\nCONCLUSIONS: It appears that pill splitting is overall a relatively reliable practice; however tablets should not be split ahead of time but only immediately prior to intended usage.",
+      "doi": "10.1016/j.jvc.2009.04.003",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/19477704/",
+      "species": "Both",
+      "topics": [
+        "Other Veterinary Medicine"
+      ],
+      "selected_journal": false,
+      "matched_authors": [
+        "Michele Borgarelli"
+      ]
     },
     {
       "pmid": "19473902",
@@ -58600,7 +59213,8 @@
       ],
       "selected_journal": true,
       "matched_authors": [
-        "Jens Häggström"
+        "Jens Häggström",
+        "Michele Borgarelli"
       ]
     },
     {
@@ -58725,7 +59339,8 @@
       "selected_journal": true,
       "matched_authors": [
         "Mark A. Oyama",
-        "N. Sydney Moïse"
+        "N. Sydney Moïse",
+        "John D. Bonagura"
       ]
     },
     {
@@ -59215,7 +59830,8 @@
       ],
       "selected_journal": true,
       "matched_authors": [
-        "Roberto A. Santilli"
+        "Roberto A. Santilli",
+        "Michele Borgarelli"
       ]
     },
     {
@@ -60129,7 +60745,8 @@
       "selected_journal": true,
       "matched_authors": [
         "Brian A. Scansen",
-        "Joshua A. Stern"
+        "Joshua A. Stern",
+        "John D. Bonagura"
       ]
     },
     {
@@ -60234,7 +60851,9 @@
       "matched_authors": [
         "Gerhard Wess",
         "Jens Häggström",
-        "Roberto A. Santilli"
+        "Roberto A. Santilli",
+        "Michele Borgarelli",
+        "Claudio Maria Bussadori"
       ]
     },
     {
@@ -60748,7 +61367,8 @@
       ],
       "selected_journal": true,
       "matched_authors": [
-        "Brian A. Scansen"
+        "Brian A. Scansen",
+        "John D. Bonagura"
       ]
     },
     {
@@ -60786,7 +61406,10 @@
         "Echocardiography"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "Michele Borgarelli",
+        "Claudio Maria Bussadori"
+      ]
     },
     {
       "pmid": "18394211",
@@ -60846,6 +61469,26 @@
       ],
       "selected_journal": true,
       "matched_authors": []
+    },
+    {
+      "pmid": "18402838",
+      "title": "Verrucoid lesions of mitral valve in a dog with features of inflammatory myofibroblastic tumor.",
+      "authors_text": "Massimiliano Tursi, Luca Garofalo, Maruska Muscio, Marco Galloni, Renato Zanatta, Michele Borgarelli, Angela Pucci",
+      "journal": "Cardiovascular pathology : the official journal of the Society for Cardiovascular Pathology",
+      "publication_date": "2008-03-04",
+      "sort_date": "2008-03-04",
+      "abstract": "We report a mitral valve lesion detected at autopsy in a 9-year-old male German Shepherd dog suffering from mild mitral regurgitation. Gross examination of the heart showed exophitic, noncontiguous lesions involving the atrial aspect of both mitral leaflets. Microscopic evaluation of the mitral lesions disclosed a diffuse proliferation of myofibroblasts with little atypia, arranged loosely and rather randomly, within a myxoid stroma and associated with inflammatory cells identified as CD138+ plasma cells, CD68+ macrophages, and eosinophils. The myofibroblastic proliferation we describe is quite similar to previously described inflammatory myofibroblastic tumor (IMT), a very rare lesion, exceptionally found in the human heart.",
+      "doi": "10.1016/j.carpath.2007.12.017",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/18402838/",
+      "species": "Canine",
+      "topics": [
+        "MMVD / Mitral Valve"
+      ],
+      "selected_journal": false,
+      "matched_authors": [
+        "Michele Borgarelli"
+      ]
     },
     {
       "pmid": "18366550",
@@ -61364,7 +62007,8 @@
       "selected_journal": true,
       "matched_authors": [
         "Jens Häggström",
-        "Roberto A. Santilli"
+        "Roberto A. Santilli",
+        "Michele Borgarelli"
       ]
     },
     {
@@ -61752,7 +62396,9 @@
       ],
       "selected_journal": true,
       "matched_authors": [
-        "Roberto A. Santilli"
+        "Roberto A. Santilli",
+        "Michele Borgarelli",
+        "Claudio Maria Bussadori"
       ]
     },
     {
@@ -61853,6 +62499,26 @@
       "matched_authors": []
     },
     {
+      "pmid": "17850280",
+      "title": "Migration of a Kirschner wire to the heart in a Yorkshire terrier.",
+      "authors_text": "S Crosara, S Zabarino, E Morello, S Iussich, P Buracco, M Borgarelli",
+      "journal": "The Journal of small animal practice",
+      "publication_date": "2007-09-07",
+      "sort_date": "2007-09-07",
+      "abstract": "A 12-year-old, male Yorkshire terrier was presented for acute pulmonary oedema. Thoracic radiographs showed a linear metallic foreign body within the cardiac silhouette. Echocardiogram showed a hyperechoic line extending through the left ventricle, the mitral valve, leading into the left atrium. A 4 cm long Kirschner wire was surgically removed by left fourth thoracotomy. The dog died two days after surgery for acute pulmonary oedema. Necropsy showed thrombi on the mitral leaflets that impeded their movement.",
+      "doi": "10.1111/j.1748-5827.2007.00426.x",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/17850280/",
+      "species": "Canine",
+      "topics": [
+        "MMVD / Mitral Valve"
+      ],
+      "selected_journal": false,
+      "matched_authors": [
+        "Michele Borgarelli"
+      ]
+    },
+    {
       "pmid": "17766157",
       "title": "Radiographic measurement of vertebral heart size in healthy stray cats.",
       "authors_text": "Alireza Ghadiri, Reza Avizeh, Abdolrahman Rasekh, Ali Yadegari",
@@ -61949,6 +62615,30 @@
       "selected_journal": true,
       "matched_authors": [
         "Jens Häggström"
+      ]
+    },
+    {
+      "pmid": "17884106",
+      "title": "Chronic cardiac resynchronization therapy and reverse ventricular remodeling in a model of nonischemic cardiomyopathy.",
+      "authors_text": "Yoshinori Nishijima, Arun Sridhar, Serge Viatchenko-Karpinski, Courtney Shaw, John D Bonagura, William T Abraham, Mandar S Joshi, John Anthony Bauer, Robert L Hamlin, Sandor Györke, David S Feldman, Cynthia A Carnes",
+      "journal": "Life sciences",
+      "publication_date": "2007-08-30",
+      "sort_date": "2007-08-30",
+      "abstract": "While cardiac resynchronization therapy (CRT) has been shown to reduce morbidity and mortality in heart failure (HF) patients, the fundamental mechanisms for the efficacy of CRT are poorly understood. The lack of understanding of these basic mechanisms represents a significant barrier to our understanding of the pathogenesis of HF and potential recovery mechanisms. Our purpose was to determine cellular mechanisms for the observed improvement in chronic HF after CRT. We used a canine model of chronic nonischemic cardiomyopathy. After 15 months, dogs were randomized to continued RV tachypacing (untreated HF) or CRT for an additional 9 months. Six minute walk tests, echocardiograms, and electrocardiograms were done to assess the functional response to therapy. Left ventricular (LV) midmyocardial myocytes were isolated to study electrophysiology and intracellular calcium regulation. Compared to untreated HF, CRT improved HF-induced increases in LV volumes, diameters and mass (p<0.05). CRT reversed HF-induced prolongations in LV myocyte repolarization (p<0.05) and normalized HF-induced depolarization (p<0.03) of the resting membrane potential. CRT improved HF-induced reductions in calcium (p<0.05). CRT did not attenuate the HF-induced increases in LV interstitial fibrosis. Using a translational approach in a chronic HF model, CRT significantly improved LV structure; this was accompanied by improved LV myocyte electrophysiology and calcium regulation. The beneficial effects of CRT may be attributable, in part, to improved LV myocyte function.",
+      "doi": "10.1016/j.lfs.2007.08.022",
+      "pmcid": "PMC2080080",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/17884106/",
+      "species": "Canine",
+      "topics": [
+        "Cardiomyopathy",
+        "Arrhythmia",
+        "Heart Failure",
+        "Echocardiography",
+        "ECG / Holter"
+      ],
+      "selected_journal": false,
+      "matched_authors": [
+        "John D. Bonagura"
       ]
     },
     {
@@ -62081,7 +62771,9 @@
         "Echocardiography"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "Claudio Maria Bussadori"
+      ]
     },
     {
       "pmid": "17765621",
@@ -62226,6 +62918,26 @@
       ]
     },
     {
+      "pmid": "17466545",
+      "title": "Transvenous coil embolisation for the treatment of single congenital portosystemic shunts in six dogs.",
+      "authors_text": "Roberto Bussadori, Claudio Bussadori, Lorena Millán, Serafín Costilla, José Antonio Rodríguez-Altónaga, María Asunción Orden, José Manuel Gonzalo-Orden",
+      "journal": "Veterinary journal (London, England : 1997)",
+      "publication_date": "2007-04-26",
+      "sort_date": "2007-04-26",
+      "abstract": "This article describes the treatment of single congenital portosystemic shunts (CPSs) (intrahepatic and extrahepatic) using an interventional radiology technique involving embolisation of anomalous vessels with percutaneous coils. Briefly, a multipurpose catheter was introduced into the caudal vena cava and then into the portosystemic shunt. An autoexpandable stent was placed in the caudal vena cava, next to the shunt, in order to avoid coil migrations, and a cobra-like vascular catheter was used to pass through the stent and to place the coils in the shunt. This technique was used for treatment of CPS in six dogs. The results indicate that percutaneous embolisation of a CPS using coils, a less invasive technique than the traditional surgical technique, may result in complete closure of the anomalous vessel without development of portal hypertension.",
+      "doi": "10.1016/j.tvjl.2007.02.027",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/17466545/",
+      "species": "Canine",
+      "topics": [
+        "Other Veterinary Medicine"
+      ],
+      "selected_journal": false,
+      "matched_authors": [
+        "Claudio Maria Bussadori"
+      ]
+    },
+    {
       "pmid": "17689467",
       "title": "Increased chymase-like activity in a dog with congenital pulmonic stenosis.",
       "authors_text": "Yoko Fujii, Tsuyoshi Yamane, Kensuke Orito, Kaori Osamura, Yoshito Wakao",
@@ -62360,7 +63072,8 @@
       ],
       "selected_journal": true,
       "matched_authors": [
-        "Jens Häggström"
+        "Jens Häggström",
+        "Claudio Maria Bussadori"
       ]
     },
     {
@@ -62538,7 +63251,9 @@
         "Intervention / Surgery"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "Claudio Maria Bussadori"
+      ]
     },
     {
       "pmid": "18196738",
@@ -63111,7 +63826,8 @@
       ],
       "selected_journal": true,
       "matched_authors": [
-        "Kathryn M. Meurs"
+        "Kathryn M. Meurs",
+        "John D. Bonagura"
       ]
     },
     {
@@ -63155,7 +63871,8 @@
       ],
       "selected_journal": true,
       "matched_authors": [
-        "Jens Häggström"
+        "Jens Häggström",
+        "Michele Borgarelli"
       ]
     },
     {
@@ -63298,7 +64015,8 @@
       "selected_journal": true,
       "matched_authors": [
         "Kathryn M. Meurs",
-        "Ashley B. Saunders"
+        "Ashley B. Saunders",
+        "John D. Bonagura"
       ]
     },
     {
@@ -63796,6 +64514,26 @@
       ],
       "selected_journal": true,
       "matched_authors": []
+    },
+    {
+      "pmid": "16669860",
+      "title": "Pharmacokinetics of the calcium-channel blocker diltiazem after a single intravenous dose in horses.",
+      "authors_text": "C C Schwarzwald, R A Sams, J D Bonagura",
+      "journal": "Journal of veterinary pharmacology and therapeutics",
+      "publication_date": "2006-06",
+      "sort_date": "2006-06-01",
+      "abstract": "The pharmacokinetics of diltiazem were determined in eight healthy horses. Diltiazem HCl, 1 mg/kg i.v., was administered over 5 min. Venous blood samples were collected at regular intervals after administration. Plasma concentrations of diltiazem and desacetyldiltiazem were determined by high-performance liquid chromatography. A second, putative metabolite was detected, but could not be identified due to the lack of an authentic standard. Data were analyzed by nonlinear least-squares regression analysis. The median (minimum-maximum) peak plasma concentration of diltiazem was 727 (539-976) ng/mL. Plasma diltiazem concentration vs. time data were best described by a two-compartment model with first-order drug elimination. The distribution half-life was 12 (6-23) min, the terminal half-life was 93 (73-161) min, the mean residence time was 125 (99-206) min, total plasma clearance was 14.4 (10.4-18.6) mL/kg/min, and the volume of distribution at steady-state was 1.84 (1.46-2.51) L/kg. The normalized ratio of the area under the curve (AUC) of desacetyldiltiazem to the AUC of diltiazem was 0.088 (0.062-0.179). The disposition of diltiazem in horses was characterized by rapid distribution and elimination and a terminal half-life shorter than reported in humans and dogs. Because of the reported low pharmacologic activity, plasma diltiazem metabolite concentrations were not considered clinically important.",
+      "doi": "10.1111/j.1365-2885.2006.00733.x",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/16669860/",
+      "species": "Canine",
+      "topics": [
+        "Other Veterinary Medicine"
+      ],
+      "selected_journal": false,
+      "matched_authors": [
+        "John D. Bonagura"
+      ]
     },
     {
       "pmid": "16733711",
@@ -64427,7 +65165,8 @@
       ],
       "selected_journal": true,
       "matched_authors": [
-        "Kathryn M. Meurs"
+        "Kathryn M. Meurs",
+        "John D. Bonagura"
       ]
     },
     {
@@ -64586,6 +65325,26 @@
       "matched_authors": []
     },
     {
+      "pmid": "16822763",
+      "title": "Clinical efficacy of pimobendan versus benazepril for the treatment of acquired atrioventricular valvular disease in dogs.",
+      "authors_text": "Christophe W Lombard, Olaf Jöns, Claudio M Bussadori",
+      "journal": "Journal of the American Animal Hospital Association",
+      "publication_date": "2006-01",
+      "sort_date": "2006-01-01",
+      "abstract": "Seventy-six dogs with clinical acquired atrioventricular valvular disease were evaluated to determine the efficacy of pimobendan (n=41) versus benazepril hydrochloride (n=35) in a randomized, positive-controlled, multicenter study. The study was divided into 56-day and long-term evaluation periods. In a subgroup of dogs with concurrent furosemide treatment (pimobendan [n=31], benazepril [n=25]), the Heart Insufficiency Score improved in favor of pimobendan (P=0.0011), equating to a superior overall efficacy rating (P<0.0001) at day 56. Long-term median survival (i.e., death or treatment failure) for dogs receiving pimobendan was 415 days versus 128 days for dogs not on pimobendan (P=0.0022).",
+      "doi": "10.5326/0420249",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/16822763/",
+      "species": "Canine",
+      "topics": [
+        "Pharmacology"
+      ],
+      "selected_journal": false,
+      "matched_authors": [
+        "Claudio Maria Bussadori"
+      ]
+    },
+    {
       "pmid": "16734109",
       "title": "Left ventricular outflow tract obstruction secondary to hemangiosarcoma in a dog.",
       "authors_text": "Maria Josefa Fernández-del Palacio, Jesús Talavera López, Alejandro Bayón del Río, Juan Seva Alcaraz, Francisco J Pallarés, Carlos M Martinez",
@@ -64697,7 +65456,9 @@
         "Echocardiography"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "Claudio Maria Bussadori"
+      ]
     },
     {
       "pmid": "16700182",
@@ -64862,7 +65623,8 @@
       ],
       "selected_journal": true,
       "matched_authors": [
-        "Roberto A. Santilli"
+        "Roberto A. Santilli",
+        "Michele Borgarelli"
       ]
     },
     {
@@ -65309,6 +66071,31 @@
       ]
     },
     {
+      "pmid": "16230269",
+      "title": "Canine nonischemic left ventricular dysfunction: a model of chronic human cardiomyopathy.",
+      "authors_text": "Yoshinori Nishijima, David S Feldman, John D Bonagura, Yunusemre Ozkanlar, Paula J Jenkins, Veronique A Lacombe, William T Abraham, Robert L Hamlin, Cynthia A Carnes",
+      "journal": "Journal of cardiac failure",
+      "publication_date": "2005-10",
+      "sort_date": "2005-10-01",
+      "abstract": "BACKGROUND: The mechanisms of cardiac remodeling during chronic heart failure remain poorly defined. We sought to advance a chronic canine model of nonischemic cardiomyopathy.\nMETHODS AND RESULTS: Male dogs (n = 6) received decremental right ventricular apical tachypacing (12 months) to achieve and maintain stable left ventricular (LV) dysfunction. After 10 months of tachypacing, 120 beats/min was sufficient to maintain stable LV dysfunction. Electrocardiography, echocardiography, and tissue Doppler imaging were done to evaluate electrophysiology, LV dimensions and function, and dyssynchrony during normal sinus rhythm. The 6-minute walk test was used to evaluate functional capacity. We observed increases in both QRS duration (P < .0001) and QRS amplitude (P < .0001). LV fractional shortening was reduced from a baseline of 38.0 +/- 1.4% to 11.2 +/- 1.4% (P < .0001). LV end-diastolic dimension increased from 3.8 +/- 0.1 cm at baseline to 5.3 +/- 0.3 cm (P < .0001); LV end-systolic dimension increased from 2.3 +/- 0.1 cm to 4.7 +/- 0.2 cm (P < .0001). LV mass increased from 85.9 +/- 3.5 g at baseline to 179 +/- 13.7 g (P < .0001). There was evidence of LV dyssynchrony (P < .04) during both normal sinus rhythm and right ventricular tachypacing, compared with control dogs. The distance a dog walked in 6 minutes was significantly less at 12 months compared with normal controls (540 +/- 32 m versus 277 +/- 64 m, P < .008).\nCONCLUSION: This nonischemic model of canine cardiomyopathy reproduces many aspects of chronic human heart failure including reduced fractional shortening, dilated ventricular dimensions, increased LV mass, decreased functional capacity, and dyssynchrony.",
+      "doi": "10.1016/j.cardfail.2005.05.006",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/16230269/",
+      "species": "Canine",
+      "topics": [
+        "Cardiomyopathy",
+        "Arrhythmia",
+        "Heart Failure",
+        "Echocardiography",
+        "ECG / Holter",
+        "Biomarkers"
+      ],
+      "selected_journal": false,
+      "matched_authors": [
+        "John D. Bonagura"
+      ]
+    },
+    {
       "pmid": "16261827",
       "title": "Pulmonary arterial disease in cats seropositive for Dirofilaria immitis but lacking adult heartworms in the heart and lungs.",
       "authors_text": "Leanne E Browne, Todd D Carter, Julie K Levy, Patti S Snyder, Calvin M Johnson",
@@ -65439,7 +66226,8 @@
       ],
       "selected_journal": true,
       "matched_authors": [
-        "Kathryn M. Meurs"
+        "Kathryn M. Meurs",
+        "John D. Bonagura"
       ]
     },
     {
@@ -65580,6 +66368,26 @@
       ],
       "selected_journal": true,
       "matched_authors": []
+    },
+    {
+      "pmid": "15917711",
+      "title": "The implantation of a permanent transvenous endocardial pacemaker in 42 dogs: a retrospective study.",
+      "authors_text": "Oriol Domenech, Roberto Santilli, Danitza Pradelli, Claudio Bussadori",
+      "journal": "Medical science monitor : international medical journal of experimental and clinical research",
+      "publication_date": "2005-05-25",
+      "sort_date": "2005-05-25",
+      "abstract": "BACKGROUND: The primary indication for pacemaker therapy in dogs and cats is symptomatic bradyarrhythmia that does not respond to medical treatment. Different techniques have been used for pacemaker implantation since 1968. Transvenous endocardial pacemaker implantation is a minimally invasive method and represents the first choice of treatment for this type of arrhythmia.\nMATERIAL/METHODS: The authors reviewed retrospectively the indications, efficacy, complications, and long-term outcome in 42 cases of transvenous endocardial pacemaker implantation in dogs.\nRESULTS: Complications which required a second intervention occurred in 10 dogs (23.8%), while complications that did not require another procedure occurred in 5 dogs (11.9%). Two of the 42 patients died due to the pacemaker implantation (mortality: 4.76%). The mean survival age of those patients with a pacemaker that survived the procedure was 11.4 years.\nCONCLUSIONS: The life expectancy of our patients carrying a pacemaker was higher than the general life expectancy published in a study on a large population of dogs. The low mortality rate and long life expectancy of dogs treated makes transvenous pacemaker implantation an efficacious and safe alternative for treatment of those bradyarrhythmias that do not respond to medical therapy.",
+      "doi": "",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/15917711/",
+      "species": "Both",
+      "topics": [
+        "Arrhythmia"
+      ],
+      "selected_journal": false,
+      "matched_authors": [
+        "Claudio Maria Bussadori"
+      ]
     },
     {
       "pmid": "19083320",
@@ -65857,7 +66665,8 @@
       "selected_journal": true,
       "matched_authors": [
         "Virginia Luis Fuentes",
-        "Kathryn M. Meurs"
+        "Kathryn M. Meurs",
+        "John D. Bonagura"
       ]
     },
     {
@@ -66207,7 +67016,8 @@
       ],
       "selected_journal": true,
       "matched_authors": [
-        "Kathryn M. Meurs"
+        "Kathryn M. Meurs",
+        "John D. Bonagura"
       ]
     },
     {
@@ -66487,6 +67297,26 @@
       "matched_authors": []
     },
     {
+      "pmid": "15634864",
+      "title": "Percutaneous drainage and alcoholization of hepatic abscesses in five dogs and a cat.",
+      "authors_text": "Andrea Zatelli, Ugo Bonfanti, Eric Zini, Paola D'Ippolito, Claudio Bussadori",
+      "journal": "Journal of the American Animal Hospital Association",
+      "publication_date": "2005-01",
+      "sort_date": "2005-01-01",
+      "abstract": "Hepatic abscesses are rare and difficult to diagnose in dogs and cats. Ultrasonographic examination is essential to thoroughly examine hepatic abnormalities, and it may also help in the localization of hepatic abscesses. In this retrospective study, five dogs and one cat with focal hepatic lesions compatible with a hepatic abscess were treated with percutaneous ultrasound-assisted drainage and alcoholization using 95% ethanol. The procedure was performed rapidly under injectable anesthesia and provided excellent results in all animals. No complications or relapses were noted for 120 days following the procedure. The technique of percutaneous ultrasound-assisted drainage and alcoholization of hepatic abscesses in the dog and cat is also described.",
+      "doi": "10.5326/0410034",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/15634864/",
+      "species": "Both",
+      "topics": [
+        "Other Veterinary Medicine"
+      ],
+      "selected_journal": false,
+      "matched_authors": [
+        "Claudio Maria Bussadori"
+      ]
+    },
+    {
       "pmid": "15643837",
       "title": "Use of tissue Doppler imaging to confirm the diagnosis of dilated cardiomyopathy in a dog with equivocal echocardiographic findings.",
       "authors_text": "Valérie Chetboul, Carolina Carlos Sampedrano, Isabelle Testault, Jean-Louis Pouchelon",
@@ -66565,7 +67395,8 @@
       "selected_journal": true,
       "matched_authors": [
         "Jens Häggström",
-        "Roberto A. Santilli"
+        "Roberto A. Santilli",
+        "Michele Borgarelli"
       ]
     },
     {
@@ -66911,6 +67742,27 @@
       ]
     },
     {
+      "pmid": "15373003",
+      "title": "Serum values of cardiac troponin-T in normal and cardiomyopathic dogs.",
+      "authors_text": "A Tarducci, O Abate, M Borgarelli, A Borrelli, R Zanatta, A Cagnasso",
+      "journal": "Veterinary research communications",
+      "publication_date": "2004-08",
+      "sort_date": "2004-08-01",
+      "abstract": "",
+      "doi": "10.1023/b:verc.0000045451.89851.9d",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/15373003/",
+      "species": "Canine",
+      "topics": [
+        "Cardiomyopathy",
+        "Biomarkers"
+      ],
+      "selected_journal": false,
+      "matched_authors": [
+        "Michele Borgarelli"
+      ]
+    },
+    {
       "pmid": "15328713",
       "title": "Assessment of the prevalence of heart murmurs in overtly healthy cats.",
       "authors_text": "Etienne Côté, Ann Marie Manning, Dawn Emerson, Nancy J Laste, Rebecca L Malakoff, Neil K Harpster",
@@ -67010,6 +67862,26 @@
       "matched_authors": []
     },
     {
+      "pmid": "15198211",
+      "title": "Pulsed-wave Doppler ultrasonographic evaluation of hepatic veins during variable hemodynamic states in healthy anesthetized dogs.",
+      "authors_text": "Bryan Todd Smithenson, John S Mattoon, John D Bonagura, Eric J Abrahamsen, William Tod Drost",
+      "journal": "American journal of veterinary research",
+      "publication_date": "2004-06",
+      "sort_date": "2004-06-01",
+      "abstract": "OBJECTIVES: To quantify direction and velocity of blood flow in hepatic veins in dogs under different hemodynamic conditions by use of pulsed-wave Doppler ultrasonography.\nANIMALS: 10 healthy dogs.\nPROCEDURE: Dogs were anesthetized, and venous flow velocities in the quadrate lobe were measured. Arterial blood pressure, right atrial pressure, pulmonary artery pressure, and cardiac output were measured simultaneously. The timing of each waveform during the cardiac cycle was used to identify velocity profiles. Peak waveform velocities were measured during conditions of light anesthesia with isoflurane (baseline; period 1), cardiovascular depression following administration of high-dose isoflurane and esmolol i.v. (period 2), cardiovascular depression with crystalloid volume expansion (period 3), and high cardiac output induced with dobutamine (period 4). Hemodynamic measurements and maximum waveform velocities were compared among the 4 periods by use of an ANOVA and univariate and multivariate linear regression.\nRESULTS: During each study period, 4 distinct, low-velocity waves were identified. Mean velocities recorded during period 1 were as follows: retrograde atrial contraction a-wave, 7.3 cm/s; antegrade systolic S-wave, 15.0 cm/s; retrograde venous return v-wave, 2.7 cm/s; and antegrade diastolic D-wave, 11.4 cm/s. Mean S:D ratio was 1.27. During periods 3 and 4, S-wave velocity increased; D-wave velocity was highest during period 4.\nCONCLUSIONS AND CLINICAL RELEVANCE: Consistent hepatic venous velocity profiles were observed in healthy dogs under different hemodynamic conditions. These findings provide baseline values that may be useful in evaluating clinical cases, but further study involving healthy, awake dogs and dogs with cardiac and hepatic diseases is required.",
+      "doi": "10.2460/ajvr.2004.65.734",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/15198211/",
+      "species": "Canine",
+      "topics": [
+        "Echocardiography"
+      ],
+      "selected_journal": true,
+      "matched_authors": [
+        "John D. Bonagura"
+      ]
+    },
+    {
       "pmid": "15154725",
       "title": "ECG of the month. Pulmonic stenosis.",
       "authors_text": "Robert J Vasilopulos",
@@ -67107,7 +67979,9 @@
         "Pharmacology"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "Claudio Maria Bussadori"
+      ]
     },
     {
       "pmid": "15163048",
@@ -67207,6 +68081,26 @@
       "matched_authors": []
     },
     {
+      "pmid": "15116887",
+      "title": "Percutaneous fine-needle biopsy of deep thoracic and abdominal masses in dogs and cats.",
+      "authors_text": "U Bonfanti, C Bussadori, A Zatelli, D De Lorenzi, C Masserdotti, W Bertazzolo, S Faverzani, G Ghisleni, R Capobianco, M Caniatti",
+      "journal": "The Journal of small animal practice",
+      "publication_date": "2004-04",
+      "sort_date": "2004-04-01",
+      "abstract": "Percutaneous fine-needle biopsy was used to investigate thoracic and abdominal masses in the dog and cat. One hundred and thirty-two cases were included in the study; 20 cases were excluded from the comparative study due to poor cellularity or blood contamination (retrieval rate 86.8 per cent). One hundred samples (56 dogs and 44 cats) were classified by cytology as neoplastic. All the cytological diagnoses of neoplasia were confirmed by histological samples obtained either by non-surgical methods, at surgery or during postmortem examination. No false positive diagnoses of neoplasia were made. Thirty-two samples were cytologically classified as 'negative for neoplasia'. Subsequent histological examination revealed 18 true negative and 14 false negative results. The procedure had an overall 89.4 per cent (118 cases out of 132) agreement between the diagnosis of inflammatory disease versus neoplasia, with a sensitivity of 87.8 per cent, a specificity of 100 per cent, a predictive value of a positive test of 100 per cent and a predictive value of a negative test of 56.3 per cent.",
+      "doi": "10.1111/j.1748-5827.2004.tb00223.x",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/15116887/",
+      "species": "Both",
+      "topics": [
+        "Other Veterinary Medicine"
+      ],
+      "selected_journal": false,
+      "matched_authors": [
+        "Claudio Maria Bussadori"
+      ]
+    },
+    {
       "pmid": "15116885",
       "title": "Low intensity heart murmurs in boxer dogs: inter-observer variation and effects of stress testing.",
       "authors_text": "K Höglund, A French, J Dukes-McEwan, J Häggström, P Smith, B Corcoran, C Kvart",
@@ -67244,6 +68138,27 @@
       ],
       "selected_journal": true,
       "matched_authors": []
+    },
+    {
+      "pmid": "15010225",
+      "title": "Blood lymphocyte subsets in canine idiopathic pericardial effusion.",
+      "authors_text": "R Guglielmino, B Miniscalco, A Tarducci, M Borgarelli, F Riondato, E Zini, A Borrelli, C Bussadori",
+      "journal": "Veterinary immunology and immunopathology",
+      "publication_date": "2004-04",
+      "sort_date": "2004-04-01",
+      "abstract": "The immunophenotype of peripheral blood lymphocytes was investigated in 23 dogs diagnosed with idiopathic pericardial effusion in order to provide information about a possible role of the immune system in this pathology. Flow cytometric analysis showed a significant reduction in nearly all lymphocyte subsets examined and a strong, significant (P < 0.001) reduction of the CD4 subset, which gave rise to a significantly lower CD4/CD8 ratio. Our data suggest that an imbalance in the immune system is present during the course of the disease, preferentially affecting the T helper cell response.",
+      "doi": "10.1016/j.vetimm.2003.12.003",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/15010225/",
+      "species": "Canine",
+      "topics": [
+        "Pericardial Disease"
+      ],
+      "selected_journal": false,
+      "matched_authors": [
+        "Michele Borgarelli",
+        "Claudio Maria Bussadori"
+      ]
     },
     {
       "pmid": "15049573",
@@ -68064,7 +68979,8 @@
       ],
       "selected_journal": true,
       "matched_authors": [
-        "Jens Häggström"
+        "Jens Häggström",
+        "Michele Borgarelli"
       ]
     },
     {
@@ -68142,6 +69058,27 @@
       ],
       "selected_journal": true,
       "matched_authors": []
+    },
+    {
+      "pmid": "14550737",
+      "title": "Echo-assisted percutaneous renal biopsy in dogs. A retrospective study of 229 cases.",
+      "authors_text": "Andrea Zatelli, Ugo Bonfanti, Roberto Santilli, Michele Borgarelli, Claudio Bussadori",
+      "journal": "Veterinary journal (London, England : 1997)",
+      "publication_date": "2003-11",
+      "sort_date": "2003-11-01",
+      "abstract": "Renal biopsies were carried out on 229 dogs using an echo-assisted, semi-automatic method. Complications arising after the biopsy were also evaluated. The biopsies were examined for the accuracy of diagnosis and the presence of histologically demonstrable primary renal pathologies. A retrospective study of the observed lesions and parenchymal echogenicity showed a correlation between these factors involving the tubulo-interstitial compartment. Histopathological renal lesions and their correlation with laboratory methods are the only parameters that allow a correct diagnostic, prognostic, and therapeutic work-up in cases of clinical kidney disease in canines.",
+      "doi": "10.1016/s1090-0233(03)00023-6",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/14550737/",
+      "species": "Canine",
+      "topics": [
+        "Other Veterinary Medicine"
+      ],
+      "selected_journal": false,
+      "matched_authors": [
+        "Michele Borgarelli",
+        "Claudio Maria Bussadori"
+      ]
     },
     {
       "pmid": "14584743",
@@ -68241,6 +69178,48 @@
       ],
       "selected_journal": true,
       "matched_authors": []
+    },
+    {
+      "pmid": "14535525",
+      "title": "Asymptomatic dilated cardiomyopathy in Great Danes: clinical, electrocardiographic, echocardiographic and echo-Doppler features.",
+      "authors_text": "A Tarducci, M Borgarelli, R Zanatta, A Cagnasso",
+      "journal": "Veterinary research communications",
+      "publication_date": "2003-09",
+      "sort_date": "2003-09-01",
+      "abstract": "",
+      "doi": "10.1023/b:verc.0000014275.18697.18",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/14535525/",
+      "species": "Canine",
+      "topics": [
+        "Cardiomyopathy",
+        "Echocardiography",
+        "ECG / Holter"
+      ],
+      "selected_journal": false,
+      "matched_authors": [
+        "Michele Borgarelli"
+      ]
+    },
+    {
+      "pmid": "14535522",
+      "title": "Tumour thrombus: direct endoluminal 'caudal caval vein-right atrium' extension in a dog affected by adrenal neoplasia.",
+      "authors_text": "D Pradelli, C Quintavalla, O Domenech, C Bussadori",
+      "journal": "Veterinary research communications",
+      "publication_date": "2003-09",
+      "sort_date": "2003-09-01",
+      "abstract": "",
+      "doi": "10.1023/b:verc.0000014272.65194.0f",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/14535522/",
+      "species": "Canine",
+      "topics": [
+        "Other Veterinary Medicine"
+      ],
+      "selected_journal": false,
+      "matched_authors": [
+        "Claudio Maria Bussadori"
+      ]
     },
     {
       "pmid": "12939224",
@@ -68584,6 +69563,26 @@
       ]
     },
     {
+      "pmid": "12755294",
+      "title": "Glomerular lesions in dogs infected with Leishmania organisms.",
+      "authors_text": "Andrea Zatelli, Michele Borgarelli, Roberto Santilli, Ugo Bonfanti, Evandro Nigrisoli, Renato Zanatta, Alberto Tarducci, Aurelio Guarraci",
+      "journal": "American journal of veterinary research",
+      "publication_date": "2003-05",
+      "sort_date": "2003-05-01",
+      "abstract": "OBJECTIVE: To histologically identify glomerular lesions in dogs infected with Leishmania organisms.\nANIMALS: 41 dogs (17 sexually intact males and 14 sexually intact and 10 ovariohysterectomized females) that had positive results when tested for leishmaniosis as determined by use of serologic evaluation (indirect fluorescent antibody test, titers of 1:80 to 1:640) and direct microscopic identification of the protozoal organisms.\nPROCEDURE: Urine samples were collected by use of cystocentesis and examined by qualitative SDS-agarose gel electrophoresis (AGE). All dogs had non-selective (glomerular) or mixed (glomerular and tubular) proteinemia. Specimens were obtained from each dog during ultrasound-assisted renal biopsy and used for histologic examination. Each specimen was stained with H&E, periodic acid-Schiff, Goldner's trichrome, methenamine silver, and Congo Red stains. Specimens were adequate for evaluation when they contained at least 5 glomeruli/section, except for specimens stained with Congo Red in which 1 glomerulus/section was adequate.\nRESULTS: Examination of renal biopsy specimens revealed various glomerular lesions in all dogs and interstitial or tubular (or both) lesions in 23 of 41 (55%) dogs.\nCONCLUSIONS AND CLINICAL RELEVANCE: Glomerular lesions that develop in dogs during infection with Leishmania organisms can be classified histologically as mesangial glomerulonephritis, membranous glomerulonephritis, membranoproliferative glomerulonephritis, and focal segmental glomerulonephritis. Tubulointerstitial histopathologic conditions were not observed as the primary lesion, despite being evident in 23 of 41 (55%) dogs. Use of SDS-AGE for qualitative evaluation of proteinuria and successive collection of specimens during renal biopsies following diagnosis of nonselective glomerular proteinuria provides the possibility for early identification of renal lesions.",
+      "doi": "10.2460/ajvr.2003.64.558",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/12755294/",
+      "species": "Canine",
+      "topics": [
+        "Other Veterinary Medicine"
+      ],
+      "selected_journal": false,
+      "matched_authors": [
+        "Michele Borgarelli"
+      ]
+    },
+    {
       "pmid": "12725308",
       "title": "Comparison of results of three commercial heartworm antigen test kits in dogs with low heartworm burdens.",
       "authors_text": "Clarke E Atkins",
@@ -68751,7 +69750,8 @@
       ],
       "selected_journal": true,
       "matched_authors": [
-        "Kathryn M. Meurs"
+        "Kathryn M. Meurs",
+        "John D. Bonagura"
       ]
     },
     {
@@ -69430,7 +70430,9 @@
         "Echocardiography"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "John D. Bonagura"
+      ]
     },
     {
       "pmid": "12489744",
@@ -69487,7 +70489,9 @@
         "Intervention / Surgery"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "Claudio Maria Bussadori"
+      ]
     },
     {
       "pmid": "19081348",
@@ -69763,7 +70767,9 @@
         "Echocardiography"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "Claudio Maria Bussadori"
+      ]
     },
     {
       "pmid": "12061526",
@@ -70596,6 +71602,26 @@
       "matched_authors": []
     },
     {
+      "pmid": "11786946",
+      "title": "Transthoracic defibrillation of dogs with Edmark, biphasic, and quadriphasic waveforms.",
+      "authors_text": "Wayne C McDaniel, Thomas Magin, Richard W Madsen, John D Bonagura, John C Schuder, Jack J Curtis",
+      "journal": "Journal of electrocardiology",
+      "publication_date": "2002-01",
+      "sort_date": "2002-01-01",
+      "abstract": "Patients with high transthoracic impedance are reported to be at higher risk of poor outcomes when treated by present defibrillators. This study evaluates the defibrillation efficacy of biphasic truncated exponential (BTE), quadriphasic truncated exponential (QTE), and Edmark waveforms at simulated low, average, and high impedance levels. Waveforms were tested at 2 energy levels in random order in anesthetized dogs (n = 15, 16.9 +/- 1.2 kg), and a supplemental study estimated the ED50 peak current for BTE and QTE at a simulated high impedance level. Overall, BTE and QTE were equivalent, and both were superior to Edmark at equal delivered energies (P<.0001). However, in simulated high impedance patients at 24 J, QTE was superior to BTE (71% vs. 49%, P =.011 (borderline significance-see text)). Supplemental study, QTE mean ED50 peak current was lower than BTE (7.9 vs. 8.9 A, P =.0049). QTE and BTE waveforms were superior to Edmark at all studied conditions, but QTE appears to be superior to BTE in simulated high impedance patients.",
+      "doi": "10.1054/jelc.2002.30701",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/11786946/",
+      "species": "Canine",
+      "topics": [
+        "ECG / Holter"
+      ],
+      "selected_journal": false,
+      "matched_authors": [
+        "John D. Bonagura"
+      ]
+    },
+    {
       "pmid": "11791770",
       "title": "What is your diagnosis? Heart base tumour, probably a chemodectoma, with secondary pericardial effusion and cardiac tamponade.",
       "authors_text": "Y L McGrotty",
@@ -70688,7 +71714,9 @@
         "Echocardiography"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "Claudio Maria Bussadori"
+      ]
     },
     {
       "pmid": "11765236",
@@ -70804,7 +71832,8 @@
       ],
       "selected_journal": true,
       "matched_authors": [
-        "Jens Häggström"
+        "Jens Häggström",
+        "Michele Borgarelli"
       ]
     },
     {
@@ -71002,7 +72031,8 @@
       ],
       "selected_journal": true,
       "matched_authors": [
-        "Jens Häggström"
+        "Jens Häggström",
+        "Michele Borgarelli"
       ]
     },
     {
@@ -71386,7 +72416,8 @@
       ],
       "selected_journal": false,
       "matched_authors": [
-        "Virginia Luis Fuentes"
+        "Virginia Luis Fuentes",
+        "John D. Bonagura"
       ]
     },
     {
@@ -71469,7 +72500,9 @@
       ],
       "selected_journal": true,
       "matched_authors": [
-        "Roberto A. Santilli"
+        "Roberto A. Santilli",
+        "Michele Borgarelli",
+        "Claudio Maria Bussadori"
       ]
     },
     {
@@ -71549,7 +72582,9 @@
         "Echocardiography"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "John D. Bonagura"
+      ]
     },
     {
       "pmid": "11499705",
@@ -71957,7 +72992,9 @@
         "ECG / Holter"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "Claudio Maria Bussadori"
+      ]
     },
     {
       "pmid": "19081329",
@@ -72190,7 +73227,9 @@
         "Echocardiography"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "John D. Bonagura"
+      ]
     },
     {
       "pmid": "11043989",
@@ -72503,7 +73542,8 @@
       ],
       "selected_journal": true,
       "matched_authors": [
-        "Roberto A. Santilli"
+        "Roberto A. Santilli",
+        "Claudio Maria Bussadori"
       ]
     },
     {
@@ -73352,7 +74392,9 @@
       ],
       "selected_journal": false,
       "matched_authors": [
-        "Roberto A. Santilli"
+        "Roberto A. Santilli",
+        "Michele Borgarelli",
+        "Claudio Maria Bussadori"
       ]
     },
     {
@@ -73475,7 +74517,10 @@
         "ECG / Holter"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "Michele Borgarelli",
+        "Claudio Maria Bussadori"
+      ]
     },
     {
       "pmid": "10489268",
@@ -73495,7 +74540,9 @@
         "ECG / Holter"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "Michele Borgarelli"
+      ]
     },
     {
       "pmid": "10476710",
@@ -74149,7 +75196,9 @@
         "ECG / Holter"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "John D. Bonagura"
+      ]
     },
     {
       "pmid": "10052066",
@@ -74312,6 +75361,46 @@
       ]
     },
     {
+      "pmid": "10098243",
+      "title": "Doppler echocardiography. II. Color Doppler imaging.",
+      "authors_text": "J D Bonagura, M W Miller",
+      "journal": "The Veterinary clinics of North America. Small animal practice",
+      "publication_date": "1998-11",
+      "sort_date": "1998-11-01",
+      "abstract": "Color Doppler imaging (CDI) is a sophisticated form of ultrasound technology that overlays blood flow and velocity information onto a B-mode, two-dimensional, gray-scale image. This imaging technique--also called color Doppler echocardiography, color-coded Doppler, Doppler color-flow imaging, and color-flow imaging--is a type of pulsed-wave Doppler echocardiography. Because the anatomical site of received Doppler-shift information can be readily determined, CDI is useful for documenting normal blood flow patterns and screening the heart and great vessels for areas of abnormal flow.",
+      "doi": "10.1016/s0195-5616(98)50127-1",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/10098243/",
+      "species": "Canine",
+      "topics": [
+        "Echocardiography"
+      ],
+      "selected_journal": false,
+      "matched_authors": [
+        "John D. Bonagura"
+      ]
+    },
+    {
+      "pmid": "10098242",
+      "title": "Doppler echocardiography. I. Pulsed-wave and continuous-wave examinations.",
+      "authors_text": "J D Bonagura, M W Miller, P G Darke",
+      "journal": "The Veterinary clinics of North America. Small animal practice",
+      "publication_date": "1998-11",
+      "sort_date": "1998-11-01",
+      "abstract": "Doppler echocardiography is a specialized processing of cardiac ultrasound that is characterized by a continuously updated display of blood velocity during the cardiac cycle. Doppler examinations, which include color-coded Doppler echocardiography, pulsed-wave examination, and continuous-wave studies, are readily applicable to veterinary patients.",
+      "doi": "10.1016/s0195-5616(98)50126-x",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/10098242/",
+      "species": "Both",
+      "topics": [
+        "Echocardiography"
+      ],
+      "selected_journal": false,
+      "matched_authors": [
+        "John D. Bonagura"
+      ]
+    },
+    {
       "pmid": "10051876",
       "title": "[Percutaneous pericardiotomy with balloon catheter in the treatment of malignant pericardial effusion in dogs].",
       "authors_text": "C Bussadori, A Grasso, R A Santilli",
@@ -74329,7 +75418,8 @@
       ],
       "selected_journal": false,
       "matched_authors": [
-        "Roberto A. Santilli"
+        "Roberto A. Santilli",
+        "Claudio Maria Bussadori"
       ]
     },
     {
@@ -74349,7 +75439,8 @@
       ],
       "selected_journal": true,
       "matched_authors": [
-        "Roberto A. Santilli"
+        "Roberto A. Santilli",
+        "Claudio Maria Bussadori"
       ]
     },
     {
@@ -75355,7 +76446,9 @@
         "Echocardiography"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "Michele Borgarelli"
+      ]
     },
     {
       "pmid": "9231031",
@@ -75433,7 +76526,9 @@
         "Cardiomyopathy"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "John D. Bonagura"
+      ]
     },
     {
       "pmid": "22047407",
@@ -75451,7 +76546,9 @@
         "Heart Failure"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "John D. Bonagura"
+      ]
     },
     {
       "pmid": "9127286",
@@ -75796,7 +76893,9 @@
         "Pharmacology"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "John D. Bonagura"
+      ]
     },
     {
       "pmid": "9183772",
@@ -77224,6 +78323,28 @@
       "matched_authors": []
     },
     {
+      "pmid": "9417203",
+      "title": "Comparison of catheterization and Doppler-derived pressure gradients in a canine model of subaortic stenosis.",
+      "authors_text": "L B Lehmkuhl, J D Bonagura, D E Jones, R L Stepien",
+      "journal": "Journal of the American Society of Echocardiography : official publication of the American Society of Echocardiography",
+      "publication_date": "1995-01",
+      "sort_date": "1995-01-01",
+      "abstract": "The relationship between Doppler-estimated and catheterization-measured pressure gradients was examined by repeated-measures linear regression analysis and difference plots in 15 dogs with naturally occurring subvalvular aortic stenosis. Thirty left ventricular outflow tract gradients were compared during sinus rhythm and 142 gradients during premature or postextrasystolic beats for the following pairs of data: (1) mean catheterization gradient versus mean Doppler gradient, (2) maximal instantaneous catheterization gradient versus maximal Doppler gradient, and (3) peak-to-peak catheterization gradient versus maximal Doppler gradient. The correlation between Doppler-derived and catheterization-derived pressure gradients was excellent (r = 0.99; p < 0.001) for the maximal instantaneous (sinus rhythm: standard error of the estimate [SEE] = 5.7 mm Hg; premature and postextrasystolic beats: SEE = 6.7 mm Hg) and mean gradients (sinus rhythm: SEE = 3.6 mm Hg; premature and postextrasystolic beats: SEE = 4.5 mm Hg). There was also a strong correlation between the peak-to-peak catheterization gradient and the maximal Doppler gradient (sinus rhythm: r = 0.99, p < 0.001, SEE = 5.3 mm Hg; premature and postextrasystolic beats: r = 0.97, p < 0.001, SEE = 7.2 mm Hg). Agreement between the two techniques was best for mean gradients and most disparate for the comparisons of maximal Doppler gradients and peak-to-peak catheterization gradients.",
+      "doi": "10.1016/s0894-7317(05)80374-8",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/9417203/",
+      "species": "Canine",
+      "topics": [
+        "Cardiomyopathy",
+        "Congenital Heart Disease",
+        "Echocardiography"
+      ],
+      "selected_journal": false,
+      "matched_authors": [
+        "John D. Bonagura"
+      ]
+    },
+    {
       "pmid": "8558490",
       "title": "Balloon valvuloplasty of tricuspid stenosis in a Labrador retriever.",
       "authors_text": "W A Brown, W P Thomas",
@@ -77462,7 +78583,9 @@
         "Echocardiography"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "John D. Bonagura"
+      ]
     },
     {
       "pmid": "7698921",
@@ -77877,7 +79000,9 @@
         "Echocardiography"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "John D. Bonagura"
+      ]
     },
     {
       "pmid": "8176659",
@@ -77899,7 +79024,9 @@
         "ECG / Holter"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "John D. Bonagura"
+      ]
     },
     {
       "pmid": "8125826",
@@ -77922,7 +79049,8 @@
       ],
       "selected_journal": true,
       "matched_authors": [
-        "Kathryn M. Meurs"
+        "Kathryn M. Meurs",
+        "John D. Bonagura"
       ]
     },
     {
@@ -78000,7 +79128,9 @@
         "Echocardiography"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "John D. Bonagura"
+      ]
     },
     {
       "pmid": "7884731",
@@ -79488,7 +80618,8 @@
       ],
       "selected_journal": true,
       "matched_authors": [
-        "N. Sydney Moïse"
+        "N. Sydney Moïse",
+        "John D. Bonagura"
       ]
     },
     {
@@ -79857,7 +80988,9 @@
         "Cardiac Emergency / CPR"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "John D. Bonagura"
+      ]
     },
     {
       "pmid": "2141015",
@@ -80076,7 +81209,9 @@
         "Echocardiography"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "John D. Bonagura"
+      ]
     },
     {
       "pmid": "2074553",
@@ -80421,6 +81556,46 @@
       "selected_journal": false,
       "matched_authors": [
         "N. Sydney Moïse"
+      ]
+    },
+    {
+      "pmid": "2653773",
+      "title": "[The pathology of mitral valve prolapse in dogs].",
+      "authors_text": "F Guarda, S Amedeo, C Scotti, C Bussadori, E Vercelli",
+      "journal": "DTW. Deutsche tierarztliche Wochenschrift",
+      "publication_date": "1989-04",
+      "sort_date": "1989-04-01",
+      "abstract": "The authors present investigations of the prolapse of the mitral valves in dogs. In 18 cases there were dogs with a prolapse, in 6 dogs there was a prolapse of the tricuspid valves, and in 3 cases a prolapse of both valves was observed. In all cases prolapse occurred together with endocardiosis of the valves or as a consequence of it.",
+      "doi": "",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/2653773/",
+      "species": "Canine",
+      "topics": [
+        "MMVD / Mitral Valve"
+      ],
+      "selected_journal": false,
+      "matched_authors": [
+        "Claudio Maria Bussadori"
+      ]
+    },
+    {
+      "pmid": "2467897",
+      "title": "ECG of the month. Atrial premature complexes and paroxysmal atrial tachycardia.",
+      "authors_text": "M W Miller, J D Bonagura",
+      "journal": "Journal of the American Veterinary Medical Association",
+      "publication_date": "1989-04",
+      "sort_date": "1989-04-01",
+      "abstract": "",
+      "doi": "",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/2467897/",
+      "species": "Canine",
+      "topics": [
+        "ECG / Holter"
+      ],
+      "selected_journal": true,
+      "matched_authors": [
+        "John D. Bonagura"
       ]
     },
     {
@@ -81201,6 +82376,27 @@
       "matched_authors": []
     },
     {
+      "pmid": "3812220",
+      "title": "The equilibrium position of the mitral valve: an accurate model of mitral valve motion in humans.",
+      "authors_text": "P F Binkley, J D Bonagura, S M Olson, H Boudoulas, C F Wooley",
+      "journal": "The American journal of cardiology",
+      "publication_date": "1987-01",
+      "sort_date": "1987-01-01",
+      "abstract": "A \"semiopen\" diastolic equilibrium position of the mitral valve that is assumed in the absence of transmitral flow has been demonstrated in instrumented dogs. It has been suggested that the papillary muscles and chordae tendineae play an integral role in returning the valve to this position after initial diastolic opening. To determine whether such a model of mitral valve motion is valid in noninstrumented humans without underlying valvular disease, M-mode and Doppler ultrasound studies were performed in 6 subjects who underwent prolonged periods of ventricular diastole and atrial inactivity. After maximal opening, the mitral valve assumed a stable open position in which mean separation of the anterior and posterior mitral leaflets was 52% of maximal separation. This position was maintained for a mean duration of 585 ms, during which time transmitral flow fell to 0 m/s. Peak mitral valve opening preceded the early transmitral flow peak by an average of 42 ms, suggesting an active closure of the mitral valve as flow continued to accelerate. It is concluded that a semiopen equilibrium position of the mitral valve is assumed during prolonged diastolic periods in the absence of transmitral flow and is an accurate model describing diastolic mitral valve motion in noninstrumented humans. The chordae tendineae and papillary muscles may actively participate in the genesis and maintenance of the equilibrium position.",
+      "doi": "10.1016/s0002-9149(87)80081-4",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/3812220/",
+      "species": "Canine",
+      "topics": [
+        "MMVD / Mitral Valve",
+        "Echocardiography"
+      ],
+      "selected_journal": false,
+      "matched_authors": [
+        "John D. Bonagura"
+      ]
+    },
+    {
       "pmid": "3506618",
       "title": "Platelet aggregation in feline cardiomyopathy.",
       "authors_text": "C A Helenski, J N Ross",
@@ -81566,7 +82762,9 @@
         "ECG / Holter"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "John D. Bonagura"
+      ]
     },
     {
       "pmid": "3731781",
@@ -82029,6 +83227,91 @@
       "matched_authors": []
     },
     {
+      "pmid": "3878619",
+      "title": "Echocardiography. Acquired heart disease.",
+      "authors_text": "J D Bonagura, D S Herring",
+      "journal": "The Veterinary clinics of North America. Small animal practice",
+      "publication_date": "1985-11",
+      "sort_date": "1985-11-01",
+      "abstract": "Acquired disease of the cardiac valves, myocardium, and pericardium may be recognized through echocardiography. Quantitation of atrial and ventricular dimensions is a key aspect in the echocardiographic evaluation of acquired heart diseases. Subjective interpretation permits identification of pericardial effusion, dilated cardiomyopathy, valvular lesions, cardiac masses, and abnormal blood flow.",
+      "doi": "10.1016/s0195-5616(85)50366-6",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/3878619/",
+      "species": "Canine",
+      "topics": [
+        "MMVD / Mitral Valve",
+        "Cardiomyopathy",
+        "Pericardial Disease",
+        "Echocardiography"
+      ],
+      "selected_journal": false,
+      "matched_authors": [
+        "John D. Bonagura"
+      ]
+    },
+    {
+      "pmid": "3878618",
+      "title": "Echocardiography. Congenital heart disease.",
+      "authors_text": "J D Bonagura, D S Herring",
+      "journal": "The Veterinary clinics of North America. Small animal practice",
+      "publication_date": "1985-11",
+      "sort_date": "1985-11-01",
+      "abstract": "Echocardiography can be used to identify malformations of the heart and to assess the degree of cardiac compensation that occurs with congenital heart disease. Integration of clinical and ultrasound data will generally allow a diagnosis to be made noninvasively. Contrast echocardiography may delineate intracardiac shunting.",
+      "doi": "10.1016/s0195-5616(85)50365-4",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/3878618/",
+      "species": "Both",
+      "topics": [
+        "MMVD / Mitral Valve",
+        "Congenital Heart Disease",
+        "Echocardiography"
+      ],
+      "selected_journal": false,
+      "matched_authors": [
+        "John D. Bonagura"
+      ]
+    },
+    {
+      "pmid": "3878617",
+      "title": "Echocardiography. Principles of interpretation.",
+      "authors_text": "J D Bonagura, M R O'Grady, D S Herring",
+      "journal": "The Veterinary clinics of North America. Small animal practice",
+      "publication_date": "1985-11",
+      "sort_date": "1985-11-01",
+      "abstract": "Echocardiography offers the clinician an opportunity to image the heart noninvasively. Both M-mode and cross-sectional echocardiography can be used to measure cardiac dilation and hypertrophy and to quantitate myocardial function. Knowledge of normal echocardiographic anatomy is essential for understanding changes that occur in disease.",
+      "doi": "10.1016/s0195-5616(85)50364-2",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/3878617/",
+      "species": "Both",
+      "topics": [
+        "Echocardiography"
+      ],
+      "selected_journal": false,
+      "matched_authors": [
+        "John D. Bonagura"
+      ]
+    },
+    {
+      "pmid": "4062006",
+      "title": "Determination of serum bile acids in fasting dogs with hepatobiliary disease.",
+      "authors_text": "S E Johnson, W A Rogers, J D Bonagura, J H Caldwell",
+      "journal": "American journal of veterinary research",
+      "publication_date": "1985-10",
+      "sort_date": "1985-10-01",
+      "abstract": "The diagnostic value of determining total conjugated serum bile acid (SBA) concentrations was evaluated in fasting dogs with spontaneous liver disease. Conjugated primary SBA values were determined by radioimmunoassay in 12 healthy dogs, 64 dogs with hepatobiliary disease, and 9 dogs with intestinal disorders unassociated with clinical or biochemical evidence of liver disease. Reference values for SBA concentrations ranged from 0 to 5 mumol/L and were not significantly different from those determined in dogs with intestinal disease (P less than 0.05). Mean SBA concentrations determined in dogs with portosystemic shunts, glucocorticoid-induced hepatopathy, hepatic neoplasia, hepatitis, cholestasis, and cirrhosis were significantly greater than reference values (P less than 0.05). The mean SBA concentration in dogs with glucocorticoid-induced hepatopathy was significantly (P less than 0.05) lower than that in all other clinical groups of dogs with liver disease, except in dogs with cholestasis. Although these 2 groups were statistically indistinguishable, dogs with glucocorticoid-induced hepatopathy generally had lower SBA values (2 to 37 mumol/L) than did the group with cholestasis (2 to 562 mumol/L). The SBA concentrations in fasting dogs were weakly correlated with histologic evidence of hepatic damage, as determined by a total biopsy score (r = 0.28, P less than 0.02). Because total SBA concentrations were increased in 89% of all dogs with hepatobiliary disease, the determination of SBA appears to be a sensitive test of hepatic dysfunction.",
+      "doi": "",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/4062006/",
+      "species": "Canine",
+      "topics": [
+        "Other Veterinary Medicine"
+      ],
+      "selected_journal": false,
+      "matched_authors": [
+        "John D. Bonagura"
+      ]
+    },
+    {
       "pmid": "4086371",
       "title": "Heart failure caused by gossypol poisoning in two dogs.",
       "authors_text": "C S Patton, A M Legendre, R E Gompf, M A Walker",
@@ -82080,7 +83363,9 @@
         "Echocardiography"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "John D. Bonagura"
+      ]
     },
     {
       "pmid": "4051290",
@@ -82678,7 +83963,9 @@
         "ECG / Holter"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "John D. Bonagura"
+      ]
     },
     {
       "pmid": "6547279",
@@ -82982,6 +84269,47 @@
       "matched_authors": []
     },
     {
+      "pmid": "6629975",
+      "title": "ECG of the month. Muscular dystrophy with involvement of sinoatrial and atrioventricular nodal tissues.",
+      "authors_text": "J D Bonagura, M O'Grady",
+      "journal": "Journal of the American Veterinary Medical Association",
+      "publication_date": "1983-09",
+      "sort_date": "1983-09-15",
+      "abstract": "",
+      "doi": "",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/6629975/",
+      "species": "Canine",
+      "topics": [
+        "Arrhythmia",
+        "ECG / Holter"
+      ],
+      "selected_journal": true,
+      "matched_authors": [
+        "John D. Bonagura"
+      ]
+    },
+    {
+      "pmid": "6618966",
+      "title": "ECG of the month. Sick sinus syndrome.",
+      "authors_text": "J D Bonagura, S P DiBartola",
+      "journal": "Journal of the American Veterinary Medical Association",
+      "publication_date": "1983-08",
+      "sort_date": "1983-08-15",
+      "abstract": "",
+      "doi": "",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/6618966/",
+      "species": "Canine",
+      "topics": [
+        "ECG / Holter"
+      ],
+      "selected_journal": true,
+      "matched_authors": [
+        "John D. Bonagura"
+      ]
+    },
+    {
       "pmid": "6885610",
       "title": "Arrhythmia associated with levamisole heartworm therapy in a dog.",
       "authors_text": "J D Hoskins",
@@ -83227,6 +84555,27 @@
       "matched_authors": []
     },
     {
+      "pmid": "6604983",
+      "title": "M-mode echocardiography. Basic principles.",
+      "authors_text": "J D Bonagura",
+      "journal": "The Veterinary clinics of North America. Small animal practice",
+      "publication_date": "1983-05",
+      "sort_date": "1983-05-01",
+      "abstract": "",
+      "doi": "10.1016/s0195-5616(83)50031-4",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/6604983/",
+      "species": "Both",
+      "topics": [
+        "Congenital Heart Disease",
+        "Echocardiography"
+      ],
+      "selected_journal": false,
+      "matched_authors": [
+        "John D. Bonagura"
+      ]
+    },
+    {
       "pmid": "6833102",
       "title": "Echocardiographic features of aortic valve endocarditis in a dog, a cow, and a horse.",
       "authors_text": "J D Bonagura, F S Pipers",
@@ -83243,7 +84592,9 @@
         "Echocardiography"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "John D. Bonagura"
+      ]
     },
     {
       "pmid": "6838040",
@@ -83317,7 +84668,9 @@
         "Echocardiography"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "John D. Bonagura"
+      ]
     },
     {
       "pmid": "6833068",
@@ -83374,7 +84727,9 @@
         "ECG / Holter"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "John D. Bonagura"
+      ]
     },
     {
       "pmid": "6826432",
@@ -83563,7 +84918,9 @@
         "Arrhythmia"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "John D. Bonagura"
+      ]
     },
     {
       "pmid": "7141953",
@@ -83583,6 +84940,26 @@
       ],
       "selected_journal": true,
       "matched_authors": []
+    },
+    {
+      "pmid": "6983767",
+      "title": "Fluid and electrolyte management of the cardiac patient.",
+      "authors_text": "J D Bonagura",
+      "journal": "The Veterinary clinics of North America. Small animal practice",
+      "publication_date": "1982-08",
+      "sort_date": "1982-08-01",
+      "abstract": "",
+      "doi": "10.1016/s0195-5616(82)50058-7",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/6983767/",
+      "species": "Canine",
+      "topics": [
+        "Heart Failure"
+      ],
+      "selected_journal": false,
+      "matched_authors": [
+        "John D. Bonagura"
+      ]
     },
     {
       "pmid": "6286583",
@@ -83737,6 +85114,48 @@
       "selected_journal": false,
       "matched_authors": [
         "N. Sydney Moïse"
+      ]
+    },
+    {
+      "pmid": "6980522",
+      "title": "Angiocardiography.",
+      "authors_text": "J D Bonagura, C W Myer, R R Pensinger",
+      "journal": "The Veterinary clinics of North America. Small animal practice",
+      "publication_date": "1982-05",
+      "sort_date": "1982-05-01",
+      "abstract": "",
+      "doi": "10.1016/s0195-5616(82)50030-7",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/6980522/",
+      "species": "Feline",
+      "topics": [
+        "Cardiomyopathy",
+        "Congenital Heart Disease"
+      ],
+      "selected_journal": false,
+      "matched_authors": [
+        "John D. Bonagura"
+      ]
+    },
+    {
+      "pmid": "6213088",
+      "title": "Survey radiography of the heart.",
+      "authors_text": "C W Myer, J D Bonagura",
+      "journal": "The Veterinary clinics of North America. Small animal practice",
+      "publication_date": "1982-05",
+      "sort_date": "1982-05-01",
+      "abstract": "",
+      "doi": "10.1016/s0195-5616(82)50029-0",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/6213088/",
+      "species": "Canine",
+      "topics": [
+        "Cardiomyopathy",
+        "Congenital Heart Disease"
+      ],
+      "selected_journal": false,
+      "matched_authors": [
+        "John D. Bonagura"
       ]
     },
     {
@@ -83928,6 +85347,27 @@
       "matched_authors": []
     },
     {
+      "pmid": "6977931",
+      "title": "Cardiopulmonary disorders in the geriatric dog.",
+      "authors_text": "J D Bonagura",
+      "journal": "The Veterinary clinics of North America. Small animal practice",
+      "publication_date": "1981-11",
+      "sort_date": "1981-11-01",
+      "abstract": "",
+      "doi": "10.1016/s0195-5616(81)50082-9",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/6977931/",
+      "species": "Canine",
+      "topics": [
+        "Cardiomyopathy",
+        "ECG / Holter"
+      ],
+      "selected_journal": false,
+      "matched_authors": [
+        "John D. Bonagura"
+      ]
+    },
+    {
       "pmid": "7263477",
       "title": "Echocardiographic abnormalities of the mitral valve associated with left sided heart diseases in the dog.",
       "authors_text": "F S Pipers, J D Bonagura, R L Hamlin, M Kittleson",
@@ -83944,7 +85384,9 @@
         "Echocardiography"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "John D. Bonagura"
+      ]
     },
     {
       "pmid": "7196395",
@@ -84056,7 +85498,9 @@
         "Echocardiography"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "John D. Bonagura"
+      ]
     },
     {
       "pmid": "7275773",
@@ -84149,7 +85593,9 @@
         "ECG / Holter"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "John D. Bonagura"
+      ]
     },
     {
       "pmid": "7263461",
@@ -85422,6 +86868,26 @@
       ],
       "selected_journal": true,
       "matched_authors": []
+    },
+    {
+      "pmid": "325873",
+      "title": "Feline cardiovascular emergencies.",
+      "authors_text": "J D Bonagura",
+      "journal": "The Veterinary clinics of North America",
+      "publication_date": "1977-05",
+      "sort_date": "1977-05-01",
+      "abstract": "",
+      "doi": "10.1016/s0091-0279(77)50037-8",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/325873/",
+      "species": "Feline",
+      "topics": [
+        "ECG / Holter"
+      ],
+      "selected_journal": false,
+      "matched_authors": [
+        "John D. Bonagura"
+      ]
     },
     {
       "pmid": "870466",
