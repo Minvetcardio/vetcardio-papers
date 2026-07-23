@@ -33,7 +33,7 @@ EUTILS = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils"
 NCBI_API_KEY = os.getenv("NCBI_API_KEY", "").strip()
 NCBI_EMAIL = os.getenv("NCBI_EMAIL", "").strip()
 AUTHOR_SCOPE_VERSION = "2026-07-22-all-dog-cat-papers"
-AUTHOR_LIST_VERSION = "2026-07-22-expanded-authors"
+AUTHOR_LIST_VERSION = "2026-07-23-bonagura"
 JOURNAL_LIST_VERSION = "2026-07-22-vetq-jsap"
 
 
@@ -82,6 +82,15 @@ TRACKED_AUTHORS = {
     "Romain Pariaut": [("Pariaut", "R")],
     "N. Sydney Moïse": [("Moise", "NS")],
     "Ashley B. Saunders": [("Saunders", "AB")],
+    "Michele Borgarelli": [("Borgarelli", "M")],
+    "Claudio Maria Bussadori": [
+        ("Bussadori", "CM"),
+        ("Bussadori", "C"),
+    ],
+    "John D. Bonagura": [
+        ("Bonagura", "JD"),
+        ("Bonagura", "J"),
+    ],
 }
 
 
@@ -841,7 +850,7 @@ def main() -> None:
     data = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "total": len(papers),
-        "filter_version": "unified-authors-journals-2026-07-22",
+        "filter_version": "unified-authors-journals-bonagura-2026-07-23",
         "tracked_journals": list(TRACKED_JOURNALS.keys()),
         "tracked_authors": list(TRACKED_AUTHORS.keys()),
         "papers": papers,
