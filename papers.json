@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-23T09:32:57.730209+00:00",
-  "total": 4517,
-  "filter_version": "unified-authors-journals-bonagura-2026-07-23",
+  "generated_at": "2026-07-24T00:22:00.678498+00:00",
+  "total": 4551,
+  "filter_version": "unified-authors-journals-etienne-cote-2026-07-24",
   "tracked_journals": [
     "Frontiers in Veterinary Science",
     "BMC Veterinary Research",
@@ -41,7 +41,8 @@
     "Ashley B. Saunders",
     "Michele Borgarelli",
     "Claudio Maria Bussadori",
-    "John D. Bonagura"
+    "John D. Bonagura",
+    "Étienne Côté"
   ],
   "papers": [
     {
@@ -171,6 +172,45 @@
       "species": "Feline",
       "topics": [
         "Cardiomyopathy"
+      ],
+      "selected_journal": true,
+      "matched_authors": []
+    },
+    {
+      "pmid": "42490935",
+      "title": "Quantitative mitral regurgitation and conventional echocardiographic variables in canine myxomatous mitral valve disease.",
+      "authors_text": "Shimpei Kawai, Ryohei Suzuki, Yohei Mochizuki, Yunosuke Yuchi, Shuji Satomi, Arata Kitazawa, Masanobu Teraoka, Takahiro Teshima, Hirotaka Matsumoto",
+      "journal": "Frontiers in veterinary science",
+      "publication_date": "2026-07-03",
+      "sort_date": "2026-07-03",
+      "abstract": "INTRODUCTION: Disease severity in dogs with myxomatous mitral valve disease (MMVD) is commonly assessed using conventional echocardiographic variables and staging systems based on cardiac remodeling and heart failure status. Multiparametric scoring systems incorporating variables such as early diastolic transmitral velocity (E-wave) have also been recently proposed. However, these approaches primarily reflect secondary morphological and loading changes rather than directly quantifying severity of mitral regurgitation (MR). Therefore, quantitative regurgitant indices may provide additional information regarding the functional severity of MR.\nMETHODS: This retrospective study included 167 predominantly small-breed dogs with MMVD evaluated at Japanese referral centers, classified according to the American College of Veterinary Internal Medicine (ACVIM) staging system. Body weight-normalized regurgitant volume (RVol/kg) and regurgitant fraction (RF) were calculated using volumetric methods. Group comparisons among ACVIM stages, correlation analysis, logistic regression analysis, and receiver operating characteristic analysis were performed to evaluate associations between regurgitant indices and conventional echocardiographic variables.\nRESULTS: RVol/kg and RF increased significantly with advancing disease stage (both p < 0.001). However, no significant differences were observed between stages B2 and C/D and severe MR (RF ≥ 50%) was identified in some dogs classified as stage B1. Quantitative regurgitant indices showed significant correlations with the left atrium-to-aorta ratio, body-weight-normalized left ventricular internal diameter in diastole (LVIDDN), and E-wave, whereas correlations with fractional shortening were weak. The mitral-aortic velocity-time integral (VTI) ratio demonstrated the strongest correlations with both RVol/kg and RF (both r = 0.75; p < 0.001) and showed the highest diagnostic performance in identifying severe MR (area under the curve = 0.89). In the multivariable analysis, LVIDDN and the mitral-aortic VTI ratio remained independent predictors of severe MR.\nDISCUSSION: Quantitative regurgitant indices were associated with conventional echocardiographic variables and may provide complementary information regarding MR severity in dogs with MMVD. In this predominantly small-breed Japanese MMVD population, the mitral-aortic VTI ratio showed strong associations with quantitative regurgitant indices and may be a clinically useful Doppler-derived surrogate for MR severity, although prospective studies are required to confirm these findings.",
+      "doi": "10.3389/fvets.2026.1885087",
+      "pmcid": "PMC13375524",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42490935/",
+      "species": "Canine",
+      "topics": [
+        "MMVD / Mitral Valve",
+        "Heart Failure",
+        "Echocardiography"
+      ],
+      "selected_journal": true,
+      "matched_authors": []
+    },
+    {
+      "pmid": "42490799",
+      "title": "Characterization of global and regional left heart function using advanced echocardiography following intravenous administration of pimobendan in awake dogs.",
+      "authors_text": "Pierre Foulex, Valérie Chetboul, Emilie Moisset, Fany Roncin, Alona Dougère, Guillaume Noël, Emilie Tréhiou, Céline Pouzot-Nevoret, Valentin Bondoux, Mathieu Magnin",
+      "journal": "Frontiers in veterinary science",
+      "publication_date": "2026-07-03",
+      "sort_date": "2026-07-03",
+      "abstract": "BACKGROUND: Pimobendan is commonly used in veterinary cardiology; however, its impact on myocardial deformation in conscious dogs over time remains poorly characterized.\nOBJECTIVES: This exploratory and descriptive study aimed to characterize the effects of intravenous pimobendan on left heart function using advanced echocardiography and to identify the myocardial deformation component most closely associated with stroke volume increase.\nMETHODS: Five healthy, conscious, male Beagle dogs received a single bolus of pimobendan. Conventional echocardiography, tissue Doppler imaging, and 2D speckle-tracking echocardiography were performed at baseline and up to 24 h post-administration. Longitudinal, circumferential, and radial left ventricular strain were assessed, along with left atrial function, stroke volume, and cardiac output.\nRESULTS: Pimobendan induced a significant increase in left ventricular systolic performance. Radial strain increased markedly from 30 min to 6 h, while circumferential strain increased transiently up to 4 h, primarily at the endocardial and mid-myocardial levels. Longitudinal strain increased from 30 min to 8 h, with a pronounced regional effect characterized by a greater enhancement of the apical segment, resulting in an accentuated base-to-apex strain gradient. Stroke volume increased significantly for up to 8 h and showed the strongest statistical association with longitudinal strain, particularly the apical component. Left atrial contractile function also improved transiently following treatment.\nCONCLUSION: Intravenous pimobendan produces a sustained improvement in left heart function in healthy, conscious, male Beagle dogs. The increase in stroke volume was most strongly associated with longitudinal myocardial deformation, especially at the apical level. Confirmation in females, other breeds, different age groups, and cardiac patients is warranted.",
+      "doi": "10.3389/fvets.2026.1842861",
+      "pmcid": "PMC13375486",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42490799/",
+      "species": "Canine",
+      "topics": [
+        "Echocardiography",
+        "Pharmacology"
       ],
       "selected_journal": true,
       "matched_authors": []
@@ -2031,6 +2071,26 @@
       ],
       "selected_journal": true,
       "matched_authors": []
+    },
+    {
+      "pmid": "41855393",
+      "title": "Effects of Oral Single-Dose Empagliflozin on Urinary Glucose, Serum β-Hydroxybutyrate, and Plasma Empagliflozin Concentrations in Healthy Adult Dogs.",
+      "authors_text": "Andrea D Plá Gutierrez, M Lynne O'Sullivan, Etienne Côté, Sandra McConkey, Butch KuKanich, Stephanie E Martinez",
+      "journal": "Journal of veterinary pharmacology and therapeutics",
+      "publication_date": "2026-03-19",
+      "sort_date": "2026-03-19",
+      "abstract": "Empagliflozin is a sodium-glucose cotransporter-2 inhibitor used for treating humans with heart failure, among other conditions. This drug could have applications in veterinary cardiology, but whether empagliflozin has biological effects in dogs when administered at dosages approximating human therapeutic dosages is unknown. This study investigated whether empagliflozin (target dosage, 0.3 mg/kg) could produce significant increases in urinary glucose concentrations and measurable plasma drug concentrations, without increasing serum β-hydroxybutyrate (β-HA) concentrations in dogs. Six healthy, privately-owned dogs weighing 22-36 kg were studied prospectively. Urinary glucose, serum β-HA, and plasma empagliflozin concentrations were measured 0 h, 6 h, 12 h, 24 h, 48 h, and 72 h after single-dose oral administration of 10 mg empagliflozin. The dosage administered was 0.28-0.45 mg/kg. Mean urinary glucose concentration peaked at 24 h (8,041 mg/dL) before returning to baseline (< 40 mg/dL) at 72 h (p < 0.001). Serum β-HA concentrations remained within the reference interval for dogs (< 2.1 mg/dL). Plasma drug concentrations at 24 h were 13 times greater than the reported human in vitro IC50. The half-life was 4.4-6 h. Oral empagliflozin 0.28-0.45 mg/kg produced glucosuria and measurable plasma drug concentrations in healthy dogs, without ketonemia, after a single dose.",
+      "doi": "10.1111/jvp.70066",
+      "pmcid": "PMC13371846",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41855393/",
+      "species": "Canine",
+      "topics": [
+        "Heart Failure"
+      ],
+      "selected_journal": true,
+      "matched_authors": [
+        "Étienne Côté"
+      ]
     },
     {
       "pmid": "41893695",
@@ -5813,7 +5873,8 @@
       "selected_journal": true,
       "matched_authors": [
         "Mark Rishniw",
-        "Jens Häggström"
+        "Jens Häggström",
+        "Étienne Côté"
       ]
     },
     {
@@ -7907,6 +7968,26 @@
       ],
       "selected_journal": true,
       "matched_authors": []
+    },
+    {
+      "pmid": "40070940",
+      "title": "Computed tomographic angiographic study of common carotid artery anatomic relationships in the dog.",
+      "authors_text": "Jenna Feyler, Etienne Côté, Chick Weisse, Sue Dawson",
+      "journal": "The Canadian veterinary journal = La revue veterinaire canadienne",
+      "publication_date": "2025-03",
+      "sort_date": "2025-03-01",
+      "abstract": "OBJECTIVE: To further understand spatial relationships of common carotid arteries to adjacent structures through evaluation of computed tomographic angiograms in dogs.\nANIMALS: 24 pet dogs.\nPROCEDURE: A database was searched for triplanar computed tomographic angiograms that included the heart base caudally and the 5th cervical vertebra cranially, without macroscopic abnormalities. Measurements included brachiocephalic trunk length, common carotid arteries' position relative to the trachea, transverse (axial) thoracic height and width, manubrium length, and length of the 7th cervical vertebra (C7).\nRESULTS: Measurements (mean + SD) included brachiocephalic trunk length = 3.65 ± 1.34 cm (n = 24), mean thoracic inlet height = 6.51 ± 2.03 cm (n = 23), mean thoracic inlet width = 4.69 ± 1.35 cm (n = 20), mean manubrium length = 3.52 ± 1.15 cm (n = 22), and mean length of C7 = 1.93 ± 0.46 cm (n = 23).\nCONCLUSION: Some or all measurements were feasible in all dogs. Understanding interindividual variation in spatial relationships is pertinent to differentiating normal from abnormal, for surgical planning, and possibly for elucidating the pathogenesis of certain disorders.\nCLINICAL RELEVANCE: It is possible to obtain these measurements in dogs. This technique could be applied to subgroups of dogs (e.g., breeds) and dogs with cervical or thoracic abnormalities.",
+      "doi": "",
+      "pmcid": "PMC11891798",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/40070940/",
+      "species": "Canine",
+      "topics": [
+        "Other Veterinary Medicine"
+      ],
+      "selected_journal": false,
+      "matched_authors": [
+        "Étienne Côté"
+      ]
     },
     {
       "pmid": "40075986",
@@ -10557,7 +10638,9 @@
         "Biomarkers"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "Étienne Côté"
+      ]
     },
     {
       "pmid": "39272314",
@@ -11320,7 +11403,9 @@
         "Echocardiography"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "Étienne Côté"
+      ]
     },
     {
       "pmid": "38997996",
@@ -13456,6 +13541,27 @@
       ]
     },
     {
+      "pmid": "38304475",
+      "title": "Effects of acute atrial fibrillation and cardioversion on left and right atrial pressures in a dog.",
+      "authors_text": "Justin Allen, Étienne Côté",
+      "journal": "The Canadian veterinary journal = La revue veterinaire canadienne",
+      "publication_date": "2024-02",
+      "sort_date": "2024-02-01",
+      "abstract": "The occurrence of right-sided congestive heart failure (CHF) in dogs with left-sided heart disease is well-recognized, but its mechanisms are incompletely understood. A 12-year-old Maltese dog was admitted to the clinic for left atrial decompression to treat recurrent CHF due to severe myxomatous mitral valve disease (MMVD). Left atrial decompression was successful but atrial fibrillation (AF) occurred during the procedure. Electric cardioversion restored normal sinus rhythm (NSR) and the dog's recovery was uneventful. This sequence of events made it possible to study intracameral pressures individually in each atrium in a dog with naturally occurring MMVD during AF and again during NSR. Although pressures in both atria declined following cardioversion, the right atrial pressure declined to a greater degree. These findings indicated a disproportionate effect of AF on right atrial pressure. This difference was noteworthy given the long-standing clinical observation that dogs with MMVD have a higher prevalence of right-sided CHF when AF is present. Key clinical message: A dog with MMVD had a greater reduction in right atrial pressure than in left atrial pressure when its AF was cardioverted as part of a cardiac catheterization procedure. This observation proposed a mechanism for the well-known but unexplained observation that dogs with MMVD manifest right-sided CHF disproportionately more often when they have AF.",
+      "doi": "",
+      "pmcid": "PMC10783583",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/38304475/",
+      "species": "Canine",
+      "topics": [
+        "MMVD / Mitral Valve",
+        "Arrhythmia",
+        "Heart Failure",
+        "Echocardiography"
+      ],
+      "selected_journal": false,
+      "matched_authors": []
+    },
+    {
       "pmid": "38275929",
       "title": "Risk Factors for Atrial Fibrillation in the Dog: A Systematic Review.",
       "authors_text": "Giulia Arcuri, Carlotta Valente, Caterina Perini, Carlo Guglielmini",
@@ -14263,7 +14369,8 @@
       "selected_journal": true,
       "matched_authors": [
         "Mark Rishniw",
-        "Jens Häggström"
+        "Jens Häggström",
+        "Étienne Côté"
       ]
     },
     {
@@ -14324,7 +14431,8 @@
       "selected_journal": true,
       "matched_authors": [
         "Mark Rishniw",
-        "Jens Häggström"
+        "Jens Häggström",
+        "Étienne Côté"
       ]
     },
     {
@@ -15288,6 +15396,25 @@
       ]
     },
     {
+      "pmid": "37663017",
+      "title": "Serum C-terminal telopeptide of Type-I collagen (CTx) concentration and myocardial hyperechogenicity in cats with hypertrophic cardiomyopathy.",
+      "authors_text": "Erin L Anderson, Étienne Côté, Shelley Burton, Tarek Saleh",
+      "journal": "The Canadian veterinary journal = La revue veterinaire canadienne",
+      "publication_date": "2023-09",
+      "sort_date": "2023-09-01",
+      "abstract": "OBJECTIVE: This study sought to determine the serum concentrations of C-terminal telopeptide of Type-I collagen (CTx), a marker of collagen degradation, in a hospital population of cats with hypertrophic cardiomyopathy (HCM). The study also evaluated the prevalence of myocardial hyperechogenicity of the left ventricle (LV) in the same cats.\nANIMALS AND PROCEDURE: Cats brought to a university veterinary cardiology service entered the study when they had an echocardiographic diagnosis of HCM; echocardiographically normal cats served as controls. Serum CTx concentrations were assessed using ELISA.\nRESULTS: There was no difference in serum CTx concentrations between cats with HCM and controls (HCM: median 0.248 ng/mL, controls: median 0.253 ng/mL; P = 0.4). Significantly more cats with HCM (60%) showed echocardiographic LV myocardial hyperechogenicity compared to normal controls (17%; P = 0.0057), but serum CTx concentrations were not different between these 2 groups.\nCONCLUSION AND CLINICAL RELEVANCE: These results indicate that, as in human patients with HCM and in contrast to earlier feline studies, there was no evidence of enhanced collagen degradation indicated by serum CTx concentrations in cats with HCM compared to normal controls.",
+      "doi": "",
+      "pmcid": "PMC10426254",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/37663017/",
+      "species": "Feline",
+      "topics": [
+        "Cardiomyopathy",
+        "Echocardiography"
+      ],
+      "selected_journal": false,
+      "matched_authors": []
+    },
+    {
       "pmid": "37720471",
       "title": "Machine learning-based risk prediction model for canine myxomatous mitral valve disease using electronic health record data.",
       "authors_text": "Yunji Kim, Jaejin Kim, Sehoon Kim, Hwayoung Youn, Jihye Choi, Kyoungwon Seo",
@@ -15541,7 +15668,8 @@
       ],
       "selected_journal": true,
       "matched_authors": [
-        "Kathryn M. Meurs"
+        "Kathryn M. Meurs",
+        "Étienne Côté"
       ]
     },
     {
@@ -18225,6 +18353,26 @@
       "selected_journal": true,
       "matched_authors": [
         "Gerhard Wess"
+      ]
+    },
+    {
+      "pmid": "36467374",
+      "title": "Surgical removal of an embolized intravenous catheter fragment from the axillobrachial vein of a dog.",
+      "authors_text": "Ian M Hubbard, Todd R Hamilton, Etienne Côté",
+      "journal": "The Canadian veterinary journal = La revue veterinaire canadienne",
+      "publication_date": "2022-12",
+      "sort_date": "2022-12-01",
+      "abstract": "An 8-month-old neutered male miniature Australian shepherd was examined for evaluation and treatment of suspected embolization of a peripheral intravenous catheter fragment. Embolism had occurred after the catheter cannula was accidentally cut during removal from the right cephalic vein. Radiographs showed migration of the fragment to the proximolateral right brachium. Surgical exploration, assisted by fluoroscopy, localized the fragment to the axillobrachial vein, where the tip was visualized within the vessel lodged against the wall. A venotomy was performed, allowing the fragment to be extracted from the peripheral vessel before it could migrate farther. The dog recovered from surgery without complication and was discharged the following day. Key clinical message: In the case reported here, the axillobrachial vein was a clinically important location on the migration path of a cephalic intravenous catheter embolus. Fluoroscopy allowed for quick localization of an embolized intravenous catheter fragment within a peripheral vein and directed open surgical retrieval of the foreign body. A peripheral catheter fragment can be retrieved surgically from a vein in a limb even when a tourniquet has not been applied immediately.",
+      "doi": "",
+      "pmcid": "PMC9648480",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/36467374/",
+      "species": "Canine",
+      "topics": [
+        "Other Veterinary Medicine"
+      ],
+      "selected_journal": false,
+      "matched_authors": [
+        "Étienne Côté"
       ]
     },
     {
@@ -21016,6 +21164,26 @@
       "matched_authors": []
     },
     {
+      "pmid": "35417410",
+      "title": "Computed tomographic assessment of principal bronchial anatomy in dogs of various thoracic conformations: 93 cases (2012-2017).",
+      "authors_text": "Etienne Côté, Chick Weisse, Kenneth Lamb, Erik Tozier",
+      "journal": "Journal of the American Veterinary Medical Association",
+      "publication_date": "2022-04-13",
+      "sort_date": "2022-04-13",
+      "abstract": "OBJECTIVE: To better understand spatial relationships between principal bronchi and other intrathoracic structures by use of CT images of dogs of various somatotypes.\nANIMALS: 93 dogs that underwent thoracic CT.\nPROCEDURES: Information was collected from medical records regarding signalment and physical examination and echocardiographic findings. Two investigators recorded multiple measurements on a thoracic axial CT image from each dog.\nRESULTS: Thoracic height-to-width ratio (H:W) was associated with left principal bronchus (LPB) and right principal bronchus (RPB) H:W, aortic-LPB separation, focal LPB narrowing, and aortic-vertebral overlap. Thoracic H:W was not associated with dog age, weight, sex, or brachycephalic breed. Twenty-five (27%) dogs had focal LPB narrowing, compared with 5 (5%) dogs with focal RPB narrowing (P < 0.001). Ten of 25 dogs had overlap or contact between vertebrae, aorta, LPB, and heart, suggesting a cumulative compressive effect on the LPB, while 15 had LPB-aorta contact and lack of contact between the aorta and thoracic vertebrae, suggesting an aortic constrictive effect on the LPB. None had LPB narrowing without contact from surrounding structures. Inter-rater agreement was high.\nCLINICAL RELEVANCE: In dogs that underwent CT and were not selected for clinical suspicion of bronchial disease, principal bronchial morphology was associated with thoracic conformation. Focal LPB narrowing occurred more often than RPB narrowing. Focal LPB narrowing occurred with evidence of extraluminal compression, with or without contact between aorta and vertebrae. Brachycephalic breed could not be used for predicting thoracic H:W.",
+      "doi": "10.2460/javma.20.12.0716",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/35417410/",
+      "species": "Canine",
+      "topics": [
+        "Echocardiography"
+      ],
+      "selected_journal": true,
+      "matched_authors": [
+        "Étienne Côté"
+      ]
+    },
+    {
       "pmid": "35454228",
       "title": "Repeated-Dose Pharmacodynamics of Pimobendan in Healthy Cats.",
       "authors_text": "Keisuke Sugimoto, Kazutoshi Sugita, Kensuke Orito, Yoko Fujii",
@@ -21155,6 +21323,25 @@
       "matched_authors": []
     },
     {
+      "pmid": "35368403",
+      "title": "Mineralized, obstructive cardiac myxoma with chondroid differentiation in a cocker spaniel.",
+      "authors_text": "Cassandra Mellish, Étienne Côté, Enrique Aburto, Jonathan Lichtenberger",
+      "journal": "The Canadian veterinary journal = La revue veterinaire canadienne",
+      "publication_date": "2022-04",
+      "sort_date": "2022-04-01",
+      "abstract": "A 12-year-old castrated male cocker spaniel dog was referred for evaluation of signs consistent with right-sided heart failure. Thoracic radiography revealed mineralization in the region of the right atrium. Echocardiography identified a mass partially filling the right atrium and right ventricle and obstructing flow through the right heart. These findings were confirmed at necropsy and histopathologic features were consistent with myxoma with chondroid differentiation.",
+      "doi": "",
+      "pmcid": "PMC8922378",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/35368403/",
+      "species": "Canine",
+      "topics": [
+        "Heart Failure",
+        "Echocardiography"
+      ],
+      "selected_journal": false,
+      "matched_authors": []
+    },
+    {
       "pmid": "35433906",
       "title": "Comparison of Intestinal Microbiota Between Healthy and MMVD Chihuahuas Using 16S rRNA Gene Amplicon Sequencing.",
       "authors_text": "Ryuji Araki, Koji Iwanaga, Kazunori Ueda, Ayaka Shima, Genki Ishihara, Mitsuhiro Aizu, Toshiharu Fukayama, Mitsuhiro Isaka",
@@ -21214,7 +21401,8 @@
       "matched_authors": [
         "Joshua A. Stern",
         "Virginia Luis Fuentes",
-        "Romain Pariaut"
+        "Romain Pariaut",
+        "Étienne Côté"
       ]
     },
     {
@@ -21784,7 +21972,9 @@
         "Biomarkers"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "Étienne Côté"
+      ]
     },
     {
       "pmid": "35242837",
@@ -22202,6 +22392,27 @@
       "matched_authors": []
     },
     {
+      "pmid": "35492289",
+      "title": "Left Atrial Tachycardia and Third-Degree Atrioventricular Block in a Dog.",
+      "authors_text": "Etienne Côté, M Lynne O'Sullivan, Deepmala Agarwal, Roberto Santilli",
+      "journal": "CASE (Philadelphia, Pa.)",
+      "publication_date": "2022-01-08",
+      "sort_date": "2022-01-08",
+      "abstract": "• SVT may affect only the LA in the dog. • Spectral and 2D Doppler echocardiography help confirm that an SVT is confined to the LA. • Left atrial SVT was identified by comparing MV and TV inflows via spectral Doppler.",
+      "doi": "10.1016/j.case.2021.12.001",
+      "pmcid": "PMC9050603",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/35492289/",
+      "species": "Canine",
+      "topics": [
+        "Arrhythmia",
+        "Echocardiography"
+      ],
+      "selected_journal": false,
+      "matched_authors": [
+        "Étienne Côté"
+      ]
+    },
+    {
       "pmid": "34997940",
       "title": "Prospective evaluation of complications associated with transesophageal echocardiography in dogs with congenital heart disease.",
       "authors_text": "Caitlin H Stoner, Ashley B Saunders, Johanna C Heseltine, Audrey K Cook, Jonathan A Lidbury",
@@ -22581,6 +22792,26 @@
       "matched_authors": []
     },
     {
+      "pmid": "34890359",
+      "title": "Effects of handling and storage on potassium concentration in plasma and serum samples obtained from cats.",
+      "authors_text": "Briana M Domenegato, Etienne Côté, Deepmala Agarwal, M Lynne O'Sullivan, Elaine D Reveler, Elizabeth Dobbin, Ellen McMahon",
+      "journal": "Journal of the American Veterinary Medical Association",
+      "publication_date": "2021-12-09",
+      "sort_date": "2021-12-09",
+      "abstract": "OBJECTIVE: To compare potassium concentrations in feline plasma and serum samples analyzed promptly after collection or after 20 to 28 hours of refrigerated storage.\nANIMALS: 41 cats.\nPROCEDURES: A venous blood sample was obtained from each cat. Aliquots were placed in 2 tubes without anticoagulant (blood was allowed to clot to derive serum) and 2 tubes with heparin (to derive plasma). One serum and 1 plasma sample were kept at room temperature and analyzed within 60 minutes after collection (baseline); the other serum and plasma samples were analyzed after 20 to 28 hours of refrigerated storage. At both time points, serum and plasma potassium concentrations were measured.\nRESULTS: Median baseline serum potassium concentration (4.3 mmol/L) was significantly higher than median baseline plasma potassium concentration (4.1 mmol/L). The median difference between those values was 0.4 mmol/L (95% CI, 0.2 to 0.5 mmol/L). Compared with their respective baseline measurements, the median serum plasma concentration (4.8 mmol/L) and median plasma potassium concentration (4.6 mmol/L) were higher after 20 to 28 hours of refrigeration.\nCLINICAL RELEVANCE: Results indicated that with regard to potassium concentration in feline blood samples, clotting or refrigerated storage for 20 to 28 hours results in a significant artifactual increase. Detection of an unexpectedly high potassium concentration in a cat may represent pseudohyperkalemia, especially if the blood sample was placed in a no-additive tube, was stored for 20 to 28 hours prior to analysis, or both.",
+      "doi": "10.2460/javma.20.09.0530",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/34890359/",
+      "species": "Feline",
+      "topics": [
+        "Other Veterinary Medicine"
+      ],
+      "selected_journal": false,
+      "matched_authors": [
+        "Étienne Côté"
+      ]
+    },
+    {
       "pmid": "34999479",
       "title": "Non-cardiogenic pulmonary oedema complicating balloon valvuloplasty and stent angioplasty of severe pulmonary valve stenosis in four dogs.",
       "authors_text": "G Santarelli, J Bouvard, S F Brethel, S Gordon, S Lord, A Mavropoulou, P Oliveira, K T Sykes, S Swift, G J Culshaw",
@@ -22771,7 +23002,9 @@
         "Echocardiography"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "Étienne Côté"
+      ]
     },
     {
       "pmid": "34851851",
@@ -23151,7 +23384,9 @@
         "Echocardiography"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "Étienne Côté"
+      ]
     },
     {
       "pmid": "34693807",
@@ -23169,7 +23404,9 @@
         "Cardiomyopathy"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "Étienne Côté"
+      ]
     },
     {
       "pmid": "34693806",
@@ -23190,7 +23427,9 @@
         "Biomarkers"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "Étienne Côté"
+      ]
     },
     {
       "pmid": "34693805",
@@ -23211,7 +23450,9 @@
         "Echocardiography"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "Étienne Côté"
+      ]
     },
     {
       "pmid": "34669489",
@@ -25356,7 +25597,9 @@
         "Biomarkers"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "Étienne Côté"
+      ]
     },
     {
       "pmid": "33993542",
@@ -27059,6 +27302,25 @@
       "matched_authors": [
         "N. Sydney Moïse"
       ]
+    },
+    {
+      "pmid": "33502753",
+      "title": "Letter to the editor regarding \"Efficacy of adding ramipril (VAsotop) to the combination of furosemide (Lasix) and pimobendan (VEtmedin) in dogs with mitral valve degeneration: The VALVE trial\".",
+      "authors_text": "Clarke Atkins, Bruce Keene, Teresa C DeFrancesco, Sandra Tou, Valérie Chetboul, Étienne Côté, Stephen Ettinger, Philip R Fox, Robert L Hamlin, Jonathan P Mochel, Jean-Louis Pouchelon, Rebecca L Stepien",
+      "journal": "Journal of veterinary internal medicine",
+      "publication_date": "2021-01-27",
+      "sort_date": "2021-01-27",
+      "abstract": "",
+      "doi": "10.1111/jvim.16035",
+      "pmcid": "PMC7995426",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/33502753/",
+      "species": "Canine",
+      "topics": [
+        "MMVD / Mitral Valve",
+        "Pharmacology"
+      ],
+      "selected_journal": false,
+      "matched_authors": []
     },
     {
       "pmid": "33496988",
@@ -30744,7 +31006,8 @@
       "matched_authors": [
         "Joshua A. Stern",
         "Virginia Luis Fuentes",
-        "Jens Häggström"
+        "Jens Häggström",
+        "Étienne Côté"
       ]
     },
     {
@@ -31801,7 +32064,8 @@
       ],
       "selected_journal": true,
       "matched_authors": [
-        "Tommaso Vezzosi"
+        "Tommaso Vezzosi",
+        "Étienne Côté"
       ]
     },
     {
@@ -32131,7 +32395,8 @@
         "Romain Pariaut",
         "N. Sydney Moïse",
         "Michele Borgarelli",
-        "Claudio Maria Bussadori"
+        "Claudio Maria Bussadori",
+        "Étienne Côté"
       ]
     },
     {
@@ -32543,7 +32808,9 @@
         "Pericardial Disease"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "Étienne Côté"
+      ]
     },
     {
       "pmid": "31317600",
@@ -35657,6 +35924,27 @@
       "matched_authors": []
     },
     {
+      "pmid": "30197443",
+      "title": "Tetralogy of Fallot with concurrent patent foramen ovale and tricuspid valve dysplasia in a dog.",
+      "authors_text": "Wilson Chung, Etienne Côté, Risa Roland",
+      "journal": "The Canadian veterinary journal = La revue veterinaire canadienne",
+      "publication_date": "2018-09",
+      "sort_date": "2018-09-01",
+      "abstract": "The echocardiographic findings of a young Pomeranian-cross dog with tetralogy of Fallot, patent foramen ovale, and tricuspid valve dysplasia are described. Ongoing medical management of hypoxemia and erythrocytosis was carried out and the dog survived to 2 years of age. Treatment options for tetralogy of Fallot are discussed.",
+      "doi": "",
+      "pmcid": "PMC6091122",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/30197443/",
+      "species": "Canine",
+      "topics": [
+        "Congenital Heart Disease",
+        "Echocardiography"
+      ],
+      "selected_journal": false,
+      "matched_authors": [
+        "Étienne Côté"
+      ]
+    },
+    {
       "pmid": "30145181",
       "title": "Right ventricular outflow tract fractional shortening: an echocardiographic index of right ventricular systolic function in dogs with pulmonary hypertension.",
       "authors_text": "D Caivano, M Rishniw, F Birettoni, V Patata, M E Giorgi, K Dei, F Porciello",
@@ -36516,7 +36804,8 @@
         "Romain Pariaut",
         "N. Sydney Moïse",
         "Michele Borgarelli",
-        "Claudio Maria Bussadori"
+        "Claudio Maria Bussadori",
+        "Étienne Côté"
       ]
     },
     {
@@ -36797,7 +37086,8 @@
       ],
       "selected_journal": false,
       "matched_authors": [
-        "Kathryn M. Meurs"
+        "Kathryn M. Meurs",
+        "Étienne Côté"
       ]
     },
     {
@@ -38863,6 +39153,27 @@
       ]
     },
     {
+      "pmid": "28647113",
+      "title": "Feline Congestive Heart Failure: Current Diagnosis and Management.",
+      "authors_text": "Etienne Côté",
+      "journal": "The Veterinary clinics of North America. Small animal practice",
+      "publication_date": "2017-06-21",
+      "sort_date": "2017-06-21",
+      "abstract": "Congestive heart failure (CHF) is a well-known disorder in feline practice, having been recognized as the most common clinical syndrome in cats with hypertrophic cardiomyopathy, for example. This article identifies the reasons why an accurate diagnosis of CHF is important and the means by which to obtain one; pharmacologic and nonpharmacologic methods for controlling signs of CHF; and recommendations for follow-up evaluations, monitoring, and troubleshooting.",
+      "doi": "10.1016/j.cvsm.2017.04.008",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/28647113/",
+      "species": "Feline",
+      "topics": [
+        "Cardiomyopathy",
+        "Heart Failure"
+      ],
+      "selected_journal": false,
+      "matched_authors": [
+        "Étienne Côté"
+      ]
+    },
+    {
       "pmid": "28647112",
       "title": "Arrhythmogenic Right Ventricular Cardiomyopathy in the Boxer Dog: An Update.",
       "authors_text": "Kathryn M Meurs",
@@ -40232,7 +40543,9 @@
         "Intervention / Surgery"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "Étienne Côté"
+      ]
     },
     {
       "pmid": "28111138",
@@ -42536,7 +42849,9 @@
         "Echocardiography"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "Étienne Côté"
+      ]
     },
     {
       "pmid": "27056107",
@@ -43246,7 +43561,8 @@
       ],
       "selected_journal": false,
       "matched_authors": [
-        "Brian A. Scansen"
+        "Brian A. Scansen",
+        "Étienne Côté"
       ]
     },
     {
@@ -43695,7 +44011,9 @@
         "Heart Failure"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "Étienne Côté"
+      ]
     },
     {
       "pmid": "26776574",
@@ -44225,7 +44543,8 @@
       ],
       "selected_journal": true,
       "matched_authors": [
-        "Brian A. Scansen"
+        "Brian A. Scansen",
+        "Étienne Côté"
       ]
     },
     {
@@ -45074,7 +45393,8 @@
       ],
       "selected_journal": false,
       "matched_authors": [
-        "Brian A. Scansen"
+        "Brian A. Scansen",
+        "Étienne Côté"
       ]
     },
     {
@@ -45977,7 +46297,9 @@
         "Echocardiography"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "Étienne Côté"
+      ]
     },
     {
       "pmid": "25497298",
@@ -47040,7 +47362,9 @@
         "Echocardiography"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "Étienne Côté"
+      ]
     },
     {
       "pmid": "24962737",
@@ -48563,6 +48887,26 @@
       ]
     },
     {
+      "pmid": "24094256",
+      "title": "ECG of the month. Sinus tachycardia due to albuterol-induced hypokalemia.",
+      "authors_text": "Giovanni Romito, Etienne Côté, Oriol Domenech",
+      "journal": "Journal of the American Veterinary Medical Association",
+      "publication_date": "2013-10",
+      "sort_date": "2013-10-15",
+      "abstract": "",
+      "doi": "10.2460/javma.243.8.1108",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/24094256/",
+      "species": "Canine",
+      "topics": [
+        "ECG / Holter"
+      ],
+      "selected_journal": true,
+      "matched_authors": [
+        "Étienne Côté"
+      ]
+    },
+    {
       "pmid": "24200832",
       "title": "Atrioventricular septal defects: natural history, echocardiographic, electrocardiographic, and radiographic findings in 26 cats.",
       "authors_text": "Donald P Schrope",
@@ -49406,7 +49750,9 @@
         "Pericardial Disease"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "Étienne Côté"
+      ]
     },
     {
       "pmid": "23838208",
@@ -50349,6 +50695,26 @@
       "matched_authors": [
         "Jens Häggström",
         "Claudio Maria Bussadori"
+      ]
+    },
+    {
+      "pmid": "23456967",
+      "title": "Histological characterization of dilated cardiomyopathy in the juvenile toy Manchester terrier.",
+      "authors_text": "C H Legge, A López, P Hanna, E Côté, E Hare, S A Martinson",
+      "journal": "Veterinary pathology",
+      "publication_date": "2013-03-01",
+      "sort_date": "2013-03-01",
+      "abstract": "Dilated cardiomyopathy (DCM), the most common form of cardiomyopathy in the dog, most often occurs in certain breeds. The objective of this study was to describe a rapidly progressive form of DCM that has been recently recognized in juvenile Toy Manchester Terrier dogs (TMTs). The clinical history and gross findings were reviewed in a group of 14 TMTs, and histologic sections of heart were examined in 12 of those 14 TMTs with DCM. Histochemical and histomorphometric analyses were employed to compare the heart in TMTs affected by DCM with that of control dogs. TMTs ranged in age from 10 to 58.3 weeks, with males and females being equally affected. Affected TMT hearts contained foci of degeneration and loss of myofibers with fibrosis and mild lymphoplasmacytic infiltrates. Less prominent features included foci of acute myofiber degeneration and necrosis with or without intralesional mineralization and mild to moderate suppurative and lymphoplasmacytic infiltrates. Morphometric quantification demonstrated that the right ventricle was more severely affected (P ≤ .05) than the left ventricle with variable involvement of the interventricular septum. Immunohistochemistry for canine parvovirus was negative in all heart samples. However, the absence of parvoviral antigen does not rule out a possible viral or autoimmune cause. The presence of these myocardial lesions among closely related dogs suggests a genetic contribution to this disease process in the TMT.",
+      "doi": "10.1177/0300985813480509",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/23456967/",
+      "species": "Canine",
+      "topics": [
+        "Cardiomyopathy"
+      ],
+      "selected_journal": false,
+      "matched_authors": [
+        "Étienne Côté"
       ]
     },
     {
@@ -54627,6 +54993,26 @@
       ]
     },
     {
+      "pmid": "21636339",
+      "title": "Congenital coronary-pulmonary arterial shunt in a German shepherd dog: diagnosis and surgical correction.",
+      "authors_text": "Augusta Pelosi, Etienne Côté, George E Eyster",
+      "journal": "Journal of veterinary cardiology : the official journal of the European Society of Veterinary Cardiology",
+      "publication_date": "2011-06-01",
+      "sort_date": "2011-06-01",
+      "abstract": "BACKGROUND: A 10 week-old intact female German shepherd dog was examined because of a heart murmur.\nMETHODS: An echocardiogram revealed an extracardiac left-to-right shunt. An angiogram identified shunting between the aorta and the pulmonary artery in an unusual location.\nRESULTS: Thoracotomy was performed to better identify and correct the lesion; a tubular shunt between the left coronary artery and the pulmonary artery was found and ligated in a closed-heart procedure. The murmur resolved immediately upon ligation and the dog's heart size normalized over a period of several months after surgery.\nCONCLUSION: In the dog, surgical correction of a coronary artery-pulmonary artery shunt can be performed without complications and can be associated with reversal of cardiac remodeling.",
+      "doi": "10.1016/j.jvc.2011.03.001",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/21636339/",
+      "species": "Canine",
+      "topics": [
+        "Other Veterinary Medicine"
+      ],
+      "selected_journal": true,
+      "matched_authors": [
+        "Étienne Côté"
+      ]
+    },
+    {
       "pmid": "21636338",
       "title": "Ultrastructural changes in cardiac myocytes from Boxer dogs with arrhythmogenic right ventricular cardiomyopathy.",
       "authors_text": "Eva M Oxford, Charles G Danko, Bruce G Kornreich, Karen Maass, Shari A Hemsley, Dima Raskolnikov, Philip R Fox, Mario Delmar, N Sydney Moïse",
@@ -55234,7 +55620,9 @@
         "Echocardiography"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "Étienne Côté"
+      ]
     },
     {
       "pmid": "21354834",
@@ -56614,6 +57002,27 @@
       "matched_authors": [
         "Jens Häggström",
         "Michele Borgarelli"
+      ]
+    },
+    {
+      "pmid": "20610016",
+      "title": "Feline arrhythmias: an update.",
+      "authors_text": "Etienne Côté",
+      "journal": "The Veterinary clinics of North America. Small animal practice",
+      "publication_date": "2010-07",
+      "sort_date": "2010-07-01",
+      "abstract": "In the cat, electrocardiography is indicated for assessing the rhythm of the heartbeat and identifying and monitoring the effect of certain systemic disorders on the heart. Basic information regarding feline electrocardiography is contained in several textbooks, and the reader is referred to these sources for background reading. This article describes selected clinical advances in feline cardiac arrhythmias and electrocardiography from the past decade.",
+      "doi": "10.1016/j.cvsm.2010.04.002",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/20610016/",
+      "species": "Feline",
+      "topics": [
+        "Arrhythmia",
+        "ECG / Holter"
+      ],
+      "selected_journal": false,
+      "matched_authors": [
+        "Étienne Côté"
       ]
     },
     {
@@ -58899,6 +59308,26 @@
       "matched_authors": []
     },
     {
+      "pmid": "19548968",
+      "title": "Effects of in vitro hemodilution of canine blood on platelet function analysis using the PFA-100.",
+      "authors_text": "Noel Clancey, Shelley Burton, Barbara Horney, Allan Mackenzie, Andrea Nicastro, Etienne Côté",
+      "journal": "Veterinary clinical pathology",
+      "publication_date": "2009-06-22",
+      "sort_date": "2009-06-22",
+      "abstract": "BACKGROUND: The platelet function analyzer (PFA)-100 is a point-of-care instrument previously evaluated in humans and dogs. In both species, artificially prolonged platelet closure time (CT) occurs with anemia. Reliability of the analyzer in dogs becomes a concern when the HCT is between 0.25 and 0.35 L/L.\nOBJECTIVE: The objective of this study was to further define the level of HCT at which CT is prolonged, using in vitro diluted canine blood.\nMETHODS: Citrated whole blood samples were collected from 22 healthy dogs. Initial HCT was determined and autologous platelet-rich plasma was added to samples to achieve HCTs of 0.33, 0.30, and 0.27 L/L. CT was determined in duplicate on the PFA-100 using collagen/adenosine-5'-diphosphate cartridges.\nRESULTS: Compared with the initial CT in samples with HCT 0.39-0.54 L/L (CT mean+/-SD=57.8+/-5.75 seconds), significantly prolonged CTs were found in hemodiluted samples with HCT 0.33 L/L (61.1+/-4.64 seconds), 0.30 L/L (64.3+/-6.79 seconds), and 0.27 L/L (70.8+/-7.90 seconds) (P=0.029; repeated measures ANOVA).\nCONCLUSION: Although statistical differences were found, further studies are needed to determine the clinical significance of the mild prolongation in CT associated with mild anemia. Until then, dogs with HCTs slightly <0.35 L/L should be evaluated cautiously for platelet dysfunction using the PFA-100.",
+      "doi": "10.1111/j.1939-165X.2009.00162.x",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/19548968/",
+      "species": "Canine",
+      "topics": [
+        "Other Veterinary Medicine"
+      ],
+      "selected_journal": false,
+      "matched_authors": [
+        "Étienne Côté"
+      ]
+    },
+    {
       "pmid": "19702848",
       "title": "Spatial distribution of Helicobacter spp. in the gastrointestinal tract of dogs.",
       "authors_text": "Camilla Recordati, Valentina Gualdi, Melanie Craven, Lorenza Sala, Mario Luini, Anna Lanzoni, Mark Rishniw, Kenneth W Simpson, Eugenio Scanziani",
@@ -59427,6 +59856,27 @@
       ],
       "selected_journal": true,
       "matched_authors": []
+    },
+    {
+      "pmid": "19392759",
+      "title": "Evaluation of platelet function in dogs with cardiac disease using the PFA-100 platelet function analyzer.",
+      "authors_text": "Noel Clancey, Shelley Burton, Barbara Horney, Allan Mackenzie, Andrea Nicastro, Etienne Côté",
+      "journal": "Veterinary clinical pathology",
+      "publication_date": "2009-04-06",
+      "sort_date": "2009-04-06",
+      "abstract": "BACKGROUND: Cardiac disease has the potential to alter platelet function in dogs. Evaluation of platelet function using the PFA-100 analyzer in dogs of multiple breeds and with a broad range of cardiac conditions would help clarify the effect of cardiac disease on platelets.\nOBJECTIVES: The objective of this study was to assess differences in closure time (CT) in dogs with cardiac disease associated with murmurs, when compared with that of healthy dogs.\nMETHODS: Thirty-nine dogs with cardiac murmurs and turbulent blood flow as determined echocardiographically were included in the study. The dogs represented 23 different breeds. Dogs with murmurs were further divided into those with atrioventricular valvular insufficiency (n=23) and subaortic stenosis (n=9). Fifty-eight clinically healthy dogs were used as controls. CTs were determined in duplicate on a PFA-100 analyzer using collagen/ADP cartridges.\nRESULTS: Compared with CTs in the control group (mean+/-SD, 57.6+/-5.9 seconds; median, 56.5 seconds; reference interval, 48.0-77.0 seconds), dogs with valvular insufficiency (mean+/-SD, 81.9+/-26.3 seconds; median, 78.0 seconds; range, 52.5-187 seconds), subaortic stenosis (71.4+/-16.5 seconds; median, 66.0 seconds; range, 51.5-95.0 seconds), and all dogs with murmurs combined (79.6+/-24.1 seconds; median, 74.0 seconds; range, 48.0-187 seconds) had significantly prolonged CTs (P<.01).\nCONCLUSIONS: The PFA-100 analyzer is useful in detecting platelet function defects in dogs with cardiac murmurs, most notably those caused by mitral and/or tricuspid valvular insufficiency or subaortic stenosis. The form of turbulent blood flow does not appear to be an important factor in platelet hypofunction in these forms of cardiac disease.",
+      "doi": "10.1111/j.1939-165X.2009.00138.x",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/19392759/",
+      "species": "Canine",
+      "topics": [
+        "Congenital Heart Disease",
+        "Echocardiography"
+      ],
+      "selected_journal": false,
+      "matched_authors": [
+        "Étienne Côté"
+      ]
     },
     {
       "pmid": "19691570",
@@ -61665,7 +62115,9 @@
         "Echocardiography"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "Étienne Côté"
+      ]
     },
     {
       "pmid": "19000248",
@@ -64173,7 +64625,9 @@
         "Congenital Heart Disease"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "Étienne Côté"
+      ]
     },
     {
       "pmid": "16934512",
@@ -64292,6 +64746,28 @@
       "selected_journal": false,
       "matched_authors": [
         "Mark Rishniw"
+      ]
+    },
+    {
+      "pmid": "16877021",
+      "title": "Wide-complex tachycardia associated with severe hyperkalemia in three cats.",
+      "authors_text": "Brian C Norman, Etienne Côté, Kirstie A Barrett",
+      "journal": "Journal of feline medicine and surgery",
+      "publication_date": "2006-07-28",
+      "sort_date": "2006-07-28",
+      "abstract": "The well recognized cardiac effects of severe hyperkalemia include progressive rhythm and conduction disturbances such as bradycardia, spiked and narrow T waves, widening QRS complex, widening and flattening P wave, disappearance of the P wave, and cardiac arrest. Paradoxically, a heart rate greater than 200 beats/min may coexist with hyperkalemia in some cats. This report describes three cats with moderate to severe hyperkalemia and concurrent rapid heart rate. In each cat, the serum potassium (K(+)) concentration was > or =7.5 mEq/dl with a concurrent heart rate > 200 beats/min. In each cat, nine-lead electrocardiograms demonstrate an absence of P waves and a wide-complex tachycardia. Hyperkalemia should be considered in the differential diagnosis when a feline electrocardiogram demonstrates a wide-complex tachycardia without identifiable P waves.",
+      "doi": "10.1016/j.jfms.2006.04.003",
+      "pmcid": "PMC10832922",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/16877021/",
+      "species": "Feline",
+      "topics": [
+        "Arrhythmia",
+        "ECG / Holter",
+        "Cardiac Emergency / CPR"
+      ],
+      "selected_journal": true,
+      "matched_authors": [
+        "Étienne Côté"
       ]
     },
     {
@@ -66151,6 +66627,26 @@
       "matched_authors": []
     },
     {
+      "pmid": "16180398",
+      "title": "Echocardiography: common pitfalls and practical solutions.",
+      "authors_text": "Etienne Côté",
+      "journal": "Clinical techniques in small animal practice",
+      "publication_date": "2005-08",
+      "sort_date": "2005-08-01",
+      "abstract": "The asymmetric shape of the heart, small acoustic window, and range of interindividual variation in normal and abnormal states all can limit the extent of echocardiographic studies in small animal medicine. Beyond these uncontrollable variables, however, there are a number of additional potentially complicating factors that the echocardiogapher controls. Understanding and handling this second category of variables is critical for optimizing the quality and diagnostic value of echocardiographic studies. These variables range from such simple issues as proper restraint and an indissociable association between echocardiographic findings and clinical information, to specific points relating to simultaneous electrocardiogram display, good visualization of cardiac structures using multiple overlapping imaging planes, and avoidance of oblique or tangential views. The basic overview presented here aims to describe these commonly encountered, clinically relevant points in a way that helps veterinarians improve the quality of echocardiograms they perform.",
+      "doi": "10.1053/j.ctsap.2005.05.003",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/16180398/",
+      "species": "Both",
+      "topics": [
+        "Echocardiography"
+      ],
+      "selected_journal": false,
+      "matched_authors": [
+        "Étienne Côté"
+      ]
+    },
+    {
       "pmid": "16173485",
       "title": "Ultrastructural morphologic evaluation of the phenotype of valvular interstitial cells in dogs with myxomatous degeneration of the mitral valve.",
       "authors_text": "Alexander Black, Anne T French, Joanna Dukes-McEwan, Brendan M Corcoran",
@@ -67057,6 +67553,28 @@
       "matched_authors": []
     },
     {
+      "pmid": "16267066",
+      "title": "Quadricuspid aortic valve and associated abnormalities in a dog.",
+      "authors_text": "Frank Kettner, Etienne Côté, Robert M Kirberger",
+      "journal": "Journal of the American Animal Hospital Association",
+      "publication_date": "2005-01",
+      "sort_date": "2005-01-01",
+      "abstract": "An 11-month-old, female Scottish terrier was presented with a history of a heart murmur. The electrocardiogram showed signs of left ventricular enlargement, and radiography confirmed generalized cardiomegaly. Echocardiography revealed four equally sized aortic valve cusps. A ventricular septal defect, with systolic left-to-right shunting, and aortic regurgitation into both ventricles were also present. The dog was free of clinical signs 1 year after diagnosis.",
+      "doi": "10.5326/0410406",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/16267066/",
+      "species": "Canine",
+      "topics": [
+        "Congenital Heart Disease",
+        "Echocardiography",
+        "ECG / Holter"
+      ],
+      "selected_journal": false,
+      "matched_authors": [
+        "Étienne Côté"
+      ]
+    },
+    {
       "pmid": "16231716",
       "title": "Neurohormonal and circulatory effects of short-term treatment with enalapril and quinapril in dogs with asymptomatic mitral regurgitation.",
       "authors_text": "Sophia Gry Moesgaard, Lotte Gam Pedersen, Tom Teerlink, Jens Häggström, Henrik Duelund Pedersen",
@@ -67779,7 +68297,9 @@
         "Echocardiography"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "Étienne Côté"
+      ]
     },
     {
       "pmid": "15323383",
@@ -67800,7 +68320,9 @@
         "ECG / Holter"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "Étienne Côté"
+      ]
     },
     {
       "pmid": "15281648",
@@ -70571,6 +71093,28 @@
       "matched_authors": []
     },
     {
+      "pmid": "12387378",
+      "title": "ECG of the month. Narrow-complex monomorphic tachycardia with a ventricular rate of 320 beats/min.",
+      "authors_text": "Lillian Good, Etienne Côté, Kathy N Wright",
+      "journal": "Journal of the American Veterinary Medical Association",
+      "publication_date": "2002-10",
+      "sort_date": "2002-10-15",
+      "abstract": "",
+      "doi": "10.2460/javma.2002.221.1108",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/12387378/",
+      "species": "Canine",
+      "topics": [
+        "Arrhythmia",
+        "ECG / Holter",
+        "Pharmacology"
+      ],
+      "selected_journal": true,
+      "matched_authors": [
+        "Étienne Côté"
+      ]
+    },
+    {
       "pmid": "12400642",
       "title": "Canine pleural and mediastinal effusions: a retrospective study of 81 cases.",
       "authors_text": "R J Mellanby, E Villiers, M E Herrtage",
@@ -71063,6 +71607,27 @@
       "matched_authors": []
     },
     {
+      "pmid": "12126124",
+      "title": "ECG of the month. Second-degree atrioventricular (AV) block, type II advanced (3:1), with ventricular escape complexes.",
+      "authors_text": "Wendy D Fife, Etienne Côté",
+      "journal": "Journal of the American Veterinary Medical Association",
+      "publication_date": "2002-01",
+      "sort_date": "2002-01-15",
+      "abstract": "",
+      "doi": "10.2460/javma.2002.220.172",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/12126124/",
+      "species": "Feline",
+      "topics": [
+        "Arrhythmia",
+        "ECG / Holter"
+      ],
+      "selected_journal": true,
+      "matched_authors": [
+        "Étienne Côté"
+      ]
+    },
+    {
       "pmid": "16206780",
       "title": "Evaluation of stability over time for measures of heart-rate variability in overtly healthy Doberman Pinschers.",
       "authors_text": "Clay A Calvert, Michelle Wall",
@@ -71276,6 +71841,26 @@
       ],
       "selected_journal": true,
       "matched_authors": []
+    },
+    {
+      "pmid": "12088325",
+      "title": "Diagnosis of urinary bladder rupture using ultrasound contrast cystography: in vitro model and two case-history reports.",
+      "authors_text": "Etienne Côté, Maureen C Carroll, Kathy A Beck, Lillian Good, Kristi Gannon",
+      "journal": "Veterinary radiology & ultrasound : the official journal of the American College of Veterinary Radiology and the International Veterinary Radiology Association",
+      "publication_date": "2002-01",
+      "sort_date": "2002-01-01",
+      "abstract": "Because urinary bladder rupture can be life threatening, a simple, safe technique for evaluating patients is desirable. Current diagnostic protocols involve radiographic imaging, but ultrasound-based contrast techniques have not been methodically evaluated in veterinary patients with urologic trauma. Ultrasound contrast cystography (contrast cystosonography) involves infusion of microbubbled saline solution through a urinary catheter. It was performed in an in vitro model and in 2 dogs with naturally occurring urinary bladder rupture. A positive result consisted of visualizing microbubbles sonographically in fluid surrounding the bladder immediately after infusion of contrast into the urinary catheter. A positive result was obtained both in the in vitro model and in the 2 dogs, with radiographic and surgical confirmation of naturally occurring intraperitoneal urinary bladder rupture in the dogs. Based on the results of this study, ultrasound contrast cystography appears to be more sensitive than two-dimensional (2D) abdominal sonography for detecting naturally occurring urinary bladder rupture in dogs.",
+      "doi": "10.1111/j.1740-8261.2002.tb01004.x",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/12088325/",
+      "species": "Canine",
+      "topics": [
+        "Other Veterinary Medicine"
+      ],
+      "selected_journal": false,
+      "matched_authors": [
+        "Étienne Côté"
+      ]
     },
     {
       "pmid": "12041654",
@@ -71735,6 +72320,27 @@
       ],
       "selected_journal": true,
       "matched_authors": []
+    },
+    {
+      "pmid": "11727330",
+      "title": "Cardiogenic shock and cardiac arrest.",
+      "authors_text": "E Côté",
+      "journal": "The Veterinary clinics of North America. Small animal practice",
+      "publication_date": "2001-11",
+      "sort_date": "2001-11-01",
+      "abstract": "Severe heart disease may cause hypotension and hypoperfusion, and ultimately circulation may cease altogether. These two clinical syndromes are cardiogenic shock and cardiac arrest, respectively. This review summarizes the causes and clinical features of each, and describes the treatment options available to clinicians managing patients in cardiogenic shock.",
+      "doi": "10.1016/s0195-5616(01)50096-0",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/11727330/",
+      "species": "Both",
+      "topics": [
+        "ECG / Holter",
+        "Cardiac Emergency / CPR"
+      ],
+      "selected_journal": false,
+      "matched_authors": [
+        "Étienne Côté"
+      ]
     },
     {
       "pmid": "11721982",
@@ -72855,7 +73461,9 @@
         "Congenital Heart Disease"
       ],
       "selected_journal": true,
-      "matched_authors": []
+      "matched_authors": [
+        "Étienne Côté"
+      ]
     },
     {
       "pmid": "11197563",
@@ -73294,6 +73902,26 @@
       ]
     },
     {
+      "pmid": "11109718",
+      "title": "Transvenous cardiac pacing.",
+      "authors_text": "E Côté, N J Laste",
+      "journal": "Clinical techniques in small animal practice",
+      "publication_date": "2000-08",
+      "sort_date": "2000-08-01",
+      "abstract": "Transvenous pacing therapy is a life-saving technique for patients with clinically significant bradyarrhythmias. For most symptomatic bradyarrhythmias in small animals, there is no effective substitute for cardiac pacing. The methods employed for pacemaker placement, although potentially time-consuming, are not technically difficult. This article discusses the indications, techniques, clinical decision-making, and potential complications associated with temporary and permanent transvenous cardiac pacing.",
+      "doi": "10.1053/svms.2000.18294",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/11109718/",
+      "species": "Canine",
+      "topics": [
+        "Arrhythmia"
+      ],
+      "selected_journal": false,
+      "matched_authors": [
+        "Étienne Côté"
+      ]
+    },
+    {
       "pmid": "11086542",
       "title": "Single nucleotide polymorphisms in intron 5 of the feline myosin regulatory light chain gene detected by SSCP analysis.",
       "authors_text": "A L Magnon, K M Meurs, M D Kittleson, W A Ware",
@@ -73628,6 +74256,26 @@
       ],
       "selected_journal": true,
       "matched_authors": []
+    },
+    {
+      "pmid": "10767952",
+      "title": "What is your diagnosis? Pleural effusion, pneumothorax, lung collapse and bronchopleural fistula in a cat.",
+      "authors_text": "W D Fife, E Côté",
+      "journal": "Journal of the American Veterinary Medical Association",
+      "publication_date": "2000-04",
+      "sort_date": "2000-04-15",
+      "abstract": "",
+      "doi": "10.2460/javma.2000.216.1215",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/10767952/",
+      "species": "Feline",
+      "topics": [
+        "Other Veterinary Medicine"
+      ],
+      "selected_journal": false,
+      "matched_authors": [
+        "Étienne Côté"
+      ]
     },
     {
       "pmid": "10812548",
@@ -74374,6 +75022,26 @@
       ],
       "selected_journal": true,
       "matched_authors": []
+    },
+    {
+      "pmid": "10579034",
+      "title": "What is your diagnosis? Pneumoperitoneum.",
+      "authors_text": "S A Ahrens, E Côté",
+      "journal": "Journal of the American Veterinary Medical Association",
+      "publication_date": "1999-11",
+      "sort_date": "1999-11-15",
+      "abstract": "",
+      "doi": "",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/10579034/",
+      "species": "Feline",
+      "topics": [
+        "Other Veterinary Medicine"
+      ],
+      "selected_journal": false,
+      "matched_authors": [
+        "Étienne Côté"
+      ]
     },
     {
       "pmid": "10780221",
@@ -75822,6 +76490,26 @@
       "matched_authors": []
     },
     {
+      "pmid": "9518294",
+      "title": "Case 33-1997: a 75-year-old man with chest pain, hemoptysis, and a pulmonary lesion.",
+      "authors_text": "D Feldman, E Côté",
+      "journal": "The New England journal of medicine",
+      "publication_date": "1998-03",
+      "sort_date": "1998-03-26",
+      "abstract": "",
+      "doi": "10.1056/NEJM199803263381321",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/9518294/",
+      "species": "Canine",
+      "topics": [
+        "Other Veterinary Medicine"
+      ],
+      "selected_journal": false,
+      "matched_authors": [
+        "Étienne Côté"
+      ]
+    },
+    {
       "pmid": "9491158",
       "title": "Prevalence of heartworm infection in cats with signs of cardiorespiratory abnormalities.",
       "authors_text": "C E Atkins, T C DeFrancesco, M W Miller, K M Meurs, B Keene",
@@ -76668,6 +77356,46 @@
       ],
       "selected_journal": true,
       "matched_authors": []
+    },
+    {
+      "pmid": "9040835",
+      "title": "Blastomycosis in six dogs in New York state.",
+      "authors_text": "E Côté, S C Barr, C Allen, E Eaglefeather",
+      "journal": "Journal of the American Veterinary Medical Association",
+      "publication_date": "1997-02",
+      "sort_date": "1997-02-15",
+      "abstract": "Blastomycosis was diagnosed in 6 dogs living in New York state. To our knowledge, blastomycosis has not been previously reported in dogs in this area, and maps that indicate the prevalence of blastomycosis in North America often partially or completely exclude the state of New York. Environmental characteristics implicated in previous blastomycosis outbreaks in people can be found in New York state, and this may explain how these dogs became infected. Blastomycosis develops in people as well as in dogs, and an understanding of the ecologic and clinical features of blastomycosis can help veterinarians counsel their clients in matters of public health.",
+      "doi": "",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/9040835/",
+      "species": "Canine",
+      "topics": [
+        "Other Veterinary Medicine"
+      ],
+      "selected_journal": false,
+      "matched_authors": [
+        "Étienne Côté"
+      ]
+    },
+    {
+      "pmid": "9040827",
+      "title": "Possible transmission of Blastomycosis dermatitidis via culture specimen.",
+      "authors_text": "E Côté, S C Barr, C Allen",
+      "journal": "Journal of the American Veterinary Medical Association",
+      "publication_date": "1997-02",
+      "sort_date": "1997-02-15",
+      "abstract": "",
+      "doi": "",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/9040827/",
+      "species": "Canine",
+      "topics": [
+        "Other Veterinary Medicine"
+      ],
+      "selected_journal": false,
+      "matched_authors": [
+        "Étienne Côté"
+      ]
     },
     {
       "pmid": "9057927",
@@ -77584,6 +78312,26 @@
       ],
       "selected_journal": true,
       "matched_authors": []
+    },
+    {
+      "pmid": "8617619",
+      "title": "ECG of the month. Phase-4 aberrancy in a dog.",
+      "authors_text": "E de Madron, E Côté",
+      "journal": "Journal of the American Veterinary Medical Association",
+      "publication_date": "1996-03",
+      "sort_date": "1996-03-01",
+      "abstract": "",
+      "doi": "",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/8617619/",
+      "species": "Canine",
+      "topics": [
+        "ECG / Holter"
+      ],
+      "selected_journal": true,
+      "matched_authors": [
+        "Étienne Côté"
+      ]
     },
     {
       "pmid": "8656596",
