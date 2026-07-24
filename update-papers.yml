@@ -3,11 +3,8 @@ name: Update PubMed papers
 on:
   workflow_dispatch:
   schedule:
-    - cron: "15 0 * * *"
-  push:
-    paths:
-      - "fetch_papers.py"
-      - ".github/workflows/update-papers.yml"
+    - cron: "0 9 * * *"
+      timezone: "Asia/Seoul"
 
 permissions:
   contents: write
@@ -15,30 +12,26 @@ permissions:
 jobs:
   update-papers:
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+
     steps:
-      - name: Checkout
+      - name: Get repository
         uses: actions/checkout@v4
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+
       - name: Install requests
-        run: python -m pip install --upgrade requests
-      - name: Fetch PubMed papers
+        run: python -m pip install requests
+
+      - name: Collect PubMed papers
         run: python fetch_papers.py
-        env:
-          PYTHONUNBUFFERED: "1"
-          NCBI_API_KEY: ${{ secrets.NCBI_API_KEY }}
-          NCBI_EMAIL: ${{ secrets.NCBI_EMAIL }}
-      - name: Commit updated data
+
+      - name: Save updated papers
         run: |
-          if git diff --quiet -- papers.json; then
-            echo "No changes."
-            exit 0
-          fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add papers.json
-          git commit -m "Update PubMed papers"
+          git diff --cached --quiet || git commit -m "Update PubMed papers"
           git push
