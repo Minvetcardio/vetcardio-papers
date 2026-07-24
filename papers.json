@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-24T00:22:00.678498+00:00",
-  "total": 4551,
+  "generated_at": "2026-07-24T09:14:18.807451+00:00",
+  "total": 4552,
   "filter_version": "unified-authors-journals-etienne-cote-2026-07-24",
   "tracked_journals": [
     "Frontiers in Veterinary Science",
@@ -175,6 +175,29 @@
       ],
       "selected_journal": true,
       "matched_authors": []
+    },
+    {
+      "pmid": "42492422",
+      "title": "A retrospective (2020-2025), multicenter study of myxomatous mitral valve disease in Chihuahuas from Italy, Sweden, and the United States of America.",
+      "authors_text": "I Spalla, M B Bjerknaes, T Bertuccini, G Menciotti, A Showers, G Dossi, M Borgarelli, J Häggström, I Ljungvall, R Toschi Corneliani, C Locatelli",
+      "journal": "Journal of veterinary cardiology : the official journal of the European Society of Veterinary Cardiology",
+      "publication_date": "2026-07-03",
+      "sort_date": "2026-07-03",
+      "abstract": "INTRODUCTION/OBJECTIVES: Chihuahuas are affected by myxomatous mitral valve disease (MMVD). The aim of this study was to investigate MMVD in Chihuahuas, specifically clinical and echocardiographic characteristics including probability of pulmonary hypertension (PH), disease progression, and survival.\nANIMALS, MATERIALS AND METHODS: A retrospective study of privately owned Chihuahuas with an echocardiographic study compatible with MMVD from four cardiology centers across three countries (2020-2025) was conducted. Differences between signalment, centers, and American College of Veterinary Internal Medicine (ACVIM) stages were assessed; disease progression and survival analysis were calculated.\nRESULTS: In total, 390 Chihuahuas of both coat types, with median age of 11 years, were included. A total of 181 out of 390 dogs (46%) were classified as ACVIM stage B1, 85 of 390 (22%) as stage B2, 114 of 390 (29%) as stage C, and 10 of 390 (3%) as stage D. Females were more numerous in ACVIM stage B1 and males in combined stages C and D; however, sex did not influence survival or disease progression. Among 122 dogs for which follow-up was available (median: 488 days), 47% (57/390) progressed in stage, while 53% (65/122) remained stable. The population median survival time was 783 days; survival differed among ACVIM stages (survival for ACVIM stage B1 was 1,164 days, ACVIM stage B2: 794 days, and ACVIM stages C and D: 345 days, log-rank test P<0.001). A multivariable survival analysis identified ACVIM staging and PH probability as risk factors for all-cause mortality and left atrium-to-aorta ratio and PH probability for cardiac-related death.\nSTUDY LIMITATIONS: Study limitations included the retrospective design and uneven center contribution.\nCONCLUSIONS: Left atrial enlargement, ACVIM staging, and PH probability were prognostic factors for cardiac and non-cardiac death in Chihuahuas with MMVD.",
+      "doi": "10.1016/j.jvc.2026.06.005",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42492422/",
+      "species": "Canine",
+      "topics": [
+        "MMVD / Mitral Valve",
+        "Pulmonary Hypertension",
+        "Echocardiography"
+      ],
+      "selected_journal": true,
+      "matched_authors": [
+        "Jens Häggström",
+        "Michele Borgarelli"
+      ]
     },
     {
       "pmid": "42490935",
