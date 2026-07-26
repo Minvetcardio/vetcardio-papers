@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-26T02:47:07.733238+00:00",
-  "total": 4552,
+  "generated_at": "2026-07-26T09:04:03.935142+00:00",
+  "total": 4553,
   "filter_version": "unified-authors-journals-etienne-cote-2026-07-24",
   "tracked_journals": [
     "Frontiers in Veterinary Science",
@@ -45,6 +45,25 @@
     "Étienne Côté"
   ],
   "papers": [
+    {
+      "pmid": "42501791",
+      "title": "Development and Validation of PCR-RFLP Assays for Detection of MYBPC3 Variants Associated with Hypertrophic Cardiomyopathy in Maine Coon and Ragdoll Cats.",
+      "authors_text": "Thao Phuong Vu, Thong Quang Le, Truc Thi Thanh Truong, Giang Thi Cam Nguyen, Khe Bich By, Cuong Ngoc Duong, Dai Van Nguyen, Khoa Hoang Dang Le, Anh Phu Nam Bui",
+      "journal": "Veterinary journal (London, England : 1997)",
+      "publication_date": "2026-07-25",
+      "sort_date": "2026-07-25",
+      "abstract": "Hypertrophic cardiomyopathy (HCM) is the most common myocardial disease in domestic cats and breed-associated variants in MYBPC3 have been reported in Maine Coon and Ragdoll cats. This study developed and analytically evaluated two polymerase chain reaction-restriction fragment length polymorphism (PCR-RFLP) assays for detecting the MYBPC3 c.91G>C (A31P) variant in Maine Coon cats and the c.2453C>T (R820W) variant in Ragdoll cats, and applied the assays to a small Vietnamese cohort with concurrent echocardiographic phenotyping. Twenty-five Maine Coon and 34 Ragdoll client-owned cats were examined and classified using echocardiographic criteria based primarily on left ventricular wall thickness after exclusion of secondary causes of hypertrophy. The A31P assay generated a 128-bp amplicon digested with HaeIII, whereas the R820W assay generated a 319-bp amplicon digested with BccI. Restriction profiles were concordant with in silico predictions and representative Sanger sequencing results. Heterozygous carriers were detected in 3/25 Maine Coons (12.0%; mutant allele frequency 0.06) and 3/34 Ragdolls (8.8%; mutant allele frequency 0.044); no homozygous mutant cats were identified. Clinical HCM was observed in one heterozygous cat of each breed, but Fisher's exact tests did not provide evidence of genotype-HCM associations. Heterozygous cats showed exploratory differences in selected echocardiographic variables. These findings support the technical feasibility of PCR-RFLP for targeted MYBPC3 genotyping in resource-limited laboratory settings, but this cohort is underpowered for penetrance estimation, clinical risk prediction, or population-level allele-frequency inference.",
+      "doi": "10.1016/j.tvjl.2026.106796",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42501791/",
+      "species": "Feline",
+      "topics": [
+        "Cardiomyopathy",
+        "Echocardiography"
+      ],
+      "selected_journal": true,
+      "matched_authors": []
+    },
     {
       "pmid": "42473271",
       "title": "Anaesthetic management of dogs with myxomatous mitral valve disease: results of a questionnaire survey of veterinary anaesthesiologists.",
