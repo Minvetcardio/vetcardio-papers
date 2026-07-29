@@ -2,13 +2,18 @@ name: Update PubMed papers
 
 on:
   workflow_dispatch:
+
   push:
     paths:
       - "fetch_papers.py"
       - ".github/workflows/update-papers.yml"
+
+  # GitHub Actions는 정각에 작업이 몰리면 지연되거나 누락될 수 있어
+  # 한국시간 09:17에 실행하고, 정오와 저녁에 자동 백업 실행합니다.
   schedule:
-    - cron: "0 9 * * *"
-      timezone: "Asia/Seoul"
+    - cron: "17 0 * * *"   # 09:17 KST
+    - cron: "47 3 * * *"   # 12:47 KST backup
+    - cron: "17 9 * * *"   # 18:17 KST backup
 
 permissions:
   contents: write
@@ -20,52 +25,77 @@ concurrency:
 jobs:
   update-papers:
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 60
 
     steps:
       - name: Get repository
         uses: actions/checkout@v5
+        with:
+          fetch-depth: 1
 
       - name: Set up Python
         uses: actions/setup-python@v6
         with:
           python-version: "3.12"
 
-      - name: Install requests
+      - name: Install dependencies
         run: python -m pip install --upgrade requests
 
       - name: Collect PubMed papers with retry
         shell: bash
         run: |
-          set -o pipefail
+          set -Eeuo pipefail
 
-          for attempt in 1 2 3; do
-            echo "PubMed collection attempt ${attempt}/3"
+          for attempt in 1 2 3 4; do
+            echo "PubMed collection attempt ${attempt}/4"
 
-            if python fetch_papers.py; then
+            if python -u fetch_papers.py; then
               echo "PubMed collection succeeded."
               exit 0
             fi
 
-            if [ "${attempt}" -lt 3 ]; then
-              wait_seconds=$((attempt * 60))
+            if [ "${attempt}" -lt 4 ]; then
+              wait_seconds=$((attempt * 90))
               echo "Attempt failed. Retrying in ${wait_seconds} seconds..."
               sleep "${wait_seconds}"
             fi
           done
 
-          echo "PubMed collection failed after 3 attempts."
+          echo "PubMed collection failed after 4 attempts."
           exit 1
+
+      - name: Validate papers.json
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          path = Path("papers.json")
+          if not path.exists():
+              raise SystemExit("papers.json was not created.")
+
+          data = json.loads(path.read_text(encoding="utf-8"))
+          papers = data.get("papers")
+
+          if not isinstance(papers, list) or not papers:
+              raise SystemExit("papers.json has no papers; refusing to overwrite the site.")
+
+          print(f"Validated papers.json: {len(papers):,} papers")
+          print(f"Generated at: {data.get('generated_at')}")
+          PY
 
       - name: Save updated papers
         shell: bash
         run: |
+          set -Eeuo pipefail
+
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add papers.json
 
           if git diff --cached --quiet; then
-            echo "No paper changes to commit."
+            echo "No changes to commit."
             exit 0
           fi
 
