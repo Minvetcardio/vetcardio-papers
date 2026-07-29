@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-28T01:18:13.522683+00:00",
-  "total": 4553,
+  "generated_at": "2026-07-29T10:15:04.253469+00:00",
+  "total": 4554,
   "filter_version": "unified-authors-journals-etienne-cote-2026-07-24",
   "tracked_journals": [
     "Frontiers in Veterinary Science",
@@ -60,6 +60,24 @@
       "topics": [
         "Cardiomyopathy",
         "Echocardiography"
+      ],
+      "selected_journal": true,
+      "matched_authors": []
+    },
+    {
+      "pmid": "42514732",
+      "title": "Chylopericardium in a Dog with Concurrent Chylothorax, Mesothelioma, and Bilateral Brachiocephalic Vein Thrombosis: A Case Report.",
+      "authors_text": "Tomohiro Yoshida, Kazuyuki Terai, Aki Takeuchi, Akari Hatanaka, Rio Hayashi, Yusuke Takahashi, Daisuke Ito, Hussein M El-Husseiny, Takashi Tanaka, Ryou Tanaka",
+      "journal": "Veterinary sciences",
+      "publication_date": "2026-07-22",
+      "sort_date": "2026-07-22",
+      "abstract": "Chylopericardium is an extremely rare disorder in dogs, and its underlying mechanisms and optimal management strategies remain poorly defined. This report describes a dog with chylopericardium complicated by concurrent chylothorax, bilateral brachiocephalic vein thrombosis, and mesothelioma. A 6-year-old neutered male Shiba Inu presented with respiratory distress and was diagnosed with chylothorax and chylopericardium based on fluid analysis. Computed tomography revealed multiple thoracic ducts and bilateral brachiocephalic vein thrombosis but no definitive site of lymphatic leakage. Surgical management included thoracic duct ligation, subtotal pericardiectomy, and cisterna chyli ablation. Histopathological examination of resected pericardial and mediastinal tissues confirmed mesothelioma. Postoperatively, pleural effusion initially decreased but subsequently recurred, and intrathoracic chemotherapy with carboplatin was administered, resulting in long-term control of chylous effusion. Antithrombotic therapy was also initiated for venous thrombosis. The dog remained free of chylous fluid accumulation until death from an unrelated disease. This case highlights the complex interactions among lymphatic, vascular, and neoplastic disorders and suggests that a comprehensive, multimodal diagnostic and therapeutic approach may be effective for managing complicated cases of chylopericardium in dogs.",
+      "doi": "10.3390/vetsci13070722",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42514732/",
+      "species": "Canine",
+      "topics": [
+        "Pericardial Disease"
       ],
       "selected_journal": true,
       "matched_authors": []
