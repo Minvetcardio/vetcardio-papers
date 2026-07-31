@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="ko">
 <head>
+<!-- MAJOR_JOURNAL_FILTER_VERSION: 2026-07-31-v1 -->
 <!-- FULL_ABSTRACT_TRANSLATION_VERSION: 2026-07-22-v1 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -69,7 +70,7 @@ main{padding:28px 0 60px}
 .dog{background:#eaf1ff;color:#2563eb}
 .cat{background:#f5eafe;color:#9333ea}
 .author{background:#fff7d6;color:#a16207}
-.journal{background:#e6f5ff;color:#0369a1}
+.journal{background:#e6f5ff;color:#0369a1}.aip{background:#fff1f2;color:#be123c}
 h2{font-size:20px;line-height:1.4;margin:0 0 8px}
 .tracked{
   margin-top:7px;color:#a16207;font-size:13px;font-weight:700
@@ -159,6 +160,9 @@ footer{
   <div class="label">수집 경로</div>
   <div class="filters" id="source"></div>
 
+  <div class="label">주요 저널</div>
+  <div class="filters" id="journals"></div>
+
   <div class="label">분야</div>
   <div class="filters" id="topics"></div>
 
@@ -189,7 +193,7 @@ footer{
 <script>
 const PAGE=40;
 let papers=[],filtered=[],visible=PAGE;
-let state={species:"all",source:"all",topic:"all",author:"all"};
+let state={species:"all",source:"all",journal:"all",topic:"all",author:"all"};
 
 const $=id=>document.getElementById(id);
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({
@@ -205,6 +209,32 @@ function btn(text,value,group,active=false){
   return b;
 }
 
+
+function majorJournalKey(paper){
+  if(paper.article_in_press===true)return "JVC_AIP";
+
+  const journal=String(paper.journal||"").toLowerCase();
+
+  if(
+    journal.includes("journal of veterinary cardiology")||
+    journal.includes("j vet cardiol")
+  )return "JVC";
+
+  if(
+    journal.includes("journal of veterinary internal medicine")||
+    journal.includes("j vet intern med")
+  )return "JVIM";
+
+  if(
+    journal.includes(
+      "journal of the american veterinary medical association"
+    )||
+    journal.includes("j am vet med assoc")
+  )return "JAVMA";
+
+  return "OTHER";
+}
+
 function fillFilters(){
   const s=$("species");
   s.innerHTML="";
@@ -215,6 +245,16 @@ function fillFilters(){
   so.innerHTML="";
   [["전체","all"],["지정 저널","journal"],["추적 연구자","author"]]
     .forEach((x,i)=>so.append(btn(x[0],x[1],"source",i===0)));
+
+  const j=$("journals");
+  j.innerHTML="";
+  [
+    ["전체 저널","all"],
+    ["JVC","JVC"],
+    ["JVC Article in Press","JVC_AIP"],
+    ["JVIM","JVIM"],
+    ["JAVMA","JAVMA"]
+  ].forEach((x,i)=>j.append(btn(x[0],x[1],"journal",i===0)));
 
   const t=$("topics");
   t.innerHTML="";
@@ -244,6 +284,14 @@ function apply(){
       (state.source==="journal"&&p.selected_journal)||
       (state.source==="author"&&(p.matched_authors||[]).length);
 
+    const jr=
+      state.journal==="all"||
+      majorJournalKey(p)===state.journal||
+      (
+        state.journal==="JVC"&&
+        majorJournalKey(p)==="JVC_AIP"
+      );
+
     const tp=
       state.topic==="all"||
       (p.topics||[]).includes(state.topic);
@@ -257,7 +305,7 @@ function apply(){
       ...(p.topics||[]),...(p.matched_authors||[])
     ].join(" ").toLowerCase();
 
-    return sp&&src&&tp&&au&&(!q||text.includes(q));
+    return sp&&src&&jr&&tp&&au&&(!q||text.includes(q));
   });
 
   const sort=$("sort").value;
@@ -297,6 +345,8 @@ function render(){
         ?'<span class="tag journal">지정 저널</span>':"",
       p.matched_authors?.length
         ?'<span class="tag author">추적 연구자</span>':"",
+      p.article_in_press===true
+        ?'<span class="tag aip">JVC Article in Press</span>':"",
       ...(p.topics||[]).slice(0,5)
         .map(x=>`<span class="tag">${esc(x)}</span>`)
     ].join("");
@@ -324,22 +374,33 @@ function render(){
       ?`<a target="_blank" rel="noopener"
         href="https://doi.org/${encodeURIComponent(p.doi)}">DOI 원문</a>`:"";
 
+    const pubmed=p.pubmed_url
+      ?`<a target="_blank" rel="noopener"
+        href="${esc(p.pubmed_url)}">PubMed</a>`:"";
+
+    const earlyOnline=(
+      !p.pubmed_url&&p.article_url
+    )
+      ?`<a target="_blank" rel="noopener"
+        href="${esc(p.article_url)}">ScienceDirect</a>`:"";
+
+    const pmidText=p.pmid
+      ?` · PMID ${esc(p.pmid)}`
+      :"";
+
     return `
       <article class="paper">
         <div class="tags">${tags}</div>
         <h2>${esc(p.title)}</h2>
         <div class="meta">
           ${esc(p.authors_text)}<br>
-          ${esc(p.journal)} · ${esc(p.publication_date)} ·
-          PMID ${esc(p.pmid)}
+          ${esc(p.journal)} · ${esc(p.publication_date)}${pmidText}
         </div>
         ${tracked}
         <div class="paper-tools">${summaryTool}${abstractTool}</div>
         ${summaryBox}
         <div class="links">
-          <a target="_blank" rel="noopener"
-            href="${esc(p.pubmed_url)}">PubMed</a>
-          ${doi}
+          ${pubmed}${earlyOnline}${doi}
         </div>
       </article>`;
   }).join("");

@@ -11,6 +11,7 @@
 
 from __future__ import annotations
 
+import hashlib
 import html
 import json
 import os
@@ -19,6 +20,7 @@ import sys
 import time
 import unicodedata
 from datetime import datetime, timezone
+from email.utils import parsedate_to_datetime
 from pathlib import Path
 from typing import Iterable
 import xml.etree.ElementTree as ET
@@ -34,7 +36,9 @@ NCBI_API_KEY = os.getenv("NCBI_API_KEY", "").strip()
 NCBI_EMAIL = os.getenv("NCBI_EMAIL", "").strip()
 AUTHOR_SCOPE_VERSION = "2026-07-22-all-dog-cat-papers"
 AUTHOR_LIST_VERSION = "2026-07-24-etienne-cote"
-JOURNAL_LIST_VERSION = "2026-07-22-vetq-jsap"
+JOURNAL_LIST_VERSION = "2026-07-31-major-journal-filter-jvc-aip"
+JVC_EARLY_ONLINE_VERSION = "2026-07-31-sciencedirect-rss"
+JVC_RSS_URL = "https://rss.sciencedirect.com/publication/science/25764"
 
 
 TRACKED_JOURNALS = {
@@ -789,7 +793,228 @@ def parse_article(
         "topics": classify_topics(classification_text),
         "selected_journal": pmid in journal_pmids,
         "matched_authors": tracked,
+        "article_in_press": False,
+        "source_type": "pubmed",
+        "article_url": "",
     }
+
+
+
+def local_name(tag: str) -> str:
+    return tag.rsplit("}", 1)[-1].lower()
+
+
+def rss_value(
+    item: ET.Element,
+    *names: str,
+) -> str:
+    wanted = {name.lower() for name in names}
+
+    for element in item.iter():
+        if local_name(element.tag) not in wanted:
+            continue
+
+        value = clean(text_of(element))
+        if value:
+            return value
+
+        href = element.attrib.get("href", "").strip()
+        if href:
+            return href
+
+    return ""
+
+
+def strip_markup(value: str) -> str:
+    without_tags = re.sub(r"<[^>]+>", " ", value)
+    return clean(html.unescape(without_tags))
+
+
+def normalize_doi(value: str) -> str:
+    value = clean(value).lower()
+    value = re.sub(
+        r"^https?://(?:dx\.)?doi\.org/",
+        "",
+        value,
+    )
+    value = re.sub(r"^doi:\s*", "", value)
+    return value.rstrip(" .")
+
+
+def doi_from_text(value: str) -> str:
+    match = re.search(
+        r"\b10\.\d{4,9}/[-._;()/:a-z0-9]+\b",
+        value,
+        re.I,
+    )
+    return normalize_doi(match.group(0)) if match else ""
+
+
+def rss_date(value: str) -> tuple[str, str]:
+    value = clean(value)
+
+    if not value:
+        today = datetime.now(timezone.utc).date()
+        iso = today.isoformat()
+        return iso, iso
+
+    try:
+        parsed = parsedate_to_datetime(value)
+        if parsed.tzinfo is None:
+            parsed = parsed.replace(tzinfo=timezone.utc)
+        iso = parsed.date().isoformat()
+        return iso, iso
+    except (TypeError, ValueError, OverflowError):
+        pass
+
+    match = re.search(r"\d{4}-\d{2}-\d{2}", value)
+    if match:
+        return match.group(0), match.group(0)
+
+    match = re.search(r"\b(20\d{2})\b", value)
+    if match:
+        return f"{match.group(1)}-01-01", match.group(1)
+
+    today = datetime.now(timezone.utc).date()
+    iso = today.isoformat()
+    return iso, iso
+
+
+def classify_rss_species(text: str) -> str:
+    species = classify_species(text, [])
+
+    if species != "Unclear":
+        return species
+
+    lowered = text.lower()
+    if re.search(
+        r"\b(small animal|small animals|companion animal|companion animals)\b",
+        lowered,
+    ):
+        return "Both"
+
+    return "Unclear"
+
+
+def fetch_jvc_early_online(
+    existing_papers: list[dict],
+) -> list[dict]:
+    """ScienceDirect RSS의 JVC 최신 조기공개 논문을 보충합니다.
+
+    PubMed에 이미 있는 DOI/제목은 제외합니다. RSS 접속 실패는 전체
+    PubMed 업데이트를 중단시키지 않도록 호출부에서 경고만 출력합니다.
+    """
+    response = SESSION.get(JVC_RSS_URL, timeout=60)
+    response.raise_for_status()
+    root = ET.fromstring(response.content)
+
+    existing_dois = {
+        normalize_doi(str(paper.get("doi", "")))
+        for paper in existing_papers
+        if paper.get("doi")
+    }
+    existing_titles = {
+        clean(str(paper.get("title", ""))).casefold()
+        for paper in existing_papers
+        if paper.get("title")
+    }
+
+    additions: list[dict] = []
+
+    for item in root.iter():
+        if local_name(item.tag) not in {"item", "entry"}:
+            continue
+
+        title = strip_markup(rss_value(item, "title"))
+        link = rss_value(item, "link", "guid", "identifier")
+        description_raw = rss_value(
+            item,
+            "description",
+            "summary",
+            "content",
+        )
+        description = strip_markup(description_raw)
+        authors = strip_markup(
+            rss_value(item, "creator", "author")
+        )
+        date_raw = rss_value(
+            item,
+            "pubdate",
+            "date",
+            "published",
+            "updated",
+        )
+
+        if not title:
+            continue
+
+        combined = " ".join([
+            title,
+            description,
+            authors,
+        ])
+        species = classify_rss_species(combined)
+
+        # VetCardio Papers는 개/고양이 논문만 표시합니다.
+        if species == "Unclear":
+            continue
+
+        doi = doi_from_text(" ".join([
+            link,
+            description_raw,
+            rss_value(item, "identifier"),
+        ]))
+
+        normalized_title = title.casefold()
+        if (
+            (doi and doi in existing_dois)
+            or normalized_title in existing_titles
+        ):
+            continue
+
+        sort_date, date_display = rss_date(date_raw)
+        stable_source = doi or link or title
+        stable_id = hashlib.sha1(
+            stable_source.encode("utf-8")
+        ).hexdigest()[:16]
+
+        article_url = (
+            f"https://doi.org/{doi}"
+            if doi
+            else link
+        )
+
+        classification_text = " ".join([
+            title,
+            description,
+            "Journal of Veterinary Cardiology",
+        ])
+
+        additions.append({
+            "pmid": "",
+            "external_id": f"jvc-aip-{stable_id}",
+            "title": title,
+            "authors_text": authors,
+            "journal": "Journal of Veterinary Cardiology",
+            "publication_date":
+                f"Article in Press · {date_display}",
+            "sort_date": sort_date,
+            # RSS에는 초록이 없는 경우가 많아 설명 필드를 초록으로
+            # 오인하지 않고 비워 둡니다.
+            "abstract": "",
+            "doi": doi,
+            "pmcid": "",
+            "pubmed_url": "",
+            "article_url": article_url,
+            "species": species,
+            "topics": classify_topics(classification_text),
+            "selected_journal": True,
+            "matched_authors": [],
+            "article_in_press": True,
+            "source_type": "sciencedirect_rss",
+        })
+
+    return additions
 
 
 def main() -> None:
@@ -843,10 +1068,26 @@ def main() -> None:
         if parsed is not None:
             papers.append(parsed)
 
+    try:
+        jvc_early_online = fetch_jvc_early_online(papers)
+        papers.extend(jvc_early_online)
+        print(
+            "JVC Article in Press/early online 보충: "
+            f"{len(jvc_early_online):,}개"
+        )
+    except Exception as error:
+        # ScienceDirect RSS 문제로 PubMed 전체 업데이트가 멈추지 않게 합니다.
+        print(
+            "경고: JVC Article in Press RSS 수집 실패: "
+            f"{error}",
+            file=sys.stderr,
+        )
+
     papers.sort(
         key=lambda paper: (
-            paper["sort_date"],
-            int(paper["pmid"]),
+            paper.get("sort_date", ""),
+            int(paper.get("pmid") or 0),
+            paper.get("title", ""),
         ),
         reverse=True,
     )
@@ -854,7 +1095,7 @@ def main() -> None:
     data = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "total": len(papers),
-        "filter_version": "unified-authors-journals-etienne-cote-2026-07-24",
+        "filter_version": "major-journal-filter-jvc-aip-2026-07-31",
         "tracked_journals": list(TRACKED_JOURNALS.keys()),
         "tracked_authors": list(TRACKED_AUTHORS.keys()),
         "papers": papers,
