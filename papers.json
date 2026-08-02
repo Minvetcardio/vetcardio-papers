@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-01T07:54:34.136796+00:00",
-  "total": 4555,
+  "generated_at": "2026-08-02T07:55:43.396465+00:00",
+  "total": 4556,
   "filter_version": "major-journal-filter-jvc-aip-2026-07-31",
   "tracked_journals": [
     "Frontiers in Veterinary Science",
@@ -45,6 +45,27 @@
     "Étienne Côté"
   ],
   "papers": [
+    {
+      "pmid": "42542127",
+      "title": "Is annual Dirofilaria immitis antigen testing at preventive renewal proportionate to the residual infection risk in documented-compliant dogs?",
+      "authors_text": "Matt Horvath",
+      "journal": "Journal of the American Veterinary Medical Association",
+      "publication_date": "2026-07-31",
+      "sort_date": "2026-07-31",
+      "abstract": "Current American Heartworm Society guidelines characterize prescribing macrocyclic lactone preventives in the absence of antigen testing as \"NOT RECOMMENDED,\" regardless of compliance history or geographic prevalence. Number Needed to Screen, an established human preventive medicine framework applied here as a novel veterinary screening tool, has not previously been used to evaluate this guideline. Using county-level Companion Animal Parasite Council prevalence data and the compliance-gap distribution as a proxy, we derive geographically stratified Number Needed to Screen estimates varying approximately 25-fold across US states. A risk-stratified approach calibrated to local prevalence and compliance history merits prospective evaluation.",
+      "doi": "10.2460/javma.26.04.0293",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42542127/",
+      "species": "Canine",
+      "topics": [
+        "Heartworm"
+      ],
+      "selected_journal": true,
+      "matched_authors": [],
+      "article_in_press": false,
+      "source_type": "pubmed",
+      "article_url": ""
+    },
     {
       "pmid": "42532333",
       "title": "Deep Learning for Canine Cardiac Radiography: A Comprehensive Review of Automated Vertebral Heart Score Estimation.",
