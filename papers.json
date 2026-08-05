@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-04T10:16:31.200251+00:00",
+  "generated_at": "2026-08-05T10:09:55.191117+00:00",
   "total": 4556,
   "filter_version": "major-journal-filter-jvc-aip-2026-07-31",
   "tracked_journals": [
@@ -118,7 +118,7 @@
       "sort_date": "2026-07-22",
       "abstract": "Chylopericardium is an extremely rare disorder in dogs, and its underlying mechanisms and optimal management strategies remain poorly defined. This report describes a dog with chylopericardium complicated by concurrent chylothorax, bilateral brachiocephalic vein thrombosis, and mesothelioma. A 6-year-old neutered male Shiba Inu presented with respiratory distress and was diagnosed with chylothorax and chylopericardium based on fluid analysis. Computed tomography revealed multiple thoracic ducts and bilateral brachiocephalic vein thrombosis but no definitive site of lymphatic leakage. Surgical management included thoracic duct ligation, subtotal pericardiectomy, and cisterna chyli ablation. Histopathological examination of resected pericardial and mediastinal tissues confirmed mesothelioma. Postoperatively, pleural effusion initially decreased but subsequently recurred, and intrathoracic chemotherapy with carboplatin was administered, resulting in long-term control of chylous effusion. Antithrombotic therapy was also initiated for venous thrombosis. The dog remained free of chylous fluid accumulation until death from an unrelated disease. This case highlights the complex interactions among lymphatic, vascular, and neoplastic disorders and suggests that a comprehensive, multimodal diagnostic and therapeutic approach may be effective for managing complicated cases of chylopericardium in dogs.",
       "doi": "10.3390/vetsci13070722",
-      "pmcid": "",
+      "pmcid": "PMC13431562",
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42514732/",
       "species": "Canine",
       "topics": [
