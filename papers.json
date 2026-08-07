@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-06T10:15:15.478837+00:00",
-  "total": 4556,
+  "generated_at": "2026-08-07T05:54:27.533332+00:00",
+  "total": 4559,
   "filter_version": "major-journal-filter-jvc-aip-2026-07-31",
   "tracked_journals": [
     "Frontiers in Veterinary Science",
@@ -46,6 +46,30 @@
   ],
   "papers": [
     {
+      "pmid": "42556405",
+      "title": "An artificial intelligence-enabled digital stethoscope demonstrates moderate murmur detection in dogs but not cats and unreliable arrhythmia classification in both species.",
+      "authors_text": "Jake H Johnson, Joshua A Stern, Teresa C DeFrancesco, Kursten V Pierce",
+      "journal": "Journal of the American Veterinary Medical Association",
+      "publication_date": "2026-08-05",
+      "sort_date": "2026-08-05",
+      "abstract": "OBJECTIVE: To prospectively evaluate the diagnostic performance of an AI-enabled digital stethoscope in detecting cardiac murmurs and arrhythmias compared to fourth-year veterinary students and experienced clinicians.\nMETHODS: Dogs and cats presenting to a university teaching hospital were prospectively enrolled from August 1, 2025, through December 31, 2025. Each animal underwent cardiac auscultation at 4 thoracic sites with the use of an AI-enabled digital stethoscope (Core 500; EKO Health Inc), 6-lead ECG, and echocardiogram, if clinically indicated. Auscultation was performed by a cardiology resident, board-certified cardiologist, and fourth-year veterinary student.\nRESULTS: The stethoscope demonstrated a sensitivity of 86.8%, specificity of 56.3%, and positive predictive value of 82.5% for murmur detection in dogs. There was no difference between the agreement of the AI stethoscope or students with a clinician (κ = 0.447). In cats, sensitivity was markedly lower (9.1%), with only 2 of 22 murmurs detected (κ = 0.081). The stethoscope demonstrated high sensitivity for atrial fibrillation (100%), but classified no dog as arrhythmia-free. Murmur grade was the only significant predictor of stethoscope murmur diagnosis, and high-grade murmurs (≥ 3) had significantly greater odds of detection (OR, 15.11).\nCONCLUSIONS: The AI-enabled stethoscope demonstrated moderate murmur detection performance in dogs, comparable to fourth-year veterinary students, but performed poorly in cats. Arrhythmia classification was unreliable in both species.\nCLINICAL RELEVANCE: AI-enabled stethoscopes represent an emerging tool in veterinary medicine, but clinical validation is necessary before routine adoption. This study provides prospective performance data across small animals and examiner levels, identifying meaningful limitations regarding interpretation of this technology.",
+      "doi": "10.2460/javma.26.05.0353",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42556405/",
+      "species": "Both",
+      "topics": [
+        "Arrhythmia",
+        "ECG / Holter"
+      ],
+      "selected_journal": true,
+      "matched_authors": [
+        "Joshua A. Stern"
+      ],
+      "article_in_press": false,
+      "source_type": "pubmed",
+      "article_url": ""
+    },
+    {
       "pmid": "42542127",
       "title": "Is annual Dirofilaria immitis antigen testing at preventive renewal proportionate to the residual infection risk in documented-compliant dogs?",
       "authors_text": "Matt Horvath",
@@ -68,12 +92,12 @@
     },
     {
       "pmid": "42532333",
-      "title": "Deep Learning for Canine Cardiac Radiography: A Comprehensive Review of Automated Vertebral Heart Score Estimation.",
+      "title": "Deep learning for canine cardiac radiography: A comprehensive review of automated vertebral heart score estimation.",
       "authors_text": "Het Buch, Prit Mayani",
       "journal": "Veterinary journal (London, England : 1997)",
       "publication_date": "2026-07-30",
       "sort_date": "2026-07-30",
-      "abstract": "Myxomatous mitral valve disease (MMVD) is the most common acquired cardiac disorder in dogs and represents a large proportion of cases encountered in small animal veterinary practice. Thoracic radiography is routinely used to evaluate cardiac enlargement, with the vertebral heart score (VHS) serving as a widely accepted radiographic measurement. However, VHS assessment depends on manual landmark identification and measurement, which can result in variation between observers. This review summarizes recent advances in deep learning methods developed for automated VHS estimation, including convolutional neural networks, EfficientNet models, and hybrid architectures incorporating transformer-based components. A systematic search of three major scientific databases, followed by backward citation screening, identified 3,729 records. After eligibility assessment, 94 studies met the inclusion criteria, and 17 representative studies were selected for detailed evaluation. The reviewed studies were compared with respect to landmark localization, feature extraction strategies, predictive performance, and their ability to generalize across different datasets. Among the reported approaches, EfficientNet-B3 and EfficientNet-B7 demonstrated consistently strong performance for landmark regression and VHS prediction. The literature also suggests that transfer learning has contributed substantially to model performance, particularly where annotated veterinary imaging datasets are limited. Despite encouraging results, differences in dataset characteristics, annotation protocols, and the limited availability of multi-centre validation continue to restrict broader clinical implementation. Future work should focus on improving dataset diversity, model interpretability, and external validation to support the reliable integration of automated VHS estimation into veterinary practice.",
+      "abstract": "Myxomatous mitral valve disease (MMVD) is the most common acquired cardiac disorder in dogs and represents a large proportion of cases encountered in small animal veterinary practice. Thoracic radiography is routinely used to evaluate cardiac enlargement, with the vertebral heart score (VHS) serving as a widely accepted radiographic measurement. However, VHS assessment depends on manual landmark identification and measurement, which can result in variation between observers. This review summarizes recent advances in deep learning methods developed for automated VHS estimation, including convolutional neural networks, EfficientNet models, and hybrid architectures incorporating transformer-based components. A systematic search of three major scientific databases, followed by backward citation screening, identified 3729 records. After eligibility assessment, 94 studies met the inclusion criteria, and 17 representative studies were selected for detailed evaluation. The reviewed studies were compared with respect to landmark localization, feature extraction strategies, predictive performance, and their ability to generalize across different datasets. Among the reported approaches, EfficientNet-B3 and EfficientNet-B7 demonstrated consistently strong performance for landmark regression and VHS prediction. The literature also suggests that transfer learning has contributed substantially to model performance, particularly where annotated veterinary imaging datasets are limited. Despite encouraging results, differences in dataset characteristics, annotation protocols, and the limited availability of multi-centre validation continue to restrict broader clinical implementation. Future work should focus on improving dataset diversity, model interpretability, and external validation to support the reliable integration of automated VHS estimation into veterinary practice.",
       "doi": "10.1016/j.tvjl.2026.106797",
       "pmcid": "",
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42532333/",
@@ -214,6 +238,51 @@
       "matched_authors": [
         "Jens Häggström"
       ],
+      "article_in_press": false,
+      "source_type": "pubmed",
+      "article_url": ""
+    },
+    {
+      "pmid": "42562674",
+      "title": "Left atrial decompression in dogs with heart failure secondary to myxomatous mitral valve disease: a long-term outcome study.",
+      "authors_text": "K L Phipps, J A Allen, K A Barrett, C J Day, M N Doan",
+      "journal": "Journal of veterinary cardiology : the official journal of the European Society of Veterinary Cardiology",
+      "publication_date": "2026-07-13",
+      "sort_date": "2026-07-13",
+      "abstract": "INTRODUCTION/OBJECTIVES: Left-sided congestive heart failure (CHF) secondary to myxomatous mitral valve disease carries high morbidity and mortality in dogs. Left atrial decompression (LAD) has been employed in severely affected dogs refractory to medical therapy, but long-term outcomes have not been reported. The aim of this study was to evaluate survival time following LAD, the frequency of iatrogenic atrial septal defect closure, the frequency of right-sided CHF, and the frequency of cardiac-related hospitalizations.\nANIMALS, MATERIALS AND METHODS: A total of 111 client-owned dogs with stage B2, C, or D mitral valve disease undergoing LAD. A retrospective cohort study of patients treated between October 2018 and September 2021 was conducted. The primary outcome was time to cardiac-related death or euthanasia. Secondary outcomes included time to right-sided CHF, iatrogenic atrial septal defect closure, and frequency of CHF-related hospitalization.\nRESULTS: Iatrogenic atrial septal defect closure occurred in 22 dogs (20.2%), most commonly when septal puncture was performed caudal to the fossa ovalis. Forty-seven dogs (42.3%) developed right-sided CHF after LAD, with onset ranging from 1 to 873 days. Twenty-five dogs (22.5%) were hospitalized for cardiac disease after the procedure. Median survival time was 379 days (range, 1-1282) after the LAD procedure.\nSTUDY LIMITATIONS: Given the retrospective design and absence of a medically managed control group, prospective studies are warranted to further define the long-term benefits of LAD.\nCONCLUSIONS: Left atrial decompression provided satisfactory survival times in dogs with advanced mitral valve disease refractory to standard therapy. Left CHF recurrence requiring hospitalization was uncommon, but right-sided CHF developed frequently, albeit with variable onset. Atrial septal defect closure was rare and may be minimized by puncturing within the fossa ovalis.",
+      "doi": "10.1016/j.jvc.2026.07.003",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42562674/",
+      "species": "Canine",
+      "topics": [
+        "MMVD / Mitral Valve",
+        "Congenital Heart Disease",
+        "Heart Failure"
+      ],
+      "selected_journal": true,
+      "matched_authors": [],
+      "article_in_press": false,
+      "source_type": "pubmed",
+      "article_url": ""
+    },
+    {
+      "pmid": "42561469",
+      "title": "Pulmonary valve sinus aneurysm associated with pulmonic stenosis and patent ductus arteriosus in a dog.",
+      "authors_text": "D M P Vázquez, J E V Rodríguez, P P Serrano",
+      "journal": "Journal of veterinary cardiology : the official journal of the European Society of Veterinary Cardiology",
+      "publication_date": "2026-07-13",
+      "sort_date": "2026-07-13",
+      "abstract": "A three-year-old neutered female Bernese mountain dog was referred for evaluation of multiple congenital cardiac abnormalities. Transthoracic echocardiography demonstrated features consistent with type A pulmonic stenosis, including a normal pulmonary valve annulus, an increased transvalvular pressure gradient, systolic doming of thickened and fused pulmonary valve leaflets, and concentric right ventricular hypertrophy. Additionally, a focal aneurysmal dilation arising from the intermediate pulmonary valve leaflet was identified. Furthermore, a concurrent left-to-right shunting patent ductus arteriosus was detected. Computed tomography confirmed thickening of the pulmonic valve, narrowing of the sinotubular junction, and thin-walled, contrast-enhancing saccular dilation originating of the intermediate pulmonary valve sinus. These findings supported the diagnosis of a pulmonary valve sinus aneurysm associated with severe type A pulmonic stenosis and patent ductus arteriosus.",
+      "doi": "10.1016/j.jvc.2026.07.002",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42561469/",
+      "species": "Canine",
+      "topics": [
+        "Congenital Heart Disease",
+        "Echocardiography"
+      ],
+      "selected_journal": true,
+      "matched_authors": [],
       "article_in_press": false,
       "source_type": "pubmed",
       "article_url": ""
