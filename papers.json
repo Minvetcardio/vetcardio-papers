@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-07T05:54:27.533332+00:00",
-  "total": 4559,
+  "generated_at": "2026-08-08T04:18:42.552640+00:00",
+  "total": 4560,
   "filter_version": "major-journal-filter-jvc-aip-2026-07-31",
   "tracked_journals": [
     "Frontiers in Veterinary Science",
@@ -45,6 +45,27 @@
     "Étienne Côté"
   ],
   "papers": [
+    {
+      "pmid": "42563163",
+      "title": "Longitudinal echocardiographic systolic changes in dogs receiving doxorubicin-based chemotherapy.",
+      "authors_text": "Gustavo Cavinato Herrera, Matheus Matioli Mantovani, Jacqueline Ribeiro de Castro, Andresa Dos Santos Veras, Marcelo José Barbosa Silva",
+      "journal": "BMC veterinary research",
+      "publication_date": "2026-08-06",
+      "sort_date": "2026-08-06",
+      "abstract": "BACKGROUND: Doxorubicin is widely used in veterinary oncology but carries a risk of cumulative cardiotoxicity. Serial echocardiographic evaluation is commonly used to monitor dogs receiving potentially cardiotoxic chemotherapy; however, evidence remains limited regarding which indices best capture early longitudinal systolic changes. Conventional monitoring relies largely on fractional shortening and M-mode estimated ejection fraction, which are based on geometric assumptions and may have limited sensitivity for subtle systolic change. This study evaluated whether Simpson-derived left ventricular ejection fraction better captures longitudinal echocardiographic systolic changes than conventional indices in dogs receiving doxorubicin-based chemotherapy. Twenty-nine client-owned dogs were prospectively enrolled, including 23 females and 6 males, with a median age of 10.0 years (IQR, 7.0-11.0) and median body weight of 13.2 kg (IQR, 7.0-21.6). Twelve dogs received doxorubicin as monotherapy and 17 received combination protocols. Echocardiography was performed before the first cycle (D0) and after three consecutive cycles (D1, D2, D3).\nRESULTS: Simpson-derived left ventricular ejection fraction (LVEF) showed a progressive numerical decline from 72.0 ± 7.3% at baseline to 66.5 ± 7.7% at D3; however, no individual time-point estimate reached statistical significance in the mixed-effects model (D1, p = 0.183; D2, p = 0.618; D3, p = 0.206). M-mode estimated LVEF and fractional shortening did not show comparable directional patterns or significant longitudinal changes. A decline greater than 10% points in Simpson-derived LVEF was identified in 9 of 29 dogs (31.0%), all while absolute values remained within conventional reference limits. Six of these dogs were not identified by either conventional index.\nCONCLUSIONS: Serial, baseline-referenced Simpson-derived LVEF identified more longitudinal echocardiographic systolic changes than conventional indices in this cohort. These findings suggest that Simpson-derived LVEF may provide complementary information for tracking baseline-referenced systolic changes in dogs receiving doxorubicin. However, these changes should not be interpreted as definitive evidence of myocardial injury, and their clinical relevance requires confirmation in larger prospective studies.",
+      "doi": "10.1186/s12917-026-05707-1",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42563163/",
+      "species": "Canine",
+      "topics": [
+        "Echocardiography"
+      ],
+      "selected_journal": true,
+      "matched_authors": [],
+      "article_in_press": false,
+      "source_type": "pubmed",
+      "article_url": ""
+    },
     {
       "pmid": "42556405",
       "title": "An artificial intelligence-enabled digital stethoscope demonstrates moderate murmur detection in dogs but not cats and unreliable arrhythmia classification in both species.",
@@ -2553,6 +2574,7 @@
       "species": "Canine",
       "topics": [
         "MMVD / Mitral Valve",
+        "Echocardiography",
         "Biomarkers"
       ],
       "selected_journal": true,
