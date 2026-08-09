@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-08T04:18:42.552640+00:00",
+  "generated_at": "2026-08-09T04:46:53.863166+00:00",
   "total": 4560,
   "filter_version": "major-journal-filter-jvc-aip-2026-07-31",
   "tracked_journals": [
@@ -54,7 +54,7 @@
       "sort_date": "2026-08-06",
       "abstract": "BACKGROUND: Doxorubicin is widely used in veterinary oncology but carries a risk of cumulative cardiotoxicity. Serial echocardiographic evaluation is commonly used to monitor dogs receiving potentially cardiotoxic chemotherapy; however, evidence remains limited regarding which indices best capture early longitudinal systolic changes. Conventional monitoring relies largely on fractional shortening and M-mode estimated ejection fraction, which are based on geometric assumptions and may have limited sensitivity for subtle systolic change. This study evaluated whether Simpson-derived left ventricular ejection fraction better captures longitudinal echocardiographic systolic changes than conventional indices in dogs receiving doxorubicin-based chemotherapy. Twenty-nine client-owned dogs were prospectively enrolled, including 23 females and 6 males, with a median age of 10.0 years (IQR, 7.0-11.0) and median body weight of 13.2 kg (IQR, 7.0-21.6). Twelve dogs received doxorubicin as monotherapy and 17 received combination protocols. Echocardiography was performed before the first cycle (D0) and after three consecutive cycles (D1, D2, D3).\nRESULTS: Simpson-derived left ventricular ejection fraction (LVEF) showed a progressive numerical decline from 72.0 ± 7.3% at baseline to 66.5 ± 7.7% at D3; however, no individual time-point estimate reached statistical significance in the mixed-effects model (D1, p = 0.183; D2, p = 0.618; D3, p = 0.206). M-mode estimated LVEF and fractional shortening did not show comparable directional patterns or significant longitudinal changes. A decline greater than 10% points in Simpson-derived LVEF was identified in 9 of 29 dogs (31.0%), all while absolute values remained within conventional reference limits. Six of these dogs were not identified by either conventional index.\nCONCLUSIONS: Serial, baseline-referenced Simpson-derived LVEF identified more longitudinal echocardiographic systolic changes than conventional indices in this cohort. These findings suggest that Simpson-derived LVEF may provide complementary information for tracking baseline-referenced systolic changes in dogs receiving doxorubicin. However, these changes should not be interpreted as definitive evidence of myocardial injury, and their clinical relevance requires confirmation in larger prospective studies.",
       "doi": "10.1186/s12917-026-05707-1",
-      "pmcid": "",
+      "pmcid": "PMC13445866",
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42563163/",
       "species": "Canine",
       "topics": [
@@ -2569,7 +2569,7 @@
       "sort_date": "2026-03-21",
       "abstract": "Myxomatous mitral valve disease, an acquired valvular degeneration, is the most common cardiac disorder in dogs, affecting approximately 10% of dogs in primary care veterinary practice. Dogs with myxomatous mitral valve disease frequently require anaesthesia for routine procedures. The American Society of Anesthesiologists physical status classification system shows increasing mortality with higher grades, but its subjectivity limits risk stratification in dogs with preclinical myxomatous mitral valve disease. Because Stage B1 and B2 dogs can vary widely in disease severity, even within the same American Society of Anesthesiologists category, a single American Society of Anesthesiologists score may not accurately reflect their anaesthetic risk. While a comprehensive echocardiogram remains the gold standard for myxomatous mitral valve disease staging, referral to a veterinary cardiologist is often cost-prohibitive and might involve long waiting periods. This narrative review proposes a practical framework for pre-anaesthetic risk assessment and protocol selection in dogs with myxomatous mitral valve disease, integrating accessible diagnostic tools including physical examination, radiographic measurements (vertebral heart size and vertebral left atrial size), cardiac biomarkers (N-terminal pro-B-type natriuretic peptide) and point-of-care ultrasound. Recommended anaesthetic protocols are provided for different clinical scenarios ranging from cases with limited diagnostics through grey zone presentations to confirmed cardiomegaly, alongside structured approaches to managing intraoperative complications. This spectrum of care approach recognises that while specialist evaluation remains ideal, practical alternatives can guide safe anaesthetic management for this commonly encountered cardiac condition in companion dogs.",
       "doi": "10.1111/jsap.70119",
-      "pmcid": "",
+      "pmcid": "PMC13448755",
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41863286/",
       "species": "Canine",
       "topics": [
