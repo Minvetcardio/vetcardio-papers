@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-09T04:46:53.863166+00:00",
-  "total": 4560,
+  "generated_at": "2026-08-10T05:11:43.368308+00:00",
+  "total": 4561,
   "filter_version": "major-journal-filter-jvc-aip-2026-07-31",
   "tracked_journals": [
     "Frontiers in Veterinary Science",
@@ -45,6 +45,29 @@
     "Étienne Côté"
   ],
   "papers": [
+    {
+      "pmid": "42571816",
+      "title": "Evaluating Sacubitril/Valsartan's Efficacy in Reducing Myocardial Hypertrophy and Fibrosis in Feline Models.",
+      "authors_text": "Zeyao Sun, Wenjia Huang, Xinyue Chai, Changmin Hu, Cong Zhu",
+      "journal": "Veterinary journal (London, England : 1997)",
+      "publication_date": "2026-08-09",
+      "sort_date": "2026-08-09",
+      "abstract": "Hypertrophic cardiomyopathy is the most common form of feline heart disease, and current therapy is largely supportive with no widely available effective treatment to reverse myocardial hypertrophy or attenuate fibrosis. Sacubitril/valsartan (Sac/Val), an angiotensin receptor-neprilysin inhibitor, has antihypertrophic and antifibrotic effects, but its potential in feline hypertrophic cardiomyopathy remains unclear. The objective of this exploratory pilot study was to evaluate the effects of Sac/Val on myocardial hypertrophy and fibrosis in a feline pressure-overload model. Twelve healthy cats were equally randomized to sham surgery (SHAM group), abdominal aortic constriction (AAC group), and AAC plus Sac/Val treatment (AAC+Sac/Val group). Left ventricular (LV) hypertrophy was assessed by transthoracic echocardiography, with computed tomography performed at the study endpoint. Circulating N-terminal pro-B-type natriuretic peptide (NT-proBNP) and cardiac troponin I (cTnI) were measured serially using feline-validated ELISA assays. Myocardial fibrosis was evaluated by histology and quantitative reverse-transcription PCR (qRT-PCR) targeting BNP, ACTA, TGF-β, and COL-I. Pressure-overload AAC induced hypertrophic remodeling, with increased circulating cardiac biomarkers and maximal LV wall thickness. At Day 60 (pre-treatment), NT-proBNP and cTnI were higher in AAC (and AAC+Sac/Val) cats than in SHAM cats (P < 0.05). By Day 90, Sac/Val was associated with lower NT-proBNP and cTnI versus untreated AAC (e.g., NT-proBNP 0.241 ± 0.049 vs 0.921 ± 0.115ng/mL; cTnI 0.958 ± 0.519 vs 3.313 ± 0.510ng/mL; P < 0.05). Sac/Val also reduced maximal LV wall thickness compared with AAC on echocardiography and endpoint CT (echo 3.45 ± 0.33 vs 5.88 ± 1.77mm; CT 3.54 ± 0.24 vs 5.68 ± 1.61mm; P < 0.05). Histology showed reduced interstitial collagen deposition with Sac/Val (P < 0.05), accompanied by downregulation of fibrosis-associated transcripts (P < 0.05). In conclusion, sacubitril/valsartan administration was associated with reduced left ventricular hypertrophy and fibrosis in a feline pressure-overload model, suggesting additional benefits for feline hypertrophic cardiomyopathy.",
+      "doi": "10.1016/j.tvjl.2026.106819",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42571816/",
+      "species": "Feline",
+      "topics": [
+        "Cardiomyopathy",
+        "Echocardiography",
+        "Biomarkers"
+      ],
+      "selected_journal": true,
+      "matched_authors": [],
+      "article_in_press": false,
+      "source_type": "pubmed",
+      "article_url": ""
+    },
     {
       "pmid": "42563163",
       "title": "Longitudinal echocardiographic systolic changes in dogs receiving doxorubicin-based chemotherapy.",
