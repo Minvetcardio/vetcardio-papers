@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-11T04:51:37.350109+00:00",
-  "total": 4563,
+  "generated_at": "2026-08-12T05:46:20.078200+00:00",
+  "total": 4565,
   "filter_version": "major-journal-filter-jvc-aip-2026-07-31",
   "tracked_journals": [
     "Frontiers in Veterinary Science",
@@ -220,6 +220,29 @@
       "article_url": ""
     },
     {
+      "pmid": "42580987",
+      "title": "Breed screening for myxomatous mitral valve disease in dogs.",
+      "authors_text": "L H Olsen, S Swift, J Häggström",
+      "journal": "Journal of veterinary cardiology : the official journal of the European Society of Veterinary Cardiology",
+      "publication_date": "2026-07-21",
+      "sort_date": "2026-07-21",
+      "abstract": "Myxomatous mitral valve disease contributes to cardiac morbidity and mortality in dogs worldwide. It is the most common heart disease in dogs. The exact cause of myxomatous mitral valve disease is still unknown but it is described as heritable in some dog breeds. The present literature review presents an overview of myxomatous mitral valve disease breeding screening methods and ongoing screening programs in dogs.",
+      "doi": "10.1016/j.jvc.2026.07.004",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42580987/",
+      "species": "Canine",
+      "topics": [
+        "MMVD / Mitral Valve"
+      ],
+      "selected_journal": true,
+      "matched_authors": [
+        "Jens Häggström"
+      ],
+      "article_in_press": false,
+      "source_type": "pubmed",
+      "article_url": ""
+    },
+    {
       "pmid": "42473271",
       "title": "Anaesthetic management of dogs with myxomatous mitral valve disease: results of a questionnaire survey of veterinary anaesthesiologists.",
       "authors_text": "E Vettorato, S Bell, E J Benjamin, A H Estrada, L Köster",
@@ -303,6 +326,29 @@
       "matched_authors": [
         "Jens Häggström"
       ],
+      "article_in_press": false,
+      "source_type": "pubmed",
+      "article_url": ""
+    },
+    {
+      "pmid": "42580986",
+      "title": "High-pressure balloon valvuloplasty in small dogs with severe pulmonary stenosis: retrospective evaluation of the Mustang™ Balloon Dilatation Catheter in 12 dogs.",
+      "authors_text": "M E McMullen, R L Winter, K L Maneval, C S Ferrel",
+      "journal": "Journal of veterinary cardiology : the official journal of the European Society of Veterinary Cardiology",
+      "publication_date": "2026-07-14",
+      "sort_date": "2026-07-14",
+      "abstract": "INTRODUCTION/OBJECTIVES: Balloon valvuloplasty (BV) is a common treatment in dogs with severe valvar pulmonary stenosis (PS). Many reports in dogs with PS describe low-pressure balloon catheter use, with successful outcomes expected with type A. High-pressure balloon catheter use in dogs with type B PS has been reported; however, these reports typically describe dogs of larger body weight. The Mustang™ Balloon Dilatation Catheter, which requires smaller introducer sheath sizes, may be of use in small dogs with PS. The objective of this study was to retrospectively evaluate the immediate outcomes of dogs with severe PS that underwent BV with a Mustang™ balloon catheter.\nANIMALS, MATERIALS AND METHODS: Twelve client-owned dogs with type B or intermediate-type PS that underwent BV were included in the study. Medical records, echocardiographic images, and angiographic examinations were reviewed. Maximal pressure gradient across the pulmonary valve was assessed before and 18-24 h after BV. Intra-operative complications, introducer size, and size of balloon catheter used were recorded.\nRESULTS: The median (range) weight at the time of BV was 3.05 kg (2.2-5.7 kg). A 6-Fr introducer was used in 10 of 12 dogs. The median (standard deviation) pulmonary annulus diameter was 7.0 ± 1.09 mm, and the balloon-to-annulus ratio was 1.4 ± 0.09. Pulmonary pressure gradient decreased from 168 ± 46 mmHg to 56 ± 25 mmHg (P<0.0001).\nSTUDY LIMITATIONS: Limitations include the retrospective nature of the study, the small number of dogs, and the reporting of only immediate outcomes.\nCONCLUSIONS: The use of the Mustang™ balloon catheter for BV is feasible in small dogs and may provide benefit in those with severe type B or intermediate-type PS.",
+      "doi": "10.1016/j.jvc.2026.07.001",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42580986/",
+      "species": "Canine",
+      "topics": [
+        "Congenital Heart Disease",
+        "Echocardiography",
+        "Intervention / Surgery"
+      ],
+      "selected_journal": true,
+      "matched_authors": [],
       "article_in_press": false,
       "source_type": "pubmed",
       "article_url": ""
