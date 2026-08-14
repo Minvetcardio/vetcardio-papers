@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-13T05:51:01.963316+00:00",
-  "total": 4565,
+  "generated_at": "2026-08-14T05:47:16.055714+00:00",
+  "total": 4568,
   "filter_version": "major-journal-filter-jvc-aip-2026-07-31",
   "tracked_journals": [
     "Frontiers in Veterinary Science",
@@ -135,6 +135,51 @@
       "article_url": ""
     },
     {
+      "pmid": "42589021",
+      "title": "Complete Mitral Valve Reconstruction Using Fresh Autologous Pericardium in a Chihuahua with Infective Endocarditis: A Case Report.",
+      "authors_text": "Noriko Isayama, Yusuke Uchimura, Kenta Sasaki, Erika Maeda, Megumi Watanabe, Sayaka Suzuki, Takeshi Mizuno",
+      "journal": "Animals : an open access journal from MDPI",
+      "publication_date": "2026-08-03",
+      "sort_date": "2026-08-03",
+      "abstract": "In humans, surgical repair is commonly performed for infective endocarditis (IE) associated with mitral valve destruction. However, extensive valve destruction may make repair impossible and require prosthetic valve replacement. In small-breed dogs, appropriately sized prosthetic valves are lacking, and complete surgical mitral valve reconstruction in dogs has not been reported. We encountered a Chihuahua that developed IE after mitral valve repair. During reoperation for progressive mitral regurgitation recurrence, the mitral leaflets were extensively destroyed and torn, and re-repair using native tissue was impossible; the entire valve was therefore reconstructed with fresh autologous pericardium. A graft was harvested and fashioned into a cylindrical valve based on a design previously described in a human study. Intraoperative saline testing and immediate postoperative echocardiography confirmed adequate opening and closure of the reconstructed pericardial valve, with only mild mitral regurgitation and no stenosis. The dog died on the second day after reoperative day of an uncontrolled infection caused by extended-spectrum beta-lactamase-producing Escherichia coli. This case demonstrates that an autologous pericardial valve can provide short-term mechanical function as a mitral valve in a small-breed dog and indicates that infection control is the principal determinant of outcome.",
+      "doi": "10.3390/ani16152387",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42589021/",
+      "species": "Canine",
+      "topics": [
+        "MMVD / Mitral Valve",
+        "Pericardial Disease",
+        "Echocardiography",
+        "Intervention / Surgery"
+      ],
+      "selected_journal": true,
+      "matched_authors": [],
+      "article_in_press": false,
+      "source_type": "pubmed",
+      "article_url": ""
+    },
+    {
+      "pmid": "42588999",
+      "title": "Epidemiological and Molecular Investigation of Dirofilaria repens, Dirofilaria immitis, and Acanthocheilonema reconditum in Dogs in the Republic of Srpska (Bosnia and Herzegovina).",
+      "authors_text": "Darko Despotovic, Nemanja M Jovanovic, Tamas Petrovic, Ivona Subic, Andrea Radalj, Oliver Stevanovic, Katarina Nenadovic, Tamara Ilic",
+      "journal": "Animals : an open access journal from MDPI",
+      "publication_date": "2026-08-02",
+      "sort_date": "2026-08-02",
+      "abstract": "Canine filariosis is an emerging vector-borne parasitic disease of veterinary and public health importance, caused primarily by D. immitis and D. repens. The present study investigated the prevalence, risk factors, diagnostic performance of different methods, and molecular characteristics of filarial infections in dogs from the Republic of Srpska (Bosnia and Herzegovina). Blood samples from 418 dogs collected between 2020 and 2024 were examined using a modified Knott test, antigen enzyme-linked immunosorbent assay, and polymerase chain reaction-based methods. Overall, 21.3% of dogs were positive for at least one filarial species. D. repens was the most prevalent species (13.40%), followed by D. immitis (10.8%) and A. reconditum (1.4%). Coinfections with D. immitis and D. repens were detected in 3.35% of dogs, while triple infections occurred in 0.5%. Several individual and environmental factors were associated with an increased risk of infection, including poor body condition, mixed-breed status, inadequate parasite control, and specific movement histories. PCR showed the highest diagnostic performance for all detected species, outperforming both microscopy and antigen testing. Phylogenetic analysis revealed genetic diversity among the detected isolates and demonstrated their relationship to strains previously reported from other European countries. These findings confirm the endemic presence of canine filarial infections in the Republic of Srpska and emphasize the importance of molecular diagnostics, surveillance programs, and preventive measures for effective disease control.",
+      "doi": "10.3390/ani16152361",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42588999/",
+      "species": "Canine",
+      "topics": [
+        "Heartworm"
+      ],
+      "selected_journal": true,
+      "matched_authors": [],
+      "article_in_press": false,
+      "source_type": "pubmed",
+      "article_url": ""
+    },
+    {
       "pmid": "42542127",
       "title": "Is annual Dirofilaria immitis antigen testing at preventive renewal proportionate to the residual infection risk in documented-compliant dogs?",
       "authors_text": "Matt Horvath",
@@ -169,6 +214,27 @@
       "species": "Canine",
       "topics": [
         "MMVD / Mitral Valve"
+      ],
+      "selected_journal": true,
+      "matched_authors": [],
+      "article_in_press": false,
+      "source_type": "pubmed",
+      "article_url": ""
+    },
+    {
+      "pmid": "42591112",
+      "title": "Commentary: QRS complex configurations in 12-lead electrocardiograms of dogs with monomorphic ventricular tachycardia or complete bundle branch block.",
+      "authors_text": "Dragutin Novosel, Petar Žuljević, Tina Bečić",
+      "journal": "Frontiers in veterinary science",
+      "publication_date": "2026-07-29",
+      "sort_date": "2026-07-29",
+      "abstract": "",
+      "doi": "10.3389/fvets.2026.1877574",
+      "pmcid": "PMC13461454",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42591112/",
+      "species": "Canine",
+      "topics": [
+        "Arrhythmia"
       ],
       "selected_journal": true,
       "matched_authors": [],
