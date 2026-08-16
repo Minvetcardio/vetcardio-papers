@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-15T03:04:11.357061+00:00",
-  "total": 4569,
+  "generated_at": "2026-08-16T03:16:42.313974+00:00",
+  "total": 4570,
   "filter_version": "major-journal-filter-jvc-aip-2026-07-31",
   "tracked_journals": [
     "Frontiers in Veterinary Science",
@@ -45,6 +45,29 @@
     "Étienne Côté"
   ],
   "papers": [
+    {
+      "pmid": "42600645",
+      "title": "Medetomidine-vatinoxan (Zenalpha) results in reduction of systolic function, blood pressure, and heart rate with prolongation of electrocardiographic intervals in healthy dogs.",
+      "authors_text": "Kiersten K Forsyth, Daniel F Hogan, Luis F N Dos Santos, Hsin-Yi Weng",
+      "journal": "Journal of the American Veterinary Medical Association",
+      "publication_date": "2026-08-14",
+      "sort_date": "2026-08-14",
+      "abstract": "OBJECTIVE: To determine the effects of medetomidine-vatinoxan (Zenalpha; MVZ) on echocardiographic parameters, blood pressure, and cardiac rhythm in healthy dogs.\nMETHODS: Healthy, client-owned dogs were eligible for enrollment in this prospective, pretest/posttest study. Exclusion criteria included preexisting cardiac disease or medications that could alter the measured study parameters. Echocardiography, blood pressure, and 1-hour Holter monitor were performed at baseline and after sedation with MVZ per the manufacturer's guidelines. Multiple echocardiographic parameters, blood pressure, and arrhythmic burden score were assessed with pairwise comparisons between baseline and sedation.\nRESULTS: 21 dogs were enrolled in the study. Compared to baseline, MVZ resulted in significant reduction in multiple echocardiography-derived systolic function parameters (including ejection fraction, fractional shortening, end-systolic volume index, stroke volume index, and fractional area change), blood pressure, and heart rate, along with prolongation in PR and absolute QT intervals; there were nonsignificant increases in corrected QT interval and arrhythmic burden scores. Thirteen of 21 dogs (62%) developed or had worsening of atrioventricular nodal conduction on Holter monitor, while 2 of 21 (9.5%) developed or had worsening atrial or ventricular ectopic activity. Of all measured echocardiographic systolic function parameters, 15 of 21 dogs (71.4%) had 2 or more parameters below reference range with MVZ sedation.\nCONCLUSIONS: Sedation with MVZ resulted in significant changes to multiple cardiovascular and hemodynamic parameters.\nCLINICAL RELEVANCE: The cardiovascular effects of MVZ should be considered prior to sedation in dogs with, or being screened for, cardiovascular disease.",
+      "doi": "10.2460/javma.26.03.0210",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42600645/",
+      "species": "Canine",
+      "topics": [
+        "Arrhythmia",
+        "Echocardiography",
+        "ECG / Holter"
+      ],
+      "selected_journal": true,
+      "matched_authors": [],
+      "article_in_press": false,
+      "source_type": "pubmed",
+      "article_url": ""
+    },
     {
       "pmid": "42599030",
       "title": "EXPRESS: MYOCARDIAL INJURY IN CATS WITH ACUTE BLUNT TRAUMA: PREVALENCE AND PROGNOSTIC IMPLICATIONS.",
