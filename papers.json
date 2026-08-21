@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-20T01:01:23.679454+00:00",
-  "total": 4570,
+  "generated_at": "2026-08-21T01:04:36.556289+00:00",
+  "total": 4572,
   "filter_version": "major-journal-filter-jvc-aip-2026-07-31",
   "tracked_journals": [
     "Frontiers in Veterinary Science",
@@ -45,6 +45,27 @@
     "Étienne Côté"
   ],
   "papers": [
+    {
+      "pmid": "42617661",
+      "title": "Are common clinical protocols prioritizing detection over prevention in canine Dirofilaria immitis?",
+      "authors_text": "Matt Horvath",
+      "journal": "Journal of the American Veterinary Medical Association",
+      "publication_date": "2026-08-19",
+      "sort_date": "2026-08-19",
+      "abstract": "Owner noncompliance, not preventive failure, drives most canine Dirofilaria immitis infections in established patients. Only 24.4% of dogs under care achieve full-year purchase compliance with monthly macrocyclic lactones. Informal data suggest far more practices send annual testing reminders than monthly dosing reminders. The primary goal is continuous chemical protection, not annual detection of prior failures. This viewpoint argues for tracking adherence rates, routine adherence counseling, and prospective evaluation of adherence-first protocols in standard prescription-renewal settings.",
+      "doi": "10.2460/javma.26.04.0312",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42617661/",
+      "species": "Canine",
+      "topics": [
+        "Heartworm"
+      ],
+      "selected_journal": true,
+      "matched_authors": [],
+      "article_in_press": false,
+      "source_type": "pubmed",
+      "article_url": ""
+    },
     {
       "pmid": "42600645",
       "title": "Medetomidine-vatinoxan (Zenalpha) results in reduction of systolic function, blood pressure, and heart rate with prolongation of electrocardiographic intervals in healthy dogs.",
@@ -150,6 +171,30 @@
       "species": "Canine",
       "topics": [
         "Echocardiography"
+      ],
+      "selected_journal": true,
+      "matched_authors": [],
+      "article_in_press": false,
+      "source_type": "pubmed",
+      "article_url": ""
+    },
+    {
+      "pmid": "42622030",
+      "title": "Effects of a resveratrol-containing nutraceutical on cardiac biomarkers, echocardiographic parameters, and oxidative stress in dogs with naturally occurring cardiac disease.",
+      "authors_text": "Dong-Yeong Kim, Hee-Myung Park",
+      "journal": "Frontiers in veterinary science",
+      "publication_date": "2026-08-05",
+      "sort_date": "2026-08-05",
+      "abstract": "INTRODUCTION: Cardiac diseases such as myxomatous mitral valve disease (MMVD) and dilated cardiomyopathy (DCM) are common in dogs and are associated with progressive cardiac dysfunction and increased oxidative stress. Despite the widespread use of nutraceuticals in veterinary medicine, clinical evidence supporting their efficacy remains limited. This study aimed to evaluate the effects of a resveratrol-containing nutraceutical on cardiac biomarkers, echocardiographic parameters, oxidative stress, and safety in dogs with naturally occurring cardiac disease.\nMETHODS: This prospective, non-randomized, open-label study included 24 client-owned dogs allocated to a treatment group (n = 12) or a control group (n = 12). Dogs in the treatment group received a resveratrol-containing nutraceutical (with taurine, vitamin E, and coenzyme Q10) once daily for approximately one month, while control dogs received standard cardiac medications without nutraceutical supplementation. Cardiac biomarkers (NT-proBNP, cTnI), echocardiographic variables including global longitudinal strain (GLS), and oxidative stress markers (TAC, MDA) were evaluated.\nRESULTS: The percent change in NT-proBNP was significantly lower in the treatment group than in controls (-4.51 ± 46.21% vs. +44.61 ± 62.36%, P = 0.024), indicating attenuation of NT-proBNP elevation. TAC increased in the treatment group but decreased in controls (7.85 ± 7.07% vs. -8.00 ± 5.31%, P < 0.0001). No significant between-group differences were observed for cTnI (P = 0.164), GLS (P = 0.214), or MDA (P = 0.590). A significant negative association was observed between changes in TAC and NT-proBNP (r = -0.471, P = 0.020). No clinically relevant adverse effects were observed.\nDISCUSSION: Findings from this exploratory pilot study suggest that a resveratrol-containing nutraceutical was associated with attenuation of NT-proBNP elevation and an increase in total antioxidant capacity in dogs with cardiac disease. These preliminary findings suggest a potential role for antioxidant-based nutraceuticals as adjunctive therapy, although further studies with larger populations and longer follow-up are needed.",
+      "doi": "10.3389/fvets.2026.1867081",
+      "pmcid": "PMC13488418",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42622030/",
+      "species": "Canine",
+      "topics": [
+        "MMVD / Mitral Valve",
+        "Cardiomyopathy",
+        "Echocardiography",
+        "Biomarkers"
       ],
       "selected_journal": true,
       "matched_authors": [],
