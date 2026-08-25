@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="ko">
 <head>
-<!-- MAJOR_JOURNAL_FILTER_VERSION: 2026-07-31-v1 -->
+<!-- MAJOR_JOURNAL_FILTER_VERSION: 2026-08-26-v2 -->
 <!-- FULL_ABSTRACT_TRANSLATION_VERSION: 2026-07-22-v1 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -211,8 +211,6 @@ function btn(text,value,group,active=false){
 
 
 function majorJournalKey(paper){
-  if(paper.article_in_press===true)return "JVC_AIP";
-
   const journal=String(paper.journal||"").toLowerCase();
 
   if(
@@ -251,7 +249,6 @@ function fillFilters(){
   [
     ["전체 저널","all"],
     ["JVC","JVC"],
-    ["JVC Article in Press","JVC_AIP"],
     ["JVIM","JVIM"],
     ["JAVMA","JAVMA"]
   ].forEach((x,i)=>j.append(btn(x[0],x[1],"journal",i===0)));
@@ -286,11 +283,7 @@ function apply(){
 
     const jr=
       state.journal==="all"||
-      majorJournalKey(p)===state.journal||
-      (
-        state.journal==="JVC"&&
-        majorJournalKey(p)==="JVC_AIP"
-      );
+      majorJournalKey(p)===state.journal;
 
     const tp=
       state.topic==="all"||

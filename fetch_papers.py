@@ -36,9 +36,9 @@ NCBI_API_KEY = os.getenv("NCBI_API_KEY", "").strip()
 NCBI_EMAIL = os.getenv("NCBI_EMAIL", "").strip()
 AUTHOR_SCOPE_VERSION = "2026-07-22-all-dog-cat-papers"
 AUTHOR_LIST_VERSION = "2026-07-24-etienne-cote"
-JOURNAL_LIST_VERSION = "2026-07-31-major-journal-filter-jvc-aip"
-JVC_EARLY_ONLINE_VERSION = "2026-07-31-sciencedirect-rss"
-JVC_RSS_URL = "https://rss.sciencedirect.com/publication/science/25764"
+JOURNAL_LIST_VERSION = "2026-08-26-major-journal-filter-jvc-integrated"
+JVC_EARLY_ONLINE_VERSION = "2026-08-26-sciencedirect-rss"
+JVC_RSS_URL = "https://rss.sciencedirect.com/publication/science/17602734"
 
 
 TRACKED_JOURNALS = {
@@ -867,6 +867,14 @@ def rss_date(value: str) -> tuple[str, str]:
     except (TypeError, ValueError, OverflowError):
         pass
 
+    for date_format in ("%d %B %Y", "%d %b %Y"):
+        try:
+            parsed = datetime.strptime(value, date_format)
+            iso = parsed.date().isoformat()
+            return iso, iso
+        except ValueError:
+            pass
+
     match = re.search(r"\d{4}-\d{2}-\d{2}", value)
     if match:
         return match.group(0), match.group(0)
@@ -896,30 +904,47 @@ def classify_rss_species(text: str) -> str:
     return "Unclear"
 
 
+def rss_description_field(value: str, label: str) -> str:
+    """ScienceDirect RSS description의 라벨 값을 추출합니다."""
+    plain_text = strip_markup(value)
+    labels = r"Publication date|Source|Author\(s\)"
+    match = re.search(
+        rf"(?:^|\s){re.escape(label)}:\s*(.*?)"
+        rf"(?=\s+(?:{labels}):|$)",
+        plain_text,
+        re.I,
+    )
+    return clean(match.group(1)) if match else ""
+
+
 def fetch_jvc_early_online(
     existing_papers: list[dict],
-) -> list[dict]:
+) -> tuple[list[dict], int]:
     """ScienceDirect RSS의 JVC 최신 조기공개 논문을 보충합니다.
 
-    PubMed에 이미 있는 DOI/제목은 제외합니다. RSS 접속 실패는 전체
-    PubMed 업데이트를 중단시키지 않도록 호출부에서 경고만 출력합니다.
+    RSS에는 정식 권/호 논문도 섞여 있으므로 Publication date가
+    Available online인 항목만 Article in Press로 처리합니다. PubMed에
+    이미 있는 논문은 제외하지 않고 article_in_press 상태를 병합합니다.
+    RSS 접속 실패는 전체 PubMed 업데이트를 중단시키지 않도록 호출부에서
+    경고만 출력합니다.
     """
     response = SESSION.get(JVC_RSS_URL, timeout=60)
     response.raise_for_status()
     root = ET.fromstring(response.content)
 
-    existing_dois = {
-        normalize_doi(str(paper.get("doi", "")))
+    existing_by_doi = {
+        normalize_doi(str(paper.get("doi", ""))): paper
         for paper in existing_papers
-        if paper.get("doi")
+        if normalize_doi(str(paper.get("doi", "")))
     }
-    existing_titles = {
-        clean(str(paper.get("title", ""))).casefold()
+    existing_by_title = {
+        clean(str(paper.get("title", ""))).casefold(): paper
         for paper in existing_papers
         if paper.get("title")
     }
 
     additions: list[dict] = []
+    marked_existing = 0
 
     for item in root.iter():
         if local_name(item.tag) not in {"item", "entry"}:
@@ -934,8 +959,9 @@ def fetch_jvc_early_online(
             "content",
         )
         description = strip_markup(description_raw)
-        authors = strip_markup(
-            rss_value(item, "creator", "author")
+        authors = (
+            strip_markup(rss_value(item, "creator", "author"))
+            or rss_description_field(description_raw, "Author(s)")
         )
         date_raw = rss_value(
             item,
@@ -947,6 +973,21 @@ def fetch_jvc_early_online(
 
         if not title:
             continue
+
+        publication_date = rss_description_field(
+            description_raw,
+            "Publication date",
+        )
+        if not re.match(r"^Available online\b", publication_date, re.I):
+            continue
+
+        available_online_date = re.sub(
+            r"^Available online\s*",
+            "",
+            publication_date,
+            flags=re.I,
+        )
+        date_raw = date_raw or available_online_date
 
         combined = " ".join([
             title,
@@ -965,11 +1006,16 @@ def fetch_jvc_early_online(
             rss_value(item, "identifier"),
         ]))
 
-        normalized_title = title.casefold()
-        if (
-            (doi and doi in existing_dois)
-            or normalized_title in existing_titles
-        ):
+        normalized_title = clean(title).casefold()
+        existing = (
+            existing_by_doi.get(doi) if doi else None
+        ) or existing_by_title.get(normalized_title)
+
+        if existing is not None:
+            existing["article_in_press"] = True
+            if not existing.get("article_url"):
+                existing["article_url"] = link
+            marked_existing += 1
             continue
 
         sort_date, date_display = rss_date(date_raw)
@@ -1014,7 +1060,7 @@ def fetch_jvc_early_online(
             "source_type": "sciencedirect_rss",
         })
 
-    return additions
+    return additions, marked_existing
 
 
 def main() -> None:
@@ -1069,11 +1115,12 @@ def main() -> None:
             papers.append(parsed)
 
     try:
-        jvc_early_online = fetch_jvc_early_online(papers)
+        jvc_early_online, jvc_marked_existing = fetch_jvc_early_online(papers)
         papers.extend(jvc_early_online)
         print(
-            "JVC Article in Press/early online 보충: "
-            f"{len(jvc_early_online):,}개"
+            "JVC Article in Press: "
+            f"신규 {len(jvc_early_online):,}개, "
+            f"PubMed 병합 {jvc_marked_existing:,}개"
         )
     except Exception as error:
         # ScienceDirect RSS 문제로 PubMed 전체 업데이트가 멈추지 않게 합니다.
@@ -1095,7 +1142,7 @@ def main() -> None:
     data = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "total": len(papers),
-        "filter_version": "major-journal-filter-jvc-aip-2026-07-31",
+        "filter_version": "major-journal-filter-jvc-integrated-2026-08-26",
         "tracked_journals": list(TRACKED_JOURNALS.keys()),
         "tracked_authors": list(TRACKED_AUTHORS.keys()),
         "papers": papers,
