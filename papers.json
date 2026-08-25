@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-25T01:02:57.446771+00:00",
-  "total": 4572,
-  "filter_version": "major-journal-filter-jvc-aip-2026-07-31",
+  "generated_at": "2026-08-25T15:51:22.875801+00:00",
+  "total": 4601,
+  "filter_version": "major-journal-filter-jvc-integrated-2026-08-26",
   "tracked_journals": [
     "Frontiers in Veterinary Science",
     "BMC Veterinary Research",
@@ -45,6 +45,72 @@
     "Étienne Côté"
   ],
   "papers": [
+    {
+      "pmid": "",
+      "external_id": "jvc-aip-cb89829569ce1ff1",
+      "title": "Use of a novel integrated dilator-needle system for transseptal puncture in three dogs undergoing left atrial decompression.",
+      "authors_text": "Fabio Sarcinella, Sophie Goodrich, Katie Glyde, Sarah Smith, Ruth Willis, Simon Swift, Siddharth Sudunagunta",
+      "journal": "Journal of Veterinary Cardiology",
+      "publication_date": "Article in Press · 2026-08-22",
+      "sort_date": "2026-08-22",
+      "abstract": "",
+      "doi": "",
+      "pmcid": "",
+      "pubmed_url": "",
+      "article_url": "https://www.sciencedirect.com/science/article/pii/S1760273426000937?dgcid=rss_sd_all",
+      "species": "Canine",
+      "topics": [
+        "Other Veterinary Medicine"
+      ],
+      "selected_journal": true,
+      "matched_authors": [],
+      "article_in_press": true,
+      "source_type": "sciencedirect_rss"
+    },
+    {
+      "pmid": "",
+      "external_id": "jvc-aip-9126199fd29fa4e5",
+      "title": "Evaluation of the mitral-aortic velocity time integral ratio for severity assessment in dogs with myxomatous mitral valve disease",
+      "authors_text": "Shimpei Kawai, Ryohei Suzuki, Yohei Mochizuki, Yunosuke Yuchi, Arata Kitazawa, Takahiro Teshima, Hirotaka Matsumoto",
+      "journal": "Journal of Veterinary Cardiology",
+      "publication_date": "Article in Press · 2026-08-22",
+      "sort_date": "2026-08-22",
+      "abstract": "",
+      "doi": "",
+      "pmcid": "",
+      "pubmed_url": "",
+      "article_url": "https://www.sciencedirect.com/science/article/pii/S1760273426000949?dgcid=rss_sd_all",
+      "species": "Canine",
+      "topics": [
+        "MMVD / Mitral Valve"
+      ],
+      "selected_journal": true,
+      "matched_authors": [],
+      "article_in_press": true,
+      "source_type": "sciencedirect_rss"
+    },
+    {
+      "pmid": "",
+      "external_id": "jvc-aip-a1d0ac25d5708b33",
+      "title": "Predominant mitral valve morphology in dogs at different stages of myxomatous mitral valve disease: toward a standardized nomenclature",
+      "authors_text": "Amanda Bentley, Ryan C. Fries, Saki Kadotani, Carl Toborowsky, Emily A. Javery",
+      "journal": "Journal of Veterinary Cardiology",
+      "publication_date": "Article in Press · 2026-08-20",
+      "sort_date": "2026-08-20",
+      "abstract": "",
+      "doi": "",
+      "pmcid": "",
+      "pubmed_url": "",
+      "article_url": "https://www.sciencedirect.com/science/article/pii/S1760273426000913?dgcid=rss_sd_all",
+      "species": "Canine",
+      "topics": [
+        "MMVD / Mitral Valve"
+      ],
+      "selected_journal": true,
+      "matched_authors": [],
+      "article_in_press": true,
+      "source_type": "sciencedirect_rss"
+    },
     {
       "pmid": "42617661",
       "title": "Are common clinical protocols prioritizing detection over prevention in canine Dirofilaria immitis?",
@@ -135,6 +201,50 @@
       "article_url": ""
     },
     {
+      "pmid": "",
+      "external_id": "jvc-aip-090bd6403c609db1",
+      "title": "Multicenter transvenous pacemaker implantation in 595 dogs: Complications and Survival Rates.",
+      "authors_text": "Marisa Ciccozzi, Christopher Stauthammer, Christopher Whipp, Lance Visser, Heidi Kellihan, Robert Sanders, Marisa Ames, Geghani Galustanian, Jacob Ryave, Aaron Rendahl",
+      "journal": "Journal of Veterinary Cardiology",
+      "publication_date": "Article in Press · 2026-08-10",
+      "sort_date": "2026-08-10",
+      "abstract": "",
+      "doi": "",
+      "pmcid": "",
+      "pubmed_url": "",
+      "article_url": "https://www.sciencedirect.com/science/article/pii/S1760273426000901?dgcid=rss_sd_all",
+      "species": "Canine",
+      "topics": [
+        "Arrhythmia"
+      ],
+      "selected_journal": true,
+      "matched_authors": [],
+      "article_in_press": true,
+      "source_type": "sciencedirect_rss"
+    },
+    {
+      "pmid": "",
+      "external_id": "jvc-aip-0743b9aab7a492e1",
+      "title": "Clinical utility of Shear Wave Speed and Dispersion Slope measured by Shear Wave Elastography for the assessment of hepatic congestion in dogs with cardiac disease",
+      "authors_text": "Nozomi Shiohara, Kensuke Nakamura, Masahiro Tamura, Nozomu Yokoyama, Noboru Sasaki, Sei Kawamoto, Mitsuyoshi Takiguchi",
+      "journal": "Journal of Veterinary Cardiology",
+      "publication_date": "Article in Press · 2026-08-10",
+      "sort_date": "2026-08-10",
+      "abstract": "",
+      "doi": "",
+      "pmcid": "",
+      "pubmed_url": "",
+      "article_url": "https://www.sciencedirect.com/science/article/pii/S1760273426000895?dgcid=rss_sd_all",
+      "species": "Canine",
+      "topics": [
+        "Other Veterinary Medicine"
+      ],
+      "selected_journal": true,
+      "matched_authors": [],
+      "article_in_press": true,
+      "source_type": "sciencedirect_rss"
+    },
+    {
       "pmid": "42571816",
       "title": "Evaluating Sacubitril/Valsartan's efficacy in reducing myocardial hypertrophy and fibrosis in feline models.",
       "authors_text": "Zeyao Sun, Wenjia Huang, Xinyue Chai, Changmin Hu, Cong Zhu",
@@ -156,6 +266,28 @@
       "article_in_press": false,
       "source_type": "pubmed",
       "article_url": ""
+    },
+    {
+      "pmid": "",
+      "external_id": "jvc-aip-e7c0c845b2dcf590",
+      "title": "Intermittent ventricular pre-excitation in a dog with orthodromic reciprocating atrioventricular tachycardia (OAVRT)",
+      "authors_text": "Marta Salvati, Christophe Bourguignon, Frane Ivasovic",
+      "journal": "Journal of Veterinary Cardiology",
+      "publication_date": "Article in Press · 2026-08-08",
+      "sort_date": "2026-08-08",
+      "abstract": "",
+      "doi": "",
+      "pmcid": "",
+      "pubmed_url": "",
+      "article_url": "https://www.sciencedirect.com/science/article/pii/S1760273426000883?dgcid=rss_sd_all",
+      "species": "Canine",
+      "topics": [
+        "Arrhythmia"
+      ],
+      "selected_journal": true,
+      "matched_authors": [],
+      "article_in_press": true,
+      "source_type": "sciencedirect_rss"
     },
     {
       "pmid": "42563163",
@@ -335,6 +467,50 @@
       "article_url": ""
     },
     {
+      "pmid": "",
+      "external_id": "jvc-aip-07606213ce85be49",
+      "title": "Three Radiographic Methods for Assessing Left Atrial Enlargement in Dogs: Diagnostic Performance and Correlation with Qualitative Features",
+      "authors_text": "Yae Eun Hwang, Nahyun Kwon, Minjoo Kwon, Mire Namgoong, Sujung Wang, Chanwoo Jung, Hye-yeon Choi, Jihye Choi, Junghee Yoon",
+      "journal": "Journal of Veterinary Cardiology",
+      "publication_date": "Article in Press · 2026-07-29",
+      "sort_date": "2026-07-29",
+      "abstract": "",
+      "doi": "",
+      "pmcid": "",
+      "pubmed_url": "",
+      "article_url": "https://www.sciencedirect.com/science/article/pii/S176027342600086X?dgcid=rss_sd_all",
+      "species": "Canine",
+      "topics": [
+        "Other Veterinary Medicine"
+      ],
+      "selected_journal": true,
+      "matched_authors": [],
+      "article_in_press": true,
+      "source_type": "sciencedirect_rss"
+    },
+    {
+      "pmid": "",
+      "external_id": "jvc-aip-75f661793c19e919",
+      "title": "Implantation of a LUX-Dx insertable cardiac monitor enables remote heart rhythm monitoring in dogs and cats",
+      "authors_text": "Anne Ernestine van de Watering, Caroline Melis, Niek Jozef Beijerink",
+      "journal": "Journal of Veterinary Cardiology",
+      "publication_date": "Article in Press · 2026-07-29",
+      "sort_date": "2026-07-29",
+      "abstract": "",
+      "doi": "",
+      "pmcid": "",
+      "pubmed_url": "",
+      "article_url": "https://www.sciencedirect.com/science/article/pii/S1760273426000858?dgcid=rss_sd_all",
+      "species": "Both",
+      "topics": [
+        "Other Veterinary Medicine"
+      ],
+      "selected_journal": true,
+      "matched_authors": [],
+      "article_in_press": true,
+      "source_type": "sciencedirect_rss"
+    },
+    {
       "pmid": "42501791",
       "title": "Development and validation of PCR-RFLP assays for detection of MYBPC3 variants associated with hypertrophic cardiomyopathy in Maine Coon and Ragdoll cats.",
       "authors_text": "Thao Phuong Vu, Thong Quang Le, Truc Thi Thanh Truong, Giang Thi Cam Nguyen, Khe Bich By, Cuong Ngoc Duong, Dai Van Nguyen, Khoa Hoang Dang Le, Anh Phu Nam Bui",
@@ -399,6 +575,28 @@
       "article_in_press": false,
       "source_type": "pubmed",
       "article_url": ""
+    },
+    {
+      "pmid": "",
+      "external_id": "jvc-aip-180d00d01ee87ce6",
+      "title": "Breed screening for myxomatous mitral valve disease in dogs",
+      "authors_text": "L.H. Olsen, S. Swift, J. Häggström",
+      "journal": "Journal of Veterinary Cardiology",
+      "publication_date": "Article in Press · 2026-07-21",
+      "sort_date": "2026-07-21",
+      "abstract": "",
+      "doi": "",
+      "pmcid": "",
+      "pubmed_url": "",
+      "article_url": "https://www.sciencedirect.com/science/article/pii/S1760273426000846?dgcid=rss_sd_all",
+      "species": "Canine",
+      "topics": [
+        "MMVD / Mitral Valve"
+      ],
+      "selected_journal": true,
+      "matched_authors": [],
+      "article_in_press": true,
+      "source_type": "sciencedirect_rss"
     },
     {
       "pmid": "42473271",
@@ -512,6 +710,29 @@
       "article_url": ""
     },
     {
+      "pmid": "",
+      "external_id": "jvc-aip-34880ed4f8a32ecc",
+      "title": "High-pressure balloon valvuloplasty in small dogs with severe pulmonary stenosis: retrospective evaluation of the Mustang™ Balloon Dilatation Catheter in 12 dogs",
+      "authors_text": "M.E. McMullen, R.L. Winter, K.L. Maneval, C.S. Ferrel",
+      "journal": "Journal of Veterinary Cardiology",
+      "publication_date": "Article in Press · 2026-07-14",
+      "sort_date": "2026-07-14",
+      "abstract": "",
+      "doi": "",
+      "pmcid": "",
+      "pubmed_url": "",
+      "article_url": "https://www.sciencedirect.com/science/article/pii/S1760273426000810?dgcid=rss_sd_all",
+      "species": "Canine",
+      "topics": [
+        "Congenital Heart Disease",
+        "Intervention / Surgery"
+      ],
+      "selected_journal": true,
+      "matched_authors": [],
+      "article_in_press": true,
+      "source_type": "sciencedirect_rss"
+    },
+    {
       "pmid": "42562674",
       "title": "Left atrial decompression in dogs with heart failure secondary to myxomatous mitral valve disease: a long-term outcome study.",
       "authors_text": "K L Phipps, J A Allen, K A Barrett, C J Day, M N Doan",
@@ -577,6 +798,29 @@
       "article_in_press": false,
       "source_type": "pubmed",
       "article_url": ""
+    },
+    {
+      "pmid": "",
+      "external_id": "jvc-aip-26d4dab6b299f7b8",
+      "title": "Left atrial decompression in dogs with heart failure secondary to myxomatous mitral valve disease: a long-term outcome study",
+      "authors_text": "K.L. Phipps, J.A. Allen, K.A. Barrett, C.J. Day, M.N. Doan",
+      "journal": "Journal of Veterinary Cardiology",
+      "publication_date": "Article in Press · 2026-07-13",
+      "sort_date": "2026-07-13",
+      "abstract": "",
+      "doi": "",
+      "pmcid": "",
+      "pubmed_url": "",
+      "article_url": "https://www.sciencedirect.com/science/article/pii/S1760273426000834?dgcid=rss_sd_all",
+      "species": "Canine",
+      "topics": [
+        "MMVD / Mitral Valve",
+        "Heart Failure"
+      ],
+      "selected_journal": true,
+      "matched_authors": [],
+      "article_in_press": true,
+      "source_type": "sciencedirect_rss"
     },
     {
       "pmid": "42431230",
@@ -945,6 +1189,28 @@
       "article_in_press": false,
       "source_type": "pubmed",
       "article_url": ""
+    },
+    {
+      "pmid": "",
+      "external_id": "jvc-aip-691f7bf2908a54c3",
+      "title": "Acquired aortic and mitral stenosis characterized by valvular fibroelastosis in a dog",
+      "authors_text": "A. Climent-Pastor, M. Tursi, P. Sebastián-Marcos, D. Casamián-Sorrosal",
+      "journal": "Journal of Veterinary Cardiology",
+      "publication_date": "Article in Press · 2026-06-16",
+      "sort_date": "2026-06-16",
+      "abstract": "",
+      "doi": "",
+      "pmcid": "",
+      "pubmed_url": "",
+      "article_url": "https://www.sciencedirect.com/science/article/pii/S1760273426000664?dgcid=rss_sd_all",
+      "species": "Canine",
+      "topics": [
+        "Other Veterinary Medicine"
+      ],
+      "selected_journal": true,
+      "matched_authors": [],
+      "article_in_press": true,
+      "source_type": "sciencedirect_rss"
     },
     {
       "pmid": "42442331",
@@ -1508,6 +1774,28 @@
       "article_url": ""
     },
     {
+      "pmid": "",
+      "external_id": "jvc-aip-dcd2ba624576ee62",
+      "title": "Cardiac computed tomography of the canine mitral and tricuspid valves",
+      "authors_text": "Brian A. Scansen",
+      "journal": "Journal of Veterinary Cardiology",
+      "publication_date": "Article in Press · 2026-05-20",
+      "sort_date": "2026-05-20",
+      "abstract": "",
+      "doi": "",
+      "pmcid": "",
+      "pubmed_url": "",
+      "article_url": "https://www.sciencedirect.com/science/article/pii/S1760273426000524?dgcid=rss_sd_all",
+      "species": "Canine",
+      "topics": [
+        "Other Veterinary Medicine"
+      ],
+      "selected_journal": true,
+      "matched_authors": [],
+      "article_in_press": true,
+      "source_type": "sciencedirect_rss"
+    },
+    {
       "pmid": "42188963",
       "title": "Left Atrioventricular Coupling Index in Feline Hypertrophic Cardiomyopathy: Association with Disease Severity and Arterial Thromboembolism.",
       "authors_text": "Tuğba Varlik, Didem Algan, Ryou Tanaka, Zeki Yilmaz",
@@ -1734,6 +2022,29 @@
       "article_in_press": false,
       "source_type": "pubmed",
       "article_url": ""
+    },
+    {
+      "pmid": "",
+      "external_id": "jvc-aip-136f7342844dbc63",
+      "title": "Three-dimensional echocardiographic determinants of the early onset of myxomatous mitral valve disease within two years in young Cavalier King Charles spaniel dogs",
+      "authors_text": "A. Franchini, G. Menciotti, H. Jeong, S. Lahmers, M. Borgarelli",
+      "journal": "Journal of Veterinary Cardiology",
+      "publication_date": "Article in Press · 2026-05-06",
+      "sort_date": "2026-05-06",
+      "abstract": "",
+      "doi": "",
+      "pmcid": "",
+      "pubmed_url": "",
+      "article_url": "https://www.sciencedirect.com/science/article/pii/S1760273426000469?dgcid=rss_sd_all",
+      "species": "Canine",
+      "topics": [
+        "MMVD / Mitral Valve",
+        "Echocardiography"
+      ],
+      "selected_journal": true,
+      "matched_authors": [],
+      "article_in_press": true,
+      "source_type": "sciencedirect_rss"
     },
     {
       "pmid": "42341219",
@@ -2144,6 +2455,28 @@
       "article_url": ""
     },
     {
+      "pmid": "",
+      "external_id": "jvc-aip-a2cf2c7de65b3f21",
+      "title": "Clinical findings and survival time in dogs with myxomatous mitral valve disease at the American College of Veterinary Internal Medicine stage D",
+      "authors_text": "S. Oricco, S. Crosara, C. Mazzoldi, I. Apolloni, C. Guiducci, C. Quintavalla, G. Romito",
+      "journal": "Journal of Veterinary Cardiology",
+      "publication_date": "Article in Press · 2026-04-30",
+      "sort_date": "2026-04-30",
+      "abstract": "",
+      "doi": "",
+      "pmcid": "",
+      "pubmed_url": "",
+      "article_url": "https://www.sciencedirect.com/science/article/pii/S1760273426000433?dgcid=rss_sd_all",
+      "species": "Canine",
+      "topics": [
+        "MMVD / Mitral Valve"
+      ],
+      "selected_journal": true,
+      "matched_authors": [],
+      "article_in_press": true,
+      "source_type": "sciencedirect_rss"
+    },
+    {
       "pmid": "42188906",
       "title": "Reframing Heart Failure as a Multiorgan Network Disorder: Translational and Regenerative Perspectives in Veterinary Cardiology.",
       "authors_text": "Mitsuhiro Isaka, Hiromu Udagawa, Yuji Hamamoto, Eunryel Nam",
@@ -2305,6 +2638,28 @@
       "article_in_press": false,
       "source_type": "pubmed",
       "article_url": ""
+    },
+    {
+      "pmid": "",
+      "external_id": "jvc-aip-8975e64fe2162128",
+      "title": "Evidence-based medical therapy for mitral regurgitation in dogs",
+      "authors_text": "J.P. Mochel, J.L. Ward, J.A. Stern",
+      "journal": "Journal of Veterinary Cardiology",
+      "publication_date": "Article in Press · 2026-04-21",
+      "sort_date": "2026-04-21",
+      "abstract": "",
+      "doi": "",
+      "pmcid": "",
+      "pubmed_url": "",
+      "article_url": "https://www.sciencedirect.com/science/article/pii/S1760273426000421?dgcid=rss_sd_all",
+      "species": "Canine",
+      "topics": [
+        "MMVD / Mitral Valve"
+      ],
+      "selected_journal": true,
+      "matched_authors": [],
+      "article_in_press": true,
+      "source_type": "sciencedirect_rss"
     },
     {
       "pmid": "42072016",
@@ -3043,6 +3398,29 @@
       "article_url": ""
     },
     {
+      "pmid": "",
+      "external_id": "jvc-aip-b0db0671713a0a51",
+      "title": "Comparison of echocardiographic variables of mitral regurgitation severity to cardiac computed tomography in dogs with degenerative mitral valve disease",
+      "authors_text": "I.B. Chi, R.E. Ellis-Reis, L.C. Visser, B.M. Potter, B.A. Scansen",
+      "journal": "Journal of Veterinary Cardiology",
+      "publication_date": "Article in Press · 2026-03-07",
+      "sort_date": "2026-03-07",
+      "abstract": "",
+      "doi": "",
+      "pmcid": "",
+      "pubmed_url": "",
+      "article_url": "https://www.sciencedirect.com/science/article/pii/S1760273426000342?dgcid=rss_sd_all",
+      "species": "Canine",
+      "topics": [
+        "MMVD / Mitral Valve",
+        "Echocardiography"
+      ],
+      "selected_journal": true,
+      "matched_authors": [],
+      "article_in_press": true,
+      "source_type": "sciencedirect_rss"
+    },
+    {
       "pmid": "41792123",
       "title": "Efficacy of high-dose carvedilol treatment for cats with stage B1 obstructive hypertrophic cardiomyopathy.",
       "authors_text": "Shuji Satomi, Ryohei Suzuki, Yunosuke Yuchi, Haruka Kanno, Maria Inoue, Takahiro Teshima, Hirotaka Matsumoto",
@@ -3390,6 +3768,29 @@
       "article_url": ""
     },
     {
+      "pmid": "",
+      "external_id": "jvc-aip-4a43c43995330eba",
+      "title": "Pulmonary hypertension in dogs with myxomatous mitral valve disease",
+      "authors_text": "M. Borgarelli, C.M. Bussadori",
+      "journal": "Journal of Veterinary Cardiology",
+      "publication_date": "Article in Press · 2026-02-26",
+      "sort_date": "2026-02-26",
+      "abstract": "",
+      "doi": "",
+      "pmcid": "",
+      "pubmed_url": "",
+      "article_url": "https://www.sciencedirect.com/science/article/pii/S1760273426000263?dgcid=rss_sd_all",
+      "species": "Canine",
+      "topics": [
+        "MMVD / Mitral Valve",
+        "Pulmonary Hypertension"
+      ],
+      "selected_journal": true,
+      "matched_authors": [],
+      "article_in_press": true,
+      "source_type": "sciencedirect_rss"
+    },
+    {
       "pmid": "41881755",
       "title": "Invited Commentary: American College of Veterinary Internal Medicine consensus guidelines on diagnosis and treatment of myxomatous mitral valve disease in dogs.",
       "authors_text": "G Menciotti, E C Orton, J Häggström, M Rishniw",
@@ -3413,6 +3814,28 @@
       "article_in_press": false,
       "source_type": "pubmed",
       "article_url": ""
+    },
+    {
+      "pmid": "",
+      "external_id": "jvc-aip-a1d76849ea32c6fd",
+      "title": "Invited Commentary: American College of Veterinary Internal Medicine consensus guidelines on diagnosis and treatment of myxomatous mitral valve disease in dogs",
+      "authors_text": "G. Menciotti, E.C. Orton, J. Häggström, M. Rishniw",
+      "journal": "Journal of Veterinary Cardiology",
+      "publication_date": "Article in Press · 2026-02-25",
+      "sort_date": "2026-02-25",
+      "abstract": "",
+      "doi": "",
+      "pmcid": "",
+      "pubmed_url": "",
+      "article_url": "https://www.sciencedirect.com/science/article/pii/S1760273426000251?dgcid=rss_sd_all",
+      "species": "Canine",
+      "topics": [
+        "MMVD / Mitral Valve"
+      ],
+      "selected_journal": true,
+      "matched_authors": [],
+      "article_in_press": true,
+      "source_type": "sciencedirect_rss"
     },
     {
       "pmid": "41735978",
@@ -3597,6 +4020,29 @@
       "article_in_press": false,
       "source_type": "pubmed",
       "article_url": ""
+    },
+    {
+      "pmid": "",
+      "external_id": "jvc-aip-a77e08d1ddf7b802",
+      "title": "Variations of the ellipsoid method in estimating three-dimensional echocardiographic left atrial volume in dogs with myxomatous mitral valve disease: comparison with left atrial-to-aortic root ratios and planar volumetric methods",
+      "authors_text": "B.A. Terhaar, C.E. Pelzek, S. Siess, P.F.J. Jennings, R. Pariaut, W. Hsue",
+      "journal": "Journal of Veterinary Cardiology",
+      "publication_date": "Article in Press · 2026-02-23",
+      "sort_date": "2026-02-23",
+      "abstract": "",
+      "doi": "",
+      "pmcid": "",
+      "pubmed_url": "",
+      "article_url": "https://www.sciencedirect.com/science/article/pii/S1760273426000214?dgcid=rss_sd_all",
+      "species": "Canine",
+      "topics": [
+        "MMVD / Mitral Valve",
+        "Echocardiography"
+      ],
+      "selected_journal": true,
+      "matched_authors": [],
+      "article_in_press": true,
+      "source_type": "sciencedirect_rss"
     },
     {
       "pmid": "41800316",
@@ -4279,6 +4725,29 @@
       "article_url": ""
     },
     {
+      "pmid": "",
+      "external_id": "jvc-aip-618ed24a0f755802",
+      "title": "The mitral-to-aortic velocity-time integral ratio used to estimate regurgitant fraction in dogs with myxomatous mitral valve disease: a retrospective observational study of 1,109 echocardiographic examinations",
+      "authors_text": "S. Crosara, S. Oricco, M. Poggi, I. Apolloni, C. Quintavalla",
+      "journal": "Journal of Veterinary Cardiology",
+      "publication_date": "Article in Press · 2026-01-21",
+      "sort_date": "2026-01-21",
+      "abstract": "",
+      "doi": "",
+      "pmcid": "",
+      "pubmed_url": "",
+      "article_url": "https://www.sciencedirect.com/science/article/pii/S1760273426000056?dgcid=rss_sd_all",
+      "species": "Canine",
+      "topics": [
+        "MMVD / Mitral Valve",
+        "Echocardiography"
+      ],
+      "selected_journal": true,
+      "matched_authors": [],
+      "article_in_press": true,
+      "source_type": "sciencedirect_rss"
+    },
+    {
       "pmid": "41594487",
       "title": "Evaluation of the Prevalence of Genetic Variants at the Nebulette Locus in Cavalier King Charles Spaniels.",
       "authors_text": "Caroline Melis, Claire Wade, Claudia Rozendom, Frank G van Steenbeek, Niek J Beijerink",
@@ -4392,6 +4861,54 @@
       "article_in_press": false,
       "source_type": "pubmed",
       "article_url": ""
+    },
+    {
+      "pmid": "",
+      "external_id": "jvc-aip-fc3893e1716ab9c4",
+      "title": "Transesophageal echocardiography for mitral valve transcatheter edge-to-edge repair in dogs using the V-Clamp device",
+      "authors_text": "B.M. Potter, I.B. Chi, L. Tantisuwat, B.A. Scansen",
+      "journal": "Journal of Veterinary Cardiology",
+      "publication_date": "Article in Press · 2026-01-16",
+      "sort_date": "2026-01-16",
+      "abstract": "",
+      "doi": "",
+      "pmcid": "",
+      "pubmed_url": "",
+      "article_url": "https://www.sciencedirect.com/science/article/pii/S1760273426000020?dgcid=rss_sd_all",
+      "species": "Canine",
+      "topics": [
+        "MMVD / Mitral Valve",
+        "Echocardiography",
+        "Intervention / Surgery"
+      ],
+      "selected_journal": true,
+      "matched_authors": [],
+      "article_in_press": true,
+      "source_type": "sciencedirect_rss"
+    },
+    {
+      "pmid": "",
+      "external_id": "jvc-aip-3b6531302b19d2ff",
+      "title": "Echocardiographic predictors of persistent left heart enlargement in dogs undergoing surgical mitral valve repair",
+      "authors_text": "B.K. Atkinson, M. Rossanese, D.J. Brockman, V. Luis Fuentes",
+      "journal": "Journal of Veterinary Cardiology",
+      "publication_date": "Article in Press · 2026-01-16",
+      "sort_date": "2026-01-16",
+      "abstract": "",
+      "doi": "",
+      "pmcid": "",
+      "pubmed_url": "",
+      "article_url": "https://www.sciencedirect.com/science/article/pii/S1760273426000032?dgcid=rss_sd_all",
+      "species": "Canine",
+      "topics": [
+        "MMVD / Mitral Valve",
+        "Echocardiography",
+        "Intervention / Surgery"
+      ],
+      "selected_journal": true,
+      "matched_authors": [],
+      "article_in_press": true,
+      "source_type": "sciencedirect_rss"
     },
     {
       "pmid": "41538996",
@@ -4642,6 +5159,28 @@
       "article_url": ""
     },
     {
+      "pmid": "",
+      "external_id": "jvc-aip-74ac83026f585fcb",
+      "title": "Assessment of combination cardiac supplements available in the United States for dogs with myxomatous mitral valve disease",
+      "authors_text": "W. Bousquet, J.E. Rush, L.M. Freeman",
+      "journal": "Journal of Veterinary Cardiology",
+      "publication_date": "Article in Press · 2025-12-24",
+      "sort_date": "2025-12-24",
+      "abstract": "",
+      "doi": "",
+      "pmcid": "",
+      "pubmed_url": "",
+      "article_url": "https://www.sciencedirect.com/science/article/pii/S1760273425001341?dgcid=rss_sd_all",
+      "species": "Canine",
+      "topics": [
+        "MMVD / Mitral Valve"
+      ],
+      "selected_journal": true,
+      "matched_authors": [],
+      "article_in_press": true,
+      "source_type": "sciencedirect_rss"
+    },
+    {
       "pmid": "41487485",
       "title": "Linking clinical and imaging diagnostic assessments of the feline hypertrophic cardiomyopathy phenotype.",
       "authors_text": "Felipe Gaia de Sousa, Ruthnea Aparecida Lazaro Muzzi, Roberto Baracat de Araújo, Rafael Resende Faleiros, Fabiana Silva Fádel Queiroz, Suzane Lilian Beier",
@@ -4738,6 +5277,29 @@
       "article_in_press": false,
       "source_type": "pubmed",
       "article_url": ""
+    },
+    {
+      "pmid": "",
+      "external_id": "jvc-aip-76854aa4568eb42b",
+      "title": "One-year echocardiographic follow-up and two-year survival in 111 dogs undergoing mitral transcatheter edge-to-edge repair",
+      "authors_text": "B.M. Potter, E.C. Orton, B.A. Scansen, K.M. Abbott-Johnson, L. Tantisuwat, S. Arai, L.C. Visser, J.D. Bonagura",
+      "journal": "Journal of Veterinary Cardiology",
+      "publication_date": "Article in Press · 2025-12-16",
+      "sort_date": "2025-12-16",
+      "abstract": "",
+      "doi": "",
+      "pmcid": "",
+      "pubmed_url": "",
+      "article_url": "https://www.sciencedirect.com/science/article/pii/S1760273425001328?dgcid=rss_sd_all",
+      "species": "Canine",
+      "topics": [
+        "Echocardiography",
+        "Intervention / Surgery"
+      ],
+      "selected_journal": true,
+      "matched_authors": [],
+      "article_in_press": true,
+      "source_type": "sciencedirect_rss"
     },
     {
       "pmid": "41398279",
@@ -5438,6 +6000,28 @@
       "article_url": ""
     },
     {
+      "pmid": "",
+      "external_id": "jvc-aip-2ca7cc21c8572db6",
+      "title": "Prevalence of mitral valve regurgitation in 97 apparently healthy Chihuahua dogs",
+      "authors_text": "E. Pålsson, A.R. Vestberg, A. Tidholm",
+      "journal": "Journal of Veterinary Cardiology",
+      "publication_date": "Article in Press · 2025-11-07",
+      "sort_date": "2025-11-07",
+      "abstract": "",
+      "doi": "",
+      "pmcid": "",
+      "pubmed_url": "",
+      "article_url": "https://www.sciencedirect.com/science/article/pii/S176027342500116X?dgcid=rss_sd_all",
+      "species": "Canine",
+      "topics": [
+        "MMVD / Mitral Valve"
+      ],
+      "selected_journal": true,
+      "matched_authors": [],
+      "article_in_press": true,
+      "source_type": "sciencedirect_rss"
+    },
+    {
       "pmid": "41289969",
       "title": "Right sinus of Valsalva aneurysm ruptured into the right atrium in a dog.",
       "authors_text": "M Kochi, N Nishihara, R Yamamoto, T Wada, T Mori, Y Kurokawa, K Kutara, K Sugimoto",
@@ -5525,6 +6109,28 @@
       "article_in_press": false,
       "source_type": "pubmed",
       "article_url": ""
+    },
+    {
+      "pmid": "",
+      "external_id": "jvc-aip-750f25d42b7f9fd7",
+      "title": "Distribution of ionized calcium–binding adaptor molecule 1–positive macrophages and papillary muscle fibrosis in dogs with myxomatous mitral valve disease",
+      "authors_text": "E.N. LeRoy, A.A. Williams, M.O. Skor, C.E. Lyons, A.J. Martinot, V.K. Yang",
+      "journal": "Journal of Veterinary Cardiology",
+      "publication_date": "Article in Press · 2025-11-03",
+      "sort_date": "2025-11-03",
+      "abstract": "",
+      "doi": "",
+      "pmcid": "",
+      "pubmed_url": "",
+      "article_url": "https://www.sciencedirect.com/science/article/pii/S1760273425001146?dgcid=rss_sd_all",
+      "species": "Canine",
+      "topics": [
+        "MMVD / Mitral Valve"
+      ],
+      "selected_journal": true,
+      "matched_authors": [],
+      "article_in_press": true,
+      "source_type": "sciencedirect_rss"
     },
     {
       "pmid": "41268639",
@@ -5777,6 +6383,28 @@
       "article_in_press": false,
       "source_type": "pubmed",
       "article_url": ""
+    },
+    {
+      "pmid": "",
+      "external_id": "jvc-aip-7fefafe25849d63a",
+      "title": "Mitral transcatheter edge-to-edge repair: guidance in dogs from the human experience",
+      "authors_text": "E.C. Orton, J.D. Carroll",
+      "journal": "Journal of Veterinary Cardiology",
+      "publication_date": "Article in Press · 2025-10-18",
+      "sort_date": "2025-10-18",
+      "abstract": "",
+      "doi": "",
+      "pmcid": "",
+      "pubmed_url": "",
+      "article_url": "https://www.sciencedirect.com/science/article/pii/S1760273425001122?dgcid=rss_sd_all",
+      "species": "Canine",
+      "topics": [
+        "Intervention / Surgery"
+      ],
+      "selected_journal": true,
+      "matched_authors": [],
+      "article_in_press": true,
+      "source_type": "sciencedirect_rss"
     },
     {
       "pmid": "41150146",
@@ -7679,6 +8307,28 @@
       "article_in_press": false,
       "source_type": "pubmed",
       "article_url": ""
+    },
+    {
+      "pmid": "",
+      "external_id": "jvc-aip-4438b55cf24686da",
+      "title": "Mitral annular disjunction prevalence in 403 dogs referred for cardiac assessment (the MAD dog study)",
+      "authors_text": "N. Pereira, M. Wyler",
+      "journal": "Journal of Veterinary Cardiology",
+      "publication_date": "Article in Press · 2025-06-30",
+      "sort_date": "2025-06-30",
+      "abstract": "",
+      "doi": "",
+      "pmcid": "",
+      "pubmed_url": "",
+      "article_url": "https://www.sciencedirect.com/science/article/pii/S1760273425000645?dgcid=rss_sd_all",
+      "species": "Canine",
+      "topics": [
+        "Other Veterinary Medicine"
+      ],
+      "selected_journal": true,
+      "matched_authors": [],
+      "article_in_press": true,
+      "source_type": "sciencedirect_rss"
     },
     {
       "pmid": "40579840",
