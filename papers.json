@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-26T01:04:45.441882+00:00",
-  "total": 4601,
+  "generated_at": "2026-08-27T07:04:11.934235+00:00",
+  "total": 4603,
   "filter_version": "major-journal-filter-jvc-integrated-2026-08-26",
   "tracked_journals": [
     "Frontiers in Veterinary Science",
@@ -45,6 +45,29 @@
     "Étienne Côté"
   ],
   "papers": [
+    {
+      "pmid": "42648350",
+      "title": "Diagnostic performance of 1,2-O-dilauryl-rac-glycero glutaric acid-(6'-methylresorufin) ester lipase activity in cats presenting to a veterinary referral hospital.",
+      "authors_text": "Javier Rodriguez Godoy, Annelies Willems, Patricia Ibarrola, Mark Rishniw",
+      "journal": "Journal of the American Veterinary Medical Association",
+      "publication_date": "2026-08-26",
+      "sort_date": "2026-08-26",
+      "abstract": "OBJECTIVE: To determine the prevalence of increased 1,2-O-dilauryl-rac-glycero glutaric acid-(6'-methylresorufin) ester (DGGR) lipase activity in cats with and without pancreatitis, and to evaluate its diagnostic performance relative to a clinical diagnosis of pancreatitis and ultrasonographic assessments.\nMETHODS: Serum DGGR lipase activity was measured with the Randox lipase assay and considered increased if > 25 U/L. A board-certified internal medicine clinician, blinded to DGGR results, gave each cat a clinician-assigned score from 0 (no pancreatitis) to 4 (definite pancreatitis). Ultrasonographic scores (0 to 4) were assigned on the basis of the number of changes supportive of pancreatitis. DGGR lipase performance was compared with clinical and ultrasonographic scores.\nRESULTS: A total of 231 cats were included; 59 of 231 (25.5%) had increased DGGR lipase activity. Clinical scores were 0 in 47 of 231 cats (20.3%), 1 in 128 of 231 (55.4%), 2 in 36 of 231 (15.6%), and 3 in 20 of 231 (8.7%); no cats had a score of 4. With the use of a clinical score of 3 as the reference, DGGR lipase activity had a sensitivity of 70% and specificity of 79% (positive predictive value, 24%; negative predictive value, 97%). DGGR lipase activity was significantly lower in cats with an ultrasound score of 0 compared to scores of 1, 2, and 3. DGGR lipase activity was lower in cats with clinician-assigned scores of 0 and 1 compared to scores of 2 and 3.\nCONCLUSIONS: DGGR lipase activity was lower in cats with lower clinical and ultrasonographic scores and demonstrated a high negative predictive value.\nCLINICAL RELEVANCE: In this low-prevalence referral population, a normal DGGR lipase result reduced the likelihood of clinician-suspected pancreatitis.",
+      "doi": "10.2460/javma.26.01.0064",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42648350/",
+      "species": "Feline",
+      "topics": [
+        "Other Veterinary Medicine"
+      ],
+      "selected_journal": false,
+      "matched_authors": [
+        "Mark Rishniw"
+      ],
+      "article_in_press": false,
+      "source_type": "pubmed",
+      "article_url": ""
+    },
     {
       "pmid": "",
       "external_id": "jvc-aip-cb89829569ce1ff1",
@@ -446,6 +469,49 @@
       "article_url": ""
     },
     {
+      "pmid": "42648162",
+      "title": "Implantation of a LUX-Dx insertable cardiac monitor enables remote heart rhythm monitoring in dogs and cats.",
+      "authors_text": "A E van de Watering, C Melis, N J Beijerink",
+      "journal": "Journal of veterinary cardiology : the official journal of the European Society of Veterinary Cardiology",
+      "publication_date": "2026-07-29",
+      "sort_date": "2026-07-29",
+      "abstract": "INTRODUCTION/OBJECTIVES: Remote long-term rhythm monitoring enables arrhythmia diagnosis and treatment evaluation without in-clinic visits. This prospective case series evaluated the safety, feasibility, and clinical utility of the insertable cardiac monitor LUX-Dx™ and LUX-Dx II/II+™ in dogs and cats.\nANIMALS, MATERIALS AND METHODS: Patients were divided into two groups. The diagnostic group included patients with unexplained intermittent clinical signs potentially caused by arrhythmia. The therapeutic group included patients with known arrhythmias requiring assessment of arrhythmia burden and treatment efficacy. Data were analyzed using the LATITUDE Clarity platform. Electrocardiography strips and tachograms were recorded during tachycardia, during bradycardia, or when triggered by owners. The device continuously registered mean heart rates.\nRESULTS: The device was implanted in 15 dogs and three cats with a 100% success rate and no complications. All procedures were performed under local anesthesia without sedation or general anesthesia. One-lead electrocardiography tracings were sufficient for rhythm interpretation, and remote monitoring and programming were successful in all patients. Clinically useful information contributed to rhythm diagnosis in 8 of 10 diagnostic patients and supported treatment decisions in all therapeutic patients, although changes in arrhythmia burden were not interpreted as proof of clinical benefit or improved prognosis. In two diagnostic cases, the absence of symptom recurrence with normal rhythm data limited conclusions.\nSTUDY LIMITATIONS: Occasional sensing artifacts and misclassification of atrial arrhythmias occurred but were manageable through remote reprogramming.\nCONCLUSIONS: The LUX-Dx™ and LUX-Dx II/II+™ insertable cardiac monitors enable implantation without general anesthesia and remote monitoring in dogs and cats, providing clinically relevant rhythm data.",
+      "doi": "10.1016/j.jvc.2026.07.005",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42648162/",
+      "species": "Both",
+      "topics": [
+        "Arrhythmia",
+        "ECG / Holter"
+      ],
+      "selected_journal": true,
+      "matched_authors": [],
+      "article_in_press": false,
+      "source_type": "pubmed",
+      "article_url": ""
+    },
+    {
+      "pmid": "42648161",
+      "title": "Three radiographic methods for assessing left atrial enlargement in dogs: diagnostic performance and correlation with qualitative features.",
+      "authors_text": "Y E Hwang, N Kwon, M Kwon, M Namgoong, S Wang, C Jung, H Choi, J Choi, J Yoon",
+      "journal": "Journal of veterinary cardiology : the official journal of the European Society of Veterinary Cardiology",
+      "publication_date": "2026-07-29",
+      "sort_date": "2026-07-29",
+      "abstract": "INTRODUCTION/OBJECTIVES: Left atrial (LA) enlargement is a critical indicator of cardiac disease progression in dogs. This study compared the diagnostic accuracy of vertebral heart size (VHS), vertebral left atrial size (VLAS), and radiographic left atrial dimension (RLAD) in detecting ≥moderate LA enlargement using an ordinal echocardiographic reference standard and investigated their correlations with qualitative radiographic features.\nANIMALS, MATERIALS AND METHODS: This retrospective study included 177 dogs. Quantitative radiographic measurements (VHS, VLAS, and RLAD) and qualitative radiographic features (caudodorsal cardiac margin, left auricular bulge, and double wall sign) were evaluated. Left atrial size was classified using established left atrial-to-aortic root ratio (LA:Ao) thresholds (normal <1.6; mild 1.6-1.9; moderate 1.9-2.3; severe ≥2.3). Analyses focused on distinguishing ≥moderate LA enlargement using receiver operating characteristic analysis. Correlations with qualitative features were examined using Spearman correlation.\nRESULTS: All radiographic measurements showed fair positive correlations with LA:Ao. For detection of ≥moderate LA enlargement, LA-specific measurements demonstrated good diagnostic performance than the fair diagnostic performance of VHS. Optimal cutoffs were VHS ≥10.9, VLAS ≥2.5, and RLAD ≥2.1. Both VLAS and RLAD correlated more strongly with caudodorsal cardiac margin morphology than did VHS.\nSTUDY LIMITATIONS: The RLAD was unmeasurable in 39.8% of cases, and demonstrated lower interobserver agreement than VHS and VLAS.\nCONCLUSIONS: Measurements specific to the LA (VLAS and RLAD) demonstrated improved diagnostic performance for detecting ≥moderate LA enlargement and correlated more strongly with wedge-shaped caudodorsal margin than VHS. Vertebral left atrial size provided the optimal balance of performance, feasibility, and reliability for clinical use.",
+      "doi": "10.1016/j.jvc.2026.07.006",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42648161/",
+      "species": "Canine",
+      "topics": [
+        "Echocardiography"
+      ],
+      "selected_journal": true,
+      "matched_authors": [],
+      "article_in_press": false,
+      "source_type": "pubmed",
+      "article_url": ""
+    },
+    {
       "pmid": "42591112",
       "title": "Commentary: QRS complex configurations in 12-lead electrocardiograms of dogs with monomorphic ventricular tachycardia or complete bundle branch block.",
       "authors_text": "Dragutin Novosel, Petar Žuljević, Tina Bečić",
@@ -465,28 +531,6 @@
       "article_in_press": false,
       "source_type": "pubmed",
       "article_url": ""
-    },
-    {
-      "pmid": "",
-      "external_id": "jvc-aip-07606213ce85be49",
-      "title": "Three Radiographic Methods for Assessing Left Atrial Enlargement in Dogs: Diagnostic Performance and Correlation with Qualitative Features",
-      "authors_text": "Yae Eun Hwang, Nahyun Kwon, Minjoo Kwon, Mire Namgoong, Sujung Wang, Chanwoo Jung, Hye-yeon Choi, Jihye Choi, Junghee Yoon",
-      "journal": "Journal of Veterinary Cardiology",
-      "publication_date": "Article in Press · 2026-07-29",
-      "sort_date": "2026-07-29",
-      "abstract": "",
-      "doi": "",
-      "pmcid": "",
-      "pubmed_url": "",
-      "article_url": "https://www.sciencedirect.com/science/article/pii/S176027342600086X?dgcid=rss_sd_all",
-      "species": "Canine",
-      "topics": [
-        "Other Veterinary Medicine"
-      ],
-      "selected_journal": true,
-      "matched_authors": [],
-      "article_in_press": true,
-      "source_type": "sciencedirect_rss"
     },
     {
       "pmid": "",
