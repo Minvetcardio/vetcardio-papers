@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-28T08:51:50.121940+00:00",
-  "total": 4610,
+  "generated_at": "2026-08-29T05:27:52.983164+00:00",
+  "total": 4611,
   "filter_version": "major-journal-filter-jvc-integrated-2026-08-26",
   "tracked_journals": [
     "Frontiers in Veterinary Science",
@@ -45,6 +45,51 @@
     "Étienne Côté"
   ],
   "papers": [
+    {
+      "pmid": "42660709",
+      "title": "Corrigendum to \"Evidence-based medical therapy for mitral regurgitation in dogs\" [J Vet Cardiol (2026) 10.1016/j.jvc.2026.04.006].",
+      "authors_text": "J P Mochel, J L Ward, J A Stern",
+      "journal": "Journal of veterinary cardiology : the official journal of the European Society of Veterinary Cardiology",
+      "publication_date": "2026-08-27",
+      "sort_date": "2026-08-27",
+      "abstract": "",
+      "doi": "10.1016/j.jvc.2026.08.001",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42660709/",
+      "species": "Canine",
+      "topics": [
+        "MMVD / Mitral Valve"
+      ],
+      "selected_journal": true,
+      "matched_authors": [
+        "Joshua A. Stern"
+      ],
+      "article_in_press": false,
+      "source_type": "pubmed",
+      "article_url": ""
+    },
+    {
+      "pmid": "",
+      "external_id": "jvc-aip-469f2bc982842208",
+      "title": "Corrigendum to “Evidence-based medical therapy for mitral regurgitation in dogs” [J Vet Cardiol (2026) 10.1016/j.jvc.2026.04.006]",
+      "authors_text": "J.P. Mochel, J.L. Ward, J.A. Stern",
+      "journal": "Journal of Veterinary Cardiology",
+      "publication_date": "Article in Press · 2026-08-27",
+      "sort_date": "2026-08-27",
+      "abstract": "",
+      "doi": "",
+      "pmcid": "",
+      "pubmed_url": "",
+      "article_url": "https://www.sciencedirect.com/science/article/pii/S1760273426000871?dgcid=rss_sd_all",
+      "species": "Canine",
+      "topics": [
+        "MMVD / Mitral Valve"
+      ],
+      "selected_journal": true,
+      "matched_authors": [],
+      "article_in_press": true,
+      "source_type": "sciencedirect_rss"
+    },
     {
       "pmid": "42648350",
       "title": "Diagnostic performance of 1,2-O-dilauryl-rac-glycero glutaric acid-(6'-methylresorufin) ester lipase activity in cats presenting to a veterinary referral hospital.",
@@ -121,7 +166,7 @@
       "sort_date": "2026-08-21",
       "abstract": "Balloon valvuloplasty is a commonly performed catheter-based procedure in dogs with congenital pulmonic stenosis. Worldwide, veterinary cardiologists often administer peri- and postoperative prophylactic antimicrobials to prevent infectious complications, like bacterial endocarditis. Infective endocarditis of the pulmonary valve is, however, extremely rare in dogs, and it has never been reported after balloon valvuloplasty. The objective of this retrospective case series was to investigate the incidence of infective endocarditis, if balloon dilatation of pulmonic stenosis was performed without antimicrobial prophylaxis. Medical records of dogs operated at a university teaching hospital in a 20-year period from 2006 to 2025 were reviewed for clinical signs and echocardiographic changes that could be caused by infective endocarditis. Of the 83 dogs that were operated without peri- or postoperative antimicrobial prophylaxis, survived the surgery, and had at least three weeks of follow-up, none developed infective endocarditis. Follow-up in 68 dogs was based on medical history, physical examination and echocardiography during rechecks at the authors' institution. Follow-up information from the remaining 15 dogs was gained from the owners and/or the referring veterinarians. Our study demonstrated zero event rate in dogs that underwent balloon dilatation of congenital pulmonic stenosis without antimicrobial prophylaxis.",
       "doi": "10.3390/ani16162629",
-      "pmcid": "",
+      "pmcid": "PMC13509376",
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42652034/",
       "species": "Canine",
       "topics": [
@@ -144,7 +189,7 @@
       "sort_date": "2026-08-20",
       "abstract": "Canine dirofilariosis caused by Dirofilaria immitis and Dirofilaria repens is a vector-borne zoonotic infection of considerable veterinary and public health importance. Despite reports of the circulation of Dirofilaria spp. in neighboring countries, data on the molecular prevalence, species composition, and genetic diversity of these parasites in dogs from Kazakhstan remain limited. In the present study, owned, shelter, and stray dogs, which serve as the principal reservoirs of infection, were examined for the presence of microfilariae in blood, and the circulation of Dirofilaria spp. was molecularly confirmed. The study was conducted between September 2024 and January 2026 and included 751 canine blood samples collected from 10 regions of Kazakhstan. Initial screening was performed using the modified Knott test. Molecular identification was carried out through amplification of the mitochondrial cox1 gene, followed by DNA sequencing and comparative analysis with reference sequences available in GenBank. Phylogenetic analysis was performed to assess the genetic relationships of the detected isolates. The overall molecular prevalence of Dirofilaria spp. was 3.6% (27/751). The highest infection rate was recorded in the Aktobe region (22.3%), while positive cases were also detected in the Akmola (2.7%), Kostanay (1.7%), and West Kazakhstan (1.8%) regions. Species identification revealed the predominance of D. repens, whereas D. immitis was detected only in Aktobe region. Phylogenetic analysis confirmed the species identity of all obtained sequences and demonstrated a high degree of genetic similarity with Dirofilaria isolates previously reported from Europe and Asia. These findings confirm the circulation of Dirofilaria spp. among dogs in several regions of Kazakhstan and indicate the ongoing expansion of canine dirofilariosis in Central Asia. This study provides the first molecular genetic data on Dirofilaria spp. in dogs from Kazakhstan and highlights the need for continued epidemiological surveillance and assessment of potential risks to animal and human health.",
       "doi": "10.3390/ani16162612",
-      "pmcid": "",
+      "pmcid": "PMC13509504",
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42652017/",
       "species": "Canine",
       "topics": [
@@ -247,6 +292,28 @@
       "article_url": ""
     },
     {
+      "pmid": "42664783",
+      "title": "Multicenter transvenous pacemaker implantation in 595 dogs: complications and survival rates.",
+      "authors_text": "M Ciccozzi, C Stauthammer, C Whipp, L Visser, H Kellihan, R Sanders, M Ames, G Galustanian, J Ryave, A Rendahl",
+      "journal": "Journal of veterinary cardiology : the official journal of the European Society of Veterinary Cardiology",
+      "publication_date": "2026-08-10",
+      "sort_date": "2026-08-10",
+      "abstract": "INTRODUCTION/OBJECTIVES: Transvenous pacemakers are routinely used for pathologic bradyarrhythmias including third-degree atrioventricular block (3AVB), sick sinus syndrome (SSS), high-grade second-degree atrioventricular block (2AVB), and atrial standstill (AS). This study reports the multi-institutional complications and survival rates in a large cohort of dogs.\nANIMALS, MATERIALS AND METHODS: A retrospective analysis of outcomes and complications in dogs that underwent transvenous pacemaker implantation between January 2000 and December 2016 at four academic institutions was conducted.\nRESULTS: In total, 595 dogs were identified (221 males and 374 females) with a median age of 10.1 years (range: 0.3-17.0 years). Presenting arrhythmias included 3AVB (54.5%), SSS (24.4%), high-grade 2AVB (16.1%), and AS (4.0%). Major complications occurred in 17.5% (104/595) of cases including lead dislodgement (n = 39), infection (n = 24), thrombus formation (n = 19), ventricular fibrillation (n = 8), cardiac arrest (n = 6), cardiac perforation (n = 5), and iatrogenic tricuspid stenosis (n = 3). Ventricular lead dislodgement in AS (20%) occurred more frequently than SSS (1.4%; P=0.002), and 80% of the ventricular leads that dislodged in dogs with AS were passive leads. Procedural mortality rate was 0.8% (5/595). Median survival time was 2.8 years (2AVB, 2.9 years; 3AVB, 2.9 years; AS, 3.3 years; SSS, 2.5 years). Cardiac mortality occurred in 60.0% of AS cases compared to 2AVB (25.0%), 3AVB (21.9%), and SSS (16.9%).\nSTUDY LIMITATIONS: Limitations of this study included the retrospective nature of the project with some loss to follow-up.\nCONCLUSIONS: Pacemakers have a low procedural mortality rate, and overall, complications were minimal. Type of lead and underlying disease process may impact the risk of lead dislodgement. Dogs with AS are more likely to die from cardiac-related disease.",
+      "doi": "10.1016/j.jvc.2026.08.003",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42664783/",
+      "species": "Canine",
+      "topics": [
+        "Arrhythmia",
+        "Cardiac Emergency / CPR"
+      ],
+      "selected_journal": true,
+      "matched_authors": [],
+      "article_in_press": true,
+      "source_type": "pubmed",
+      "article_url": "https://www.sciencedirect.com/science/article/pii/S1760273426000901?dgcid=rss_sd_all"
+    },
+    {
       "pmid": "42572994",
       "title": "Evaluation of Fibrinolysis by Thromboelastography in Dogs With Hemorrhagic Pericardial Effusion.",
       "authors_text": "Margot R Ehrlich, Ian M DeStefano, Elizabeth A Rozanski, Scott Taylor, Armelle M de Laforcade, Claire R Sharp, John E Rush",
@@ -266,28 +333,6 @@
       "article_in_press": false,
       "source_type": "pubmed",
       "article_url": ""
-    },
-    {
-      "pmid": "",
-      "external_id": "jvc-aip-090bd6403c609db1",
-      "title": "Multicenter transvenous pacemaker implantation in 595 dogs: Complications and Survival Rates.",
-      "authors_text": "Marisa Ciccozzi, Christopher Stauthammer, Christopher Whipp, Lance Visser, Heidi Kellihan, Robert Sanders, Marisa Ames, Geghani Galustanian, Jacob Ryave, Aaron Rendahl",
-      "journal": "Journal of Veterinary Cardiology",
-      "publication_date": "Article in Press · 2026-08-10",
-      "sort_date": "2026-08-10",
-      "abstract": "",
-      "doi": "",
-      "pmcid": "",
-      "pubmed_url": "",
-      "article_url": "https://www.sciencedirect.com/science/article/pii/S1760273426000901?dgcid=rss_sd_all",
-      "species": "Canine",
-      "topics": [
-        "Arrhythmia"
-      ],
-      "selected_journal": true,
-      "matched_authors": [],
-      "article_in_press": true,
-      "source_type": "sciencedirect_rss"
     },
     {
       "pmid": "",
@@ -479,7 +524,7 @@
       "sort_date": "2026-07-31",
       "abstract": "This retrospective case series aims to assess the effects of an anaesthetic protocol including low-dose dexmedetomidine and butorphanol in dogs referred for cardiac tamponade undergoing ECG-gated CCT with contrast medium administration. Fifteen dogs (7 males, 8 females; ASA III/IV, body weight 25 ± 17.5 kg and age 8.6 ± 3.2 years) of different breeds with mild (n = 10/15) and moderate (n = 5/15) pericardial effusion were included. Pericardiocentesis was performed before anaesthesia. Dogs were premedicated with intravenous (IV) dexmedetomidine (0.5-1 μg kg-1) and butorphanol (0.1-0.3 mg kg-1). General anaesthesia was induced with propofol to effect (2-4.5 mg kg-1) IV and maintained with isoflurane in medical air and oxygen. During anaesthesia, heart rate and mean arterial pressure ranged from 37-141 beats min-1 and 58-117 mmHg respectively. No arrhythmias were recorded; mild hypotension occurred in two patients under general anaesthesia. No mortality was recorded within 48 h. Image quality was rated as excellent or good in most examinations, with moderate quality reported in two cases. A protocol including low-dose dexmedetomidine and butorphanol was feasible and was associated with acceptable recorded cardiovascular variables in this case series.",
       "doi": "10.3390/vetsci13080767",
-      "pmcid": "",
+      "pmcid": "PMC13517710",
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42655787/",
       "species": "Canine",
       "topics": [
@@ -523,7 +568,7 @@
       "sort_date": "2026-07-30",
       "abstract": "Radiofrequency catheter ablation is a minimally invasive electrophysiological procedure that utilizes radiofrequency energy to induce targeted thermal injury within arrhythmogenic myocardial tissue, thereby eliminating the substrate responsible for rapid and irregular cardiac rhythm disturbances. Radiofrequency ablation is a method widely used in human medicine for the permanent treatment of arrhythmias. In veterinary medicine, there are only a few centers worldwide that use this treatment method in dogs. This article presents the experiences of a Polish center in treating supraventricular and ventricular arrhythmias using this method. The first electrophysiological study and ablation were performed using an analog electrophysiological system; subsequent procedures were performed with the aid of a computerized system, and the last three procedures were performed using a 3D electroanatomical system. A total of 14 radiofrequency ablation procedures were performed on dogs weighing 10 to 33 kg, aged 9 months to 9 years, of various sexes and breeds. Fifty percent of the dogs that underwent ablation had both clinical and echocardiographic signs of tachycardia-induced cardiomyopathy. Three dogs required a re-ablation procedure. Complete elimination of clinically significant arrhythmias was achieved in 13 of 14 dogs, while one dog showed partial procedural success. No significant or permanent complications were observed in any of the dogs. Radiofrequency ablation procedures for arrhythmias are effective and safe.",
       "doi": "10.3390/vetsci13080760",
-      "pmcid": "",
+      "pmcid": "PMC13517224",
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42655780/",
       "species": "Canine",
       "topics": [
@@ -623,28 +668,6 @@
       "article_url": ""
     },
     {
-      "pmid": "",
-      "external_id": "jvc-aip-75f661793c19e919",
-      "title": "Implantation of a LUX-Dx insertable cardiac monitor enables remote heart rhythm monitoring in dogs and cats",
-      "authors_text": "Anne Ernestine van de Watering, Caroline Melis, Niek Jozef Beijerink",
-      "journal": "Journal of Veterinary Cardiology",
-      "publication_date": "Article in Press · 2026-07-29",
-      "sort_date": "2026-07-29",
-      "abstract": "",
-      "doi": "",
-      "pmcid": "",
-      "pubmed_url": "",
-      "article_url": "https://www.sciencedirect.com/science/article/pii/S1760273426000858?dgcid=rss_sd_all",
-      "species": "Both",
-      "topics": [
-        "Other Veterinary Medicine"
-      ],
-      "selected_journal": true,
-      "matched_authors": [],
-      "article_in_press": true,
-      "source_type": "sciencedirect_rss"
-    },
-    {
       "pmid": "42501791",
       "title": "Development and validation of PCR-RFLP assays for detection of MYBPC3 variants associated with hypertrophic cardiomyopathy in Maine Coon and Ragdoll cats.",
       "authors_text": "Thao Phuong Vu, Thong Quang Le, Truc Thi Thanh Truong, Giang Thi Cam Nguyen, Khe Bich By, Cuong Ngoc Duong, Dai Van Nguyen, Khoa Hoang Dang Le, Anh Phu Nam Bui",
@@ -675,7 +698,7 @@
       "sort_date": "2026-07-24",
       "abstract": "Doxorubicin-induced cardiotoxicity is an important concern in veterinary oncology, and early detection of myocardial injury remains clinically challenging. This exploratory pilot study described changes in cardiac fatty acid-binding protein (h-FABP), cardiac troponin I (cTnI), NT-proBNP, conventional echocardiographic variables, and 24-h Holter-derived heart rate variability parameters in dogs with hemangiosarcoma treated with doxorubicin. Fourteen dogs were prospectively evaluated before treatment initiation and one week after the third doxorubicin dose, corresponding to a cumulative dose of 90 mg/m2. The study did not include a control group, a predefined cardiotoxicity endpoint, or diagnostic-performance analysis. Plasma biomarkers, echocardiographic parameters, ventricular arrhythmic events, and Holter-derived time- and frequency-domain heart rate variability variables were compared between both time points. Cardiac troponin I increased significantly after three doxorubicin doses, from a median of 0.05 ng/mL to 0.15 ng/mL (p = 0.002). In contrast, h-FABP did not change significantly, with median values of 2.43 ng/mL at baseline and 2.62 ng/mL after treatment (p = 0.27). NT-proBNP also showed no significant change (p = 0.87). Among echocardiographic variables, E-point septal separation, fractional shortening, ejection fraction, LA/Ao, and LVDd index did not change significantly. Ventricular arrhythmic events were infrequent and were described descriptively, whereas Holter-derived HRV variables did not show statistically significant differences between time points. In this exploratory cohort, cTnI increased after three doxorubicin doses, whereas h-FABP and NT-proBNP did not change significantly at the evaluated time point. Because h-FABP was measured one week after treatment, its potential short-term post-infusion release cannot be assessed. Larger studies with serial early sampling, predefined cardiotoxicity endpoints, appropriate control groups, and adjusted statistical analyses are required.",
       "doi": "10.3390/vetsci13080735",
-      "pmcid": "",
+      "pmcid": "PMC13517254",
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42655755/",
       "species": "Canine",
       "topics": [
@@ -1125,7 +1148,7 @@
       "sort_date": "2026-07-01",
       "abstract": "BACKGROUND: Dogs with atrial fibrillation (AF) live longer if heart rate is strictly controlled (SHRC, 24-h mean heart rate ≤ 125 beats per minute [bpm]). Amiodarone and diltiazem are used to lower ventricular response rate (VRR) in dogs with AF, but information about their relative efficacy for achieving SHRC is lacking.\nHYPOTHESIS/OBJECTIVES: Describe heart rate response with sequential escalation of amiodarone or diltiazem monotherapy to combination therapy.\nANIMALS: Thirteen client-owned dogs with AF.\nMETHODS: Prospective cohort study with an adaptive treatment protocol. Dogs with AF with mean daily heart rate (MDHR) > 125 bpm (baseline, 24-h Holter) were randomized to receive amiodarone or diltiazem at standard doses. Dogs were reassessed 21 days later, and the other drug (amiodarone or diltiazem) was added if SHRC was not achieved. Dogs were then reassessed at 42 and 63-147 days after starting treatment. If MDHR >125 bpm at any repeat assessment, the second drug was added. Timing of final assessment was dependent on whether treatment was escalated.\nRESULTS: Monotherapy with amiodarone and diltiazem was initially used in 7 and 6 dogs, respectively. SHRC was achieved in 3 dogs (amiodarone, n = 2; diltiazem, n = 1) at first follow-up. At last follow-up, 11 of 13 dogs were receiving both drugs (median [range] 50 [20-153] days). Combination therapy of amiodarone and diltiazem did not result in SHRC (139 [94-160] bpm) in most dogs (7/11, 64%).\nCONCLUSIONS AND CLINICAL IMPORTANCE: Monotherapy with amiodarone or diltiazem or combination therapy of amiodarone/diltiazem did not achieve SHRC in most dogs in this study.",
       "doi": "10.1093/jvimsj/aalag194",
-      "pmcid": "",
+      "pmcid": "PMC13520928",
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42658783/",
       "species": "Canine",
       "topics": [
@@ -1147,7 +1170,7 @@
       "sort_date": "2026-07-01",
       "abstract": "BACKGROUND: While serum total bilirubin concentration (Tbil) has emerged as a potential prognostic marker in dogs with myxomatous mitral valve disease (MMVD) after mitral valve repair (MVR), its dose-response relationship and underlying pathophysiological mechanisms remain unclear.\nHYPOTHESIS/OBJECTIVES: To characterize the dose-response relationships between preoperative Tbil and 2-year all-cause mortality after MVR and explore the role of right-sided cardiac compromise.\nANIMALS: Two thousand sixty-three (cohort A) and 301 (cohort B) dogs with MMVD undergoing MVR at a single center.\nMETHODS: This retrospective cohort study used multivariable Cox regression to assess the association between Tbil and 2-year mortality in cohort A. Cohort B evaluated relationships among Tbil, hepatic congestion, and right-sided overload.\nRESULTS: In cohort A, preoperative Tbil showed a linear positive association with 2-year all-cause mortality even within reference interval (ie, adjusted hazard ratio [0.3 vs. 0.1 mg/dL]: 1.33; 95% CI, 1.04-1.70). This association disappeared in dogs surviving beyond 30 days. Furthermore, higher preoperative Tbil levels were associated with an increased incidence of cardiac-related 30-day deaths in cohort A, and with right-sided cardiac overload at discharge in cohort B, which resolved by one month postoperatively. Hepatic congestion was associated with right-sided overload but not Tbil levels.\nCONCLUSIONS AND CLINICAL IMPORTANCE: Subtle preoperative Tbil elevations were associated with short-term all-cause mortality and transient right-sided overload, warranting careful interpretation even within reference intervals. However, the pathophysiological mechanism linking Tbil to postoperative prognosis remains to be elucidated.\nABSTRACT TRANSLATED TO JAPANESE: ビリルビン (Tbil) は、 (MVR) の (MMVD) のにおけるのがされているが、そのおよびはとしてである。 Tbil と MVR 2とのをらかにし、とのをすること。で MVR をけた MMVD の、コホートA 2,063 およびコホートB 301 。とろきコホートでは、コホートA において Tbil と 2 とのを Cox モデルによりした。コホート B では、 Tbil とうっおよびのをした。コホートA において、 Tbil はであっても2とのをした (ハザード [0.3 0.1 mg/dL]: 1.33、95% 1.04-1.70)。このは 30をえてしたではした。さらに、 Tbil は、コホートA における 30 のの、およびコホートB におけるののとし、このは 1 かまでにした。うっはとしたが、 Tbil とはしなかった。とのわずかな Tbil は、およびのとしており、のであってもになをつがある。ただし、 Tbil とをびつけるはとしてらかではない。.",
       "doi": "10.1093/jvimsj/aalag191",
-      "pmcid": "",
+      "pmcid": "PMC13520937",
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42658781/",
       "species": "Canine",
       "topics": [
