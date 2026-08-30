@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-29T05:27:52.983164+00:00",
-  "total": 4611,
+  "generated_at": "2026-08-30T03:24:38.080016+00:00",
+  "total": 4610,
   "filter_version": "major-journal-filter-jvc-integrated-2026-08-26",
   "tracked_journals": [
     "Frontiers in Veterinary Science",
@@ -309,9 +309,9 @@
       ],
       "selected_journal": true,
       "matched_authors": [],
-      "article_in_press": true,
+      "article_in_press": false,
       "source_type": "pubmed",
-      "article_url": "https://www.sciencedirect.com/science/article/pii/S1760273426000901?dgcid=rss_sd_all"
+      "article_url": ""
     },
     {
       "pmid": "42572994",
@@ -333,28 +333,6 @@
       "article_in_press": false,
       "source_type": "pubmed",
       "article_url": ""
-    },
-    {
-      "pmid": "",
-      "external_id": "jvc-aip-0743b9aab7a492e1",
-      "title": "Clinical utility of Shear Wave Speed and Dispersion Slope measured by Shear Wave Elastography for the assessment of hepatic congestion in dogs with cardiac disease",
-      "authors_text": "Nozomi Shiohara, Kensuke Nakamura, Masahiro Tamura, Nozomu Yokoyama, Noboru Sasaki, Sei Kawamoto, Mitsuyoshi Takiguchi",
-      "journal": "Journal of Veterinary Cardiology",
-      "publication_date": "Article in Press · 2026-08-10",
-      "sort_date": "2026-08-10",
-      "abstract": "",
-      "doi": "",
-      "pmcid": "",
-      "pubmed_url": "",
-      "article_url": "https://www.sciencedirect.com/science/article/pii/S1760273426000895?dgcid=rss_sd_all",
-      "species": "Canine",
-      "topics": [
-        "Other Veterinary Medicine"
-      ],
-      "selected_journal": true,
-      "matched_authors": [],
-      "article_in_press": true,
-      "source_type": "sciencedirect_rss"
     },
     {
       "pmid": "42571816",
