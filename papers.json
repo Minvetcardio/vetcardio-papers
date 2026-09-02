@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-01T03:23:01.513036+00:00",
-  "total": 4610,
+  "generated_at": "2026-09-02T02:41:01.999222+00:00",
+  "total": 4611,
   "filter_version": "major-journal-filter-jvc-integrated-2026-08-26",
   "tracked_journals": [
     "Frontiers in Veterinary Science",
@@ -45,6 +45,27 @@
     "Étienne Côté"
   ],
   "papers": [
+    {
+      "pmid": "42675959",
+      "title": "Use of Intralipid Therapy and Therapeutic Plasma Exchange in the Management of Cholecalciferol Rodenticide Exposure in a Dog: A Case Report.",
+      "authors_text": "Tanvi A Kamat, Kara D Altman, Emma Donnelly, Neus Elias Santo-Domingo",
+      "journal": "Journal of veterinary emergency and critical care (San Antonio, Tex. : 2001)",
+      "publication_date": "2026-08-31",
+      "sort_date": "2026-08-31",
+      "abstract": "OBJECTIVE: To describe the presentation and outcome of a case of suspected cholecalciferol rodenticide intoxication managed with both intralipid emulsion (ILE) and therapeutic plasma exchange (TPE).\nCASE SUMMARY: A 3-year-old, neutered female, crossbreed dog presented for acute-onset vomiting and lethargy after suspected exposure to cholecalciferol rodenticide. Severe hypercalcemia was observed without other identifiable causes found upon investigation. Standard therapy for hypercalcemia was initiated, but rebound hypercalcemia led to consideration of alternative management options. Although ILE therapy initially showed promise, rebound hypercalcemia persisted. Ultimately, TPE was performed as a novel therapy and successfully reduced serum concentrations of vitamin D metabolites. Normocalcemia was eventually maintained, though the dog developed endocarditis that progressed to congestive heart failure and death. Blood cultures revealed the growth of Serratia marcescens.\nNEW OR UNIQUE INFORMATION PROVIDED: To the authors' knowledge, this is the first report describing the use of both ILE and TPE in the management of cholecalciferol rodenticide intoxication in a dog. It is also the second reported case of S. marcescens causing endocarditis in a dog.",
+      "doi": "10.1111/vec.70157",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42675959/",
+      "species": "Canine",
+      "topics": [
+        "Heart Failure"
+      ],
+      "selected_journal": true,
+      "matched_authors": [],
+      "article_in_press": false,
+      "source_type": "pubmed",
+      "article_url": ""
+    },
     {
       "pmid": "42660709",
       "title": "Corrigendum to \"Evidence-based medical therapy for mitral regurgitation in dogs\" [J Vet Cardiol (2026) 10.1016/j.jvc.2026.04.006].",
