@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-02T02:41:01.999222+00:00",
-  "total": 4611,
+  "generated_at": "2026-09-03T02:46:48.025577+00:00",
+  "total": 4613,
   "filter_version": "major-journal-filter-jvc-integrated-2026-08-26",
   "tracked_journals": [
     "Frontiers in Veterinary Science",
@@ -45,6 +45,28 @@
     "Étienne Côté"
   ],
   "papers": [
+    {
+      "pmid": "",
+      "external_id": "jvc-aip-541cf91cee7672b9",
+      "title": "Cone Reconstruction for Severe Tricuspid Valve Dysplasia in a Dog",
+      "authors_text": "Takuma Aoki, Asuka Ueshima, Kentaro Iwasaki, Hayato Shimoda, Naoyuki Fukamachi, Takashi Miyamoto",
+      "journal": "Journal of Veterinary Cardiology",
+      "publication_date": "Article in Press · 2026-09-01",
+      "sort_date": "2026-09-01",
+      "abstract": "",
+      "doi": "",
+      "pmcid": "",
+      "pubmed_url": "",
+      "article_url": "https://www.sciencedirect.com/science/article/pii/S1760273426000925?dgcid=rss_sd_all",
+      "species": "Canine",
+      "topics": [
+        "Other Veterinary Medicine"
+      ],
+      "selected_journal": true,
+      "matched_authors": [],
+      "article_in_press": true,
+      "source_type": "sciencedirect_rss"
+    },
     {
       "pmid": "42675959",
       "title": "Use of Intralipid Therapy and Therapeutic Plasma Exchange in the Management of Cholecalciferol Rodenticide Exposure in a Dog: A Case Report.",
@@ -258,6 +280,30 @@
       "species": "Canine",
       "topics": [
         "Heartworm"
+      ],
+      "selected_journal": true,
+      "matched_authors": [],
+      "article_in_press": false,
+      "source_type": "pubmed",
+      "article_url": ""
+    },
+    {
+      "pmid": "42682558",
+      "title": "Short-term effects of pimobendan in dogs with preclinical myxomatous mitral valve disease.",
+      "authors_text": "Irene Apolloni, Stefano Oricco, Serena Crosara, Giorgia Cavalleri, Marco Poggi, Cecilia Quintavalla",
+      "journal": "Frontiers in veterinary science",
+      "publication_date": "2026-08-18",
+      "sort_date": "2026-08-18",
+      "abstract": "INTRODUCTION: Pimobendan has been shown to delay the onset of congestive heart failure and prolong survival in dogs affected by myxomatous mitral valve disease (MMVD). However, little information is available regarding its short-term echocardiographic effects in dogs with preclinical disease. The aim of this prospective multicenter observational study was to evaluate the effect of pimobendan on selected echocardiographic indices after 7 days of therapy in dogs with American College of Veterinary Internal Medicine stage B2 MMVD.\nMETHODS: Forty-two client-owned dogs received pimobendan orally at 0.25-0.3 mg/kg every 12 h and underwent echocardiographic examination before treatment initiation and after 7 days.\nRESULTS: Significant reduction was observed in several indices of left atrial and left ventricular remodeling, including normalized left atrial diameter (p < 0.001), left atrial-to-aortic ratio (p < 0.001), maximal and minimal left atrial volumes (p < 0.001 and p = 0.008, respectively), left atrial stroke volume (p = 0.011), and normalized left ventricular internal diameters in diastole and systole (both p < 0.001). Significant decrease was also observed in fractional shortening (p = 0.007), peak velocity of early diastolic transmitral flow (E) (p = 0.001), E velocity-to-early diastolic myocardial peak velocity ratio (p = 0.031), mitral-to-aortic velocity time integral ratio (p = 0.045), and left ventricular early inflow-outflow index (p < 0.001), whereas pulmonic velocity-time integral (p < 0.001) and systolic myocardial peak velocity (p < 0.001) significantly increased. No significant differences were detected for regurgitant volume, regurgitant fraction, ejection fraction, myocardial performance index, isovolumic relaxation time, E-to-isovolumic relaxation time ratio, E deceleration, or aortic velocity-time integral. At the 1-week re-evaluation, 22/42 dogs (52.4%) showed reverse remodeling, with echocardiographic indices returning to values within the range consistent with ACVIM stage B1.\nDISCUSSION: These findings suggest that pimobendan administration is associated with early improvement in echocardiographic indices of left heart remodeling in dogs with ACVIM stage B2 MMVD and may reduce regurgitant volume shortly after treatment initiation.",
+      "doi": "10.3389/fvets.2026.1903502",
+      "pmcid": "PMC13529528",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42682558/",
+      "species": "Canine",
+      "topics": [
+        "MMVD / Mitral Valve",
+        "Heart Failure",
+        "Echocardiography",
+        "Pharmacology"
       ],
       "selected_journal": true,
       "matched_authors": [],
