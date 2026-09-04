@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-03T02:46:48.025577+00:00",
-  "total": 4613,
+  "generated_at": "2026-09-04T02:44:17.007485+00:00",
+  "total": 4615,
   "filter_version": "major-journal-filter-jvc-integrated-2026-08-26",
   "tracked_journals": [
     "Frontiers in Veterinary Science",
@@ -45,6 +45,49 @@
     "Étienne Côté"
   ],
   "papers": [
+    {
+      "pmid": "",
+      "external_id": "jvc-aip-45d69805a62fd03f",
+      "title": "A histopathological and immunohistochemical perspective on selected aspects of valvular interstitial and valve endothelial remodeling in canine mitral valve dysplasia and myxomatous degeneration",
+      "authors_text": "Izabela Janus-Ziółkowska, Hanna Biegańska, Joanna Bubak, Agnieszka Noszczyk-Nowak",
+      "journal": "Journal of Veterinary Cardiology",
+      "publication_date": "Article in Press · 2026-09-03",
+      "sort_date": "2026-09-03",
+      "abstract": "",
+      "doi": "",
+      "pmcid": "",
+      "pubmed_url": "",
+      "article_url": "https://www.sciencedirect.com/science/article/pii/S1760273426000950?dgcid=rss_sd_all",
+      "species": "Canine",
+      "topics": [
+        "MMVD / Mitral Valve"
+      ],
+      "selected_journal": true,
+      "matched_authors": [],
+      "article_in_press": true,
+      "source_type": "sciencedirect_rss"
+    },
+    {
+      "pmid": "42685768",
+      "title": "Comparing compressed 2-dose and 3-dose melarsomine protocols in the era of adjunctive therapy: a randomized clinical trial of 168 dogs with heartworm disease.",
+      "authors_text": "Linda S Jacobson, Jessie L Dyer, Adrienne Van Vlake, Brian A DiGangi, Mirah A Horowitz, Julie K Levy",
+      "journal": "Journal of the American Veterinary Medical Association",
+      "publication_date": "2026-09-02",
+      "sort_date": "2026-09-02",
+      "abstract": "OBJECTIVE: To test the hypothesis that, when used with doxycycline, moxidectin, and prednisone, 2-dose melarsomine would be as safe and effective as 3-dose melarsomine.\nMETHODS: A randomized clinical trial was conducted from April 2024 to December 2025, comparing compressed 2-dose and 3-dose melarsomine protocols. Dogs with Class 1 or 2 heartworm disease received sustained-release moxidectin, doxycycline, prednisone, and 2 or 3 injections of melarsomine. Melarsomine was administered on days 14 and 15 (2-dose group) or days 14, 44, and 45 (3-dose group). Dogs were exercise restricted for 4 weeks following melarsomine. Daily clinical observations were made until the last day of exercise restriction. Antigen tests were performed 6 or 9 months after melarsomine.\nRESULTS: 168 dogs completed treatment (2-dose group, n = 85; 3-dose group, 83), and 165 were retested (2-dose group, 85; 3-dose group, 80). There was no significant difference in efficacy between the 2-dose group (95.3%; 95% CI, 88.4% to 98.7%) and the 3-dose group (98.8%; exact 95% CI, 93.2% to 100.0%). The sample size was insufficient for conclusive noninferiority analysis at the predefined noninferiority margin of 4%. Survival was 100%. Complications were rare, with 7 dogs requiring thoracic radiographs with or without additional treatment, but none requiring intensive management. Incidence of post-melarsomine cough, increased respiratory effort, and weakness was not significantly different between groups.\nCONCLUSIONS: A compressed 2-dose melarsomine protocol, with doxycycline, moxidectin, and prednisone, was safe and effective.\nCLINICAL RELEVANCE: Compared with 3-dose protocols, the 2-dose melarsomine protocol reduces the cost, resources, and time required to treat heartworm disease.",
+      "doi": "10.2460/javma.26.06.0518",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42685768/",
+      "species": "Canine",
+      "topics": [
+        "Heartworm"
+      ],
+      "selected_journal": true,
+      "matched_authors": [],
+      "article_in_press": false,
+      "source_type": "pubmed",
+      "article_url": ""
+    },
     {
       "pmid": "",
       "external_id": "jvc-aip-541cf91cee7672b9",
