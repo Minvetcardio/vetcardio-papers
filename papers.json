@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-05T02:46:06.702346+00:00",
+  "generated_at": "2026-09-06T02:44:07.848410+00:00",
   "total": 4615,
   "filter_version": "major-journal-filter-jvc-integrated-2026-08-26",
   "tracked_journals": [
@@ -45,6 +45,29 @@
     "Étienne Côté"
   ],
   "papers": [
+    {
+      "pmid": "42697028",
+      "title": "Intermittent ventricular pre-excitation in a dog with orthodromic reciprocating atrioventricular tachycardia.",
+      "authors_text": "M Salvati, C Bourguignon, F Ivasovic",
+      "journal": "Journal of veterinary cardiology : the official journal of the European Society of Veterinary Cardiology",
+      "publication_date": "2026-09-04",
+      "sort_date": "2026-09-04",
+      "abstract": "A four-year-old female neutered Labrador retriever was referred for investigation of paroxysmal tachycardia. On physical examination, a heart rate of 220 beats/min with no heart murmurs was noticed. Cardiac troponin I was significantly increased. A six-lead electrocardiography revealed phases of narrow QRS complexes tachycardia with regular RR intervals and a QP'/P'Q of 0.80, compatible with orthodromic atrioventricular reciprocating tachycardia (OAVRT), alternating with sinus rhythm. On ambulatory electrocardiography, initial phases of OAVRT were followed by sinus rhythm. The sinus beats were interrupted by occasional wide QRS complexes with reduced PR interval and noticeable delta (δ) waves, which confirmed the presence of an accessory pathway. The diagnosis was of OAVRT with intermittent ventricular pre-excitation, and laddergrams were included to illustrate the underlying conduction patterns.",
+      "doi": "10.1016/j.jvc.2026.08.002",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42697028/",
+      "species": "Canine",
+      "topics": [
+        "Arrhythmia",
+        "ECG / Holter",
+        "Biomarkers"
+      ],
+      "selected_journal": true,
+      "matched_authors": [],
+      "article_in_press": false,
+      "source_type": "pubmed",
+      "article_url": ""
+    },
     {
       "pmid": "",
       "external_id": "jvc-aip-45d69805a62fd03f",
@@ -466,28 +489,6 @@
       "article_in_press": false,
       "source_type": "pubmed",
       "article_url": ""
-    },
-    {
-      "pmid": "",
-      "external_id": "jvc-aip-e7c0c845b2dcf590",
-      "title": "Intermittent ventricular pre-excitation in a dog with orthodromic reciprocating atrioventricular tachycardia (OAVRT)",
-      "authors_text": "Marta Salvati, Christophe Bourguignon, Frane Ivasovic",
-      "journal": "Journal of Veterinary Cardiology",
-      "publication_date": "Article in Press · 2026-08-08",
-      "sort_date": "2026-08-08",
-      "abstract": "",
-      "doi": "",
-      "pmcid": "",
-      "pubmed_url": "",
-      "article_url": "https://www.sciencedirect.com/science/article/pii/S1760273426000883?dgcid=rss_sd_all",
-      "species": "Canine",
-      "topics": [
-        "Arrhythmia"
-      ],
-      "selected_journal": true,
-      "matched_authors": [],
-      "article_in_press": true,
-      "source_type": "sciencedirect_rss"
     },
     {
       "pmid": "42563163",
