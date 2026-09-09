@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-08T02:53:43.404177+00:00",
-  "total": 4616,
+  "generated_at": "2026-09-09T02:53:51.700430+00:00",
+  "total": 4618,
   "filter_version": "major-journal-filter-jvc-integrated-2026-08-26",
   "tracked_journals": [
     "Frontiers in Veterinary Science",
@@ -45,6 +45,52 @@
     "Étienne Côté"
   ],
   "papers": [
+    {
+      "pmid": "42708524",
+      "title": "A Combination of Alleles in LMOD2 and a lncRNA is Strongly Associated With Myxomatous Mitral Valve Disease in Cavalier King Charles Spaniels.",
+      "authors_text": "Lisbeth Høier Olsen, Arney Eva Gunnlaugsdóttir, Majbritt Busk Madsen, Isabella Jane Larsen, Maria Josefine Ubbe Reimann, Foteini Papadaki, Ingrid Ljungvall, Jens Häggström, Torben Martinussen, Henrik Duelund Pedersen, Torkel Falk, Merete Fredholm, Peter Karlskov-Mortensen",
+      "journal": "Animal genetics",
+      "publication_date": "2026-10",
+      "sort_date": "2026-10-01",
+      "abstract": "A previous genome-wide association study identified regions on canine chromosome (cfa) 13 and 14 associated with early onset myxomatous mitral valve disease (MMVD) in Cavalier King Charles Spaniels (CKCS). In the present study, whole genome sequencing (WGS) of 9 CKCS cases (mitral regurgitation (MR) before 4.5 years or congestive heart failure (CHF) at any age due to MMVD) and 10 CKCS controls (no or mild MR after 8 years of age) identified > 2000 genetic variants in the MMVD associated cfa13 and cfa14 regions. Ensembl Variant Effect Predictor (VEP) identified a possible functional impact of 18 variants. These were genotyped in 250 CKCS; 117 cases and 133 controls. The most significantly associated variants were a splice-site variant in a long noncoding RNA (lncRNA) on cfa13, a nonsynonymous variant in HYAL4, a 39 base-pair insertion in LMOD2 and a synonymous variant in ENSCAFG00000024436 (p-values from 2.03E-08 to 4.20E-06). Concomitant homozygosity for risk alleles in LMOD2 and the lncRNA gave an odds-ratio for MMVD of 52.5 compared to homozygosity for the nonrisk alleles (p = 0.00034, 95% CI: 8.8-1023.8). Upon validation of our results in an independent cohort, this gene variant combination in CKCS is expected to enable targeted breeding programs to reduce MMVD prevalence in CKCS.",
+      "doi": "10.1002/age.70200",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42708524/",
+      "species": "Canine",
+      "topics": [
+        "MMVD / Mitral Valve",
+        "Heart Failure"
+      ],
+      "selected_journal": false,
+      "matched_authors": [
+        "Jens Häggström"
+      ],
+      "article_in_press": false,
+      "source_type": "pubmed",
+      "article_url": ""
+    },
+    {
+      "pmid": "",
+      "external_id": "jvc-aip-e5ba83371fc92b21",
+      "title": "Utility of longitudinal and radial myocardial velocities assessed by color tissue Doppler imaging in dogs with dilated cardiomyopathy",
+      "authors_text": "A. Tidholm, J. Häggström",
+      "journal": "Journal of Veterinary Cardiology",
+      "publication_date": "Article in Press · 2026-09-07",
+      "sort_date": "2026-09-07",
+      "abstract": "",
+      "doi": "",
+      "pmcid": "",
+      "pubmed_url": "",
+      "article_url": "https://www.sciencedirect.com/science/article/pii/S1760273426000962?dgcid=rss_sd_all",
+      "species": "Canine",
+      "topics": [
+        "Cardiomyopathy"
+      ],
+      "selected_journal": true,
+      "matched_authors": [],
+      "article_in_press": true,
+      "source_type": "sciencedirect_rss"
+    },
     {
       "pmid": "42697028",
       "title": "Intermittent ventricular pre-excitation in a dog with orthodromic reciprocating atrioventricular tachycardia.",
@@ -120,7 +166,7 @@
       "sort_date": "2026-09-01",
       "abstract": "BACKGROUND: Renal dysfunction in cardiac disease is attributed to both reduced cardiac output and venous congestion; however, relative contributions of these mechanisms are difficult to evaluate clinically.\nHYPOTHESIS/OBJECTIVES: Renal microvascular perfusion assessed by Superb Microvascular Imaging (SMI) would be associated with indices of cardiac output and venous congestion in dogs with cardiac disease.\nANIMALS: Forty-three client-owned dogs were enrolled: 15 healthy dogs (Control), 21 dogs with cardiac disease but without right-sided heart failure (non-RHF), and 7 dogs with signs of right-sided heart failure (RHF).\nMETHODS: Prospective cross-sectional observational study. SMI images were obtained from renal cortex, and mean SMI signal intensity (SMI-SI) was calculated as an index of renal perfusion. The left ventricular outflow tract velocity-time integral (LVOT-VTI) was used as an index of cardiac output, while caudal vena cava short-to-long axis ratio at minimal inspiratory diameter (CVC SD/LD) was used to indicate venous congestion.\nRESULTS: Median SMI-SI was 41.3 (95% CI, 39.1-43.8) in Control, 21.6 (95% CI: 19.4-23.9) in non-RHF, and 18.6 (95% CI, 16.4-21.0) in RHF. Both cardiac disease groups had lower values than Control (P < .001). SMI-SI was negatively correlated with CVC SD/LD (ρ = -0.59, P < .001) and positively correlated with LVOT-VTI (ρ = 0.43, P = .007). In full multivariable analysis, only CVC SD/LD was independently associated with SMI-SI (P = .001).\nCONCLUSIONS AND CLINICAL IMPORTANCE: SMI detects reduced renal microvascular perfusion in dogs with cardiac disease, which is associated with venous congestion rather than cardiac output.",
       "doi": "10.1093/jvimsj/aalag198",
-      "pmcid": "",
+      "pmcid": "PMC13549437",
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42704875/",
       "species": "Canine",
       "topics": [
