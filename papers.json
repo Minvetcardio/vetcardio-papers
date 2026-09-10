@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-09T02:53:51.700430+00:00",
+  "generated_at": "2026-09-10T02:54:50.686869+00:00",
   "total": 4618,
   "filter_version": "major-journal-filter-jvc-integrated-2026-08-26",
   "tracked_journals": [
@@ -54,7 +54,7 @@
       "sort_date": "2026-10-01",
       "abstract": "A previous genome-wide association study identified regions on canine chromosome (cfa) 13 and 14 associated with early onset myxomatous mitral valve disease (MMVD) in Cavalier King Charles Spaniels (CKCS). In the present study, whole genome sequencing (WGS) of 9 CKCS cases (mitral regurgitation (MR) before 4.5 years or congestive heart failure (CHF) at any age due to MMVD) and 10 CKCS controls (no or mild MR after 8 years of age) identified > 2000 genetic variants in the MMVD associated cfa13 and cfa14 regions. Ensembl Variant Effect Predictor (VEP) identified a possible functional impact of 18 variants. These were genotyped in 250 CKCS; 117 cases and 133 controls. The most significantly associated variants were a splice-site variant in a long noncoding RNA (lncRNA) on cfa13, a nonsynonymous variant in HYAL4, a 39 base-pair insertion in LMOD2 and a synonymous variant in ENSCAFG00000024436 (p-values from 2.03E-08 to 4.20E-06). Concomitant homozygosity for risk alleles in LMOD2 and the lncRNA gave an odds-ratio for MMVD of 52.5 compared to homozygosity for the nonrisk alleles (p = 0.00034, 95% CI: 8.8-1023.8). Upon validation of our results in an independent cohort, this gene variant combination in CKCS is expected to enable targeted breeding programs to reduce MMVD prevalence in CKCS.",
       "doi": "10.1002/age.70200",
-      "pmcid": "",
+      "pmcid": "PMC13552192",
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42708524/",
       "species": "Canine",
       "topics": [
