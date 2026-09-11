@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-10T02:54:50.686869+00:00",
-  "total": 4618,
+  "generated_at": "2026-09-11T02:49:14.697978+00:00",
+  "total": 4621,
   "filter_version": "major-journal-filter-jvc-integrated-2026-08-26",
   "tracked_journals": [
     "Frontiers in Veterinary Science",
@@ -46,6 +46,30 @@
   ],
   "papers": [
     {
+      "pmid": "42717174",
+      "title": "A Large-Scale Cross-Population Evaluation of Genetic Risk Variants for Dilated Cardiomyopathy in Dobermanns.",
+      "authors_text": "Alma H Hulsman, Gwen Flokstra, Christina Kijan, Marilijn van Rumpt, Johannes C M Vernooij, Thomas C Nelson, Sophie Liu, Lieke Vree, Magdalena Harakalova, Ingrid Ljungvall, Jens Haggstrom, Gerhard Wess, Hille Fieten, Marjo K Hytönen, Hannes Lohi, Frank G van Steenbeek",
+      "journal": "Animal genetics",
+      "publication_date": "2026-10",
+      "sort_date": "2026-10-01",
+      "abstract": "Previous studies suggest that genetic risk factors for dilated cardiomyopathy (DCM) in Dobermann dogs may differ between populations, complicating the use of genetic tests across subpopulations. Variants in pyruvate dehydrogenase kinase 4 (PDK4) and titin (TTN) have been associated with DCM in North American Dobermanns, whereas two loci on chromosome 5 involving Protein Kinase AMP-Activated Catalytic Subunit Alpha 2 (PRKAA2) and Ring Finger Protein 207 (RNF207) have been implicated in European populations. To assess the consistency of these signals across populations of Dobermanns, we harmonized and imputed genotype data from a Discovery cohort (n = 444) and a Replication cohort (n = 1771), and supplemented these with allele frequency data from a large diversity cohort (n = 3226) for cross-platform analyses. We detected a shared association signal near RNF207 in affected dogs in both Europe and North America. In contrast, SNPs located in and near PDK4 and TTN variants showed no association with DCM in either population. These findings indicate that the RNF207 variant represents a shared genetic risk factor for DCM in Dobermanns across populations, and support the dog, particularly the Dobermann, as a relevant spontaneous model for RNF207-driven DCM. The previously reported associations between PDK4 and TTN variants and DCM were not replicated in the North American Dobermann population, nor in the European Dobermann populations. Also, these results highlight the need for population-specific validation and functional validation of identified variants where possible, before implementation of variants in genetic testing strategies.",
+      "doi": "10.1002/age.70206",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42717174/",
+      "species": "Canine",
+      "topics": [
+        "Cardiomyopathy"
+      ],
+      "selected_journal": false,
+      "matched_authors": [
+        "Gerhard Wess",
+        "Jens Häggström"
+      ],
+      "article_in_press": false,
+      "source_type": "pubmed",
+      "article_url": ""
+    },
+    {
       "pmid": "42708524",
       "title": "A Combination of Alleles in LMOD2 and a lncRNA is Strongly Associated With Myxomatous Mitral Valve Disease in Cavalier King Charles Spaniels.",
       "authors_text": "Lisbeth Høier Olsen, Arney Eva Gunnlaugsdóttir, Majbritt Busk Madsen, Isabella Jane Larsen, Maria Josefine Ubbe Reimann, Foteini Papadaki, Ingrid Ljungvall, Jens Häggström, Torben Martinussen, Henrik Duelund Pedersen, Torkel Falk, Merete Fredholm, Peter Karlskov-Mortensen",
@@ -64,6 +88,53 @@
       "selected_journal": false,
       "matched_authors": [
         "Jens Häggström"
+      ],
+      "article_in_press": false,
+      "source_type": "pubmed",
+      "article_url": ""
+    },
+    {
+      "pmid": "42716424",
+      "title": "Whole-genome sequencing identifies a c.1282C > T missense variant in Taurine Transporter (TauT) associated with taurine-mediated dilated cardiomyopathy in a family of domestic shorthair cats.",
+      "authors_text": "Victor N Rivas, Lisa M Freeman, Esha M Srinivasan, Andi Morgan, Melissa Daeschner, John E Rush, Ronald H L Li, Sandra M Losa, Josue Gonzalez, Connor J Thonen-Fleck, Kailyn E Brown, E Javier Lopez Soto, Joshua A Stern",
+      "journal": "Journal of molecular and cellular cardiology",
+      "publication_date": "2026-09-09",
+      "sort_date": "2026-09-09",
+      "abstract": "Taurine is a cytoprotectant amino acid critical for a variety of cellular functions, including cell volume and intracellular calcium regulation, bile salt formation, free radical protection, and mitochondrial biogenesis. In most mammals, taurine is synthesized via methionine transsulfuration; albeit, in cats, taurine biosynthesis is blunted due to low enzymatic activity of their encoded cysteine sulfonic acid decarboxylase and, therefore, is an essential amino acid in the species. Taurine deficiency in cats results in retinopathy, coagulopathy, growth retardation, impaired immunological function, and most notably dilated cardiomyopathy (DCM). A three-year-old domestic shorthair cat was evaluated for vomiting, anorexia, and lethargy. Severe dilated cardiomyopathy and taurine deficiency were identified, despite eating a commercial, nutritionally balanced, diet with adequate taurine concentrations. A whole-genome association study (WGAS), under the assumptions of an incomplete dominance mode of inheritance (MOI), was performed on this case and two related cats with mild taurine and echocardiographic abnormalities (i.e., queen and littermate) compared to 18 previously whole-genome sequenced echocardiographically-normal geriatric controls (>10 years-of-age; n = 21). A 'MODERATE' c.1282C > T; p.Arg428Trp variant harbored in Solute Carrier Family 6 Member 6/Taurine Transporter (SLC6A6/TauT) was identified. The variant segregated to the postulated MOI and was not observed in any of the control or in an expanded population of cats (n = 422). Functional analyses involving wildtype and mutant SLC6A6 overexpression in HEK293-derived cells revealed marked reduction in cellular taurine uptake and decreased plasma membrane expression in those harboring the c.1282C > T variant. This represents the first-ever reported genetic variant explaining taurine deficiency in any domestic animal species.",
+      "doi": "10.1016/j.yjmcc.2026.09.001",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42716424/",
+      "species": "Feline",
+      "topics": [
+        "Cardiomyopathy",
+        "Echocardiography"
+      ],
+      "selected_journal": false,
+      "matched_authors": [
+        "Joshua A. Stern"
+      ],
+      "article_in_press": false,
+      "source_type": "pubmed",
+      "article_url": ""
+    },
+    {
+      "pmid": "42716105",
+      "title": "Sepsis and elevated creatinine predict poor outcomes in uncomplicated canine pyometra, and empirically prescribed antibiotics do not match bacterial susceptibility or improve survival.",
+      "authors_text": "Anna E Jones, Mark Rishniw, Isabella L Raux, Desiree Rosselli, Dylan Thomas, Cody Westmoreland, Kelley Thieman, Kristin A Coleman, Hailey Gollnick, Isabella Hildebrandt, Erin A Gibson, Brigitte A Brison, Qian Gao, Michael Tillson, Cassie N Lux, Nicole J Buote",
+      "journal": "Journal of the American Veterinary Medical Association",
+      "publication_date": "2026-09-09",
+      "sort_date": "2026-09-09",
+      "abstract": "OBJECTIVE: To identify variables associated with prolonged hospitalization or nonsurvival in the surgical management of pyometra in dogs and to report uterine bacterial susceptibility in comparison with empirically prescribed antibiotics.\nMETHODS: Retrospective study of dogs that underwent ovariohysterectomy for management of pyometra at 8 tertiary referral centers between December 1, 2008, and December 31, 2023. Data collected included signalment, preoperative/operative data, antibiotic utilization, and clinical follow-up.\nRESULTS: 625 dogs met inclusion criteria. Forty dogs (6.4%) experienced major short-term complications, and 604 dogs (96.6%) survived to discharge. Elevated preoperative creatinine concentration and sepsis increased the risk of nonsurvival. Survival to discharge did not differ between nonseptic dogs that received pre- or intraoperative antibiotics and those that did not. Sepsis, elevated creatinine, and interaction between elevated creatinine and altered mentation increased hospitalization duration. At least 1 inappropriate outpatient antibiotic was prescribed in 34.4% (116 of 337) of cases; most dogs that received inappropriate antibiotics were empirically prescribed amoxicillin-clavulanic acid (102 of 116 [87.9%]).\nCONCLUSIONS: Surgical management of pyometra in the tertiary referral setting had a good prognosis regardless of prescribed antibiotic bacterial susceptibility. Elevated creatinine and/or sepsis increased risk of mortality and prolonged hospitalization. The use of pre- and intraoperative antibiotics in nonseptic dogs was not associated with outcome.\nCLINICAL RELEVANCE: There was no clear clinical benefit of antibiotic use in the surgical management of pyometra in nonseptic dogs. If empiric antibiotics are indicated, the bacterial susceptibility profile of this patient population suggests a high likelihood of resistance to amoxicillin-clavulanic acid.",
+      "doi": "10.2460/javma.26.05.0367",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42716105/",
+      "species": "Canine",
+      "topics": [
+        "Other Veterinary Medicine"
+      ],
+      "selected_journal": false,
+      "matched_authors": [
+        "Mark Rishniw"
       ],
       "article_in_press": false,
       "source_type": "pubmed",
