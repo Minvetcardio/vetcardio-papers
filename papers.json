@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-11T02:49:14.697978+00:00",
-  "total": 4621,
+  "generated_at": "2026-09-12T02:57:32.860727+00:00",
+  "total": 4623,
   "filter_version": "major-journal-filter-jvc-integrated-2026-08-26",
   "tracked_journals": [
     "Frontiers in Veterinary Science",
@@ -89,6 +89,27 @@
       "matched_authors": [
         "Jens Häggström"
       ],
+      "article_in_press": false,
+      "source_type": "pubmed",
+      "article_url": ""
+    },
+    {
+      "pmid": "42723045",
+      "title": "Correction: Clinico-pathological and renal morphological findings in dogs naturally infected with Dirofilaria repens.",
+      "authors_text": "Korinna É Szabó, Luca Aresu, Linda Müller, Eszter Szilágyi, Fruzsina A Falus, Nándor Balogh, Márton Boros, Tibor Papp, Ferenc Manczur",
+      "journal": "BMC veterinary research",
+      "publication_date": "2026-09-10",
+      "sort_date": "2026-09-10",
+      "abstract": "",
+      "doi": "10.1186/s12917-026-05836-7",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42723045/",
+      "species": "Canine",
+      "topics": [
+        "Heartworm"
+      ],
+      "selected_journal": true,
+      "matched_authors": [],
       "article_in_press": false,
       "source_type": "pubmed",
       "article_url": ""
@@ -362,6 +383,29 @@
       "article_url": ""
     },
     {
+      "pmid": "42722611",
+      "title": "Evaluation of the mitral-aortic velocity time integral ratio for severity assessment in dogs with myxomatous mitral valve disease.",
+      "authors_text": "S Kawai, R Suzuki, Y Mochizuki, Y Yuchi, A Kitazawa, T Teshima, H Matsumoto",
+      "journal": "Journal of veterinary cardiology : the official journal of the European Society of Veterinary Cardiology",
+      "publication_date": "2026-08-22",
+      "sort_date": "2026-08-22",
+      "abstract": "INTRODUCTION/OBJECTIVES: In dogs, myxomatous mitral valve disease is the most commonly acquired cardiac disorder. Quantitative assessment of mitral regurgitation (MR), particularly regurgitant volume normalized to body weight (RVol/kg), remains challenging. A Doppler-derived mitral-to-aortic velocity time integral (VTI) ratio (calculated as mitral inflow VTI) divided by left ventricular outflow tract VTI]) has been proposed in humans to stratify MR severity. This study evaluated its association with MR severity, American College of Veterinary Internal Medicine stage, and congestive heart failure (CHF).\nANIMALS, MATERIALS AND METHODS: We evaluated 167 dogs with myxomatous mitral valve disease and 21 controls. Echocardiography included mitral inflow VTI, left ventricular outflow tract VTI, and RVol/kg. Repeatability was assessed using intraclass correlation coefficients. Receiver operating characteristic analysis was used to evaluate performance for detecting CHF and severe MR defined by a regurgitant fraction (RF) ≥50%.\nRESULTS: The mitral-to-aortic VTI ratio increased with stage (P<0.001) and correlated with RVol/kg and RF (r=0.75 each; P<0.001), with high repeatability (intraclass correlation coefficient >0.90). Multivariable regression identified early diastolic transmitral velocity (E), left atrium-to-aorta ratio, and RVol/kg as independent determinants of the mitral-to-aortic VTI ratio. Logistic regression to detect CHF (current and past) showed the association between the mitral-to-aortic VTI ratio and CHF. In the receiver operating characteristic curve analysis, the mitral-to-aortic VTI ratio showed the highest accuracy for identifying an RF ≥ 50% (area under the curve=0.89).\nSTUDY LIMITATIONS: Few dogs were in stage C/D.\nCONCLUSIONS: The mitral-to-aortic VTI ratio is a reproducible Doppler index associated with MR severity and American College of Veterinary Internal Medicine stage and may help indicate clinically relevant RF thresholds.",
+      "doi": "10.1016/j.jvc.2026.08.007",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42722611/",
+      "species": "Canine",
+      "topics": [
+        "MMVD / Mitral Valve",
+        "Heart Failure",
+        "Echocardiography"
+      ],
+      "selected_journal": true,
+      "matched_authors": [],
+      "article_in_press": false,
+      "source_type": "pubmed",
+      "article_url": ""
+    },
+    {
       "pmid": "",
       "external_id": "jvc-aip-cb89829569ce1ff1",
       "title": "Use of a novel integrated dilator-needle system for transseptal puncture in three dogs undergoing left atrial decompression.",
@@ -387,7 +431,7 @@
       "pmid": "",
       "external_id": "jvc-aip-9126199fd29fa4e5",
       "title": "Evaluation of the mitral-aortic velocity time integral ratio for severity assessment in dogs with myxomatous mitral valve disease",
-      "authors_text": "Shimpei Kawai, Ryohei Suzuki, Yohei Mochizuki, Yunosuke Yuchi, Arata Kitazawa, Takahiro Teshima, Hirotaka Matsumoto",
+      "authors_text": "S. Kawai, R. Suzuki, Y. Mochizuki, Y. Yuchi, A. Kitazawa, T. Teshima, H. Matsumoto",
       "journal": "Journal of Veterinary Cardiology",
       "publication_date": "Article in Press · 2026-08-22",
       "sort_date": "2026-08-22",
