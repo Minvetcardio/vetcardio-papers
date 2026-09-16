@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-15T03:12:46.835959+00:00",
-  "total": 4623,
+  "generated_at": "2026-09-16T03:09:53.196706+00:00",
+  "total": 4625,
   "filter_version": "major-journal-filter-jvc-integrated-2026-08-26",
   "tracked_journals": [
     "Frontiers in Veterinary Science",
@@ -89,6 +89,27 @@
       "matched_authors": [
         "Jens Häggström"
       ],
+      "article_in_press": false,
+      "source_type": "pubmed",
+      "article_url": ""
+    },
+    {
+      "pmid": "42735743",
+      "title": "Reference intervals and allometric scaling of echocardiographic measurements in small size growing dogs.",
+      "authors_text": "Marlene Huk, Sol Arioni, Mariana Tórtora, Pablo R Batista, Daniel O Arias, Paula G Blanco",
+      "journal": "Veterinary journal (London, England : 1997)",
+      "publication_date": "2026-09-14",
+      "sort_date": "2026-09-14",
+      "abstract": "In growing dogs, echocardiographic studies are scarce and carried out in large and medium breeds. In echocardiography, the most frequently used allometric reference ranges included adult dogs. Therefore, puppy reference values are required to identify normal and abnormal echocardiographic measurements. The aims of this study were 1) to analyse morphological and functional echocardiographic changes in small size dogs during the first 1.5 years of life; 2) to determine the effect of body weight (BW) and breed on these echocardiographic variables; 3) to compare echocardiographic reference intervals (RI) with allometric-scaled RI; 4) to estimate the proportionality constant (a) and the scaling exponent (b) in a specific allometric equation for these pure and cross-bred dogs. Thirteen, 2 months of age, 1.3-2.55kg, client-owned, healthy puppies were included. The animals were evaluated every two months during the first year of life and then at the age of 18 months. At each time point, a physical examination, BW recording and echocardiographic evaluations were performed. BW had an effect on all echocardiographic morphological variables, while SV was the only functional variable modified. Conversely, no breed effect was shown in any echocardiographic variable. It was demonstrated that the previously reported constants were not accurate to predict echocardiographic variables in these small size growing dogs. Specific allometric equations for small size puppies were provided.",
+      "doi": "10.1016/j.tvjl.2026.106882",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42735743/",
+      "species": "Canine",
+      "topics": [
+        "Echocardiography"
+      ],
+      "selected_journal": true,
+      "matched_authors": [],
       "article_in_press": false,
       "source_type": "pubmed",
       "article_url": ""
@@ -314,6 +335,31 @@
       "matched_authors": [],
       "article_in_press": true,
       "source_type": "sciencedirect_rss"
+    },
+    {
+      "pmid": "42738489",
+      "title": "Long-Term Control of Refractory Cardiogenic Pleural Effusion in a Cat Treated with Sacubitril/Valsartan and Hydrochlorothiazide: A Case Report.",
+      "authors_text": "Mălina-Cristina Maftei, Laura Marina Scîntei, Sorin Ioan Beschea Chiriac, Vasile Vulpe, Radu Andrei Baisan",
+      "journal": "Animals : an open access journal from MDPI",
+      "publication_date": "2026-08-31",
+      "sort_date": "2026-08-31",
+      "abstract": "Sacubitril/valsartan is an angiotensin receptor-neprilysin inhibitor (ARNI) widely used in human heart failure and has demonstrated potential cardiorenal and neurohormonal effects in experimental canine studies. Hydrochlorothiazide is a thiazide diuretic that acts at a more distal segment of the nephron than furosemide. Its addition to loop diuretic therapy may enhance sodium and fluid excretion through sequential nephron blockade and thereby improve the diuretic response in cases of refractory congestion. However, information regarding the combination of these two drugs in cats with congestive heart failure is lacking. This report describes the long-term clinical outcome of a cat with recurrent cardiogenic pleural effusion treated with sacubitril/valsartan and hydrochlorothiazide. A 14-year-old spayed female Persian-cross cat was referred for severe respiratory distress caused by recurrent pleural effusion. Echocardiography identified advanced cardiomyopathy with a nonspecific phenotype and overlapping hypertrophic and restrictive features, including focal basal septal hypertrophy, biatrial enlargement, atrial fibrillation and spontaneous echocardiographic contrast. Despite conventional treatment, which included pimobendan, torasemide, and antithrombotic medications, the cat experienced multiple episodes of pleural effusion over the following months, requiring repeated thoracocentesis. Consequently, the treatment regimen was expanded to include sacubitril/valsartan and hydrochlorothiazide. According to the owner, all other cardiac medications were discontinued approximately one week later without veterinary consultation. At long-term follow-up approximately two years after sacubitril/valsartan and hydrochlorothiazide therapy initiation, the cat remained clinically stable, with no further episodes of respiratory distress. Echocardiography revealed persistent severe structural heart disease, although improved left ventricular systolic indices were observed. This case report describes prolonged clinical stabilization in a cat with advanced cardiomyopathy and recurrent congestive heart failure following the administration of sacubitril/valsartan and hydrochlorothiazide over a two-year period. Whether this outcome reflects a specific effect of sacubitril/valsartan, the addition of hydrochlorothiazide, or a combination of both cannot be determined from a single observation. Nonetheless, the duration and completeness of the response observed here warrant prospective evaluation of combination of ARNI therapy and hydrochlorothiazide in cats with refractory congestive heart failure. Further studies are needed to assess the safety and effectiveness of this approach in feline cardiomyopathy.",
+      "doi": "10.3390/ani16172701",
+      "pmcid": "PMC13565693",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42738489/",
+      "species": "Both",
+      "topics": [
+        "Cardiomyopathy",
+        "Arrhythmia",
+        "Heart Failure",
+        "Echocardiography",
+        "Pharmacology"
+      ],
+      "selected_journal": true,
+      "matched_authors": [],
+      "article_in_press": false,
+      "source_type": "pubmed",
+      "article_url": ""
     },
     {
       "pmid": "42675959",
