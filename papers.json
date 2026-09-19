@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T03:00:31.435617+00:00",
+  "generated_at": "2026-09-19T02:58:11.140360+00:00",
   "total": 4625,
   "filter_version": "major-journal-filter-jvc-integrated-2026-08-26",
   "tracked_journals": [
@@ -92,6 +92,51 @@
       "article_in_press": false,
       "source_type": "pubmed",
       "article_url": ""
+    },
+    {
+      "pmid": "",
+      "external_id": "jvc-aip-e53c293248d58395",
+      "title": "Mitral annular disjunction associated with myxomatous mitral valve disease, infundibular pulmonic stenosis and ventricular septal defect in a dog: a case report",
+      "authors_text": "LCJ Tavares, B.A. Santos, G.T. Goldfeder",
+      "journal": "Journal of Veterinary Cardiology",
+      "publication_date": "Article in Press · 2026-09-17",
+      "sort_date": "2026-09-17",
+      "abstract": "",
+      "doi": "",
+      "pmcid": "",
+      "pubmed_url": "",
+      "article_url": "https://www.sciencedirect.com/science/article/pii/S1760273426000998?dgcid=rss_sd_all",
+      "species": "Canine",
+      "topics": [
+        "MMVD / Mitral Valve",
+        "Congenital Heart Disease"
+      ],
+      "selected_journal": true,
+      "matched_authors": [],
+      "article_in_press": true,
+      "source_type": "sciencedirect_rss"
+    },
+    {
+      "pmid": "",
+      "external_id": "jvc-aip-7931f3388bc11f31",
+      "title": "Left atrial mural infective endocarditis complicated by coronary embolism and left ventricular myocardial infarction in a cat",
+      "authors_text": "Giovanni Romito, Nicole Gemma, Kateryna Vasylyeva, Maria Morini",
+      "journal": "Journal of Veterinary Cardiology",
+      "publication_date": "Article in Press · 2026-09-17",
+      "sort_date": "2026-09-17",
+      "abstract": "",
+      "doi": "",
+      "pmcid": "",
+      "pubmed_url": "",
+      "article_url": "https://www.sciencedirect.com/science/article/pii/S1760273426000986?dgcid=rss_sd_all",
+      "species": "Feline",
+      "topics": [
+        "Echocardiography"
+      ],
+      "selected_journal": true,
+      "matched_authors": [],
+      "article_in_press": true,
+      "source_type": "sciencedirect_rss"
     },
     {
       "pmid": "42735743",
@@ -6678,28 +6723,6 @@
       "article_url": ""
     },
     {
-      "pmid": "",
-      "external_id": "jvc-aip-750f25d42b7f9fd7",
-      "title": "Distribution of ionized calcium–binding adaptor molecule 1–positive macrophages and papillary muscle fibrosis in dogs with myxomatous mitral valve disease",
-      "authors_text": "E.N. LeRoy, A.A. Williams, M.O. Skor, C.E. Lyons, A.J. Martinot, V.K. Yang",
-      "journal": "Journal of Veterinary Cardiology",
-      "publication_date": "Article in Press · 2025-11-03",
-      "sort_date": "2025-11-03",
-      "abstract": "",
-      "doi": "",
-      "pmcid": "",
-      "pubmed_url": "",
-      "article_url": "https://www.sciencedirect.com/science/article/pii/S1760273425001146?dgcid=rss_sd_all",
-      "species": "Canine",
-      "topics": [
-        "MMVD / Mitral Valve"
-      ],
-      "selected_journal": true,
-      "matched_authors": [],
-      "article_in_press": true,
-      "source_type": "sciencedirect_rss"
-    },
-    {
       "pmid": "41268639",
       "title": "CT and MRI Features of Aortic Body Paragangliomas in 44 Dogs.",
       "authors_text": "Ria Watko, Elodie Huguet, Jorge A Hernandez, Lauren A Russell, Susanne Stieger-Vanegas, Wilfried Mai, Erika R Cromwell, Samantha Loeber, Federico R Vilaplana Grosso",
@@ -6950,28 +6973,6 @@
       "article_in_press": false,
       "source_type": "pubmed",
       "article_url": ""
-    },
-    {
-      "pmid": "",
-      "external_id": "jvc-aip-7fefafe25849d63a",
-      "title": "Mitral transcatheter edge-to-edge repair: guidance in dogs from the human experience",
-      "authors_text": "E.C. Orton, J.D. Carroll",
-      "journal": "Journal of Veterinary Cardiology",
-      "publication_date": "Article in Press · 2025-10-18",
-      "sort_date": "2025-10-18",
-      "abstract": "",
-      "doi": "",
-      "pmcid": "",
-      "pubmed_url": "",
-      "article_url": "https://www.sciencedirect.com/science/article/pii/S1760273425001122?dgcid=rss_sd_all",
-      "species": "Canine",
-      "topics": [
-        "Intervention / Surgery"
-      ],
-      "selected_journal": true,
-      "matched_authors": [],
-      "article_in_press": true,
-      "source_type": "sciencedirect_rss"
     },
     {
       "pmid": "41150146",
