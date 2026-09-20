@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-19T02:58:11.140360+00:00",
-  "total": 4625,
+  "generated_at": "2026-09-20T03:11:57.440328+00:00",
+  "total": 4626,
   "filter_version": "major-journal-filter-jvc-integrated-2026-08-26",
   "tracked_journals": [
     "Frontiers in Veterinary Science",
@@ -586,6 +586,28 @@
       "article_url": ""
     },
     {
+      "pmid": "42760156",
+      "title": "Predominant mitral valve morphology in dogs at different stages of myxomatous mitral valve disease: toward a standardized nomenclature.",
+      "authors_text": "A Bentley, R C Fries, S Kadotani, C Toborowsky, E A Javery",
+      "journal": "Journal of veterinary cardiology : the official journal of the European Society of Veterinary Cardiology",
+      "publication_date": "2026-08-20",
+      "sort_date": "2026-08-20",
+      "abstract": "INTRODUCTION/OBJECTIVES: Myxomatous mitral valve disease (MMVD) is the most common heart disease in dogs. Echocardiographic markers of cardiac remodeling are used to assess disease severity, but morphological features of the mitral valve are not systematically considered. Conversely, standardized morphological classification schemes are established in human cardiology and are integral to prognosis and therapeutic planning. Our objective was to adapt and apply a mitral valve morphological classification scheme to canine MMVD across various stages.\nANIMALS, MATERIAL AND METHODS: A total of 1108 dogs weighing 1-15 kg with an echocardiographic diagnosis of MMVD (American College of Veterinary Internal Medicine stage B1 = 595; B2 = 314; C/D = 199) were included in the study. Echocardiographic studies were retrospectively reviewed. Leaflet involvement was identified using right parasternal and left apical views and classified as billow, prolapse, isolated flail, or prolapse with flail based on established morphologic descriptions by Barlow and principles of leaflet motion derived from the Carpentier classification.\nRESULTS: Anterior leaflet involvement predominated all stages, though bileaflet involvement increased in stage C/D. Billow morphology decreased significantly across stages (B1: 79%; B2: 17%; C/D: 5%; P<0.001). Prolapse and isolated flail were significantly more common in stages B2 and C/D than in stage B1 (P<0.001). Prolapse with flail increased progressively from stage B1 (5%) to B2 (25%) to C/D (56%) (P<0.001).\nSTUDY LIMITATIONS: This was a retrospective, single-center study with no longitudinal follow-up. Advanced imaging modalities were not evaluated.\nCONCLUSIONS: Mitral valve morphology in dogs with MMVD varies systematically with disease stage, and adoption of a standardized morphological classification scheme will align veterinary cardiology with established human frameworks.",
+      "doi": "10.1016/j.jvc.2026.08.004",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42760156/",
+      "species": "Canine",
+      "topics": [
+        "MMVD / Mitral Valve",
+        "Echocardiography"
+      ],
+      "selected_journal": true,
+      "matched_authors": [],
+      "article_in_press": false,
+      "source_type": "pubmed",
+      "article_url": ""
+    },
+    {
       "pmid": "42652017",
       "title": "Geographical Distribution and Molecular Characterization of Dirofilaria spp. in Dogs Across Kazakhstan.",
       "authors_text": "Tanzilya Almysheva, Rabiga Uakhit, Ainura Smagulova, Zhibek Sembaeva, Lyudmila Lider, Bekzhassar Sidikhov, Carlos Hermosilla, Marat Dusmagambetov, Vladimir Kiyan",
@@ -610,7 +632,7 @@
       "pmid": "",
       "external_id": "jvc-aip-a1d0ac25d5708b33",
       "title": "Predominant mitral valve morphology in dogs at different stages of myxomatous mitral valve disease: toward a standardized nomenclature",
-      "authors_text": "Amanda Bentley, Ryan C. Fries, Saki Kadotani, Carl Toborowsky, Emily A. Javery",
+      "authors_text": "A. Bentley, R.C. Fries, S. Kadotani, C. Toborowsky, E.A. Javery",
       "journal": "Journal of Veterinary Cardiology",
       "publication_date": "Article in Press · 2026-08-20",
       "sort_date": "2026-08-20",
