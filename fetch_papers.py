@@ -19,7 +19,8 @@ import re
 import sys
 import time
 import unicodedata
-from datetime import datetime, timezone
+from datetime import date, datetime, timedelta, timezone
+from difflib import SequenceMatcher
 from email.utils import parsedate_to_datetime
 from pathlib import Path
 from typing import Iterable
@@ -39,6 +40,9 @@ AUTHOR_LIST_VERSION = "2026-07-24-etienne-cote"
 JOURNAL_LIST_VERSION = "2026-08-26-major-journal-filter-jvc-integrated"
 JVC_EARLY_ONLINE_VERSION = "2026-08-26-sciencedirect-rss"
 JVC_RSS_URL = "https://rss.sciencedirect.com/publication/science/17602734"
+JVC_PUBLICATION_TRACKING_VERSION = "2026-09-22-doi-transition-v1"
+CROSSREF_WORKS_URL = "https://api.crossref.org/works"
+FORMAL_PUBLICATION_HIGHLIGHT_DAYS = 7
 
 
 TRACKED_JOURNALS = {
@@ -756,6 +760,10 @@ def parse_article(
         )))
     )
 
+    volume = clean(text_of(node.find(".//JournalIssue/Volume")))
+    issue = clean(text_of(node.find(".//JournalIssue/Issue")))
+    pages = clean(text_of(node.find(".//Pagination/MedlinePgn")))
+
     sort_date, publication_date = parse_date(node)
     doi = ""
     pmcid = ""
@@ -783,6 +791,9 @@ def parse_article(
         "journal": journal,
         "publication_date": publication_date,
         "sort_date": sort_date,
+        "volume": volume,
+        "issue": issue,
+        "pages": pages,
         "abstract": abstract,
         "doi": doi,
         "pmcid": pmcid,
@@ -794,6 +805,7 @@ def parse_article(
         "selected_journal": pmid in journal_pmids,
         "matched_authors": tracked,
         "article_in_press": False,
+        "publisher_formal": bool(volume),
         "source_type": "pubmed",
         "article_url": "",
     }
@@ -850,6 +862,386 @@ def doi_from_text(value: str) -> str:
     return normalize_doi(match.group(0)) if match else ""
 
 
+def normalize_title(value: str) -> str:
+    value = unicodedata.normalize("NFKD", clean(value)).casefold()
+    value = "".join(
+        character for character in value
+        if not unicodedata.combining(character)
+    )
+    return re.sub(r"[^a-z0-9]+", " ", value).strip()
+
+
+def extract_pii(value: str) -> str:
+    match = re.search(r"/pii/([A-Z0-9]+)", value, re.I)
+    return match.group(1).upper() if match else ""
+
+
+def is_jvc_paper(paper: dict) -> bool:
+    journal = str(paper.get("journal", "")).casefold()
+    return (
+        "journal of veterinary cardiology" in journal
+        or "j vet cardiol" in journal
+    )
+
+
+def has_formal_bibliography(paper: dict) -> bool:
+    """JVC의 권 배정 또는 PubMed 정식 서지정보가 있으면 정식본입니다."""
+    if not is_jvc_paper(paper):
+        return False
+    if paper.get("publisher_formal"):
+        return True
+    return bool(
+        clean(str(paper.get("volume", "")))
+        and (
+            clean(str(paper.get("issue", "")))
+            or clean(str(paper.get("pages", "")))
+        )
+    )
+
+
+def load_previous_papers() -> list[dict]:
+    if not OUTPUT.exists():
+        return []
+
+    try:
+        data = json.loads(OUTPUT.read_text(encoding="utf-8"))
+    except (OSError, ValueError) as error:
+        print(
+            f"경고: 기존 papers.json 상태를 읽지 못했습니다: {error}",
+            file=sys.stderr,
+        )
+        return []
+
+    papers = data.get("papers", []) if isinstance(data, dict) else []
+    return [paper for paper in papers if isinstance(paper, dict)]
+
+
+def paper_indexes(
+    papers: list[dict],
+) -> tuple[dict[str, dict], dict[str, dict], dict[str, dict]]:
+    by_doi: dict[str, dict] = {}
+    by_title: dict[str, dict] = {}
+    by_pii: dict[str, dict] = {}
+
+    for paper in papers:
+        doi = normalize_doi(str(paper.get("doi", "")))
+        title = normalize_title(str(paper.get("title", "")))
+        pii = clean(str(paper.get("pii", ""))).upper()
+        pii = pii or extract_pii(str(paper.get("article_url", "")))
+
+        if doi:
+            by_doi[doi] = paper
+        if title:
+            by_title[title] = paper
+        if pii:
+            by_pii[pii] = paper
+
+    return by_doi, by_title, by_pii
+
+
+_CROSSREF_CACHE: dict[str, dict[str, str]] = {}
+
+
+def crossref_jvc_metadata(title: str) -> dict[str, str]:
+    """제목을 이용해 JVC DOI와 최신 권·호·페이지 정보를 보강합니다."""
+    normalized = normalize_title(title)
+    if not normalized:
+        return {}
+    if normalized in _CROSSREF_CACHE:
+        return _CROSSREF_CACHE[normalized]
+
+    params = {
+        "query.title": title,
+        "filter": "issn:1760-2734",
+        "rows": "3",
+        "select": "DOI,title,volume,issue,page,URL",
+    }
+    if NCBI_EMAIL:
+        params["mailto"] = NCBI_EMAIL
+
+    try:
+        response = SESSION.get(
+            CROSSREF_WORKS_URL,
+            params=params,
+            timeout=45,
+        )
+        response.raise_for_status()
+        items = response.json().get("message", {}).get("items", [])
+    except (requests.RequestException, ValueError) as error:
+        print(
+            f"경고: Crossref DOI 확인 실패 ({title[:60]}): {error}",
+            file=sys.stderr,
+        )
+        _CROSSREF_CACHE[normalized] = {}
+        return {}
+
+    best_item: dict = {}
+    best_score = 0.0
+
+    for item in items:
+        candidate_titles = item.get("title") or []
+        if not candidate_titles:
+            continue
+        candidate = normalize_title(str(candidate_titles[0]))
+        score = SequenceMatcher(None, normalized, candidate).ratio()
+        if score > best_score:
+            best_item = item
+            best_score = score
+
+    if best_score < 0.88:
+        result: dict[str, str] = {}
+    else:
+        result = {
+            "doi": normalize_doi(str(best_item.get("DOI", ""))),
+            "volume": clean(str(best_item.get("volume", ""))),
+            "issue": clean(str(best_item.get("issue", ""))),
+            "pages": clean(str(best_item.get("page", ""))),
+            "article_url": clean(str(best_item.get("URL", ""))),
+        }
+
+    _CROSSREF_CACHE[normalized] = result
+    time.sleep(0.1)
+    return result
+
+
+def parse_jvc_source(value: str) -> dict[str, str]:
+    result = {"volume": "", "issue": "", "pages": ""}
+    patterns = {
+        "volume": r"\bVolume\s+([^,;]+)",
+        "issue": r"\bIssue\s+([^,;]+)",
+        "pages": r"\bPages?\s+([^,;]+)",
+    }
+
+    for field, pattern in patterns.items():
+        match = re.search(pattern, value, re.I)
+        if match:
+            result[field] = clean(match.group(1))
+
+    return result
+
+
+def paper_richness(paper: dict) -> int:
+    return sum((
+        100 if paper.get("pmid") else 0,
+        30 if paper.get("abstract") else 0,
+        20 if has_formal_bibliography(paper) else 0,
+        10 if paper.get("doi") else 0,
+    ))
+
+
+def merge_paper_records(first: dict, second: dict) -> dict:
+    primary, secondary = (
+        (first, second)
+        if paper_richness(first) >= paper_richness(second)
+        else (second, first)
+    )
+    merged = dict(primary)
+
+    for field, value in secondary.items():
+        if field in {"topics", "matched_authors"}:
+            combined = list(merged.get(field) or [])
+            for item in value or []:
+                if item not in combined:
+                    combined.append(item)
+            merged[field] = combined
+        elif field in {
+            "selected_journal", "article_in_press", "publisher_formal",
+            "ever_article_in_press", "formally_published",
+        }:
+            merged[field] = bool(merged.get(field) or value)
+        elif not merged.get(field) and value not in (None, "", [], {}):
+            merged[field] = value
+
+    if primary.get("source_type") == "pubmed":
+        merged["source_type"] = "pubmed"
+    return merged
+
+
+def deduplicate_papers(papers: list[dict]) -> list[dict]:
+    unique: dict[str, dict] = {}
+
+    for paper in papers:
+        doi = normalize_doi(str(paper.get("doi", "")))
+        if doi:
+            paper["doi"] = doi
+        pii = clean(str(paper.get("pii", ""))).upper()
+        pii = pii or extract_pii(str(paper.get("article_url", "")))
+        if pii:
+            paper["pii"] = pii
+
+        key = (
+            f"doi:{doi}" if doi
+            else f"pmid:{paper.get('pmid')}" if paper.get("pmid")
+            else f"pii:{pii}" if pii
+            else f"title:{normalize_title(str(paper.get('title', '')))}"
+        )
+        if key in unique:
+            unique[key] = merge_paper_records(unique[key], paper)
+        else:
+            unique[key] = paper
+
+    return list(unique.values())
+
+
+def carry_forward_unresolved_preproofs(
+    papers: list[dict],
+    previous_papers: list[dict],
+) -> int:
+    by_doi, by_title, by_pii = paper_indexes(papers)
+    carried = 0
+
+    for previous in previous_papers:
+        was_preproof = bool(
+            previous.get("article_in_press")
+            or previous.get("ever_article_in_press")
+        )
+        if not was_preproof or previous.get("formally_published"):
+            continue
+
+        doi = normalize_doi(str(previous.get("doi", "")))
+        title = normalize_title(str(previous.get("title", "")))
+        pii = clean(str(previous.get("pii", ""))).upper()
+        pii = pii or extract_pii(str(previous.get("article_url", "")))
+
+        if (
+            (doi and doi in by_doi)
+            or (pii and pii in by_pii)
+            or (title and title in by_title)
+        ):
+            continue
+
+        papers.append(dict(previous))
+        carried += 1
+
+    return carried
+
+
+def parse_iso_datetime(value: str) -> datetime | None:
+    if not value:
+        return None
+    try:
+        parsed = datetime.fromisoformat(value.replace("Z", "+00:00"))
+    except ValueError:
+        try:
+            parsed = datetime.combine(
+                date.fromisoformat(value[:10]),
+                datetime.min.time(),
+                tzinfo=timezone.utc,
+            )
+        except ValueError:
+            return None
+    if parsed.tzinfo is None:
+        parsed = parsed.replace(tzinfo=timezone.utc)
+    return parsed.astimezone(timezone.utc)
+
+
+def apply_publication_transitions(
+    papers: list[dict],
+    previous_papers: list[dict],
+    run_time: datetime,
+) -> int:
+    previous_by_doi, previous_by_title, previous_by_pii = paper_indexes(
+        previous_papers
+    )
+    transitions = 0
+
+    for paper in papers:
+        doi = normalize_doi(str(paper.get("doi", "")))
+        title = normalize_title(str(paper.get("title", "")))
+        pii = clean(str(paper.get("pii", ""))).upper()
+        pii = pii or extract_pii(str(paper.get("article_url", "")))
+
+        previous = previous_by_doi.get(doi) if doi else None
+        if previous is None and pii:
+            previous = previous_by_pii.get(pii)
+        if previous is None and title:
+            candidate = previous_by_title.get(title)
+            candidate_doi = normalize_doi(str(
+                (candidate or {}).get("doi", "")
+            ))
+            if candidate is not None and (
+                not doi or not candidate_doi or doi == candidate_doi
+            ):
+                previous = candidate
+
+        if doi:
+            paper["doi"] = doi
+            paper["tracking_key"] = f"doi:{doi}"
+        elif pii:
+            paper["tracking_key"] = f"pii:{pii}"
+
+        if previous:
+            for field in (
+                "first_seen_as_preproof_at", "early_online_date",
+                "formal_publication_detected_at",
+                "formal_publication_highlight_until",
+            ):
+                if previous.get(field) and not paper.get(field):
+                    paper[field] = previous[field]
+            for field in ("volume", "issue", "pages"):
+                if previous.get(field) and not paper.get(field):
+                    paper[field] = previous[field]
+            if previous.get("publisher_formal"):
+                paper["publisher_formal"] = True
+
+        was_preproof = bool(previous and (
+            previous.get("article_in_press")
+            or previous.get("ever_article_in_press")
+        ))
+        is_preproof = bool(paper.get("article_in_press"))
+        is_formal = has_formal_bibliography(paper)
+
+        if is_preproof:
+            paper["ever_article_in_press"] = True
+            paper["first_seen_as_preproof_at"] = (
+                paper.get("first_seen_as_preproof_at")
+                or run_time.date().isoformat()
+            )
+            paper["early_online_date"] = (
+                paper.get("early_online_date")
+                or paper.get("sort_date")
+                or run_time.date().isoformat()
+            )
+
+        previously_transitioned = bool(
+            previous and previous.get("formally_published")
+        )
+        if is_formal and (was_preproof or previously_transitioned):
+            newly_transitioned = not previously_transitioned
+            detected = parse_iso_datetime(str(
+                paper.get("formal_publication_detected_at", "")
+            )) or run_time
+            highlight_until = detected + timedelta(
+                days=FORMAL_PUBLICATION_HIGHLIGHT_DAYS
+            )
+
+            paper["article_in_press"] = False
+            paper["ever_article_in_press"] = True
+            paper["formally_published"] = True
+            paper["publication_status"] = "formally_published"
+            paper["publication_transition"] = (
+                "article_in_press_to_formal"
+            )
+            paper["formal_publication_detected_at"] = detected.isoformat()
+            paper["formal_publication_highlight_until"] = (
+                highlight_until.isoformat()
+            )
+            paper["recently_formally_published"] = (
+                run_time <= highlight_until
+            )
+            if newly_transitioned:
+                transitions += 1
+        elif is_preproof:
+            paper["publication_status"] = "article_in_press"
+            paper["formally_published"] = False
+            paper["recently_formally_published"] = False
+        else:
+            paper["publication_status"] = "published"
+            paper["recently_formally_published"] = False
+
+    return transitions
+
+
 def rss_date(value: str) -> tuple[str, str]:
     value = clean(value)
 
@@ -867,7 +1259,9 @@ def rss_date(value: str) -> tuple[str, str]:
     except (TypeError, ValueError, OverflowError):
         pass
 
-    for date_format in ("%d %B %Y", "%d %b %Y"):
+    for date_format in (
+        "%d %B %Y", "%d %b %Y", "%B %Y", "%b %Y"
+    ):
         try:
             parsed = datetime.strptime(value, date_format)
             iso = parsed.date().isoformat()
@@ -917,34 +1311,25 @@ def rss_description_field(value: str, label: str) -> str:
     return clean(match.group(1)) if match else ""
 
 
-def fetch_jvc_early_online(
+def fetch_jvc_feed(
     existing_papers: list[dict],
-) -> tuple[list[dict], int]:
-    """ScienceDirect RSS의 JVC 최신 조기공개 논문을 보충합니다.
-
-    RSS에는 정식 권/호 논문도 섞여 있으므로 Publication date가
-    Available online인 항목만 Article in Press로 처리합니다. PubMed에
-    이미 있는 논문은 제외하지 않고 article_in_press 상태를 병합합니다.
-    RSS 접속 실패는 전체 PubMed 업데이트를 중단시키지 않도록 호출부에서
-    경고만 출력합니다.
-    """
+    previous_papers: list[dict],
+) -> tuple[list[dict], int, int]:
+    """JVC RSS의 pre-proof와 권 배정 논문을 한 DOI 항목으로 병합합니다."""
     response = SESSION.get(JVC_RSS_URL, timeout=60)
     response.raise_for_status()
     root = ET.fromstring(response.content)
 
-    existing_by_doi = {
-        normalize_doi(str(paper.get("doi", ""))): paper
-        for paper in existing_papers
-        if normalize_doi(str(paper.get("doi", "")))
-    }
-    existing_by_title = {
-        clean(str(paper.get("title", ""))).casefold(): paper
-        for paper in existing_papers
-        if paper.get("title")
-    }
+    existing_by_doi, existing_by_title, existing_by_pii = paper_indexes(
+        existing_papers
+    )
+    previous_by_doi, previous_by_title, previous_by_pii = paper_indexes(
+        previous_papers
+    )
 
     additions: list[dict] = []
     marked_existing = 0
+    formal_updates = 0
 
     for item in root.iter():
         if local_name(item.tag) not in {"item", "entry"}:
@@ -978,54 +1363,118 @@ def fetch_jvc_early_online(
             description_raw,
             "Publication date",
         )
-        if not re.match(r"^Available online\b", publication_date, re.I):
+        source_text = rss_description_field(description_raw, "Source")
+        bibliography = parse_jvc_source(source_text)
+        is_early_online = bool(re.match(
+            r"^Available online\b", publication_date, re.I
+        ))
+        is_formal_rss = bool(
+            not is_early_online and bibliography.get("volume")
+        )
+        if not is_early_online and not is_formal_rss:
             continue
 
-        available_online_date = re.sub(
-            r"^Available online\s*",
-            "",
-            publication_date,
-            flags=re.I,
-        )
-        date_raw = date_raw or available_online_date
+        date_display_source = publication_date
+        if is_early_online:
+            date_display_source = re.sub(
+                r"^Available online\s*",
+                "",
+                publication_date,
+                flags=re.I,
+            )
+        date_raw = date_raw or date_display_source
 
         combined = " ".join([
             title,
             description,
             authors,
         ])
+        doi = doi_from_text(" ".join([
+            link,
+            description_raw,
+            rss_value(item, "identifier"),
+        ]))
+        normalized_title = normalize_title(title)
+        pii = extract_pii(" ".join([
+            link,
+            rss_value(item, "guid", "identifier"),
+        ]))
+
+        known = (
+            existing_by_doi.get(doi) if doi else None
+        ) or (
+            existing_by_pii.get(pii) if pii else None
+        ) or existing_by_title.get(normalized_title)
+        previous = (
+            previous_by_doi.get(doi) if doi else None
+        ) or (
+            previous_by_pii.get(pii) if pii else None
+        ) or previous_by_title.get(normalized_title)
+
+        if not doi:
+            doi = normalize_doi(str(
+                (known or previous or {}).get("doi", "")
+            ))
+
+        crossref: dict[str, str] = {}
+        if not doi or (
+            is_formal_rss
+            and not bibliography.get("issue")
+            and not bibliography.get("pages")
+        ):
+            crossref = crossref_jvc_metadata(title)
+            doi = doi or crossref.get("doi", "")
+            for field in ("volume", "issue", "pages"):
+                bibliography[field] = (
+                    bibliography.get(field) or crossref.get(field, "")
+                )
+
+        existing = (
+            existing_by_doi.get(doi) if doi else None
+        ) or (
+            existing_by_pii.get(pii) if pii else None
+        ) or existing_by_title.get(normalized_title)
+
+        if existing is not None:
+            if doi and not existing.get("doi"):
+                existing["doi"] = doi
+            if pii:
+                existing["pii"] = pii
+            if not existing.get("article_url"):
+                existing["article_url"] = (
+                    crossref.get("article_url") or link
+                )
+
+            if is_early_online and not has_formal_bibliography(existing):
+                existing["article_in_press"] = True
+                existing["early_online_date"] = (
+                    existing.get("early_online_date")
+                    or rss_date(date_raw)[0]
+                )
+                marked_existing += 1
+            elif is_formal_rss:
+                existing["publisher_formal"] = True
+                existing["article_in_press"] = False
+                for field in ("volume", "issue", "pages"):
+                    if bibliography.get(field):
+                        existing[field] = bibliography[field]
+                formal_updates += 1
+            continue
+
         species = classify_rss_species(combined)
 
         # VetCardio Papers는 개/고양이 논문만 표시합니다.
         if species == "Unclear":
             continue
 
-        doi = doi_from_text(" ".join([
-            link,
-            description_raw,
-            rss_value(item, "identifier"),
-        ]))
-
-        normalized_title = clean(title).casefold()
-        existing = (
-            existing_by_doi.get(doi) if doi else None
-        ) or existing_by_title.get(normalized_title)
-
-        if existing is not None:
-            existing["article_in_press"] = True
-            if not existing.get("article_url"):
-                existing["article_url"] = link
-            marked_existing += 1
-            continue
-
         sort_date, date_display = rss_date(date_raw)
-        stable_source = doi or link or title
+        stable_source = doi or pii or link or title
         stable_id = hashlib.sha1(
             stable_source.encode("utf-8")
         ).hexdigest()[:16]
 
         article_url = (
-            f"https://doi.org/{doi}"
+            crossref.get("article_url") or f"https://doi.org/{doi}"
             if doi
             else link
         )
@@ -1036,19 +1485,25 @@ def fetch_jvc_early_online(
             "Journal of Veterinary Cardiology",
         ])
 
-        additions.append({
+        addition = {
             "pmid": "",
-            "external_id": f"jvc-aip-{stable_id}",
+            "external_id": f"jvc-{stable_id}",
             "title": title,
             "authors_text": authors,
             "journal": "Journal of Veterinary Cardiology",
-            "publication_date":
-                f"Article in Press · {date_display}",
+            "publication_date": (
+                f"Article in Press · {date_display}"
+                if is_early_online else publication_date
+            ),
             "sort_date": sort_date,
+            "volume": bibliography.get("volume", ""),
+            "issue": bibliography.get("issue", ""),
+            "pages": bibliography.get("pages", ""),
             # RSS에는 초록이 없는 경우가 많아 설명 필드를 초록으로
             # 오인하지 않고 비워 둡니다.
             "abstract": "",
             "doi": doi,
+            "pii": pii,
             "pmcid": "",
             "pubmed_url": "",
             "article_url": article_url,
@@ -1056,14 +1511,26 @@ def fetch_jvc_early_online(
             "topics": classify_topics(classification_text),
             "selected_journal": True,
             "matched_authors": [],
-            "article_in_press": True,
+            "article_in_press": is_early_online,
+            "publisher_formal": is_formal_rss,
+            "early_online_date": sort_date if is_early_online else "",
             "source_type": "sciencedirect_rss",
-        })
+        }
+        additions.append(addition)
+        if doi:
+            existing_by_doi[doi] = addition
+        if pii:
+            existing_by_pii[pii] = addition
+        existing_by_title[normalized_title] = addition
 
-    return additions, marked_existing
+    return additions, marked_existing, formal_updates
 
 
 def main() -> None:
+    run_time = datetime.now(timezone.utc)
+    previous_papers = load_previous_papers()
+    print(f"이전 상태: {len(previous_papers):,}개 논문 불러옴")
+
     journal_terms = " OR ".join(
         f'"{journal}"[Journal]'
         for journal in TRACKED_JOURNALS.values()
@@ -1115,12 +1582,15 @@ def main() -> None:
             papers.append(parsed)
 
     try:
-        jvc_early_online, jvc_marked_existing = fetch_jvc_early_online(papers)
-        papers.extend(jvc_early_online)
+        jvc_records, jvc_marked_existing, jvc_formal_updates = (
+            fetch_jvc_feed(papers, previous_papers)
+        )
+        papers.extend(jvc_records)
         print(
-            "JVC Article in Press: "
-            f"신규 {len(jvc_early_online):,}개, "
-            f"PubMed 병합 {jvc_marked_existing:,}개"
+            "JVC RSS: "
+            f"신규 {len(jvc_records):,}개, "
+            f"Article in Press 병합 {jvc_marked_existing:,}개, "
+            f"정식 서지정보 병합 {jvc_formal_updates:,}개"
         )
     except Exception as error:
         # ScienceDirect RSS 문제로 PubMed 전체 업데이트가 멈추지 않게 합니다.
@@ -1130,9 +1600,26 @@ def main() -> None:
             file=sys.stderr,
         )
 
+    carried = carry_forward_unresolved_preproofs(papers, previous_papers)
+    papers = deduplicate_papers(papers)
+    transitions = apply_publication_transitions(
+        papers,
+        previous_papers,
+        run_time,
+    )
+    print(
+        "JVC DOI 추적: "
+        f"RSS에서 사라진 pre-proof {carried:,}개 유지, "
+        f"정식 출판 전환 {transitions:,}개 감지"
+    )
+
     papers.sort(
         key=lambda paper: (
-            paper.get("sort_date", ""),
+            (
+                paper.get("formal_publication_detected_at", "")
+                if paper.get("recently_formally_published")
+                else paper.get("sort_date", "")
+            ),
             int(paper.get("pmid") or 0),
             paper.get("title", ""),
         ),
@@ -1140,9 +1627,13 @@ def main() -> None:
     )
 
     data = {
-        "generated_at": datetime.now(timezone.utc).isoformat(),
+        "generated_at": run_time.isoformat(),
         "total": len(papers),
-        "filter_version": "major-journal-filter-jvc-integrated-2026-08-26",
+        "filter_version": "major-journal-filter-jvc-doi-tracking-2026-09-22",
+        "jvc_publication_tracking_version": JVC_PUBLICATION_TRACKING_VERSION,
+        "formal_publication_highlight_days": (
+            FORMAL_PUBLICATION_HIGHLIGHT_DAYS
+        ),
         "tracked_journals": list(TRACKED_JOURNALS.keys()),
         "tracked_authors": list(TRACKED_AUTHORS.keys()),
         "papers": papers,

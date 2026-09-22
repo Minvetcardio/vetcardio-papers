@@ -3,6 +3,7 @@
 <head>
 <!-- MAJOR_JOURNAL_FILTER_VERSION: 2026-08-26-v2 -->
 <!-- FULL_ABSTRACT_TRANSLATION_VERSION: 2026-07-22-v1 -->
+<!-- JVC_PUBLICATION_TRACKING_VERSION: 2026-09-22-doi-transition-v1 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>VetCardio Papers</title>
@@ -71,6 +72,14 @@ main{padding:28px 0 60px}
 .cat{background:#f5eafe;color:#9333ea}
 .author{background:#fff7d6;color:#a16207}
 .journal{background:#e6f5ff;color:#0369a1}.aip{background:#fff1f2;color:#be123c}
+.published{background:#dcfce7;color:#166534}
+.paper.republished{
+  border-color:#86cfa1;box-shadow:0 0 0 3px #dcfce780
+}
+.publication-update{
+  margin-top:10px;padding:9px 11px;border-radius:10px;
+  background:#f0fdf4;color:#166534;font-size:13px;font-weight:700
+}
 h2{font-size:20px;line-height:1.4;margin:0 0 8px}
 .tracked{
   margin-top:7px;color:#a16207;font-size:13px;font-weight:700
@@ -233,6 +242,26 @@ function majorJournalKey(paper){
   return "OTHER";
 }
 
+function isRecentFormalPublication(paper){
+  if(!paper.formally_published)return false;
+  const until=Date.parse(paper.formal_publication_highlight_until||"");
+  return Number.isFinite(until)&&Date.now()<=until;
+}
+
+function effectiveSortDate(paper){
+  return isRecentFormalPublication(paper)
+    ?paper.formal_publication_detected_at||paper.sort_date||""
+    :paper.sort_date||"";
+}
+
+function bibliographyText(paper){
+  return [
+    paper.volume?`Vol. ${paper.volume}`:"",
+    paper.issue?`No. ${paper.issue}`:"",
+    paper.pages?`pp. ${paper.pages}`:""
+  ].filter(Boolean).join(" · ");
+}
+
 function fillFilters(){
   const s=$("species");
   s.innerHTML="";
@@ -295,6 +324,7 @@ function apply(){
 
     const text=[
       p.title,p.authors_text,p.journal,p.abstract,p.pmid,p.doi,
+      p.volume,p.issue,p.pages,
       ...(p.topics||[]),...(p.matched_authors||[])
     ].join(" ").toLowerCase();
 
@@ -307,7 +337,7 @@ function apply(){
       ?(a.sort_date||"").localeCompare(b.sort_date||"")
       :sort==="title"
         ?(a.title||"").localeCompare(b.title||"")
-        :(b.sort_date||"").localeCompare(a.sort_date||"")
+        :effectiveSortDate(b).localeCompare(effectiveSortDate(a))
   );
 
   render();
@@ -328,6 +358,7 @@ function render(){
   const rows=filtered.slice(0,visible);
 
   $("list").innerHTML=rows.map(p=>{
+    const recentFormal=isRecentFormalPublication(p);
     const cls=
       p.species==="Canine"?"dog":
       p.species==="Feline"?"cat":"";
@@ -340,6 +371,8 @@ function render(){
         ?'<span class="tag author">추적 연구자</span>':"",
       p.article_in_press===true
         ?'<span class="tag aip">JVC Article in Press</span>':"",
+      recentFormal
+        ?'<span class="tag published">✓ 정식 출판됨</span>':"",
       ...(p.topics||[]).slice(0,5)
         .map(x=>`<span class="tag">${esc(x)}</span>`)
     ].join("");
@@ -381,14 +414,22 @@ function render(){
       ?` · PMID ${esc(p.pmid)}`
       :"";
 
+    const bibliography=bibliographyText(p);
+    const publicationUpdate=recentFormal
+      ?'<div class="publication-update">Article in Press에서 정식 발행 정보로 전환되었습니다.</div>'
+      :"";
+
     return `
-      <article class="paper">
+      <article class="paper${recentFormal?" republished":""}">
         <div class="tags">${tags}</div>
         <h2>${esc(p.title)}</h2>
         <div class="meta">
           ${esc(p.authors_text)}<br>
-          ${esc(p.journal)} · ${esc(p.publication_date)}${pmidText}
+          ${esc(p.journal)} · ${esc(p.publication_date)}${
+            bibliography?` · ${esc(bibliography)}`:""
+          }${pmidText}
         </div>
+        ${publicationUpdate}
         ${tracked}
         <div class="paper-tools">${summaryTool}${abstractTool}</div>
         ${summaryBox}
