@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-24T02:57:54.720192+00:00",
+  "generated_at": "2026-09-25T03:14:32.555632+00:00",
   "total": 4607,
   "filter_version": "major-journal-filter-jvc-doi-tracking-2026-09-22",
   "jvc_publication_tracking_version": "2026-09-22-doi-transition-v1",
@@ -168,12 +168,12 @@
       "tracking_key": "doi:10.1016/j.jvc.2026.08.005",
       "first_seen_as_preproof_at": "2026-09-22",
       "early_online_date": "2026-09-01",
+      "formal_publication_detected_at": "2026-09-24T02:57:54.720192+00:00",
+      "formal_publication_highlight_until": "2026-10-01T02:57:54.720192+00:00",
       "ever_article_in_press": true,
       "formally_published": true,
       "publication_status": "formally_published",
       "publication_transition": "article_in_press_to_formal",
-      "formal_publication_detected_at": "2026-09-24T02:57:54.720192+00:00",
-      "formal_publication_highlight_until": "2026-10-01T02:57:54.720192+00:00",
       "recently_formally_published": true
     },
     {
@@ -8409,8 +8409,8 @@
       "pii": "S1760273425001146",
       "early_online_date": "2025-11-03",
       "tracking_key": "doi:10.1016/j.jvc.2025.10.007",
-      "ever_article_in_press": true,
       "first_seen_as_preproof_at": "2026-09-24",
+      "ever_article_in_press": true,
       "publication_status": "article_in_press",
       "formally_published": false,
       "recently_formally_published": false
