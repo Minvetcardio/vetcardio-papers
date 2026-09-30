@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-29T04:00:36.872080+00:00",
-  "total": 4614,
+  "generated_at": "2026-09-30T03:47:58.368912+00:00",
+  "total": 4615,
   "filter_version": "major-journal-filter-jvc-doi-tracking-2026-09-22",
   "jvc_publication_tracking_version": "2026-09-22-doi-transition-v1",
   "formal_publication_highlight_days": 7,
@@ -170,12 +170,12 @@
       "tracking_key": "doi:10.1016/j.jvc.2026.07.001",
       "first_seen_as_preproof_at": "2026-09-22",
       "early_online_date": "2026-07-14",
+      "formal_publication_detected_at": "2026-09-29T04:00:36.872080+00:00",
+      "formal_publication_highlight_until": "2026-10-06T04:00:36.872080+00:00",
       "ever_article_in_press": true,
       "formally_published": true,
       "publication_status": "formally_published",
       "publication_transition": "article_in_press_to_formal",
-      "formal_publication_detected_at": "2026-09-29T04:00:36.872080+00:00",
-      "formal_publication_highlight_until": "2026-10-06T04:00:36.872080+00:00",
       "recently_formally_published": true
     },
     {
@@ -412,6 +412,39 @@
       "ever_article_in_press": true,
       "publication_status": "article_in_press",
       "formally_published": false,
+      "recently_formally_published": false
+    },
+    {
+      "pmid": "42807956",
+      "title": "Diagnostic performance of Vcheck NT-proBNP and cardiac troponin I assays for detection of dilated cardiomyopathy in Doberman Pinschers.",
+      "authors_text": "Helena Driessen, Jana Friederich, Gerhard Wess",
+      "journal": "Frontiers in veterinary science",
+      "publication_date": "2026-09-14",
+      "sort_date": "2026-09-14",
+      "volume": "13",
+      "issue": "",
+      "pages": "1895815",
+      "abstract": "BACKGROUND: Dilated cardiomyopathy (DCM) is a common hereditary cardiac disease in Doberman Pinschers. Early myocardial changes can be detected using cardiac biomarkers such as N-terminal pro-B-type natriuretic peptide (NT-proBNP) and cardiac troponin I (cTnI). The Vcheck V200 (Bionote) is a point-of-care immunofluorescence-based assay for in-clinic measurement of these markers.\nOBJECTIVE: To evaluate the diagnostic performance of NT-proBNP and cTnI measured with the Vcheck V200 point-of-care assays for detecting different stages of DCM in Doberman Pinschers and to compare Vcheck cTnI results with those obtained using a laboratory-based IDEXX cTnI assay.\nANIMALS: A total of 453 serum samples from 345 privately owned, purebred Doberman Pinschers in Germany were analyzed. Dogs were clinically classified into five stages (A, last normal, B1, B2, and C) based on echocardiographic and electrocardiographic findings.\nMETHODS: This prospective longitudinal study included physical examination, echocardiography, 24-h Holter monitoring, and biomarker analysis. NT-proBNP and cTnI concentrations were measured using the Vcheck V200 assay. In a subset of 358 samples, cTnI concentrations were additionally measured using the IDEXX assay. Diagnostic performance was evaluated using receiver operating characteristic curve analysis, and agreement between cTnI assays was assessed using Bland-Altman analysis.\nRESULTS: NT-proBNP and cTnI concentrations were significantly higher in dogs with DCM than in healthy controls. For NT-proBNP measured with Vcheck, a cutoff of ≥580 pmol/L yielded 76.6% sensitivity and 83.1% specificity (AUC 0.845). For cTnI measured with Vcheck, a cutoff of ≥0.21 ng/mL achieved 71.0% sensitivity and 78.3% specificity (AUC 0.809). The IDEXX cTnI assay showed higher diagnostic accuracy, particularly in early-stage disease, including \"last normal\" dogs. Combining both Vcheck biomarkers increased sensitivity and overall diagnostic performance (AUC 0.886), but specificity was reduced and performance remained lower than that of IDEXX cTnI alone.\nCONCLUSION AND CLINICAL IMPORTANCE: The Vcheck V200 provides a practical and accessible tool for in-clinic biomarker assessment in Doberman Pinschers at risk for DCM. While Vcheck NT-proBNP and cTnI may help identify dogs requiring further cardiac evaluation, the laboratory-based IDEXX cTnI assay showed higher diagnostic accuracy, especially for early-stage detection. Dogs exceeding these biomarker thresholds should undergo comprehensive cardiac evaluation, including echocardiography and 24-h Holter monitoring.",
+      "doi": "10.3389/fvets.2026.1895815",
+      "pmcid": "PMC13618217",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42807956/",
+      "species": "Canine",
+      "topics": [
+        "Cardiomyopathy",
+        "Echocardiography",
+        "ECG / Holter",
+        "Biomarkers"
+      ],
+      "selected_journal": true,
+      "matched_authors": [
+        "Gerhard Wess"
+      ],
+      "article_in_press": false,
+      "publisher_formal": true,
+      "source_type": "pubmed",
+      "article_url": "",
+      "tracking_key": "doi:10.3389/fvets.2026.1895815",
+      "publication_status": "published",
       "recently_formally_published": false
     },
     {
