@@ -157,8 +157,9 @@ footer{
   <div class="searchrow">
     <input id="q" placeholder="제목, 저자, 저널, 초록, PMID 검색">
     <select id="sort">
-      <option value="new">최신순</option>
-      <option value="old">오래된 순</option>
+      <option value="new">새로 수집된 순</option>
+      <option value="published">발행일 최신순</option>
+      <option value="old">발행일 오래된 순</option>
       <option value="title">제목순</option>
     </select>
   </div>
@@ -248,10 +249,26 @@ function isRecentFormalPublication(paper){
   return Number.isFinite(until)&&Date.now()<=until;
 }
 
-function effectiveSortDate(paper){
-  return isRecentFormalPublication(paper)
-    ?paper.formal_publication_detected_at||paper.sort_date||""
-    :paper.sort_date||"";
+function collectionSortTime(paper){
+  const value=Date.parse(paper.first_collected_at||"");
+  return Number.isFinite(value)?value:0;
+}
+
+function restoreCollectionDates(rows,history){
+  const dates=new Map();
+  Object.entries(history?.batches||{}).forEach(([timestamp,keys])=>{
+    keys.forEach(key=>dates.set(typeof key==="number"?`pmid:${key}`:key,timestamp));
+  });
+  rows.forEach(p=>{
+    if(p.first_collected_at)return;
+    const keys=[p.pmid?`pmid:${p.pmid}`:"",p.doi?`doi:${String(p.doi).toLowerCase()}`:""];
+    for(const key of keys){
+      if(dates.has(key)){
+        p.first_collected_at=dates.get(key);
+        break;
+      }
+    }
+  });
 }
 
 function bibliographyText(paper){
@@ -337,7 +354,12 @@ function apply(){
       ?(a.sort_date||"").localeCompare(b.sort_date||"")
       :sort==="title"
         ?(a.title||"").localeCompare(b.title||"")
-        :effectiveSortDate(b).localeCompare(effectiveSortDate(a))
+        :sort==="published"
+          ?(b.sort_date||"").localeCompare(a.sort_date||"")
+          :collectionSortTime(b)-collectionSortTime(a)
+            ||(b.sort_date||"").localeCompare(a.sort_date||"")
+            ||Number(b.pmid||0)-Number(a.pmid||0)
+            ||(b.title||"").localeCompare(a.title||"")
   );
 
   render();
@@ -415,6 +437,9 @@ function render(){
       :"";
 
     const bibliography=bibliographyText(p);
+    const collectionDate=collectionSortTime(p)
+      ?new Date(p.first_collected_at).toLocaleDateString("ko-KR")
+      :"";
     const publicationUpdate=recentFormal
       ?'<div class="publication-update">Article in Press에서 정식 발행 정보로 전환되었습니다.</div>'
       :"";
@@ -428,6 +453,7 @@ function render(){
           ${esc(p.journal)} · ${esc(p.publication_date)}${
             bibliography?` · ${esc(bibliography)}`:""
           }${pmidText}
+          ${collectionDate?`<br>최초 수집: ${esc(collectionDate)}`:""}
         </div>
         ${publicationUpdate}
         ${tracked}
@@ -754,13 +780,18 @@ $("more").addEventListener("click",()=>{
   render();
 });
 
-fetch(`papers.json?v=${Date.now()}`,{cache:"no-store"})
-  .then(response=>{
+Promise.all([
+  fetch(`papers.json?v=${Date.now()}`,{cache:"no-store"}).then(response=>{
     if(!response.ok)throw Error(response.status);
     return response.json();
-  })
-  .then(data=>{
+  }),
+  fetch(`collection_dates.json?v=${Date.now()}`,{cache:"no-store"})
+    .then(response=>response.ok?response.json():null)
+    .catch(()=>null)
+])
+  .then(([data,history])=>{
     papers=Array.isArray(data.papers)?data.papers:[];
+    restoreCollectionDates(papers,history);
     $("total").textContent=papers.length.toLocaleString("ko-KR");
     $("updated").textContent=data.generated_at
       ?new Date(data.generated_at).toLocaleDateString("ko-KR")

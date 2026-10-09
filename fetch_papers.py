@@ -43,6 +43,7 @@ JVC_RSS_URL = "https://rss.sciencedirect.com/publication/science/17602734"
 JVC_PUBLICATION_TRACKING_VERSION = "2026-09-22-doi-transition-v1"
 CROSSREF_WORKS_URL = "https://api.crossref.org/works"
 FORMAL_PUBLICATION_HIGHLIGHT_DAYS = 7
+COLLECTION_TRACKING_VERSION = "2026-10-09-first-collected-v1"
 
 
 TRACKED_JOURNALS = {
@@ -913,7 +914,23 @@ def load_previous_papers() -> list[dict]:
         return []
 
     papers = data.get("papers", []) if isinstance(data, dict) else []
-    return [paper for paper in papers if isinstance(paper, dict)]
+    papers = [paper for paper in papers if isinstance(paper, dict)]
+    history_path = OUTPUT.with_name("collection_dates.json")
+    if history_path.exists():
+        history = json.loads(history_path.read_text(encoding="utf-8"))
+        dates = {
+            f"pmid:{key}" if isinstance(key, int) else key: timestamp
+            for timestamp, keys in history.get("batches", {}).items()
+            for key in keys
+        }
+        for paper in papers:
+            if paper.get("first_collected_at"):
+                continue
+            for kind, value in collection_identity_keys(paper):
+                if f"{kind}:{value}" in dates:
+                    paper["first_collected_at"] = dates[f"{kind}:{value}"]
+                    break
+    return papers
 
 
 def paper_indexes(
@@ -1044,6 +1061,13 @@ def merge_paper_records(first: dict, second: dict) -> dict:
                 if item not in combined:
                     combined.append(item)
             merged[field] = combined
+        elif field == "first_collected_at":
+            dates = [
+                parsed for raw in (merged.get(field, ""), value)
+                if (parsed := parse_iso_datetime(str(raw or "")))
+            ]
+            if dates:
+                merged[field] = min(dates).isoformat()
         elif field in {
             "selected_journal", "article_in_press", "publisher_formal",
             "ever_article_in_press", "formally_published",
@@ -1133,6 +1157,85 @@ def parse_iso_datetime(value: str) -> datetime | None:
     if parsed.tzinfo is None:
         parsed = parsed.replace(tzinfo=timezone.utc)
     return parsed.astimezone(timezone.utc)
+
+
+def collection_identity_keys(paper: dict) -> list[tuple[str, str]]:
+    """Stable identifiers survive RSS-to-PubMed and bibliography updates."""
+    values = {
+        "doi": normalize_doi(str(paper.get("doi") or "")),
+        "pmid": clean(str(paper.get("pmid") or "")),
+        "pii": clean(str(paper.get("pii") or "")).upper()
+        or extract_pii(str(paper.get("article_url") or "")),
+        "external_id": clean(str(paper.get("external_id") or "")),
+    }
+    return [(kind, value) for kind, value in values.items() if value]
+
+
+def apply_collection_dates(
+    papers: list[dict],
+    previous_papers: list[dict],
+    run_time: datetime,
+) -> int:
+    """Keep first collection dates; only genuinely new records use this run."""
+    by_identity: dict[tuple[str, str], list[dict]] = {}
+    by_title: dict[str, list[dict]] = {}
+    for previous in previous_papers:
+        for key in collection_identity_keys(previous):
+            by_identity.setdefault(key, []).append(previous)
+        title = normalize_title(str(previous.get("title") or ""))
+        if title:
+            by_title.setdefault(title, []).append(previous)
+
+    newly_collected = 0
+    for paper in papers:
+        matches = []
+        for key in collection_identity_keys(paper):
+            matches.extend(by_identity.get(key, []))
+
+        if not matches:
+            title = normalize_title(str(paper.get("title") or ""))
+            current_ids = dict(collection_identity_keys(paper))
+            for previous in by_title.get(title, []):
+                previous_ids = dict(collection_identity_keys(previous))
+                if any(
+                    current_ids.get(kind) and previous_ids.get(kind)
+                    and current_ids[kind] != previous_ids[kind]
+                    for kind in ("doi", "pmid", "pii")
+                ):
+                    continue
+                matches.append(previous)
+
+        dates = [
+            parsed for record in [paper, *matches]
+            if (parsed := parse_iso_datetime(str(
+                record.get("first_collected_at") or ""
+            )))
+        ]
+        if not dates and matches:
+            # Legacy pre-proof dates are evidence of an earlier collection.
+            dates = [
+                parsed for record in matches
+                if (parsed := parse_iso_datetime(str(
+                    record.get("first_seen_as_preproof_at") or ""
+                )))
+            ]
+        if not matches and not dates:
+            newly_collected += 1
+        paper["first_collected_at"] = (
+            min(dates) if dates else run_time
+        ).astimezone(timezone.utc).isoformat()
+
+    return newly_collected
+
+
+def collection_sort_key(paper: dict) -> tuple:
+    collected = parse_iso_datetime(str(paper.get("first_collected_at") or ""))
+    return (
+        collected.timestamp() if collected else 0,
+        paper.get("sort_date") or "",
+        int(paper.get("pmid") or 0),
+        paper.get("title") or "",
+    )
 
 
 def apply_publication_transitions(
@@ -1613,22 +1716,14 @@ def main() -> None:
         f"정식 출판 전환 {transitions:,}개 감지"
     )
 
-    papers.sort(
-        key=lambda paper: (
-            (
-                paper.get("formal_publication_detected_at", "")
-                if paper.get("recently_formally_published")
-                else paper.get("sort_date", "")
-            ),
-            int(paper.get("pmid") or 0),
-            paper.get("title", ""),
-        ),
-        reverse=True,
-    )
+    newly_collected = apply_collection_dates(papers, previous_papers, run_time)
+    print(f"최초 수집일 추적: 신규 {newly_collected:,}개")
+    papers.sort(key=collection_sort_key, reverse=True)
 
     data = {
         "generated_at": run_time.isoformat(),
         "total": len(papers),
+        "collection_tracking_version": COLLECTION_TRACKING_VERSION,
         "filter_version": "major-journal-filter-jvc-doi-tracking-2026-09-22",
         "jvc_publication_tracking_version": JVC_PUBLICATION_TRACKING_VERSION,
         "formal_publication_highlight_days": (
