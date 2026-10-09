@@ -1,6 +1,7 @@
 {
-  "generated_at": "2026-10-09T04:22:57.775250+00:00",
+  "generated_at": "2026-10-09T13:45:47.954932+00:00",
   "total": 4628,
+  "collection_tracking_version": "2026-10-09-first-collected-v1",
   "filter_version": "major-journal-filter-jvc-doi-tracking-2026-09-22",
   "jvc_publication_tracking_version": "2026-09-22-doi-transition-v1",
   "formal_publication_highlight_days": 7,
@@ -107,8 +108,8 @@
       "early_online_date": "2026-10-07",
       "source_type": "sciencedirect_rss",
       "tracking_key": "doi:10.1016/j.jvc.2026.09.010",
-      "ever_article_in_press": true,
       "first_seen_as_preproof_at": "2026-10-09",
+      "ever_article_in_press": true,
       "publication_status": "article_in_press",
       "formally_published": false,
       "recently_formally_published": false,
@@ -142541,6 +142542,5 @@
       "recently_formally_published": false,
       "first_collected_at": "2026-07-21T05:10:47.931966+00:00"
     }
-  ],
-  "collection_tracking_version": "2026-10-09-first-collected-v1"
+  ]
 }
