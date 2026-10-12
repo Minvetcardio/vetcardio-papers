@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-11T03:44:55.664885+00:00",
-  "total": 4629,
+  "generated_at": "2026-10-12T04:07:21.305662+00:00",
+  "total": 4630,
   "collection_tracking_version": "2026-10-09-first-collected-v1",
   "filter_version": "major-journal-filter-jvc-doi-tracking-2026-09-22",
   "jvc_publication_tracking_version": "2026-09-22-doi-transition-v1",
@@ -49,6 +49,40 @@
   ],
   "papers": [
     {
+      "pmid": "42858360",
+      "title": "Global longitudinal strain assessment of systolic dysfunction in Doberman Pinschers with ventricular arrhythmias and normal echocardiographic measurements.",
+      "authors_text": "Katharina Hofmeister, Jana Friederich, Jessica Schöbel, Sabine Hertzsch, Jenny Eberhard, Robin Schüttpelz, Gerhard Wess",
+      "journal": "Journal of veterinary internal medicine",
+      "publication_date": "2026-09",
+      "sort_date": "2026-09-01",
+      "volume": "40",
+      "issue": "5",
+      "pages": "",
+      "abstract": "BACKGROUND: Dilated cardiomyopathy (DCM) in Doberman Pinschers (DPs) often initially manifests as ventricular arrhythmias (stage B1) without echocardiographic evidence of cardiac remodeling (stage B2). Global longitudinal strain (GLS) is a sensitive echocardiographic variable for detecting early systolic dysfunction.\nHYPOTHESIS/OBJECTIVES: To assess whether GLS detects systolic dysfunction in DPs with arrhythmogenic stage B1 and to evaluate the association between arrhythmic burden and GLS.\nANIMALS: Sixty-three DPs with arrhythmogenic stage B1 DCM and 63 control DPs.\nMETHODS: Retrospective case-control study. Stage B1 was defined as ≥300 ventricular premature complexes (VPCs) within 24 h or >50 VPCs on two 24-h Holter recordings within 1 year, with otherwise normal echocardiographic measurements. Forty-three dogs had \"last-normal\" (LN) examinations 6-12 months before arrhythmia onset. GLS was measured using 2-dimensional speckle-tracking echocardiography (STE) from left apical 2-, 3-, and 4-chamber views. Stage B1 dogs were subclassified into low-grade (LGvpc) and high-grade (HGvpc) groups based on arrhythmic burden.\nRESULTS: GLS was lower in stage B1 dogs (mean ± SD, -16.80% ± 2.71%) compared to controls (-20.22% ± 1.90%; P = .044). Stage B1 dogs had lower GLS compared to their LN examinations (mean difference, -2.45%; 95% CI, -3.67% to -1.24%; P < .001). Dogs in the HGvpc group had lower GLS (-15.45% ± 2.79%) than LGvpc dogs (-18.39% ± 1.51%; mean difference, -2.94%; 95% CI, -4.28% to -1.60%; P < .001).\nCONCLUSIONS: GLS detects systolic dysfunction in DPs with arrhythmogenic stage B1 DCM despite normal conventional echocardiographic measurements. Higher arrhythmic burden is associated with more severe systolic dysfunction.",
+      "doi": "10.1093/jvimsj/aalag242",
+      "pmcid": "PMC13653564",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42858360/",
+      "species": "Canine",
+      "topics": [
+        "Cardiomyopathy",
+        "Arrhythmia",
+        "Echocardiography",
+        "ECG / Holter"
+      ],
+      "selected_journal": true,
+      "matched_authors": [
+        "Gerhard Wess"
+      ],
+      "article_in_press": false,
+      "publisher_formal": true,
+      "source_type": "pubmed",
+      "article_url": "",
+      "tracking_key": "doi:10.1093/jvimsj/aalag242",
+      "publication_status": "published",
+      "recently_formally_published": false,
+      "first_collected_at": "2026-10-12T04:07:21.305662+00:00"
+    },
+    {
       "pmid": "",
       "external_id": "jvc-73e6b003f1b665ce",
       "title": "Pitfalls of M-mode Echocardiography End-diastolic and End-systolic Measurements: A study of 154 dogs with Myxomatous Mitral Valve Disease",
@@ -77,8 +111,8 @@
       "early_online_date": "2026-10-10",
       "source_type": "sciencedirect_rss",
       "tracking_key": "doi:10.1016/j.jvc.2026.09.009",
-      "ever_article_in_press": true,
       "first_seen_as_preproof_at": "2026-10-11",
+      "ever_article_in_press": true,
       "publication_status": "article_in_press",
       "formally_published": false,
       "recently_formally_published": false,
