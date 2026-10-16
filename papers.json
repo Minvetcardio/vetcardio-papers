@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-15T03:00:11.339574+00:00",
-  "total": 4634,
+  "generated_at": "2026-10-16T02:57:56.225560+00:00",
+  "total": 4636,
   "collection_tracking_version": "2026-10-09-first-collected-v1",
   "filter_version": "major-journal-filter-jvc-doi-tracking-2026-09-22",
   "jvc_publication_tracking_version": "2026-09-22-doi-transition-v1",
@@ -48,6 +48,70 @@
     "Étienne Côté"
   ],
   "papers": [
+    {
+      "pmid": "42874667",
+      "title": "Point-of-care troponin I assay has acceptable performance detecting clinically important canine myocardial injury but reduced precision at low concentrations.",
+      "authors_text": "Bobbie Ditzler, Ashley B Saunders, Sonya Wesselowski, Philip Guadiano, Jacob W Dunham, Jonathan A Lidbury",
+      "journal": "American journal of veterinary research",
+      "publication_date": "2026-10-14",
+      "sort_date": "2026-10-14",
+      "volume": "",
+      "issue": "",
+      "pages": "1-6",
+      "abstract": "OBJECTIVE: To perform a partial validation of a point-of-care assay (Vcheck cardiac troponin I [VC-cTnI; cTnI]) for measurement of cTnI in canine serum and to perform a method comparison between the VC-cTnI and an established chemiluminescent assay (ADVIA Centaur XP High-Sensitivity Troponin I [AC-cTnI-HS]).\nMETHODS: From September 4, 2024, through August 21, 2025, surplus canine serum was collected from a diagnostic laboratory, and within-day variability, dilutional parallelism, spiking recovery, and the effect of common interferents (hemolysis, icterus, and lipemia) were analyzed for the VC-cTnI assay. A method comparison of the VC-cTnI and AC-cTnI-HS assays was performed with 121 canine serum samples.\nRESULTS: The within-day coefficient of variation ranged from 8.1% to 43.8%, decreasing as cTnI concentrations increased. Dilutional parallelism and spiking recovery assessments had mean ± SD observed-to-expected ratios of 80.5 ± 33.2% (range, 21.1% to 122.2%) and 112.8 ± 35.6% (range, 46.0% to 173.9%), respectively. There was no interference from icterus, hemolysis, or lipemia. There was a positive correlation between the VC-cTnI and AC-cTnI-HS assays (Spearman ρ, 0.742), though 16 of 121 samples (13.2%) were below the VC-cTnI detectable limit.\nCONCLUSIONS: The VC-cTnI assay lacked precision for measurement of concentrations below 0.2 ng/mL, but within-day variability was acceptable for higher concentrations.\nCLINICAL RELEVANCE: The VC-cTnI assay is more precise when measuring higher cTnI concentrations and can detect myocardial injury in dogs. Results in the normal and equivocal range of the manufacturer's reference interval may be more challenging to interpret because of suboptimal precision in this range.",
+      "doi": "10.2460/ajvr.26.08.0336",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42874667/",
+      "species": "Canine",
+      "topics": [
+        "Biomarkers"
+      ],
+      "selected_journal": true,
+      "matched_authors": [
+        "Ashley B. Saunders"
+      ],
+      "article_in_press": false,
+      "publisher_formal": false,
+      "source_type": "pubmed",
+      "article_url": "",
+      "tracking_key": "doi:10.2460/ajvr.26.08.0336",
+      "publication_status": "published",
+      "recently_formally_published": false,
+      "first_collected_at": "2026-10-16T02:57:56.225560+00:00"
+    },
+    {
+      "pmid": "42874340",
+      "title": "Multimodal imaging of a coronary artery fistula in a Welsh Springer spaniel.",
+      "authors_text": "H W Jeong, G Menciotti",
+      "journal": "Journal of veterinary cardiology : the official journal of the European Society of Veterinary Cardiology",
+      "publication_date": "2026-09-08",
+      "sort_date": "2026-09-08",
+      "volume": "68",
+      "issue": "",
+      "pages": "102-107",
+      "abstract": "A four-year-old intact male Welsh Springer spaniel was presented for a prebreeding evaluation. Thoracic auscultation revealed a grade 2/6 left basilar systolic murmur. Echocardiography demonstrated left atrial and left ventricular dilation with systolic dysfunction, including a left atrium-to-aortic root ratio of 2.24, normalized left ventricular internal dimension in diastole of 2.44, and fractional shortening of 19%. Color and spectral Doppler interrogation identified continuous flow with a peak velocity of approximately 1.5 m/s in the left pulmonary artery. Transesophageal echocardiography, selective angiography, and computed tomography angiography combined revealed a complex, anomalous coronary artery conformation. Branches of the left and right coronary arteries formed two major tortuous vascular plexuses: a cranial one that drained into the pulmonary artery via a multitude of small fistulous openings, and a caudal one that drained into a branch of the celiac artery. These findings confirmed a diagnosis of a complex coronary artery fistula. Because the supernumerary openings meant surgical ligation or interventional embolization could not guarantee complete closure, medical management with oral pimobendan was elected. Three years after the initial diagnosis, the dog developed atrial fibrillation and right-sided congestive heart failure. Despite the escalation of medical therapy, the dog died four months later. This case highlights the rare anatomical presentation and severe long-term hemodynamic consequences of a complex, untreated coronary artery fistula in a dog.",
+      "doi": "10.1016/j.jvc.2026.08.010",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42874340/",
+      "species": "Canine",
+      "topics": [
+        "Arrhythmia",
+        "Heart Failure",
+        "Echocardiography",
+        "Pharmacology"
+      ],
+      "selected_journal": true,
+      "matched_authors": [],
+      "article_in_press": false,
+      "publisher_formal": true,
+      "source_type": "pubmed",
+      "article_url": "https://doi.org/10.1016/j.jvc.2026.08.010",
+      "pii": "S1760273426000974",
+      "tracking_key": "doi:10.1016/j.jvc.2026.08.010",
+      "publication_status": "published",
+      "recently_formally_published": false,
+      "first_collected_at": "2026-10-16T02:57:56.225560+00:00"
+    },
     {
       "pmid": "42872375",
       "title": "Radiographic Comparison of Pulmonary Lobar Vasculature Dimensions in Medically Managed and Drug-Naive Dogs With Left Heart Failure Secondary to Myxomatous Mitral Valve Disease.",
@@ -1008,7 +1072,7 @@
       "formally_published": true,
       "publication_status": "formally_published",
       "publication_transition": "article_in_press_to_formal",
-      "recently_formally_published": true,
+      "recently_formally_published": false,
       "first_collected_at": "2026-09-19T02:58:11.140360+00:00"
     },
     {
@@ -1147,7 +1211,7 @@
       "formally_published": true,
       "publication_status": "formally_published",
       "publication_transition": "article_in_press_to_formal",
-      "recently_formally_published": true,
+      "recently_formally_published": false,
       "first_collected_at": "2026-09-14T03:11:12.289639+00:00"
     },
     {
@@ -40408,14 +40472,17 @@
         "Brian A. Scansen",
         "Brianna M. Potter"
       ],
-      "article_in_press": false,
+      "article_in_press": true,
       "publisher_formal": false,
       "source_type": "pubmed",
-      "article_url": "",
+      "article_url": "https://www.sciencedirect.com/science/article/pii/S1760273426000020?dgcid=rss_sd_all",
+      "pii": "S1760273426000020",
+      "early_online_date": "2026-01-16",
       "tracking_key": "doi:10.1016/j.jvc.2026.01.003",
       "first_seen_as_preproof_at": "2026-09-22",
-      "early_online_date": "2026-01-16",
-      "publication_status": "published",
+      "ever_article_in_press": true,
+      "publication_status": "article_in_press",
+      "formally_published": false,
       "recently_formally_published": false,
       "first_collected_at": "2026-07-21T05:10:47.931966+00:00"
     },
