@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-18T02:51:11.092252+00:00",
-  "total": 4640,
+  "generated_at": "2026-10-19T03:04:12.173224+00:00",
+  "total": 4641,
   "collection_tracking_version": "2026-10-09-first-collected-v1",
   "filter_version": "major-journal-filter-jvc-doi-tracking-2026-09-22",
   "jvc_publication_tracking_version": "2026-09-22-doi-transition-v1",
@@ -48,6 +48,37 @@
     "Étienne Côté"
   ],
   "papers": [
+    {
+      "pmid": "42892314",
+      "title": "Annual heartworm screening for dogs.",
+      "authors_text": "C Thomas Nelson, Andy Moorhead, Marisa K Ames",
+      "journal": "Journal of the American Veterinary Medical Association",
+      "publication_date": "2026-11-01",
+      "sort_date": "2026-11-01",
+      "volume": "264",
+      "issue": "11",
+      "pages": "1431-1433",
+      "abstract": "",
+      "doi": "10.2460/javma.264.11.1431",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42892314/",
+      "species": "Canine",
+      "topics": [
+        "Heartworm"
+      ],
+      "selected_journal": true,
+      "matched_authors": [
+        "Marisa K. Ames"
+      ],
+      "article_in_press": false,
+      "publisher_formal": true,
+      "source_type": "pubmed",
+      "article_url": "",
+      "tracking_key": "doi:10.2460/javma.264.11.1431",
+      "publication_status": "published",
+      "recently_formally_published": false,
+      "first_collected_at": "2026-10-19T03:04:12.173224+00:00"
+    },
     {
       "pmid": "42878630",
       "title": "Clinical Presentation, Acute Clinical Response, Drug Tolerability, and Short-Term Outcome of Cats Treated for Acute Congestive Heart Failure With Pimobendan (2017-2022): 71 Cases.",
@@ -954,12 +985,12 @@
       "tracking_key": "doi:10.1016/j.jvc.2026.09.003",
       "first_seen_as_preproof_at": "2026-09-28",
       "early_online_date": "2026-09-25",
+      "formal_publication_detected_at": "2026-10-18T02:51:11.092252+00:00",
+      "formal_publication_highlight_until": "2026-10-25T02:51:11.092252+00:00",
       "ever_article_in_press": true,
       "formally_published": true,
       "publication_status": "formally_published",
       "publication_transition": "article_in_press_to_formal",
-      "formal_publication_detected_at": "2026-10-18T02:51:11.092252+00:00",
-      "formal_publication_highlight_until": "2026-10-25T02:51:11.092252+00:00",
       "recently_formally_published": true,
       "first_collected_at": "2026-09-28T03:24:18.954546+00:00"
     },
@@ -1704,9 +1735,9 @@
       "journal": "Journal of veterinary emergency and critical care (San Antonio, Tex. : 2001)",
       "publication_date": "2026-08-31",
       "sort_date": "2026-08-31",
-      "volume": "",
-      "issue": "",
-      "pages": "",
+      "volume": "36",
+      "issue": "5",
+      "pages": "696-702",
       "abstract": "OBJECTIVE: To describe the presentation and outcome of a case of suspected cholecalciferol rodenticide intoxication managed with both intralipid emulsion (ILE) and therapeutic plasma exchange (TPE).\nCASE SUMMARY: A 3-year-old, neutered female, crossbreed dog presented for acute-onset vomiting and lethargy after suspected exposure to cholecalciferol rodenticide. Severe hypercalcemia was observed without other identifiable causes found upon investigation. Standard therapy for hypercalcemia was initiated, but rebound hypercalcemia led to consideration of alternative management options. Although ILE therapy initially showed promise, rebound hypercalcemia persisted. Ultimately, TPE was performed as a novel therapy and successfully reduced serum concentrations of vitamin D metabolites. Normocalcemia was eventually maintained, though the dog developed endocarditis that progressed to congestive heart failure and death. Blood cultures revealed the growth of Serratia marcescens.\nNEW OR UNIQUE INFORMATION PROVIDED: To the authors' knowledge, this is the first report describing the use of both ILE and TPE in the management of cholecalciferol rodenticide intoxication in a dog. It is also the second reported case of S. marcescens causing endocarditis in a dog.",
       "doi": "10.1111/vec.70157",
       "pmcid": "",
@@ -1718,7 +1749,7 @@
       "selected_journal": true,
       "matched_authors": [],
       "article_in_press": false,
-      "publisher_formal": false,
+      "publisher_formal": true,
       "source_type": "pubmed",
       "article_url": "",
       "tracking_key": "doi:10.1111/vec.70157",
