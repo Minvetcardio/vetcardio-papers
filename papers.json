@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-19T03:04:12.173224+00:00",
+  "generated_at": "2026-10-20T03:13:26.902419+00:00",
   "total": 4641,
   "collection_tracking_version": "2026-10-09-first-collected-v1",
   "filter_version": "major-journal-filter-jvc-doi-tracking-2026-09-22",
@@ -121,7 +121,7 @@
       "pages": "",
       "abstract": "Hypertrophic cardiomyopathy (HCM), the most common cardiac disease in cats, is associated with genetic variants, including MYBPC3, which encodes cardiac myosin-binding protein C (cMyBP-C), a key sarcomeric protein involved in myocardial contractility. Although circulating cMyBP-C has emerged as a biomarker of myocardial injury in humans, its clinical relevance in feline HCM remains unclear. This study characterized plasma cMyBP-C and N-terminal pro-B-type natriuretic peptide (NT-proBNP) concentrations across different stages of feline HCM, evaluated their diagnostic performance, and assessed their associations with echocardiographic parameters. A cross-sectional study included 65 cats: 25 healthy cats, 25 with subclinical HCM, and 15 with clinical HCM (chronic and treated). Plasma NT-proBNP was significantly higher in clinical HCM than in healthy cats (p = 0.0117), whereas plasma cMyBP-C was lower in clinical HCM than in subclinical HCM (p = 0.0462) and healthy cats (p = 0.001). At a cut-off of <1.270 ng/mL, plasma cMyBP-C showed 76.19% sensitivity and 65.38% specificity for distinguishing HCM. NT-proBNP alone showed higher overall diagnostic accuracy (76.67%) than the combined use of cMyBP-C and NT-proBNP. Neither plasma NT-proBNP nor cMyBP-C correlated significantly with echocardiographic parameters. Reduced circulating cMyBP-C concentrations in cats with chronic, treated HCM suggest a biomarker pattern distinct from that reported in acute myocardial injury and warrant further investigation.",
       "doi": "10.3390/ani16193084",
-      "pmcid": "",
+      "pmcid": "PMC13663380",
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42883053/",
       "species": "Feline",
       "topics": [
@@ -152,7 +152,7 @@
       "pages": "",
       "abstract": "Peritoneopericardial diaphragmatic hernia (PPDH) is a congenital anomaly allowing communication between the peritoneal and pericardial cavities. Surgical repair of large diaphragmatic defects can be challenging due to insufficient tissue for primary closure. A 2-year-old intact female White Miniature Schnauzer weighing 6.23 kg presented with a 1-month history of panting and exercise intolerance. Thoracic radiography, ultrasonography, echocardiography, and CT confirmed PPDH with herniation of the left medial and quadrate liver lobes into the pericardial sac. Surgical repair via midline celiotomy revealed a large defect (4.5 × 5 cm) involving approximately 70% of the central tendon. Primary closure was incomplete because only two simple interrupted sutures could be placed at the dorsal margin due to excessive tension, leaving a triangular residual defect larger than 3 × 3 cm at the ventral aspect, which was closed with a two-layer canine small intestinal submucosa (cSIS) patch applied over the residual defect. Reherniation occurred 42 days postoperatively at the margin between the diaphragm and the cSIS patch. At the second surgery, grossly observed tissue presumed to be newly formed self-tissue at the cSIS site enabled direct suture repair. No recurrence was observed during a 5-month follow-up, and a telephone interview with the owner 3 years after the second surgery confirmed that the dog remained free of clinical signs. This case suggests that cSIS may serve as a feasible reinforcement biomaterial for large diaphragmatic defects where primary closure alone is insufficient, although conclusions drawn from a single case remain preliminary, and surveillance for marginal reherniation is warranted.",
       "doi": "10.3390/ani16193048",
-      "pmcid": "",
+      "pmcid": "PMC13663408",
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42883017/",
       "species": "Canine",
       "topics": [
@@ -182,7 +182,7 @@
       "pages": "",
       "abstract": "Surface electrocardiogram including peripheral limb and precordial leads has shown clinical utility in humans and dogs, but it is rarely employed in cats. This prospective single-center study aimed to evaluate a 13-lead electrocardiographic system including six peripheral limb and seven precordial leads in a group of healthy cats and cats with cardiac and non-cardiac diseases. To obtain 13 leads, after two minutes of simultaneous recording of the first 12 leads, one lead was moved in another position, and two additional minutes were recorded. The aim was to report descriptive values for several electrocardiographic variables from healthy cats and to test the exploratory diagnostic value to identify diseased status. A total of 125 cats with sinus rhythm were enrolled and grouped as healthy (H, n = 40), cardiac disease (CaD, n = 57) or non-cardiac disease without cardiac involvement (NCD, n = 28). Diagnostic work-up included echocardiography for every cat and different additional diagnostic tests based on the clinical need. Cats were mildly restrained in right lateral recumbency, and peripheral limb and precordial leads were positioned according to an adjusted Wilson system. In total 141 electrocardiographic variables were measured by one operator blinded to group allocation. Descriptive values were obtained from the H group. P wave amplitude was generally higher in peripheral limb leads compared to precordial leads. Thirty-five variables differed between H and CaD on pairwise comparison, while no variable differed between H and NCD. On multivariable logistic regression analysis, R wave amplitude in lead II, aVL, and V6, P wave amplitude in V8, and age were useful in identifying cardiac disease in this cohort. The same variables, without age but including R wave amplitude in V8, were also able to discriminate between H cats and cats with hypertrophic cardiomyopathy phenotype. In our population of cats with sinus rhythm, 13-lead electrocardiogram allowed differentiating H cats from those with CaD and with hypertrophic cardiomyopathy but not from cats with NCD. Descriptive values are provided for different variables.",
       "doi": "10.3390/ani16192993",
-      "pmcid": "",
+      "pmcid": "PMC13663457",
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42882961/",
       "species": "Both",
       "topics": [
@@ -1740,7 +1740,7 @@
       "pages": "696-702",
       "abstract": "OBJECTIVE: To describe the presentation and outcome of a case of suspected cholecalciferol rodenticide intoxication managed with both intralipid emulsion (ILE) and therapeutic plasma exchange (TPE).\nCASE SUMMARY: A 3-year-old, neutered female, crossbreed dog presented for acute-onset vomiting and lethargy after suspected exposure to cholecalciferol rodenticide. Severe hypercalcemia was observed without other identifiable causes found upon investigation. Standard therapy for hypercalcemia was initiated, but rebound hypercalcemia led to consideration of alternative management options. Although ILE therapy initially showed promise, rebound hypercalcemia persisted. Ultimately, TPE was performed as a novel therapy and successfully reduced serum concentrations of vitamin D metabolites. Normocalcemia was eventually maintained, though the dog developed endocarditis that progressed to congestive heart failure and death. Blood cultures revealed the growth of Serratia marcescens.\nNEW OR UNIQUE INFORMATION PROVIDED: To the authors' knowledge, this is the first report describing the use of both ILE and TPE in the management of cholecalciferol rodenticide intoxication in a dog. It is also the second reported case of S. marcescens causing endocarditis in a dog.",
       "doi": "10.1111/vec.70157",
-      "pmcid": "",
+      "pmcid": "PMC13676803",
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42675959/",
       "species": "Canine",
       "topics": [
