@@ -163,13 +163,16 @@ footer{
 <section class="panel">
   <div class="searchrow">
     <input id="q" placeholder="제목, 저자, 대학교, 저널, 초록, PMID 검색">
-    <select id="sort">
-      <option value="new">새로 수집된 순</option>
+    <select id="sort" aria-label="논문 정렬">
       <option value="published">발행일 최신순</option>
+      <option value="cited">인용 많은 순 (OpenAlex)</option>
+      <option value="new">새로 수집된 순</option>
       <option value="old">발행일 오래된 순</option>
       <option value="title">제목순</option>
     </select>
   </div>
+
+  <div class="filter-note" id="citation-note" hidden>인용 수는 <a href="https://openalex.org/" target="_blank" rel="noopener">OpenAlex</a> 기준입니다. 확인되지 않은 논문은 맨 뒤에 표시됩니다.</div>
 
   <div class="label">동물</div>
   <div class="filters" id="species"></div>
@@ -410,8 +413,14 @@ function apply(){
   });
 
   const sort=$("sort").value;
+  $("citation-note").hidden=sort!=="cited";
+  const citations=p=>Number.isInteger(p.citation_count)&&p.citation_count>=0?p.citation_count:-1;
   filtered.sort((a,b)=>
-    sort==="old"
+    sort==="cited"
+      ?citations(b)-citations(a)
+        ||(b.sort_date||"").localeCompare(a.sort_date||"")
+        ||Number(b.pmid||0)-Number(a.pmid||0)
+      :sort==="old"
       ?(a.sort_date||"").localeCompare(b.sort_date||"")
       :sort==="title"
         ?(a.title||"").localeCompare(b.title||"")
@@ -427,6 +436,7 @@ function apply(){
 }
 
 function render(){
+  const sort=$("sort").value;
   $("shown").textContent=filtered.length.toLocaleString("ko-KR");
   $("result").textContent=
     `조건에 맞는 논문 ${filtered.length.toLocaleString("ko-KR")}개`;
@@ -515,6 +525,9 @@ function render(){
             bibliography?` · ${esc(bibliography)}`:""
           }${pmidText}
           ${collectionDate?`<br>최초 수집: ${esc(collectionDate)}`:""}
+          ${Number.isInteger(p.citation_count)&&p.citation_count>=0
+            ?`<br>인용 ${p.citation_count.toLocaleString("ko-KR")}회 · OpenAlex${p.citation_updated_at?` · ${esc(p.citation_updated_at.slice(0,10))} 확인`:""}`
+            :sort==="cited"?"<br>인용 수 미확인":""}
         </div>
         ${publicationUpdate}
         ${tracked}
