@@ -29,6 +29,10 @@ import xml.etree.ElementTree as ET
 import requests
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
+from university_affiliations import (
+    VERSION as UNIVERSITY_FILTER_VERSION,
+    match_universities, parse_affiliations, university_catalog,
+)
 
 
 OUTPUT = Path(__file__).resolve().parent / "papers.json"
@@ -742,6 +746,7 @@ def parse_article(
 
     author_rows, author_text = parse_authors(node)
     tracked = matched_authors(author_rows)
+    affiliations = parse_affiliations(node)
 
     # 지정 저널 경로는 심장 관련성 필터를 적용합니다.
     # 추적 연구자 경로는 개·고양이 논문이면 비심장 논문도 포함합니다.
@@ -789,6 +794,8 @@ def parse_article(
         "pmid": pmid,
         "title": title,
         "authors_text": author_text,
+        "affiliations": affiliations,
+        "universities": match_universities(affiliations),
         "journal": journal,
         "publication_date": publication_date,
         "sort_date": sort_date,
@@ -1055,7 +1062,7 @@ def merge_paper_records(first: dict, second: dict) -> dict:
     merged = dict(primary)
 
     for field, value in secondary.items():
-        if field in {"topics", "matched_authors"}:
+        if field in {"topics", "matched_authors", "affiliations", "universities"}:
             combined = list(merged.get(field) or [])
             for item in value or []:
                 if item not in combined:
@@ -1593,6 +1600,8 @@ def fetch_jvc_feed(
             "external_id": f"jvc-{stable_id}",
             "title": title,
             "authors_text": authors,
+            "affiliations": [],
+            "universities": [],
             "journal": "Journal of Veterinary Cardiology",
             "publication_date": (
                 f"Article in Press · {date_display}"
@@ -1731,6 +1740,8 @@ def main() -> None:
         ),
         "tracked_journals": list(TRACKED_JOURNALS.keys()),
         "tracked_authors": list(TRACKED_AUTHORS.keys()),
+        "university_filter_version": UNIVERSITY_FILTER_VERSION,
+        "universities": university_catalog(papers),
         "papers": papers,
     }
 
