@@ -27,6 +27,7 @@ from typing import Iterable
 import xml.etree.ElementTree as ET
 
 import requests
+from citation_counts import enrich_citations
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 from university_affiliations import (
@@ -1728,6 +1729,7 @@ def main() -> None:
     newly_collected = apply_collection_dates(papers, previous_papers, run_time)
     print(f"최초 수집일 추적: 신규 {newly_collected:,}개")
     papers.sort(key=collection_sort_key, reverse=True)
+    enrich_citations(papers, previous_papers, run_time)
 
     data = {
         "generated_at": run_time.isoformat(),
@@ -1742,6 +1744,7 @@ def main() -> None:
         "tracked_authors": list(TRACKED_AUTHORS.keys()),
         "university_filter_version": UNIVERSITY_FILTER_VERSION,
         "universities": university_catalog(papers),
+        "citation_source": "OpenAlex",
         "papers": papers,
     }
 
