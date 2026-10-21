@@ -42,6 +42,13 @@ input,select{
   font-weight:700;text-transform:uppercase
 }
 .filters{display:flex;gap:7px;flex-wrap:wrap}
+.university-country{margin-top:10px;color:var(--muted);font-size:12px;font-weight:700}
+.university-country .filters{margin-top:7px;font-size:14px;font-weight:400;color:var(--text)}
+.university-more{margin-top:9px;font-weight:400}
+.university-more summary{cursor:pointer;color:var(--p);line-height:1.7}
+.filter-note{margin:8px 0 0;color:var(--muted);font-size:12px;line-height:1.6}
+.university-affiliations{margin-top:7px;color:var(--p2);font-size:13px;line-height:1.5}
+button:focus-visible{outline:3px solid #5abdb2;outline-offset:2px}
 button{
   padding:8px 11px;border:1px solid var(--line);
   border-radius:999px;background:white;cursor:pointer;font:inherit
@@ -155,7 +162,7 @@ footer{
 <div class="wrap">
 <section class="panel">
   <div class="searchrow">
-    <input id="q" placeholder="제목, 저자, 저널, 초록, PMID 검색">
+    <input id="q" placeholder="제목, 저자, 대학교, 저널, 초록, PMID 검색">
     <select id="sort">
       <option value="new">새로 수집된 순</option>
       <option value="published">발행일 최신순</option>
@@ -175,6 +182,10 @@ footer{
 
   <div class="label">분야</div>
   <div class="filters" id="topics"></div>
+
+  <div class="label" id="university-label">대학교</div>
+  <div id="universities" role="group" aria-labelledby="university-label"></div>
+  <p class="filter-note" id="university-note">미국·캐나다 대학 · 논문에 기재된 저자 소속 기준입니다. 공동연구는 각 대학에 포함되며, 소속 정보가 없는 논문은 전체 대학교에서 볼 수 있습니다.</p>
 
   <div class="label">추적 연구자</div>
   <div class="filters" id="authors"></div>
@@ -203,7 +214,8 @@ footer{
 <script>
 const PAGE=40;
 let papers=[],filtered=[],visible=PAGE;
-let state={species:"all",source:"all",journal:"all",topic:"all",author:"all"};
+let universities=[];
+let state={species:"all",source:"all",journal:"all",topic:"all",university:"all",author:"all"};
 
 const $=id=>document.getElementById(id);
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({
@@ -215,6 +227,7 @@ function btn(text,value,group,active=false){
   b.textContent=text;
   b.dataset.value=value;
   b.dataset.group=group;
+  b.setAttribute("aria-pressed",String(active));
   if(active)b.classList.add("active");
   return b;
 }
@@ -305,6 +318,50 @@ function fillFilters(){
   [...new Set(papers.flatMap(p=>p.topics||[]))].sort()
     .forEach(x=>t.append(btn(x,x,"topic")));
 
+  const u=$("universities");
+  u.innerHTML="";
+  u.append(btn("전체 대학교","all","university",true));
+  const counts=new Map();
+  papers.forEach(p=>new Set(p.universities||[]).forEach(name=>{
+    counts.set(name,(counts.get(name)||0)+1);
+  }));
+  [["US","미국"],["CA","캐나다"]].forEach(([country,label])=>{
+    const entries=universities.filter(x=>x.country===country&&counts.has(x.name))
+      .sort((a,b)=>a.name.localeCompare(b.name,"en"));
+    if(!entries.length)return;
+    const row=document.createElement("div");
+    row.className="university-country";
+    const heading=document.createElement("div");
+    heading.textContent=label;
+    row.append(heading);
+    const buttons=document.createElement("div");
+    buttons.className="filters";
+    buttons.setAttribute("role","group");
+    buttons.setAttribute("aria-label",`${label} 대학교`);
+    const topNames=new Set([...entries].sort((a,b)=>counts.get(b.name)-counts.get(a.name))
+      .slice(0,18).map(x=>x.name));
+    const extra=document.createElement("div");
+    extra.className="filters";
+    entries.forEach(x=>{
+      const b=btn(x.name,x.name,"university");
+      b.title=`${label} · ${counts.get(x.name).toLocaleString("ko-KR")}개 논문`;
+      (topNames.has(x.name)?buttons:extra).append(b);
+    });
+    row.append(buttons);
+    if(extra.children.length){
+      const details=document.createElement("details");
+      details.className="university-more";
+      const summary=document.createElement("summary");
+      summary.textContent=`${label} 대학교 더 보기 (${extra.children.length})`;
+      details.append(summary,extra);
+      row.append(details);
+    }
+    u.append(row);
+  });
+  if(!universities.length){
+    $("university-note").textContent="대학교 소속 정보를 업데이트하고 있습니다. 잠시 후 새로고침해 주세요.";
+  }
+
   const a=$("authors");
   a.innerHTML="";
   a.append(btn("전체 연구자","all","author",true));
@@ -339,13 +396,17 @@ function apply(){
       state.author==="all"||
       (p.matched_authors||[]).includes(state.author);
 
+    const un=
+      state.university==="all"||
+      (p.universities||[]).includes(state.university);
+
     const text=[
       p.title,p.authors_text,p.journal,p.abstract,p.pmid,p.doi,
       p.volume,p.issue,p.pages,
-      ...(p.topics||[]),...(p.matched_authors||[])
+      ...(p.topics||[]),...(p.matched_authors||[]),...(p.universities||[])
     ].join(" ").toLowerCase();
 
-    return sp&&src&&jr&&tp&&au&&(!q||text.includes(q));
+    return sp&&src&&jr&&tp&&au&&un&&(!q||text.includes(q));
   });
 
   const sort=$("sort").value;
@@ -457,6 +518,7 @@ function render(){
         </div>
         ${publicationUpdate}
         ${tracked}
+        ${p.universities?.length?`<div class="university-affiliations">대학교: ${esc(p.universities.join(" · "))}</div>`:""}
         <div class="paper-tools">${summaryTool}${abstractTool}</div>
         ${summaryBox}
         <div class="links">
@@ -753,8 +815,12 @@ document.addEventListener("click",event=>{
   if(event.target.matches("button[data-group]")){
     const group=event.target.dataset.group;
     document.querySelectorAll(`button[data-group="${group}"]`)
-      .forEach(button=>button.classList.remove("active"));
+      .forEach(button=>{
+        button.classList.remove("active");
+        button.setAttribute("aria-pressed","false");
+      });
     event.target.classList.add("active");
+    event.target.setAttribute("aria-pressed","true");
     state[group]=event.target.dataset.value;
     visible=PAGE;
     apply();
@@ -791,6 +857,7 @@ Promise.all([
 ])
   .then(([data,history])=>{
     papers=Array.isArray(data.papers)?data.papers:[];
+    universities=Array.isArray(data.universities)?data.universities:[];
     restoreCollectionDates(papers,history);
     $("total").textContent=papers.length.toLocaleString("ko-KR");
     $("updated").textContent=data.generated_at
