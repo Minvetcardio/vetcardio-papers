@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-30T04:11:35.005959+00:00",
+  "generated_at": "2026-10-31T03:53:49.937303+00:00",
   "total": 4649,
   "collection_tracking_version": "2026-10-09-first-collected-v1",
   "filter_version": "major-journal-filter-jvc-doi-tracking-2026-09-22",
@@ -378,15 +378,15 @@
       "early_online_date": "2026-10-28",
       "source_type": "sciencedirect_rss",
       "tracking_key": "doi:10.1016/j.jvc.2026.10.002",
-      "ever_article_in_press": true,
       "first_seen_as_preproof_at": "2026-10-30",
+      "ever_article_in_press": true,
       "publication_status": "article_in_press",
       "formally_published": false,
       "recently_formally_published": false,
       "first_collected_at": "2026-10-30T04:11:35.005959+00:00",
-      "citation_checked_at": "2026-10-30T04:11:35.005959+00:00",
       "citation_count": 0,
-      "citation_updated_at": "2026-10-30T04:11:35.005959+00:00"
+      "citation_updated_at": "2026-10-30T04:11:35.005959+00:00",
+      "citation_checked_at": "2026-10-30T04:11:35.005959+00:00"
     },
     {
       "pmid": "42955822",
@@ -407,7 +407,7 @@
       "pages": "",
       "abstract": "BACKGROUND: Circulating fibroblast growth factor-23 (FGF-23) is primarily a kidney-related biomarker, but also may be influenced by cardiovascular remodeling and hemodynamic load.\nHYPOTHESIS/OBJECTIVES: Verify whether serum FGF-23 concentration increases with myxomatous mitral valve disease (MMVD) severity.\nANIMALS: Forty-two client-owned dogs with MMVD without overt kidney disease.\nMETHODS: Retrospective cross-sectional study to evaluate serum FGF-23, N-terminal pro-B-type natriuretic peptide (NT-proBNP), atrial natriuretic peptide (ANP), blood urea nitrogen (BUN), creatinine (Cr), and symmetric dimethylarginine (SDMA) concentrations. Imaging variables included vertebral heart score (VHS), vertebral left atrial size (VLAS), left atrial-to-aortic root ratio (LA/Ao), normalized left-ventricular internal diameter in diastole (LVIDDN), and diastolic transmitral E-wave velocity (E-vel). Differences among American College of Veterinary Internal Medicine stages were analyzed using the Kruskal-Wallis test with Bonferroni-adjusted pairwise comparisons. Correlations were analyzed using Spearman's correlation. Multivariable linear regression analysis was performed to identify factors associated with serum FGF-23 concentration.\nRESULTS: Dogs with ACVIM stages C and D had higher serum FGF-23 concentrations than those with stages B1 and B2 (P < .05). Serum FGF-23 concentrations were positively correlated with VLAS (rs = 0.500, P < .01), ANP (rs = 0.455, P < .01), LA/Ao (rs = 0.384, P < .05), E-vel (rs = 0.372, P < .05), and NT-proBNP (rs = 0.366, P < .05). ACVIM stage was significantly associated with serum FGF-23 concentration after adjustment for serum Cr concentration and loop diuretic use.\nCONCLUSIONS AND CLINICAL IMPORTANCE: The potential influence of MMVD should be considered when interpreting increased circulating FGF-23 concentrations in dogs with MMVD.",
       "doi": "10.1093/jvimsj/aalag265",
-      "pmcid": "",
+      "pmcid": "PMC13718434",
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42955822/",
       "species": "Canine",
       "topics": [
@@ -674,8 +674,8 @@
       "recently_formally_published": false,
       "first_collected_at": "2026-10-24T03:06:37.843560+00:00",
       "citation_count": 0,
-      "citation_updated_at": "2026-10-24T03:06:37.843560+00:00",
-      "citation_checked_at": "2026-10-24T03:06:37.843560+00:00"
+      "citation_updated_at": "2026-10-31T03:53:49.937303+00:00",
+      "citation_checked_at": "2026-10-31T03:53:49.937303+00:00"
     },
     {
       "pmid": "42892314",
@@ -3702,8 +3702,8 @@
     },
     {
       "pmid": "42599030",
-      "title": "EXPRESS: MYOCARDIAL INJURY IN CATS WITH ACUTE BLUNT TRAUMA: PREVALENCE AND PROGNOSTIC IMPLICATIONS.",
-      "authors_text": "Greta Dossi, Marta Mismetti, Liliana Carnevale, Vitaliano Borromeo, Paola Pocar, Chiara Locatelli",
+      "title": "Myocardial injury in cats with acute blunt trauma: Prevalence and prognostic implications.",
+      "authors_text": "Greta Dossi, Liliana Carnevale, Marta Mismetti, Vitaliano Borromeo, Paola Pocar, Chiara Locatelli",
       "affiliations": [
         "Department of Veterinary Medicine and Animal Sciences, University of Milan, Lodi, Italy."
       ],
@@ -3711,10 +3711,10 @@
       "journal": "Journal of feline medicine and surgery",
       "publication_date": "2026-08-14",
       "sort_date": "2026-08-14",
-      "volume": "",
-      "issue": "",
+      "volume": "28",
+      "issue": "10",
       "pages": "1098612X261480992",
-      "abstract": "ObjectivesTo determine the prevalence of increased serum high-sensitivity cardiac troponin I (hs-cTnI) concentrations in cats with acute blunt trauma and assess associations with trauma severity, clinicopathological variables, echocardiographic findings, and short-term outcome.MethodsThirty-nine cats presenting within 48 hours of blunt trauma were prospectively enrolled. All cats underwent physical examination, Animal Trauma Triage scoring, thoracic radiography, electrocardiography, echocardiography, complete blood count, serum biochemistry, NTproBNP testing, and hs-cTnI measurement. Associations between hs-cTnI concentrations and clinical, laboratory, echocardiographic, and outcome variables were assessed. Receiver operating characteristic (ROC) analysis was performed as an exploratory assessment of prognostic performance.ResultsIncreased hs-cTnI concentrations were detected in 34/39 cats (87%; 95% CI 72-96%). A significant ordinal association was identified between trauma severity and hs-cTnI class (linear-by-linear association, p=0.036), although the overall Fisher-Freeman-Halton test was not significant (p=0.088). Hs-cTnI concentrations correlated positively with urea, creatinine, neutrophil count, ALT, NLR, blood glucose, IVSd, and LVPWd, and negatively with LVIDd. Increased left ventricular wall thickness was identified in 10/39 cats and was associated with higher hs-cTnI concentrations (p=0.033). No traumatic cardiac rupture, pericardial effusion, or pleural effusion were observed. Electrocardiographic abnormalities were detected in 6/39 cats and were not associated with hs-cTnI concentrations. Seven cats (18%) died during hospitalization. Increased urea concentration , white blood cell count, and neutrophil count were associated with non-survival. ROC analyses were considered exploratory because of the limited number of outcome events.Conclusions and relevanceIncreased hs-cTnI concentrations were common in cats with acute blunt trauma and were associated with leukocyte variables, renal function markers, and subtle echocardiographic abnormalities. These findings suggest that hs-cTnI may reflect a multifactorial biological response involving myocardial stress or injury, systemic disease severity, altered renal handling, and possible underlying subclinical cardiac disease. Further studies are needed to clarify the relative contribution and clinical significance of these mechanisms.",
+      "abstract": "OBJECTIVES: The aim of the present study was to determine the prevalence of increased serum high-sensitivity cardiac troponin I (hs-cTnI) concentrations in cats with acute blunt trauma and assess associations with trauma severity, clinicopathological variables, echocardiographic findings, and short-term outcome.\nMETHODS: A total of 39 cats presenting within 48 h of blunt trauma were prospectively enrolled. All cats underwent physical examination, Animal Trauma Triage scoring, thoracic radiography, electrocardiography, echocardiography, complete blood count, serum biochemistry, N-terminal pro B-type natriuretic peptide testing, and hs-cTnI measurement. Associations between hs-cTnI concentrations and clinical, laboratory, echocardiographic, and outcome variables were assessed. Receiver operating characteristic (ROC) analysis was performed as an exploratory assessment of prognostic performance.\nRESULTS: Increased hs-cTnI concentrations were detected in 34/39 (87%) cats (95% confidence interval 72-96). A significant ordinal association was identified between trauma severity and hs-cTnI class (linear-by-linear association, P = 0.036), although the overall Fisher-Freeman-Halton test was not significant (P = 0.088). Hs-cTnI concentrations correlated positively with urea, creatinine, neutrophil count, alanine aminotransferase, neutrophil:lymphocyte ratio, blood glucose, end-diastolic interventricular septal, and posterior wall thicknesses, and negatively with end-diastolic left ventricular internal diameter. Increased left ventricular wall thickness was identified in 10/39 cats and was associated with higher hs-cTnI concentrations (P = 0.033). No traumatic cardiac rupture, pericardial effusion, or pleural effusion were observed. Electrocardiographic abnormalities were detected in 6/39 cats and were not associated with hs-cTnI concentrations. Seven cats (18%) died during hospitalization. Increased urea concentration, white blood cell count, and neutrophil count were associated with non-survival. ROC analyses were considered exploratory because of the limited number of outcome events.\nCONCLUSIONS AND RELEVANCE: Increased hs-cTnI concentrations were common in cats with acute blunt trauma and were associated with leukocyte variables, renal function markers, and subtle echocardiographic abnormalities. These findings suggest that hs-cTnI may reflect a multifactorial biological response involving myocardial stress or injury, systemic disease severity, altered renal handling, and possible underlying subclinical cardiac disease. Further studies are needed to clarify the relative contribution and clinical significance of these mechanisms.",
       "doi": "10.1177/1098612x261480992",
       "pmcid": "",
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42599030/",
@@ -3728,7 +3728,7 @@
       "selected_journal": true,
       "matched_authors": [],
       "article_in_press": false,
-      "publisher_formal": false,
+      "publisher_formal": true,
       "source_type": "pubmed",
       "article_url": "",
       "tracking_key": "doi:10.1177/1098612x261480992",
