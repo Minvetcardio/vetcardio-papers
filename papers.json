@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-07T04:27:30.264460+00:00",
+  "generated_at": "2026-11-08T04:12:05.677688+00:00",
   "total": 4655,
   "collection_tracking_version": "2026-10-09-first-collected-v1",
   "filter_version": "major-journal-filter-jvc-doi-tracking-2026-09-22",
@@ -378,15 +378,15 @@
       "early_online_date": "2026-11-05",
       "source_type": "sciencedirect_rss",
       "tracking_key": "doi:10.1016/j.jvc.2026.10.005",
-      "ever_article_in_press": true,
       "first_seen_as_preproof_at": "2026-11-07",
+      "ever_article_in_press": true,
       "publication_status": "article_in_press",
       "formally_published": false,
       "recently_formally_published": false,
       "first_collected_at": "2026-11-07T04:27:30.264460+00:00",
-      "citation_checked_at": "2026-11-07T04:27:30.264460+00:00",
       "citation_count": 0,
-      "citation_updated_at": "2026-11-07T04:27:30.264460+00:00"
+      "citation_updated_at": "2026-11-07T04:27:30.264460+00:00",
+      "citation_checked_at": "2026-11-07T04:27:30.264460+00:00"
     },
     {
       "pmid": "42993774",
@@ -462,9 +462,9 @@
       "publication_status": "published",
       "recently_formally_published": false,
       "first_collected_at": "2026-11-07T04:27:30.264460+00:00",
-      "citation_checked_at": "2026-11-07T04:27:30.264460+00:00",
       "citation_count": 0,
-      "citation_updated_at": "2026-11-07T04:27:30.264460+00:00"
+      "citation_updated_at": "2026-11-07T04:27:30.264460+00:00",
+      "citation_checked_at": "2026-11-07T04:27:30.264460+00:00"
     },
     {
       "pmid": "42987508",
@@ -579,7 +579,9 @@
       "formally_published": false,
       "recently_formally_published": false,
       "first_collected_at": "2026-11-01T04:06:07.889732+00:00",
-      "citation_checked_at": "2026-11-01T04:06:07.889732+00:00"
+      "citation_checked_at": "2026-11-08T04:12:05.677688+00:00",
+      "citation_count": 0,
+      "citation_updated_at": "2026-11-08T04:12:05.677688+00:00"
     },
     {
       "pmid": "",
@@ -1414,7 +1416,7 @@
       "formally_published": true,
       "publication_status": "formally_published",
       "publication_transition": "article_in_press_to_formal",
-      "recently_formally_published": true,
+      "recently_formally_published": false,
       "first_collected_at": "2026-10-14T03:22:16.263041+00:00",
       "citation_count": 0,
       "citation_updated_at": "2026-11-06T04:55:24.511123+00:00",
@@ -1463,24 +1465,25 @@
       "citation_checked_at": "2026-11-06T04:55:24.511123+00:00"
     },
     {
-      "pmid": "",
-      "external_id": "jvc-73e6b003f1b665ce",
-      "title": "Pitfalls of M-mode Echocardiography End-diastolic and End-systolic Measurements: A study of 154 dogs with Myxomatous Mitral Valve Disease",
-      "authors_text": "Luís Lobo, Guilherme G.C.M. Pereira, Maria J.M. Pires",
-      "affiliations": [],
+      "pmid": "42995017",
+      "title": "Pitfalls of M-mode echocardiography end-diastolic and end-systolic measurements: a study of 154 dogs with myxomatous mitral valve disease.",
+      "authors_text": "L Lobo, G G C M Pereira, M J Pires",
+      "affiliations": [
+        "Onevet Hospital Veterinário do Porto, R. Palmeiras 19, 4150-562, Porto, Portugal; Faculdade de Medicina Veterinária, Universidade Lusófona, Campo Grande 376, 1749-024, Lisboa, Portugal; Centro de Estudos de Ciência Animal, Campus Agrário de Vairão, 4480-009, Vila do Conde, Portugal.",
+        "Universidade de Trás-Os-Montes e Alto Douro, 5000-801, Vila Real, Portugal; Onevet Clínica Veterinária Gondomar, Av. Oliveira Martins 75, 4420-230, Gondomar, Portugal. Electronic address: guilherme9pereira@gmail.com.",
+        "Centro de Investigação e Tecnologias Agroambientais e Biológicas (CITAB), Inov4Agro, Universidade de Trás-Os-Montes e Alto Douro, 5000-801, Vila Real, Portugal; Departamento de Ciências Veterinárias, Universidade de Trás-Os-Montes e Alto Douro, 5000-801, Vila Real, Portugal."
+      ],
       "universities": [],
-      "journal": "Journal of Veterinary Cardiology",
-      "publication_date": "Article in Press · 2026-10-10",
+      "journal": "Journal of veterinary cardiology : the official journal of the European Society of Veterinary Cardiology",
+      "publication_date": "2026-10-10",
       "sort_date": "2026-10-10",
       "volume": "",
       "issue": "",
       "pages": "",
-      "abstract": "",
+      "abstract": "INTRODUCTION/OBJECTIVES: Echocardiographic assessment of myxomatous mitral valve disease (MMVD) includes measurement of the left ventricular internal dimension at the end-diastole (LVIDd) and at the end-systole (LVIDs), using established cardiac cycle markers. The LVIDd is measured at the QRS onset, which may not coincide with the maximal internal dimension. The LVIDs is obtained at maximum septal contraction, which in dogs with non-synchronous contraction (NSC) between the septal and free wall, may not correspond to the minimal internal dimension. This study investigates alternative measurement methods and their potential impact on MMVD staging.\nANIMALS, MATERIALS AND METHODS: A retrospective analysis of echocardiographic examinations from 154 dogs with MMVD was performed. Twenty-five dogs displayed NSC and were selected for LVIDs assessment. The LVIDd was measured at the onset of the QRS complex (method D1, recommended by the American College of Veterinary Internal Medicine [ACVIM]) and at the largest chamber diameter (method D2). In dogs with NSC, the LVIDs was measured using maximum septal contraction point (method S1) and minimum septal-to-free wall distance (method S2).\nRESULTS: The LVIDd values were significantly lower with method D1 in 152 dogs (P<0.001). Using method D2, 12 dogs exceeded the the body-weight-normalized LVIDd threshold of 1.7. In NSC dogs, LVIDs values were significantly higher with method S1 (P<0.001).\nSTUDY LIMITATIONS: Limitations included operator subjectivity and observational NSC.\nCONCLUSIONS: The measurement method influences LVIDd and LVIDs values. Although method D2 is not ACVIM- recommended, its application could hypothetically alter staging outcomes, highlighting the effect of measurement timing.",
       "doi": "10.1016/j.jvc.2026.09.009",
-      "pii": "S1760273426001165",
       "pmcid": "",
-      "pubmed_url": "",
-      "article_url": "https://doi.org/10.1016/j.jvc.2026.09.009",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42995017/",
       "species": "Canine",
       "topics": [
         "MMVD / Mitral Valve",
@@ -1490,8 +1493,10 @@
       "matched_authors": [],
       "article_in_press": true,
       "publisher_formal": false,
+      "source_type": "pubmed",
+      "article_url": "https://www.sciencedirect.com/science/article/pii/S1760273426001165?dgcid=rss_sd_all",
+      "pii": "S1760273426001165",
       "early_online_date": "2026-10-10",
-      "source_type": "sciencedirect_rss",
       "tracking_key": "doi:10.1016/j.jvc.2026.09.009",
       "first_seen_as_preproof_at": "2026-10-11",
       "ever_article_in_press": true,
