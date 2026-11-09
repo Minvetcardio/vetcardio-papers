@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-08T04:12:05.677688+00:00",
-  "total": 4655,
+  "generated_at": "2026-11-09T04:26:54.931789+00:00",
+  "total": 4656,
   "collection_tracking_version": "2026-10-09-first-collected-v1",
   "filter_version": "major-journal-filter-jvc-doi-tracking-2026-09-22",
   "jvc_publication_tracking_version": "2026-09-22-doi-transition-v1",
@@ -349,6 +349,46 @@
   "citation_source": "OpenAlex",
   "papers": [
     {
+      "pmid": "42995609",
+      "title": "Point-of-care ultrasound in dogs with clinical signs due to heartworm disease.",
+      "authors_text": "Marisa K Ames",
+      "affiliations": [
+        "Department of Medicine and Epidemiology, Veterinary Medical Teaching Hospital, University of California, Davis, CA, USA. mkames@ucdavis.edu."
+      ],
+      "universities": [
+        "University of California, Davis"
+      ],
+      "journal": "Parasites & vectors",
+      "publication_date": "2026-10-21",
+      "sort_date": "2026-10-21",
+      "volume": "19",
+      "issue": "1",
+      "pages": "",
+      "abstract": "Estimates suggest that over 1 million dogs in the United States are infected with heartworm (Dirofilaria immitis). Although dogs often have no, or only mild clinical signs with heartworm infection, some dogs develop life-threatening cardiopulmonary disease. Point-of-care ultrasound is a useful tool to assess dogs with severe heartworm disease and varies from a quick 'fluid check' to more comprehensive exams that utilize standardized views. Ultrasound is commonly used to diagnose cavitary effusions and intracardiac heartworms. With more advanced training, ultrasound can be used to identify interstitial lung abnormalities and evaluate the morphology of the right heart.",
+      "doi": "10.1186/s13071-026-07720-7",
+      "pmcid": "PMC13741645",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42995609/",
+      "species": "Canine",
+      "topics": [
+        "Heartworm"
+      ],
+      "selected_journal": false,
+      "matched_authors": [
+        "Marisa K. Ames"
+      ],
+      "article_in_press": false,
+      "publisher_formal": true,
+      "source_type": "pubmed",
+      "article_url": "",
+      "tracking_key": "doi:10.1186/s13071-026-07720-7",
+      "publication_status": "published",
+      "recently_formally_published": false,
+      "first_collected_at": "2026-11-09T04:26:54.931789+00:00",
+      "citation_checked_at": "2026-11-09T04:26:54.931789+00:00",
+      "citation_count": 0,
+      "citation_updated_at": "2026-11-09T04:26:54.931789+00:00"
+    },
+    {
       "pmid": "",
       "external_id": "jvc-77e34031b00c53a8",
       "title": "DIAGNOSIS OF PARACHUTE MITRAL VALVE DYSPLASIA IN TWO CATS",
@@ -406,7 +446,7 @@
       "pages": "",
       "abstract": "BACKGROUND: Serotonin, ionized magnesium (iMg), cardiac biomarkers, and mitral valve prolapse are extensively investigated in humans and dogs with mitral valve regurgitation (MR), but not in horses.\nHYPOTHESIS/OBJECTIVES: To investigate serotonin, iMg, cardiac troponin I (cTnI), and N-terminal pro-brain natriuretic peptide (NT-proBNP) concentrations and degree of mitral valve billowing (MVB) in horses with MR.\nANIMALS: Eighty controls (no/trivial MR), 122 horses with MR (92 mild, 24 moderate, 6 severe).\nMETHODS: Prospective cross-sectional observational study. All horses underwent echocardiography with MVB distance assessment and MR classification. Platelet-poor plasma serotonin and serum iMg, cTnI, and NT-proBNP concentrations were determined. Controls and horses with different MR grades, biomarker concentrations, and MVB distance were compared using (non-)parametric tests.\nRESULTS: Ionized magnesium concentration was lower in MR compared to controls (mean difference, 0.03 mmol/L; 95% CI, 0.01-0.05; P = .01), but showed no correlation with billowing distance. The billowing distance was higher in horses with MR than in controls (septal: median difference, 0.2 cm; 95% CI, 0.1-0.3; P < .001; parietal: median difference, 0.3 cm; 95% CI, 0.2-0.3; P < .001), and in horses with a crescendo compared to a holosystolic MR jet (septal: median difference, 0.2 cm; 95% CI, 0.1-0.3; P = .003; parietal: median difference, 0.1 cm; 95% CI, 0.0-0.2; P = .01). No differences in serotonin, cTnI, and NT-proBNP concentrations were detected.\nCONCLUSIONS AND CLINICAL IMPORTANCE: Mitral valve billowing is to some extent likely physiological. The association of serotonin and iMg in MVB and MR requires further investigation. Both cTnI and NT-proBNP showed limited use as biomarkers of MR severity.\nABSTRACT (DUTCH): Achtergrondinformatie: Serotonine, geïoniseerd magnesium (iMg), cardiale biomarkers en mitraalklep prolaps werden reeds uitgebreid onderzocht bij mensen en honden met mitraalklep regurgitatie (MR), in tegenstelling tot paarden met MR. Hypothese/Doelstelling: Het onderzoeken van de serotonine, iMg, cardiaal troponine I (cTnI) en N-terminal pro-brain natriuretic peptide (NT-proBNP) concentraties en de mate van bolling van de mitraalklep naar het linker atrium (MVB) bij paarden met MR. Studiepopulatie: Tachtig controle paarden (geen/triviaal MR), 122 paarden met MR (92 mild, 24 matig, 6 erg). Materiaal en methoden: Prospectieve cross-sectionele observationele studie. Alle paarden ondergingen echocardiografie, waarna de mate van MVB gemeten werd en MR classificatie uitgevoerd werd. De concentraties van serotonine in bloedplaatjesarm plasma en van iMg, cTnI en NT-proBNP in serum werden bepaald. Controle paarden en paarden met verschillende MR graden, biomarker concentraties en de mate van MVB werden onderling vergeleken aan de hand van (non-)parametrische testen. Resultaten: De concentratie iMg was lager bij paarden met MR in vergelijking met controle paarden (gemiddeld verschil, 0.03 mmol/L; 95% BI, 0.01-0.05; P = 0.01), maar vertoonde geen correlatie met de mate van MVB. De mate van MVB was hoger bij paarden met MR dan bij controle paarden (septaal: mediaan verschil, 0.2 cm; 95% BI, 0.1-0.3; P < 0.001; pariëtaal: mediaan verschil, 0.3 cm; 95% BI, 0.2-0.3; P < 0.001), en bij paarden met een crescendo MR jet in vergelijking met paarden met een holosystolische MR jet (septaal: mediaan verschil, 0.2 cm; 95% BI, 0.1-0.3; P = 0.003; pariëtaal: mediaan verschil, 0.1 cm; 95% BI, 0.0-0.2; P = 0.01). Er werden geen verschillen gedetecteerd in de concentraties van serotonine, cTnI en NT-proBNP. Conclusies en klinisch belang: De mate van MVB is tot op een bepaalde hoogte waarschijnlijk fysiologisch. De rol van serotonine en iMg in MVB en MR vergt verder onderzoek. Zowel cTnI als NT-proBNP vertoonden een beperkte meerwaarde als biomarkers bij het bepalen van de ernst van MR.",
       "doi": "10.1093/jvimsj/aalag280",
-      "pmcid": "",
+      "pmcid": "PMC13742131",
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42993774/",
       "species": "Canine",
       "topics": [
@@ -579,9 +619,9 @@
       "formally_published": false,
       "recently_formally_published": false,
       "first_collected_at": "2026-11-01T04:06:07.889732+00:00",
-      "citation_checked_at": "2026-11-08T04:12:05.677688+00:00",
       "citation_count": 0,
-      "citation_updated_at": "2026-11-08T04:12:05.677688+00:00"
+      "citation_updated_at": "2026-11-08T04:12:05.677688+00:00",
+      "citation_checked_at": "2026-11-08T04:12:05.677688+00:00"
     },
     {
       "pmid": "",
@@ -874,8 +914,8 @@
       "recently_formally_published": false,
       "first_collected_at": "2026-10-26T03:00:25.402599+00:00",
       "citation_count": 0,
-      "citation_updated_at": "2026-11-02T04:10:12.738397+00:00",
-      "citation_checked_at": "2026-11-02T04:10:12.738397+00:00"
+      "citation_updated_at": "2026-11-09T04:26:54.931789+00:00",
+      "citation_checked_at": "2026-11-09T04:26:54.931789+00:00"
     },
     {
       "pmid": "42908898",
