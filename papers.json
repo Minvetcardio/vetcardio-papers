@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-09T04:26:54.931789+00:00",
+  "generated_at": "2026-11-10T05:48:26.579651+00:00",
   "total": 4656,
   "collection_tracking_version": "2026-10-09-first-collected-v1",
   "filter_version": "major-journal-filter-jvc-doi-tracking-2026-09-22",
@@ -384,9 +384,9 @@
       "publication_status": "published",
       "recently_formally_published": false,
       "first_collected_at": "2026-11-09T04:26:54.931789+00:00",
-      "citation_checked_at": "2026-11-09T04:26:54.931789+00:00",
       "citation_count": 0,
-      "citation_updated_at": "2026-11-09T04:26:54.931789+00:00"
+      "citation_updated_at": "2026-11-09T04:26:54.931789+00:00",
+      "citation_checked_at": "2026-11-09T04:26:54.931789+00:00"
     },
     {
       "pmid": "",
@@ -1358,7 +1358,7 @@
       "formally_published": true,
       "publication_status": "formally_published",
       "publication_transition": "article_in_press_to_formal",
-      "recently_formally_published": true,
+      "recently_formally_published": false,
       "first_collected_at": "2026-10-14T03:22:16.263041+00:00",
       "citation_count": 0,
       "citation_updated_at": "2026-11-06T04:55:24.511123+00:00",
@@ -1406,7 +1406,7 @@
       "formally_published": true,
       "publication_status": "formally_published",
       "publication_transition": "article_in_press_to_formal",
-      "recently_formally_published": true,
+      "recently_formally_published": false,
       "first_collected_at": "2026-10-14T03:22:16.263041+00:00",
       "citation_count": 0,
       "citation_updated_at": "2026-11-06T04:55:24.511123+00:00",
