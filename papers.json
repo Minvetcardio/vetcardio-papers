@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-14T04:48:14.843395+00:00",
-  "total": 4660,
+  "generated_at": "2026-11-15T04:38:17.611791+00:00",
+  "total": 4664,
   "collection_tracking_version": "2026-10-09-first-collected-v1",
   "filter_version": "major-journal-filter-jvc-doi-tracking-2026-09-22",
   "jvc_publication_tracking_version": "2026-09-22-doi-transition-v1",
@@ -349,6 +349,179 @@
   "citation_source": "OpenAlex",
   "papers": [
     {
+      "pmid": "43031287",
+      "title": "Airway collapse in small breed dogs and its association with clinical and anatomic variables.",
+      "authors_text": "D Kelly, J Labrador, K Peak, E Doyle, S Calleja, M Vecin, T Lomp, A Smith, B Rasmussen-Clark, D Pollard",
+      "affiliations": [
+        "Southern Counties Veterinary Specialists, IVC Evidensia, Ringwood, UK.",
+        "Anderson Moores Veterinary Specialists, Winchester, UK.",
+        "Lumbry Park Veterinary Specialists, Alton, UK.",
+        "Pride Veterinary Referrals, Derby, UK.",
+        "Bristol Vet Specialists, Bristol, UK.",
+        "Statistics, Cambridge, UK."
+      ],
+      "universities": [],
+      "journal": "The Journal of small animal practice",
+      "publication_date": "2026-11-13",
+      "sort_date": "2026-11-13",
+      "volume": "",
+      "issue": "",
+      "pages": "",
+      "abstract": "OBJECTIVES: The objective of the study was to evaluate associations between clinical and anatomic variables in small breed dogs with lower airway collapse.\nMATERIALS AND METHODS: One hundred and fifty dogs with chronic cough presenting between July 2017 and July 2023 were retrospectively included. Bronchoscopy recordings were reviewed to identify presence, location and severity of airway collapse. Anatomic variables were measured on computed tomography images. Cardiac variables were assessed with echocardiography or thoracic radiographs.\nRESULTS: Decreasing thoracic height:width ratio (Estimate: -51.75; 95% CI: -82.54 to -20.96), increasing body condition score (BCS) (Estimate: 6.45; 95% CI: 3.35 to 9.55) and presence of left atrial enlargement (Estimate: 21.97; 95% CI: 7.02 to 36.92) were associated with increasing cumulative bronchial collapse scores. Decreasing thoracic height:width ratio (OR: 0.02; 95% CI: 0.0004 to 0.63), increasing age (OR: 1.02; 95% CI: 1.01 to 1.03) and increasing body condition score (OR: 1.41; 95% CI: 1.04 to 1.92) were associated with increasing bronchomalacia scores. Decreasing thoracic height:width ratio (OR: 0.001; 95% CI: 0.00000758 to 0.08), increasing body condition score (OR: 1.63; 95% CI: 1.18 to 2.29), presence of left atrial enlargement (OR: 4.89; 95% CI: 1.19 to 21.65) and presence of airway neutrophilic inflammation (OR: 3.98; 95% CI: 1.10 to 17.39) were associated with increasing left principal bronchus collapse scores. Decreasing thoracic height:width ratio (OR: 0.003; 95% CI: 0.0001 to 0.07), increasing body condition score (OR: 1.54; 95% CI: 1.20 to 1.99) and presence of left atrial enlargement (OR: 4.85; 95% CI: 1.38 to 18.99) were associated with increasing left caudal lobar bronchus collapse scores.\nCLINICAL SIGNIFICANCE: Variations in thoracic conformation might be involved in the aetiopathogenesis of airway collapse and reduced thoracic height:width ratio is associated with increasing airway collapse scores. Increasing body condition score is a modifiable variable associated with increasing airway collapse scores. Left atrial enlargement is associated with increased bronchial collapse scores but might directly contribute only to pre-existing collapse of the left caudal lobar bronchus.",
+      "doi": "10.1111/jsap.70213",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/43031287/",
+      "species": "Canine",
+      "topics": [
+        "Echocardiography"
+      ],
+      "selected_journal": true,
+      "matched_authors": [],
+      "article_in_press": false,
+      "publisher_formal": false,
+      "source_type": "pubmed",
+      "article_url": "",
+      "tracking_key": "doi:10.1111/jsap.70213",
+      "publication_status": "published",
+      "recently_formally_published": false,
+      "first_collected_at": "2026-11-15T04:38:17.611791+00:00",
+      "citation_checked_at": "2026-11-15T04:38:17.611791+00:00"
+    },
+    {
+      "pmid": "43025057",
+      "title": "Timed Up and Go test predicts survival but not hospitalization or mobility concerns at the end of life in a population of geriatric dogs.",
+      "authors_text": "Abigail E Woods, Mark Rishniw, Karolynn M Ellis, Kelly M McMullin, Ivanka G Juran, Kurt R Venator, Allison V Miller, Margret I Lenfest, Christopher W Frye",
+      "affiliations": [
+        "1College of Veterinary Medicine, Cornell University, Ithaca, NY.",
+        "2Nestlé Purina PetCare, St Louis, MO."
+      ],
+      "universities": [
+        "Cornell University"
+      ],
+      "journal": "Journal of the American Veterinary Medical Association",
+      "publication_date": "2026-11-13",
+      "sort_date": "2026-11-13",
+      "volume": "",
+      "issue": "",
+      "pages": "1-6",
+      "abstract": "OBJECTIVE: To examine the Timed Up and Go (TUG) test in geriatric dogs as a predictive measure of survival, hospitalization, and owner concern regarding end-of-life mobility.\nMETHODS: The owners of 83 geriatric dogs that had successfully completed a TUG test between April and September of 2023 were solicited to answer a survey regarding their dog, administered in June of 2025. Surveys recorded the dates (rounded to the nearest month) of deaths and hospitalizations and ranked owner mobility concerns at end of life. Data were excluded if dogs had died within 2 weeks of their TUG test or surveys were incomplete. A post hoc analysis was conducted to investigate the predictive utility of the TUG test against all-cause mortality and select morbidity measures.\nRESULTS: 82 surveys and paired TUG times were analyzed. The median dog age was 11 years (range, 8 to 17 years) and median weight was 26.4 kg (range, 2.6 to 46.4 kg). The TUG times ranged from 1.72 to 14.19 seconds. Dogs with a TUG ≥ 7 seconds had a shorter median survival (14 months) than dogs scoring < 7 seconds (incalculable). In multivariable Cox proportional hazard analysis, only TUG demonstrated an instantaneous hazard of death risk, increasing 15% for each 1-second increase in TUG time. The TUG time failed to predict hospitalization or owner end-of-life mobility concerns.\nCONCLUSIONS: Longer TUG times predict all-cause mortality but not morbidity in a group of geriatric dogs.\nCLINICAL RELEVANCE: The TUG test may be useful for identifying geriatric dogs at greater risk of mortality for proactive clinical intervention or quality-of-life conversations.",
+      "doi": "10.2460/javma.26.09.0701",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/43025057/",
+      "species": "Canine",
+      "topics": [
+        "Other Veterinary Medicine"
+      ],
+      "selected_journal": false,
+      "matched_authors": [
+        "Mark Rishniw"
+      ],
+      "article_in_press": false,
+      "publisher_formal": false,
+      "source_type": "pubmed",
+      "article_url": "",
+      "tracking_key": "doi:10.2460/javma.26.09.0701",
+      "publication_status": "published",
+      "recently_formally_published": false,
+      "first_collected_at": "2026-11-15T04:38:17.611791+00:00",
+      "citation_checked_at": "2026-11-15T04:38:17.611791+00:00",
+      "citation_count": 0,
+      "citation_updated_at": "2026-11-15T04:38:17.611791+00:00"
+    },
+    {
+      "pmid": "43025054",
+      "title": "A simple algorithm allows triaging of dogs with mitral valve disease into cardiac or noncardiac causes of dyspnea.",
+      "authors_text": "Mark Rishniw, David Dickson, Domenico Caivano, Liva Vatne, Joanne Harris, Eva Pavelkova, Yong-Wei Hung",
+      "affiliations": [
+        "1Veterinary Information Network, Davis, CA.",
+        "2HeartVets, Porthcawl, Wales, UK.",
+        "3Department of Veterinary Medicine, University of Perugia, Perugia, Umbria, Italy.",
+        "4Empet Nydalen, Oslo, Norway.",
+        "5NMBU School of Veterinary Science, Norwegian University of Life Sciences, Ås, Norway.",
+        "6HeartVets, Exeter, England, UK.",
+        "7Woodcroft Referrals, Stockport, England, UK.",
+        "8Cardiospecial Veterinary Hospital, Taipei, Taiwan."
+      ],
+      "universities": [],
+      "journal": "Journal of the American Veterinary Medical Association",
+      "publication_date": "2026-11-13",
+      "sort_date": "2026-11-13",
+      "volume": "",
+      "issue": "",
+      "pages": "1-8",
+      "abstract": "OBJECTIVE: To create a simple algorithm for diagnosis of congestive heart failure (CHF) in dogs with myxomatous mitral valve disease (MMVD).\nMETHODS: Data were collected between November 2, 2015, and December 7, 2017, from dogs presented to investigators after a tentative diagnosis of CHF by first-opinion clinicians. Investigators completed a data-submission form and provided a final diagnosis of CHF or subclinical MMVD. Data included each of the 8 variables of the original algorithm. Variables that did not change diagnostic accuracy were removed from the model.\nRESULTS: 120 dogs were included: 46 with CHF and 74 with subclinical cardiac disease and an alternate diagnosis for clinical signs; 82 dogs (36 with CHF) were referred for coughing. All dogs with CHF had loud or palpable murmurs, as did 59 without CHF. Forty-five dogs with CHF and 26 without CHF lacked sinus arrhythmia. All nonpanting dogs with CHF and 7 of 56 without CHF had tachypnea or dyspnea. All dogs with CHF had moderate-to-severe left atrial enlargement versus 25 of 35 dogs without CHF. Examined in series, these 4 variables yielded an algorithm sensitivity of 98% and specificity of 95% for diagnosing CHF.\nCONCLUSIONS: Clinicians who are presented with a dog suspected of having CHF secondary to MMVD should be able to determine whether CHF is likely using 3 to 4 simple variables: a loud or palpable murmur, lack of sinus arrhythmia, tachypnea or dyspnea, and at least moderate left atrial enlargement.\nCLINICAL RELEVANCE: This algorithm might improve first-opinion practitioners' diagnosis of CHF in dogs with MMVD.",
+      "doi": "10.2460/javma.26.06.0470",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/43025054/",
+      "species": "Canine",
+      "topics": [
+        "MMVD / Mitral Valve",
+        "Arrhythmia",
+        "Heart Failure"
+      ],
+      "selected_journal": true,
+      "matched_authors": [
+        "Mark Rishniw"
+      ],
+      "article_in_press": false,
+      "publisher_formal": false,
+      "source_type": "pubmed",
+      "article_url": "",
+      "tracking_key": "doi:10.2460/javma.26.06.0470",
+      "publication_status": "published",
+      "recently_formally_published": false,
+      "first_collected_at": "2026-11-15T04:38:17.611791+00:00",
+      "citation_checked_at": "2026-11-15T04:38:17.611791+00:00",
+      "citation_count": 0,
+      "citation_updated_at": "2026-11-15T04:38:17.611791+00:00"
+    },
+    {
+      "pmid": "43027166",
+      "title": "Suspected Focal Junctional Tachycardia with Type I Isorhythmic Atrioventricular Dissociation Associated with Diffuse Lymphocytic Myocarditis of Undetermined Etiology in a Cat.",
+      "authors_text": "Iván Miralles-Plaza, Marina Martín-Ambrosio-Francés, Isabel Del Portillo-Miguel, Hayley-Rebecca McDonald, Altin Cala, Inmaculada Cerrada-Serra",
+      "affiliations": [
+        "Veterinary Teaching Hospital, Universidad Cardenal Herrera CEU, CEU Universities, Calle Santiago Ramón y Cajal s/n, 46115 Valencia, Spain.",
+        "University Veterinary Teaching Hospital, Faculty of Biomedical and Health Sciences, Campus de Villaviciosa, Universidad Europea de Madrid, Calle Tajo s/n, 28670 Madrid, Spain.",
+        "Small Animal Hospital Royal (Dick) School of Veterinary Studies, the University of Edinburgh, Roslin EH25 9RG, UK.",
+        "Independent Researcher, San Francisco, CA 94110, USA.",
+        "Independent Researcher, Marlow SK7 1DX, UK.",
+        "Department of Animal Medicine and Surgery, Universidad CEU-Cardenal Herrera, CEU Universities, Calle Assegadors, 2, 46115 Valencia, Spain."
+      ],
+      "universities": [],
+      "journal": "Animals : an open access journal from MDPI",
+      "publication_date": "2026-10-30",
+      "sort_date": "2026-10-30",
+      "volume": "16",
+      "issue": "21",
+      "pages": "",
+      "abstract": "Focal junctional tachycardia (FJT) is a regular, narrow QRS complex tachycardia with subtle cycle length irregularity, frequently associated with isorhythmic atrioventricular dissociation (IAVD). Its presentation may be paroxysmal or non-paroxysmal. This rhythm is well recognized in humans and dogs. However, to the best of the authors' knowledge, FJT has not been previously published in cats. This case report describes a 9-year-old neutered male domestic shorthair cat presenting with signs of congestive heart failure, hyperthermia, and a non-paroxysmal FJT. Electrocardiography demonstrated a narrow QRS tachycardia with type I synchronization IAVD, consistent with suspected FJT. Transthoracic echocardiography revealed severe biatrial enlargement, concentric ventricular hypertrophy and echocardiographic measures suggestive of high probability of pulmonary hypertension. There was apparently preserved global systolic function and diastolic dysfunction. These findings were consistent with a non-specific cardiomyopathy phenotype stage C. Pleural fluid cytology initially suggested a lymphoproliferative disorder; however, postmortem histopathological examination confirmed diffuse lymphocytic myocarditis without evidence of neoplasia. Despite intensive supportive and antithrombotic therapy, the cat experienced sudden death. To the authors' knowledge, this is the first description of suspected FJT with type I IAVD in a cat. This case highlights myocarditis as a critical differential diagnosis in cats presenting with a lymphocytic effusion, structural echocardiographic changes, and complex supraventricular arrhythmias. It also discusses the diagnostic challenges and prognostic implications associated with inflammatory myocardial disease in this species.",
+      "doi": "10.3390/ani16213437",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/43027166/",
+      "species": "Both",
+      "topics": [
+        "Cardiomyopathy",
+        "Pulmonary Hypertension",
+        "Arrhythmia",
+        "Heart Failure",
+        "Echocardiography",
+        "ECG / Holter"
+      ],
+      "selected_journal": true,
+      "matched_authors": [],
+      "article_in_press": false,
+      "publisher_formal": true,
+      "source_type": "pubmed",
+      "article_url": "",
+      "tracking_key": "doi:10.3390/ani16213437",
+      "publication_status": "published",
+      "recently_formally_published": false,
+      "first_collected_at": "2026-11-15T04:38:17.611791+00:00",
+      "citation_checked_at": "2026-11-15T04:38:17.611791+00:00",
+      "citation_count": 0,
+      "citation_updated_at": "2026-11-15T04:38:17.611791+00:00"
+    },
+    {
       "pmid": "43021594",
       "title": "Evaluation of intrarenal hypoperfusion and renal congestion assessed by intrarenal Doppler ultrasonography in dogs with myxomatous mitral valve disease.",
       "authors_text": "Yuki Iwai, Tomoya Morita, Hiroki Terukina, Masahiro Yamasaki",
@@ -364,7 +537,7 @@
       "pages": "",
       "abstract": "BACKGROUND: While the predictive value of venous impedance index (VII) for evaluating renal congestion is reported in dogs with myxomatous mitral valve disease (MMVD), an ultrasonographic index of renal perfusion has not been reported.\nHYPOTHESIS/OBJECTIVES: Low renal perfusion assessed by interlobar renal artery velocity time integral (VTI) is associated with a worse prognosis in dogs with MMVD. Combining VTI and VII provides additional prognostic information.\nANIMALS: Sixty-two client-owned dogs without heart disease evaluated for preanesthetic or general health assessment and 80 client-owned dogs with MMVD.\nMETHODS: Prospective cohort study. The VTI was measured by manually tracing the spectral velocity envelope of interlobar arteries. The primary endpoint was defined as the composite of cardiac-related death and renal-related death.\nRESULTS: The VTI was corrected for the effect of heart rate (VTIc) because VTI and heart rate were negatively correlated in dogs without heart disease. In dogs with MMVD, the VTIc decreased with higher ACVIM stage. Dogs with lower VTIc (< 8.3) had significantly shorter survival times (median, not reached; 95% CI, 98 days-not reached; P < .001) than those with normal VTIc (median, not reached; 95% CI, not reached). In multivariable Cox analysis, VII remained significantly associated with outcome (HR, 1.24 per 0.1-unit increase; 95% CI, 1.07-1.42). Exploratory classification combining VII (<0.37 or ≥0.37) and VTIc (≥8.3 or < 8.3) identified 4 subsets with different survival outcomes.\nCONCLUSIONS AND CLINICAL IMPORTANCE: The VTIc might be associated with outcome in dogs with MMVD and combined assessment might provide additional exploratory prognostic information.",
       "doi": "10.1093/jvimsj/aalag273",
-      "pmcid": "",
+      "pmcid": "PMC13759974",
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/43021594/",
       "species": "Canine",
       "topics": [
@@ -616,9 +789,9 @@
       "publication_status": "published",
       "recently_formally_published": false,
       "first_collected_at": "2026-11-07T04:27:30.264460+00:00",
-      "citation_checked_at": "2026-11-14T04:48:14.843395+00:00",
       "citation_count": 0,
-      "citation_updated_at": "2026-11-14T04:48:14.843395+00:00"
+      "citation_updated_at": "2026-11-14T04:48:14.843395+00:00",
+      "citation_checked_at": "2026-11-14T04:48:14.843395+00:00"
     },
     {
       "pmid": "42991084",
@@ -695,9 +868,9 @@
       "publication_status": "published",
       "recently_formally_published": false,
       "first_collected_at": "2026-11-06T04:55:24.511123+00:00",
-      "citation_checked_at": "2026-11-14T04:48:14.843395+00:00",
       "citation_count": 0,
-      "citation_updated_at": "2026-11-14T04:48:14.843395+00:00"
+      "citation_updated_at": "2026-11-14T04:48:14.843395+00:00",
+      "citation_checked_at": "2026-11-14T04:48:14.843395+00:00"
     },
     {
       "pmid": "",
@@ -776,8 +949,8 @@
       "recently_formally_published": false,
       "first_collected_at": "2026-11-01T04:06:07.889732+00:00",
       "citation_count": 0,
-      "citation_updated_at": "2026-11-08T04:12:05.677688+00:00",
-      "citation_checked_at": "2026-11-08T04:12:05.677688+00:00"
+      "citation_updated_at": "2026-11-15T04:38:17.611791+00:00",
+      "citation_checked_at": "2026-11-15T04:38:17.611791+00:00"
     },
     {
       "pmid": "",
@@ -35552,9 +35725,9 @@
       "publication_status": "published",
       "recently_formally_published": false,
       "first_collected_at": "2026-07-21T06:00:03.899353+00:00",
-      "citation_checked_at": "2026-11-14T04:48:14.843395+00:00",
       "citation_count": 115,
-      "citation_updated_at": "2026-11-14T04:48:14.843395+00:00"
+      "citation_updated_at": "2026-11-14T04:48:14.843395+00:00",
+      "citation_checked_at": "2026-11-14T04:48:14.843395+00:00"
     },
     {
       "pmid": "25359788",
@@ -50051,9 +50224,9 @@
       "publication_status": "published",
       "recently_formally_published": false,
       "first_collected_at": "2026-07-21T05:10:47.931966+00:00",
-      "citation_checked_at": "2026-11-14T04:48:14.843395+00:00",
       "citation_count": 1,
-      "citation_updated_at": "2026-11-14T04:48:14.843395+00:00"
+      "citation_updated_at": "2026-11-14T04:48:14.843395+00:00",
+      "citation_checked_at": "2026-11-14T04:48:14.843395+00:00"
     },
     {
       "pmid": "42063420",
