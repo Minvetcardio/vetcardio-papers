@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T04:38:17.611791+00:00",
+  "generated_at": "2026-11-16T04:35:33.194874+00:00",
   "total": 4664,
   "collection_tracking_version": "2026-10-09-first-collected-v1",
   "filter_version": "major-journal-filter-jvc-doi-tracking-2026-09-22",
@@ -424,9 +424,9 @@
       "publication_status": "published",
       "recently_formally_published": false,
       "first_collected_at": "2026-11-15T04:38:17.611791+00:00",
-      "citation_checked_at": "2026-11-15T04:38:17.611791+00:00",
       "citation_count": 0,
-      "citation_updated_at": "2026-11-15T04:38:17.611791+00:00"
+      "citation_updated_at": "2026-11-15T04:38:17.611791+00:00",
+      "citation_checked_at": "2026-11-15T04:38:17.611791+00:00"
     },
     {
       "pmid": "43025054",
@@ -471,9 +471,9 @@
       "publication_status": "published",
       "recently_formally_published": false,
       "first_collected_at": "2026-11-15T04:38:17.611791+00:00",
-      "citation_checked_at": "2026-11-15T04:38:17.611791+00:00",
       "citation_count": 0,
-      "citation_updated_at": "2026-11-15T04:38:17.611791+00:00"
+      "citation_updated_at": "2026-11-15T04:38:17.611791+00:00",
+      "citation_checked_at": "2026-11-15T04:38:17.611791+00:00"
     },
     {
       "pmid": "43027166",
@@ -496,7 +496,7 @@
       "pages": "",
       "abstract": "Focal junctional tachycardia (FJT) is a regular, narrow QRS complex tachycardia with subtle cycle length irregularity, frequently associated with isorhythmic atrioventricular dissociation (IAVD). Its presentation may be paroxysmal or non-paroxysmal. This rhythm is well recognized in humans and dogs. However, to the best of the authors' knowledge, FJT has not been previously published in cats. This case report describes a 9-year-old neutered male domestic shorthair cat presenting with signs of congestive heart failure, hyperthermia, and a non-paroxysmal FJT. Electrocardiography demonstrated a narrow QRS tachycardia with type I synchronization IAVD, consistent with suspected FJT. Transthoracic echocardiography revealed severe biatrial enlargement, concentric ventricular hypertrophy and echocardiographic measures suggestive of high probability of pulmonary hypertension. There was apparently preserved global systolic function and diastolic dysfunction. These findings were consistent with a non-specific cardiomyopathy phenotype stage C. Pleural fluid cytology initially suggested a lymphoproliferative disorder; however, postmortem histopathological examination confirmed diffuse lymphocytic myocarditis without evidence of neoplasia. Despite intensive supportive and antithrombotic therapy, the cat experienced sudden death. To the authors' knowledge, this is the first description of suspected FJT with type I IAVD in a cat. This case highlights myocarditis as a critical differential diagnosis in cats presenting with a lymphocytic effusion, structural echocardiographic changes, and complex supraventricular arrhythmias. It also discusses the diagnostic challenges and prognostic implications associated with inflammatory myocardial disease in this species.",
       "doi": "10.3390/ani16213437",
-      "pmcid": "",
+      "pmcid": "PMC13761761",
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/43027166/",
       "species": "Both",
       "topics": [
@@ -517,9 +517,9 @@
       "publication_status": "published",
       "recently_formally_published": false,
       "first_collected_at": "2026-11-15T04:38:17.611791+00:00",
-      "citation_checked_at": "2026-11-15T04:38:17.611791+00:00",
       "citation_count": 0,
-      "citation_updated_at": "2026-11-15T04:38:17.611791+00:00"
+      "citation_updated_at": "2026-11-15T04:38:17.611791+00:00",
+      "citation_checked_at": "2026-11-15T04:38:17.611791+00:00"
     },
     {
       "pmid": "43021594",
@@ -710,8 +710,8 @@
       "recently_formally_published": false,
       "first_collected_at": "2026-11-09T04:26:54.931789+00:00",
       "citation_count": 0,
-      "citation_updated_at": "2026-11-09T04:26:54.931789+00:00",
-      "citation_checked_at": "2026-11-09T04:26:54.931789+00:00"
+      "citation_updated_at": "2026-11-16T04:35:33.194874+00:00",
+      "citation_checked_at": "2026-11-16T04:35:33.194874+00:00"
     },
     {
       "pmid": "",
@@ -1243,8 +1243,8 @@
       "recently_formally_published": false,
       "first_collected_at": "2026-10-26T03:00:25.402599+00:00",
       "citation_count": 0,
-      "citation_updated_at": "2026-11-09T04:26:54.931789+00:00",
-      "citation_checked_at": "2026-11-09T04:26:54.931789+00:00"
+      "citation_updated_at": "2026-11-16T04:35:33.194874+00:00",
+      "citation_checked_at": "2026-11-16T04:35:33.194874+00:00"
     },
     {
       "pmid": "42908898",
