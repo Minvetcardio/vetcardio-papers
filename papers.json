@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T05:45:49.058154+00:00",
+  "generated_at": "2026-11-19T05:45:06.161430+00:00",
   "total": 4665,
   "collection_tracking_version": "2026-10-09-first-collected-v1",
   "filter_version": "major-journal-filter-jvc-doi-tracking-2026-09-22",
@@ -948,8 +948,8 @@
       "recently_formally_published": false,
       "first_collected_at": "2026-11-04T04:40:47.321324+00:00",
       "citation_count": 0,
-      "citation_updated_at": "2026-11-12T05:36:17.913246+00:00",
-      "citation_checked_at": "2026-11-12T05:36:17.913246+00:00"
+      "citation_updated_at": "2026-11-19T05:45:06.161430+00:00",
+      "citation_checked_at": "2026-11-19T05:45:06.161430+00:00"
     },
     {
       "pmid": "",
@@ -1028,12 +1028,12 @@
       "tracking_key": "doi:10.1016/j.jvc.2026.10.002",
       "first_seen_as_preproof_at": "2026-10-30",
       "early_online_date": "2026-10-28",
+      "formal_publication_detected_at": "2026-11-18T05:45:49.058154+00:00",
+      "formal_publication_highlight_until": "2026-11-25T05:45:49.058154+00:00",
       "ever_article_in_press": true,
       "formally_published": true,
       "publication_status": "formally_published",
       "publication_transition": "article_in_press_to_formal",
-      "formal_publication_detected_at": "2026-11-18T05:45:49.058154+00:00",
-      "formal_publication_highlight_until": "2026-11-25T05:45:49.058154+00:00",
       "recently_formally_published": true,
       "first_collected_at": "2026-10-30T04:11:35.005959+00:00",
       "citation_count": 0,
@@ -1215,8 +1215,8 @@
       "recently_formally_published": false,
       "first_collected_at": "2026-10-28T03:48:31.388977+00:00",
       "citation_count": 0,
-      "citation_updated_at": "2026-11-12T05:36:17.913246+00:00",
-      "citation_checked_at": "2026-11-12T05:36:17.913246+00:00"
+      "citation_updated_at": "2026-11-19T05:45:06.161430+00:00",
+      "citation_checked_at": "2026-11-19T05:45:06.161430+00:00"
     },
     {
       "pmid": "42944160",
@@ -1253,8 +1253,8 @@
       "recently_formally_published": false,
       "first_collected_at": "2026-10-28T03:48:31.388977+00:00",
       "citation_count": 0,
-      "citation_updated_at": "2026-11-12T05:36:17.913246+00:00",
-      "citation_checked_at": "2026-11-12T05:36:17.913246+00:00"
+      "citation_updated_at": "2026-11-19T05:45:06.161430+00:00",
+      "citation_checked_at": "2026-11-19T05:45:06.161430+00:00"
     },
     {
       "pmid": "42921832",
