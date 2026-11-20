@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-19T05:45:06.161430+00:00",
-  "total": 4665,
+  "generated_at": "2026-11-20T05:33:32.733941+00:00",
+  "total": 4667,
   "collection_tracking_version": "2026-10-09-first-collected-v1",
   "filter_version": "major-journal-filter-jvc-doi-tracking-2026-09-22",
   "jvc_publication_tracking_version": "2026-09-22-doi-transition-v1",
@@ -349,6 +349,83 @@
   "citation_source": "OpenAlex",
   "papers": [
     {
+      "pmid": "43056865",
+      "title": "Intracameral lidocaine-epinephrine has minimal effect on heart rate and blood pressure and is an effective sole mydriatic during phacoemulsification in dogs.",
+      "authors_text": "Stephanie A Pumphrey, Lisa K Gibson, Federica Maggio, Jane Lindsey, Lois A Wetmore",
+      "affiliations": [
+        "Department of Clinical Sciences, Cummings School of Veterinary Medicine, Tufts University, North Grafton, MA.",
+        "Tufts Veterinary Emergency Treatment and Specialties, Walpole, MA.",
+        "Independent Researcher, Boston, MA."
+      ],
+      "universities": [
+        "Tufts University"
+      ],
+      "journal": "American journal of veterinary research",
+      "publication_date": "2026-11-19",
+      "sort_date": "2026-11-19",
+      "volume": "",
+      "issue": "",
+      "pages": "1-10",
+      "abstract": "OBJECTIVE: To investigate heart rate (HR) and rhythm, blood pressure (BP), and pupil diameter in dogs that received intracameral (IC) preservative-free lidocaine-epinephrine (ILE) as a sole mydriatic agent during phacoemulsification.\nMETHODS: Records were retrospectively reviewed for HR and BP data and anesthesia concerns following administration of ILE during cataract surgery (IC group, 130 eyes from 83 dogs). Similar data were obtained for a control group undergoing phacoemulsification that received topical mydriatics (topical treatment [TT] group, 40 eyes from 21 dogs). Pupil diameter was measured prospectively following administration of ILE in an additional 20 eyes from 11 dogs.\nRESULTS: Average baseline HR was 13 beats/min higher in the TT group than in the IC group for both eyes operated (P ≤ .04). Heart rate increased more from baseline in the IC group than in the TT group at 15 and 20 minutes after administration, but the difference was not clinically significant (average of 4 beats/min). Changes in BP were minimal and did not differ between groups. No significant arrhythmias or other anesthetic complications were noted in either group. Mean pupil diameter was 11.3 mm (95% CI, 11, 11.6) immediately following ILE administration and 11.8 mm (95% CI, 11.5, 12.1) at the conclusion of surgery.\nCONCLUSIONS: ILE produced adequate, durable mydriasis when used as a sole mydriatic in canine eyes undergoing phacoemulsification. Intracameral lidocaine-epinephrine does not appear to affect cardiovascular parameters when administered during phacoemulsification in dogs.\nCLINICAL RELEVANCE: ILE is a reasonable mydriatic choice for canine phacoemulsification.",
+      "doi": "10.2460/ajvr.26.09.0397",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/43056865/",
+      "species": "Canine",
+      "topics": [
+        "Arrhythmia"
+      ],
+      "selected_journal": true,
+      "matched_authors": [],
+      "article_in_press": false,
+      "publisher_formal": false,
+      "source_type": "pubmed",
+      "article_url": "",
+      "tracking_key": "doi:10.2460/ajvr.26.09.0397",
+      "publication_status": "published",
+      "recently_formally_published": false,
+      "first_collected_at": "2026-11-20T05:33:32.733941+00:00",
+      "citation_checked_at": "2026-11-20T05:33:32.733941+00:00"
+    },
+    {
+      "pmid": "43054081",
+      "title": "Retrospective analysis of feline heartworm disease (Dirofilaria immitis): diagnostic patterns in cats presenting with respiratory or vomiting signs (2013-2023, USA).",
+      "authors_text": "Amber Whittle, Briana Ferguson, Morgan Taylor-Rakocevic, Barbara Poulsen Nautrup, Kseniya Topdijan, Jenifer Sheehy, Kennedy Mwacalimba",
+      "affiliations": [
+        "Department of Parasiticides, Zoetis Inc., Parsippany, NJ, United States.",
+        "Department of Outcomes Research, Zoetis Inc., Parsippany, NJ, United States.",
+        "Banfield Pet Hospital, Vancouver, WA, United States.",
+        "EAH-Consulting, Aachen, Germany."
+      ],
+      "universities": [],
+      "journal": "Frontiers in veterinary science",
+      "publication_date": "2026-11-04",
+      "sort_date": "2026-11-04",
+      "volume": "13",
+      "issue": "",
+      "pages": "1841865",
+      "abstract": "Feline heartworm infection, caused by the mosquito-borne nematode Dirofilaria immitis, is a serious and potentially fatal disease in cats. The true prevalence of this infection is likely underestimated due to the nonspecific nature of clinical signs, such as coughing, vomiting, or respiratory distress, and the diagnostic limitations of current feline heartworm antigen (Ag) and antibody (Ab) assays. This study aimed to enhance understanding of its recognition and detection by linking diverse clinical presentations with diagnostic test results. Anonymized feline medical records spanning 10 years from more than 1,000 Banfield U.S. veterinary clinics were analyzed using machine learning methods. Cats were included if records contained respiratory, vomiting, or heartworm-specific diagnostic codes and at least one heartworm Ag or Ab test. Test positivity rates were linked to clinical signs. For cats tested with both assays, concordance between results was assessed. Of 146,111 eligible cats, 91,438 (62.58%) underwent heartworm testing, and 1,555 (1.70%) were positive on at least one assay. Cats with heartworm-specific diagnostic codes had the highest positivity, but those with respiratory or vomiting codes accounted for 7.01 and 10.10% of all positives. Among 127 cats tested with both assays, 24.41% were discordant, mainly Ag-positive/Ab-negative. Heartworm infection should be considered in any cat with respiratory signs (including asthma-like presentations) or vomiting. To improve its detection, both heat-treated Ag and Ab assays should be used to screen cats annually, and in cats presenting with respiratory signs or vomiting.",
+      "doi": "10.3389/fvets.2026.1841865",
+      "pmcid": "PMC13777999",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/43054081/",
+      "species": "Feline",
+      "topics": [
+        "Heartworm"
+      ],
+      "selected_journal": true,
+      "matched_authors": [],
+      "article_in_press": false,
+      "publisher_formal": true,
+      "source_type": "pubmed",
+      "article_url": "",
+      "tracking_key": "doi:10.3389/fvets.2026.1841865",
+      "publication_status": "published",
+      "recently_formally_published": false,
+      "first_collected_at": "2026-11-20T05:33:32.733941+00:00",
+      "citation_checked_at": "2026-11-20T05:33:32.733941+00:00",
+      "citation_count": 0,
+      "citation_updated_at": "2026-11-20T05:33:32.733941+00:00"
+    },
+    {
       "pmid": "43044240",
       "title": "Cavitary effusion patterns are associated with different survival times in dogs with pulmonary hypertension and right-sided congestive heart failure.",
       "authors_text": "Jaechun Cho, Minsuk Kim, Mihyun Choi, Jeongmin Lee, Chul Park",
@@ -631,7 +708,9 @@
       "formally_published": false,
       "recently_formally_published": false,
       "first_collected_at": "2026-11-13T04:53:11.541579+00:00",
-      "citation_checked_at": "2026-11-13T04:53:11.541579+00:00"
+      "citation_checked_at": "2026-11-20T05:33:32.733941+00:00",
+      "citation_count": 0,
+      "citation_updated_at": "2026-11-20T05:33:32.733941+00:00"
     },
     {
       "pmid": "",
@@ -671,8 +750,8 @@
       "recently_formally_published": false,
       "first_collected_at": "2026-11-13T04:53:11.541579+00:00",
       "citation_count": 0,
-      "citation_updated_at": "2026-11-13T04:53:11.541579+00:00",
-      "citation_checked_at": "2026-11-13T04:53:11.541579+00:00"
+      "citation_updated_at": "2026-11-20T05:33:32.733941+00:00",
+      "citation_checked_at": "2026-11-20T05:33:32.733941+00:00"
     },
     {
       "pmid": "43017042",
@@ -709,8 +788,8 @@
       "recently_formally_published": false,
       "first_collected_at": "2026-11-13T04:53:11.541579+00:00",
       "citation_count": 0,
-      "citation_updated_at": "2026-11-13T04:53:11.541579+00:00",
-      "citation_checked_at": "2026-11-13T04:53:11.541579+00:00"
+      "citation_updated_at": "2026-11-20T05:33:32.733941+00:00",
+      "citation_checked_at": "2026-11-20T05:33:32.733941+00:00"
     },
     {
       "pmid": "42995609",
@@ -2513,7 +2592,7 @@
     },
     {
       "pmid": "42803120",
-      "title": "EXPRESS: Echocardiographic prevalence and attachment-site patterns of left ventricular bands in cats.",
+      "title": "Echocardiographic prevalence and attachment-site patterns of left ventricular bands in cats.",
       "authors_text": "Gregory Van den Noortgate, Yury Zablotski, Gerhard Wess",
       "affiliations": [
         "Dierenartsenpraktijk Akuut, Kortenberg, Belgium.",
@@ -2523,10 +2602,10 @@
       "journal": "Journal of feline medicine and surgery",
       "publication_date": "2026-09-28",
       "sort_date": "2026-09-28",
-      "volume": "",
-      "issue": "",
+      "volume": "28",
+      "issue": "11",
       "pages": "1098612X261495725",
-      "abstract": "ObjectivesTo determine the echocardiographic prevalence and attachment-site patterns of left ventricular bands (LVBs) in cats and assess whether LVB counts differed by sex, sedation status, or echocardiographic group.MethodsIn this prospective observational study, 200 cats undergoing complete transthoracic echocardiographic examination were evaluated for the presence, number, and attachment-site patterns of LVBs. LVBs were defined as discrete intracavitary linear structures connecting two myocardial structures within the left ventricle without insertion into the mitral valve leaflets. Each visible connection was classified according to predefined attachment-site categories. For the phenotype comparison, cats with normal LV wall thickness or focal insertion-site thickening (n = 89) were compared with cats with a hypertrophic cardiomyopathy (HCM) phenotype (n = 86).ResultsA total of 884 LVBs were identified. At least one LVB was detected in 199/200 cats, yielding an echocardiographic prevalence of 99.5%. The median number was 4 LVBs per cat (range 0-10). The most frequently observed attachment patterns involved the interventricular septum and papillary muscle or accessory papillary muscle-like structures. Overall, 51.9% of LVBs had at least one septal attachment, and 94.3% involved a papillary muscle or accessory papillary muscle-like structure. LVB counts did not differ by sex (P = 0.47), sedation status (P = 0.26), or between the normal/focal insertion-site thickening and HCM phenotype groups (P = 0.98).Conclusions and relevanceLeft ventricular bands were identified in nearly all cats examined and represent a common echocardiographic finding. Most involved septal and papillary muscle-related attachment sites. Sex and sedation status were not significantly associated with LVB number, and no significant difference was identified between the combined normal/focal insertion-site thickening group and the HCM phenotype group. These findings provide a reference framework for the echocardiographic recognition and classification of LVBs in cats under clinical imaging conditions.",
+      "abstract": "OBJECTIVES: The aim of the present study was to determine the echocardiographic prevalence and attachment-site patterns of left ventricular bands (LVBs) in cats and assess whether LVB counts differed by sex, sedation status, or echocardiographic group.\nMETHODS: In this prospective observational study, 200 cats undergoing complete transthoracic echocardiographic examination were evaluated for the presence, number, and attachment-site patterns of LVBs. LVBs were defined as discrete intracavitary linear structures connecting two myocardial structures within the left ventricle without insertion into the mitral valve leaflets. Each visible connection was classified according to predefined attachment-site categories. For the phenotype comparison, cats with normal left ventricular wall thickness or focal insertion-site thickening (n = 89) were compared with cats with a hypertrophic cardiomyopathy (HCM) phenotype (n = 86).\nRESULTS: A total of 884 LVBs were identified. At least one LVB was detected in 199/200 cats, yielding an echocardiographic prevalence of 99.5%. The median number was four LVBs per cat (range 0-10). The most frequently observed attachment patterns involved the interventricular septum and papillary muscle or accessory papillary muscle-like structures. Overall, 51.9% of LVBs had at least one septal attachment, and 94.3% involved a papillary muscle or accessory papillary muscle-like structure. LVB counts did not differ by sex (P = 0.47), sedation status (P = 0.26), or between the combined normal/focal insertion-site thickening group and HCM phenotype group (P = 0.98).\nCONCLUSIONS AND RELEVANCE: LVBs were identified in nearly all cats examined and represent a common echocardiographic finding. Most involved septal and papillary muscle-related attachment sites. Sex and sedation status were not significantly associated with LVB number, and no significant difference was identified between the normal/focal insertion-site thickening and HCM phenotype groups. These findings provide a reference framework for the echocardiographic recognition and classification of LVBs in cats under clinical imaging conditions.",
       "doi": "10.1177/1098612x261495725",
       "pmcid": "",
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42803120/",
@@ -2541,7 +2620,7 @@
         "Gerhard Wess"
       ],
       "article_in_press": false,
-      "publisher_formal": false,
+      "publisher_formal": true,
       "source_type": "pubmed",
       "article_url": "",
       "tracking_key": "doi:10.1177/1098612x261495725",
