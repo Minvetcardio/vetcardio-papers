@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T05:27:41.161257+00:00",
+  "generated_at": "2026-11-22T04:52:53.317332+00:00",
   "total": 4668,
   "collection_tracking_version": "2026-10-09-first-collected-v1",
   "filter_version": "major-journal-filter-jvc-doi-tracking-2026-09-22",
@@ -538,7 +538,9 @@
       "publication_status": "published",
       "recently_formally_published": false,
       "first_collected_at": "2026-11-15T04:38:17.611791+00:00",
-      "citation_checked_at": "2026-11-15T04:38:17.611791+00:00"
+      "citation_checked_at": "2026-11-22T04:52:53.317332+00:00",
+      "citation_count": 0,
+      "citation_updated_at": "2026-11-22T04:52:53.317332+00:00"
     },
     {
       "pmid": "43025057",
@@ -578,8 +580,8 @@
       "recently_formally_published": false,
       "first_collected_at": "2026-11-15T04:38:17.611791+00:00",
       "citation_count": 0,
-      "citation_updated_at": "2026-11-15T04:38:17.611791+00:00",
-      "citation_checked_at": "2026-11-15T04:38:17.611791+00:00"
+      "citation_updated_at": "2026-11-22T04:52:53.317332+00:00",
+      "citation_checked_at": "2026-11-22T04:52:53.317332+00:00"
     },
     {
       "pmid": "43025054",
@@ -625,8 +627,8 @@
       "recently_formally_published": false,
       "first_collected_at": "2026-11-15T04:38:17.611791+00:00",
       "citation_count": 0,
-      "citation_updated_at": "2026-11-15T04:38:17.611791+00:00",
-      "citation_checked_at": "2026-11-15T04:38:17.611791+00:00"
+      "citation_updated_at": "2026-11-22T04:52:53.317332+00:00",
+      "citation_checked_at": "2026-11-22T04:52:53.317332+00:00"
     },
     {
       "pmid": "43027166",
@@ -671,8 +673,8 @@
       "recently_formally_published": false,
       "first_collected_at": "2026-11-15T04:38:17.611791+00:00",
       "citation_count": 0,
-      "citation_updated_at": "2026-11-15T04:38:17.611791+00:00",
-      "citation_checked_at": "2026-11-15T04:38:17.611791+00:00"
+      "citation_updated_at": "2026-11-22T04:52:53.317332+00:00",
+      "citation_checked_at": "2026-11-22T04:52:53.317332+00:00"
     },
     {
       "pmid": "43021594",
@@ -706,9 +708,9 @@
       "publication_status": "published",
       "recently_formally_published": false,
       "first_collected_at": "2026-11-14T04:48:14.843395+00:00",
-      "citation_checked_at": "2026-11-21T05:27:41.161257+00:00",
       "citation_count": 0,
-      "citation_updated_at": "2026-11-21T05:27:41.161257+00:00"
+      "citation_updated_at": "2026-11-21T05:27:41.161257+00:00",
+      "citation_checked_at": "2026-11-21T05:27:41.161257+00:00"
     },
     {
       "pmid": "",
@@ -1106,8 +1108,8 @@
       "recently_formally_published": false,
       "first_collected_at": "2026-11-01T04:06:07.889732+00:00",
       "citation_count": 0,
-      "citation_updated_at": "2026-11-15T04:38:17.611791+00:00",
-      "citation_checked_at": "2026-11-15T04:38:17.611791+00:00"
+      "citation_updated_at": "2026-11-22T04:52:53.317332+00:00",
+      "citation_checked_at": "2026-11-22T04:52:53.317332+00:00"
     },
     {
       "pmid": "43044383",
