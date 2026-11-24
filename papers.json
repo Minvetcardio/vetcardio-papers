@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-23T05:33:08.802264+00:00",
-  "total": 4668,
+  "generated_at": "2026-11-24T08:12:03.676225+00:00",
+  "total": 4669,
   "collection_tracking_version": "2026-10-09-first-collected-v1",
   "filter_version": "major-journal-filter-jvc-doi-tracking-2026-09-22",
   "jvc_publication_tracking_version": "2026-09-22-doi-transition-v1",
@@ -348,6 +348,40 @@
   ],
   "citation_source": "OpenAlex",
   "papers": [
+    {
+      "pmid": "43070051",
+      "title": "Suspected Incidental Release of Cardiac Tamponade From Chest Compressions in a Dog.",
+      "authors_text": "Adriana Alfonso Castro, Riley Shugg",
+      "affiliations": [
+        "BluePearl Pet Hospital, Tampa, Florida, USA."
+      ],
+      "universities": [],
+      "journal": "Journal of veterinary emergency and critical care (San Antonio, Tex. : 2001)",
+      "publication_date": "2026-11-23",
+      "sort_date": "2026-11-23",
+      "volume": "",
+      "issue": "",
+      "pages": "",
+      "abstract": "OBJECTIVE: To describe the clinical presentation, management, and outcome of a dog with suspected pericardial effusion and cardiac tamponade that may have been released with chest compressions during CPR.\nCASE SUMMARY: A dog was presented to a primary care veterinarian for dyspnea. Thoracic radiographs showed a globoid cardiac silhouette and no pleural effusion. The dog was transferred immediately to a referral veterinary hospital and was unresponsive and pulseless on arrival. Chest compressions were commenced as part of CPR, and return of spontaneous circulation was achieved. Thoracic radiographs after return of spontaneous circultation showed a more normal-appearing cardiac silhouette and new pleural effusion. An echocardiogram showed a right auricular mass. The dog died at home approximately 48 h after initial presentation.\nNEW OR UNIQUE INFORMATION PROVIDED: This report describes the first known case of suspected incidental release of cardiac tamponade temporally associated with chest compressions in a dog.",
+      "doi": "10.1111/vec.70182",
+      "pmcid": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/43070051/",
+      "species": "Canine",
+      "topics": [
+        "Pericardial Disease",
+        "Cardiac Emergency / CPR"
+      ],
+      "selected_journal": true,
+      "matched_authors": [],
+      "article_in_press": false,
+      "publisher_formal": false,
+      "source_type": "pubmed",
+      "article_url": "",
+      "tracking_key": "doi:10.1111/vec.70182",
+      "publication_status": "published",
+      "recently_formally_published": false,
+      "first_collected_at": "2026-11-24T08:12:03.676225+00:00"
+    },
     {
       "pmid": "43064105",
       "title": "Serum aldosterone concentrations in Cavalier King Charles Spaniels across ACVIM stages of myxomatous mitral valve disease and their associations with echocardiographic indices.",
